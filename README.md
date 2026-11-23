@@ -32,7 +32,7 @@ Fields covered: architecture, art and design, astronomy and astrophysics, biomed
 - Markdown research files that back a roadmap, named `<field>-research.md`.
 - Sections: TL;DR, Key Findings, Undergraduate, Master's, PhD or research, Tools and AI, Career Paths, Uncertainties and Regional Variation, Sources.
 - Every figure carries a source URL and the date it was accessed.
-- Currently available for astronomy and astrophysics, computer science, economics, electrical engineering, finance, law, mathematics, mechanical engineering, medicine (pre-med), molecular biology, neuroscience, nursing, pharmacy, physics, political science, psychology, and social work. The other roadmaps do not yet have a research file in this repo.
+- Currently available for astronomy and astrophysics, business administration, computer science, economics, electrical engineering, English, finance, law, mathematics, mechanical engineering, medicine (pre-med), molecular biology, neuroscience, nursing, pharmacy, physics, political science, psychology, and social work. The other roadmaps do not yet have a research file in this repo.
 
 ### field-roadmap-builder.md
 
