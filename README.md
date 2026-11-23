@@ -19,20 +19,20 @@ career-roadmaps/
 
 ### artifacts/
 
-- 27 single-file React components, one per field, named `<field>-roadmap.jsx`.
+- 28 single-file React components, one per field, named `<field>-roadmap.jsx`.
 - Each has a default export and takes no props, and holds state in React only (no browser storage).
 - Four tabs: Undergraduate, Master's, PhD or research, and Career Paths.
 - Each phase has sub-section tabs with expandable items. Career Paths is a card grid with role titles, a realistic picture of the path, and a salary range.
 - Every field gets its own visual style, so the roadmaps do not look alike.
 
-Fields covered: architecture, art and design, astronomy and astrophysics, biomedical engineering, business administration, civil engineering, computer science, data science, economics, education, electrical engineering, English, environmental engineering, finance, law, mathematics, mechanical engineering, medicine (pre-med), molecular biology, neuroscience, nursing, pharmacy, philosophy, physics, political science, psychology, social work.
+Fields covered: architecture, art and design, astronomy and astrophysics, biomedical engineering, business administration, civil engineering, computer science, data science, economics, education, electrical engineering, English, environmental engineering, finance, game development, law, mathematics, mechanical engineering, medicine (pre-med), molecular biology, neuroscience, nursing, pharmacy, philosophy, physics, political science, psychology, social work.
 
 ### research/
 
 - Markdown research files that back a roadmap, named `<field>-research.md`.
 - Sections: TL;DR, Key Findings, Undergraduate, Master's, PhD or research, Tools and AI, Career Paths, Uncertainties and Regional Variation, Sources.
 - Every figure carries a source URL and the date it was accessed.
-- Currently available for astronomy and astrophysics, business administration, computer science, economics, electrical engineering, English, finance, law, mathematics, mechanical engineering, medicine (pre-med), molecular biology, neuroscience, nursing, pharmacy, physics, political science, psychology, and social work. The other roadmaps do not yet have a research file in this repo.
+- Every roadmap has a matching research file.
 
 ### field-roadmap-builder.md
 

@@ -137,51 +137,51 @@ const data = {
       years: "Years 1–4",
       color: T.phaseColors.undergrad,
       intro:
-        "The undergraduate degree is essentially civil and chemical engineering fundamentals bent toward pollution — mass balances, fluid mechanics, chemistry, and biology aimed at water, air, and soil. It is broad by design: you graduate a capable generalist and then compete for jobs against civil and chemical grads for many of the same roles.",
+        "The undergraduate degree is essentially civil and chemical engineering fundamentals bent toward pollution — mass balances, fluid mechanics, chemistry, and biology aimed at water, air, and soil. It is broad by design: you graduate a capable generalist, and BLS lists civil, chemical, and general engineering degrees as routes into the same occupation.",
       sections: [
         {
           title: "Core Curriculum",
           icon: "📘",
           items: [
-            { name: "Mass & Energy Balances", detail: "The accounting backbone of the field: what enters a system, what leaves, and what accumulates. Usually the first true 'weeder' course — shared with chemical engineering." },
+            { name: "Mass & Energy Balances", detail: "The accounting backbone of the field: what enters a system, what leaves, and what accumulates. At Oregon State it sits in a core shared with chemical and bioengineering, and ABET criteria require it." },
             { name: "Fluid Mechanics & Hydraulics", detail: "How water moves through pipes, open channels, and the ground. The physics underneath every treatment plant, pump station, and storm drain." },
-            { name: "Environmental Chemistry", detail: "Aqueous equilibrium, acid–base, redox, and reaction kinetics that govern how contaminants behave in water and soil. Conceptually the heart of the major, and a common stumbling block." },
-            { name: "Fate & Transport of Contaminants", detail: "Modeling how a substance moves and transforms across air, water, and soil phases — the signature environmental-engineering course and ABET's defining program criterion." },
-            { name: "Water & Wastewater Treatment", detail: "Designing the unit-process train — screening, coagulation, sedimentation, filtration, disinfection, biological treatment. The most directly job-relevant course in the degree." },
-            { name: "Hydrology & Groundwater", detail: "Rainfall–runoff, watersheds, and aquifer flow. Where civil and environmental engineering overlap most heavily." },
-            { name: "Environmental Microbiology", detail: "The bacteria that run biological treatment — and the pathogens you're trying to kill in drinking water. Biology that most other engineers never touch." },
-            { name: "Thermodynamics", detail: "Energy, phase behavior, and why treatment processes cost what they cost. Shared with chemical engineering and often taught at that intensity." },
+            { name: "Environmental Chemistry", detail: "Aqueous equilibrium, acid–base, redox, and reaction kinetics that govern how contaminants behave in water and soil. ABET criteria name stoichiometry, equilibrium, and kinetics, and Colorado State requires organic and environmental chemistry." },
+            { name: "Fate & Transport of Contaminants", detail: "Modeling how a substance moves and transforms across air, water, and soil phases. ABET's environmental program criteria name fate and transport explicitly." },
+            { name: "Water & Wastewater Treatment", detail: "Designing the unit-process train: screening, coagulation, sedimentation, filtration, disinfection, biological treatment. Oklahoma's program pairs it with air pollution control and solid and hazardous waste management." },
+            { name: "Hydrology & Groundwater", detail: "Rainfall–runoff, watersheds, and aquifer flow. Colorado State lists hydrology among its required environmental-engineering courses." },
+            { name: "Environmental Microbiology", detail: "The bacteria that run biological treatment, and the pathogens you're trying to kill in drinking water. ABET requires biological science, and Colorado State lists microbiology." },
+            { name: "Thermodynamics", detail: "Energy and phase behavior. Oregon State's shared school core pairs thermodynamics with transport phenomena and senior-year unit operations." },
           ],
         },
         {
           title: "Fieldwork & Lab",
           icon: "🧪",
           items: [
-            { name: "Water-quality sampling", detail: "Collecting and preserving samples without contaminating them. Unglamorous, but it's the skill nearly every entry-level consulting job actually needs on day one." },
+            { name: "Water-quality sampling", detail: "Collecting and preserving samples without contaminating them. Unglamorous but central: BLS describes environmental engineers as working both in offices and in the field." },
             { name: "Analytical measurement", detail: "Turbidity, dissolved oxygen, BOD/COD, pH, and jar tests — learning to produce a number and to know when not to trust it." },
             { name: "Unit-process lab", detail: "Running bench-scale coagulation, filtration, and reactor experiments to connect the equations to real, messy performance." },
-            { name: "Senior capstone design", detail: "A year-long team project designing a real treatment system, remediation plan, or stormwater scheme against actual codes, clients, and budgets." },
+            { name: "Senior capstone design", detail: "A team design project: Oklahoma runs a two-semester sequence, Colorado State a year-long capstone, and Oregon State frames it as open-ended problems with economic, operational, and reliability constraints." },
           ],
         },
         {
           title: "Tools You'll Learn",
           icon: "🖥️",
           items: [
-            { name: "AutoCAD / Civil 3D", detail: "Drafting site plans, pipe networks, and grading. Still the default deliverable across most of environmental consulting." },
-            { name: "GIS (ArcGIS / QGIS)", detail: "Mapping contamination plumes, watersheds, and infrastructure. Increasingly a core hiring skill rather than a nice-to-have." },
-            { name: "EPANET & SWMM", detail: "The EPA's free, industry-standard models for water-distribution networks and stormwater/sewer systems." },
-            { name: "HEC-RAS / HEC-HMS", detail: "Army Corps hydraulic and hydrologic models for floodplains and watershed runoff." },
-            { name: "Excel → Python / R", detail: "Mass-balance spreadsheets are giving way to scripting for data analysis, modeling, and automation. Early Python fluency compounds fast." },
+            { name: "AutoCAD / Civil 3D", detail: "Drafting site plans, pipe networks, and grading. AutoCAD appears in environmental software lists, and Payscale tracks Civil 3D as a skill for AECOM environmental engineers." },
+            { name: "GIS (ArcGIS / QGIS)", detail: "Mapping contamination plumes, watersheds, and infrastructure. ArcGIS appears in environmental software lists, and Syracuse ESF lists geospatial engineering as an upper-level area." },
+            { name: "EPANET & SWMM", detail: "Free EPA tools. EPANET models drinking-water pipe networks; SWMM models runoff and drainage and is used for flood-control design, combined sewer overflow reduction, and green infrastructure." },
+            { name: "Environmental data software (EQuIS)", detail: "Site data such as samples, wells, and results is managed in dedicated databases. EQuIS appears in environmental software lists alongside ArcGIS, AutoCAD, MODFLOW, and R and Python." },
+            { name: "Excel → Python / R", detail: "Python and R appear in environmental software lists and throughout the ML and digital-twin literature in the PhD section. No source measures how far scripting has replaced spreadsheets." },
           ],
         },
         {
           title: "Beyond the Classroom",
           icon: "🎓",
           items: [
-            { name: "Co-op / internship", detail: "A summer at a consulting firm or water utility is effectively mandatory — many firms hire almost exclusively from their intern pool." },
-            { name: "FE exam (become an EIT)", detail: "Take the Fundamentals of Engineering exam senior year while the material is fresh. It's the first, easiest step toward the PE license." },
-            { name: "AWWA · WEF · AEESP · EWB", detail: "Student chapters of the field's societies open doors; Engineers Without Borders builds genuine design experience on real projects." },
-            { name: "Undergraduate research", detail: "A lab on PFAS, membranes, or water reuse both tests your appetite for grad school and strengthens any future application." },
+            { name: "Co-op / internship", detail: "BLS says some employers prefer candidates with internship or co-op experience, and schools such as Oregon State run co-op programs (MECOP)." },
+            { name: "FE exam (become an EIT)", detail: "The Fundamentals of Engineering exam is the first step toward the PE license, and one licensing guide says it is often taken right after graduation. BLS does not require licensure for entry-level work." },
+            { name: "WEF Student Design Competition", detail: "Individuals or teams design a solution to a water quality problem, starting at the Member Association level and ending at WEFTEC with Wastewater, Water Environment, and Circular Water Economy categories. Other societies were not researched." },
+            { name: "Undergraduate research", detail: "Faculty labs work on topics such as ML-designed PFAS-filtering membranes (an Arizona State and Wisconsin-Madison example). Named REU programs were not researched." },
           ],
         },
       ],
@@ -192,46 +192,46 @@ const data = {
       years: "Years ~5–6",
       color: T.phaseColors.masters,
       intro:
-        "In environmental engineering the master's carries unusual weight. The undergrad is deliberately broad; real specialization — treatment, air quality, remediation, water resources — usually happens here, and many senior technical and government roles quietly expect it. A one-to-two-year MS is one of the field's highest-return moves.",
+        "The undergraduate degree is broad, and the master's is where programs split into specializations such as treatment, air quality, remediation, and water resources. BLS lists a bachelor's as the typical entry credential, but Old Dominion says master's degrees are most often required for higher-level positions in industry and government. That is one program's statement, not a labor-market survey.",
       sections: [
         {
           title: "Degree Types",
           icon: "🎓",
           items: [
-            { name: "Professional MS (non-thesis)", detail: "The common path: roughly 8–10 courses, often taken part-time while working, aimed squarely at practice. Usually self-funded." },
-            { name: "Thesis MS", detail: "A funded research degree with an original thesis. The route for anyone considering a PhD or a research/modeling career." },
-            { name: "Civil MS, environmental concentration", detail: "Many programs house environmental engineering inside civil. The concentration and coursework matter more than the exact name on the diploma." },
-            { name: "Online / distance MS", detail: "Increasingly common and respected, letting working engineers specialize without leaving their consulting or utility job." },
+            { name: "Course-based MS (non-thesis)", detail: "Structures vary: Brown's non-thesis MS is eight courses, and Old Dominion's course option is 30 credit hours ending in a comprehensive exam. Part-time study is available at some programs." },
+            { name: "Thesis MS", detail: "A research thesis and defense: Old Dominion's thesis option is 24 credit hours of coursework plus a 6-credit thesis, and Kansas's Option A is 30 hours including a 6 to 10 credit thesis and a final oral exam. Columbia offers an MS/PhD track for applicants who already plan a PhD." },
+            { name: "Civil MS, environmental concentration", detail: "Some programs house environmental engineering inside civil: Ohio State's is an official specialization on the transcript, and Northeastern offers both a civil MS with a water and environmental concentration and a separate environmental MS. Compare curricula, not just titles." },
+            { name: "Online / distance MS", detail: "Old Dominion lists a distance-learning MS in environmental engineering, and Columbia offers full-time and part-time options." },
           ],
         },
         {
           title: "Specializations",
           icon: "🔬",
           items: [
-            { name: "Water & wastewater treatment", detail: "Advanced physical, chemical, and biological process design. The field's largest single employment base." },
-            { name: "Site remediation & geoenvironmental", detail: "Groundwater contamination, soil cleanup, risk assessment, and CERCLA/'Superfund' work — now supercharged by PFAS." },
-            { name: "Air quality & atmospheric", detail: "Emissions inventories, control technology, dispersion modeling, and a growing slice of indoor-air and climate work." },
-            { name: "Water resources & hydrology", detail: "Watershed and stormwater modeling, flood resilience, and climate adaptation at the civil–environmental border." },
-            { name: "Sustainability & industrial ecology", detail: "Life-cycle assessment, resource recovery, and the decarbonization of industrial processes." },
+            { name: "Water & wastewater treatment", detail: "Advanced physical, chemical, and biological process design. A topic in nearly every program reviewed (Old Dominion, Northeastern, Brown, UW, Drexel)." },
+            { name: "Site remediation & geoenvironmental", detail: "Soil and groundwater remediation, site characterization, and risk assessment (Brown). PFOA and PFOS remain CERCLA hazardous substances after EPA kept that designation in September 2025." },
+            { name: "Air quality & atmospheric", detail: "Air pollution control engineering (Oklahoma), atmospheric air-quality impacts and indoor-environment control (Ohio State), and indoor air modeling (Drexel)." },
+            { name: "Water resources & hydrology", detail: "Hydrology, stormwater, and river work (Kansas lists hydroclimatology and river ecohydraulics) and Columbia's Water Resources and Climate Risks specialization." },
+            { name: "Sustainability & industrial ecology", detail: "Life-cycle assessment and climate change mitigation (Brown), and Columbia's Sustainable Energy and Sustainable Mining and Materials specializations." },
           ],
         },
         {
           title: "Advanced Skills",
           icon: "⚙️",
           items: [
-            { name: "Process modeling", detail: "BioWin and GPS-X plus reactor kinetics for designing and optimizing full treatment plants — not just single unit processes." },
-            { name: "Groundwater modeling", detail: "MODFLOW and contaminant-transport codes for predicting how a plume moves and how a cleanup will perform." },
-            { name: "Air dispersion modeling", detail: "AERMOD and CALPUFF for emissions permitting and regulatory compliance." },
-            { name: "LCA & data tools", detail: "SimaPro / openLCA plus Python to quantify environmental impact and turn field data into decisions." },
+            { name: "Process modeling", detail: "Designing and optimizing whole treatment plants, not just single unit processes. ASCE's journal collection pairs mechanistic treatment models with data-driven tools. Specific commercial packages were not sourced." },
+            { name: "Groundwater modeling", detail: "Predicting how a plume moves and how a cleanup will perform. MODFLOW appears in environmental software lists." },
+            { name: "Air quality modeling", detail: "Indoor and atmospheric air modeling appear in program research areas (Drexel, Ohio State). Specific regulatory dispersion models were not sourced." },
+            { name: "LCA & data tools", detail: "Life-cycle assessment (Brown) plus Python or R to quantify environmental impact and analyze field data. Specific LCA software was not sourced." },
           ],
         },
         {
-          title: "Funding & Payoff",
+          title: "Funding & Fit",
           icon: "💵",
           items: [
-            { name: "Professional MS is usually self-funded", detail: "But a degree that unlocks senior technical roles and a roughly $15–25K pay bump tends to pay for itself quickly." },
-            { name: "Thesis / research MS is usually funded", detail: "Research or teaching assistantships cover tuition plus a stipend — the same model as the early years of a PhD." },
-            { name: "Employer sponsorship is common", detail: "Many consulting firms and utilities pay for a part-time MS to retain engineers and move them into senior roles." },
+            { name: "Funding norms were not confirmed", detail: "The program pages reviewed do not state assistantship or tuition norms for the master's. Ask each program about funding, cost, and part-time options before applying." },
+            { name: "Is a master's required?", detail: "BLS lists a bachelor's as typical entry-level education. Old Dominion says master's degrees are most often required for higher-level positions; no source quantified a pay premium." },
+            { name: "Coming from outside engineering", detail: "Drexel requires extra undergraduate coursework for entrants without an ABET-accredited engineering bachelor's degree." },
           ],
         },
       ],
@@ -242,46 +242,46 @@ const data = {
       years: "Years ~7+",
       color: T.phaseColors.phd,
       intro:
-        "A PhD is not required to practice — it's for people who want to invent the methods rather than apply them, whether in academia, national labs, or corporate R&D. Doctoral training is four to six funded years of original research: coursework, a qualifying exam, then a dissertation on a specific problem at the field's frontier.",
+        "A PhD is not required to practice. It is for people who want to develop the methods rather than apply them. Berkeley's program typically takes four to five years after the master's: coursework, a preliminary exam, a qualifying exam built around a written prospectus, then a dissertation.",
       sections: [
         {
           title: "What a PhD Looks Like",
           icon: "🎓",
           items: [
-            { name: "Funded, not paid-for", detail: "Assistantships — research on a professor's grant, or teaching — cover tuition and a modest stipend. You should not self-fund a PhD in this field." },
-            { name: "Qualifying & candidacy exams", detail: "Early exams test your breadth and defend your research proposal before you become 'ABD' (all but dissertation)." },
-            { name: "The dissertation", detail: "Three to five years building an original contribution, usually packaged as three or four peer-reviewed journal papers." },
-            { name: "Your advisor is everything", detail: "Funding, topic, and network all flow through one professor. Choosing the right advisor matters more than the school's overall rank." },
+            { name: "Funding was not confirmed", detail: "The program pages reviewed do not describe PhD funding in detail (Berkeley names one outside source, Environmental Engineers of the Future). Get funding terms in writing before accepting an offer." },
+            { name: "Preliminary and qualifying exams", detail: "Berkeley: an oral preliminary exam in the first year after the MS, then a qualifying exam near the end of the third year of graduate study with a roughly 10-page prospectus, a presentation, and an oral exam. UW: a week-long exam with a 48-hour written exam, a 48-hour paper critique, and an oral. Only one retake is allowed at UW." },
+            { name: "The dissertation", detail: "At Berkeley a research adviser is required, and after you advance to candidacy a three-member dissertation committee (one member from outside the major) must read and approve the dissertation." },
+            { name: "Advisor and committee", detail: "Both Berkeley and UW organize milestones around a research advisor and a faculty committee, so advisor fit matters. Berkeley bars the advisor from chairing the qualifying committee; at UW the advisor chairs it." },
           ],
         },
         {
           title: "Active Frontiers",
           icon: "🔬",
           items: [
-            { name: "PFAS & emerging contaminants", detail: "Detecting and destroying 'forever chemicals' and microplastics that conventional treatment plants simply cannot remove." },
-            { name: "Water reuse & resource recovery", detail: "Turning wastewater into drinking water, energy, and nutrients — reframing the sewage plant as a resource refinery." },
-            { name: "ML-designed materials", detail: "Using machine learning to discover membranes and adsorbents faster, including new membranes tuned to filter PFAS from water." },
-            { name: "Digital twins for treatment", detail: "Live virtual replicas of treatment plants for real-time optimization, anomaly detection, and predictive control." },
-            { name: "Climate adaptation & resilience", detail: "Modeling drought, flooding, and how water and stormwater infrastructure holds up under a shifting climate." },
-            { name: "Water–energy nexus", detail: "Cutting the large and often-overlooked carbon and energy footprint of moving, heating, and treating water." },
+            { name: "PFAS & emerging contaminants", detail: "Removing PFAS from water remains an active research area (see ML-designed membranes below). EPA's 4 ppt limits for PFOA and PFOS stand, but a May 2026 proposal would move the compliance deadline from 2029 to 2031 and rescind limits for four other PFAS." },
+            { name: "Resource recovery from waste", detail: "Drexel lists microbial processes for energy and resource recovery from waste among its research areas, and UW lists resource recovery among its program areas." },
+            { name: "ML-designed membranes", detail: "A 2025 Arizona State and Wisconsin-Madison study used machine learning, trained on literature and lab data and checked with molecular simulation, to speed discovery of membranes that filter PFAS from water." },
+            { name: "Digital twins for treatment", detail: "Virtual replicas of treatment plants for real-time monitoring and predictive control. A review of 147 studies found output rising from one paper in 2015 to 41 in 2024." },
+            { name: "Climate risk & water resources", detail: "Columbia's Water Resources and Climate Risks specialization and Kansas's hydroclimatology area (drought mechanisms and climate uncertainty) show programs organizing research around water and climate." },
+            { name: "Energy and carbon in water systems", detail: "Ohio State lists energy production and use among its research areas, and a digital-twin case study lists energy among the benefits for treatment operations." },
           ],
         },
         {
           title: "Computation & AI",
           icon: "🤖",
           items: [
-            { name: "The field is formalizing data methods", detail: "ASCE's water-resources institute stood up a Machine Learning & AI in Water Engineering task committee in late 2024 — a signal the discipline is taking this seriously." },
-            { name: "The honest practitioner take", detail: "ML is genuinely useful for prediction, sensor data, and materials discovery — but mechanistic models and real field data still anchor practice. Deployment lags the hype." },
-            { name: "The core is automation-resistant", detail: "Permitting, sampling, and regulatory judgment resist automation even as the modeling around them gets smarter." },
+            { name: "The field is formalizing data methods", detail: "ASCE's Environmental and Water Resources Institute approved a Machine Learning and AI in Water Engineering task committee at the end of 2024." },
+            { name: "Utility versus hype", detail: "Reviews describe growing digital-twin work alongside technical challenges and knowledge gaps, and researchers are studying adversarial attacks on AI water forecasting. No practitioner survey of real-world utility was found." },
+            { name: "Fieldwork stays in person", detail: "BLS describes environmental engineers as working in offices and in the field. No source assessed how AI affects permitting or regulatory work." },
           ],
         },
         {
           title: "Beyond Academia",
           icon: "🏢",
           items: [
-            { name: "National labs & EPA research", detail: "NREL, PNNL, and the EPA's Office of Research and Development hire PhDs for applied environmental research." },
-            { name: "Corporate R&D", detail: "Water-tech firms (Xylem, Veolia, Ecolab) and industrial giants employ PhDs to develop treatment and control technology." },
-            { name: "The academic market is tight", detail: "Tenure-track slots are scarce and highly competitive. Most PhDs land in labs, water-tech R&D, or senior consulting — the norm here, not a failure." },
+            { name: "National labs & federal research", detail: "UW notes alumni work as researchers in national laboratories. EPA announced in July 2025 that it would eliminate its Office of Research and Development (1,540 positions) and replace it with an Office of Applied Science and Environmental Solutions." },
+            { name: "Industry research", detail: "Companies partner with universities on treatment technology: Beijing OriginWater worked with UNSW and Beijing University of Technology on ML digital twins. Which US employers hire environmental PhDs was not researched." },
+            { name: "Faculty searches", detail: "Civil and environmental engineering departments posted faculty searches in 2025 to 2026 (for example USC, UCF, and UMass Amherst). No source quantified how competitive the tenure track is, so ask programs where their PhD graduates land." },
           ],
         },
       ],
@@ -294,8 +294,8 @@ const data = {
       color: T.water,
       roles: ["Staff Engineer", "Project Engineer", "Project Manager", "Principal"],
       reality:
-        "The field's default destination — firms like AECOM, Jacobs, Stantec, and Tetra Tech hire the bulk of new grads to do permitting, site assessment, remediation, and treatment design for clients. Entry is accessible with a bachelor's and an internship, but early pay is modest and the work is driven by billable hours. The PE license plus roughly a decade of experience is what turns a staff engineer into a well-paid project manager; without it, advancement tends to stall.",
-      salary: "$60K–$75K start · $110K–$150K+ as PM / principal",
+        "Engineering services and management, scientific, and technical consulting firms together employ about 43% of environmental engineers (24% and 19% in BLS data). Entry is through a bachelor's degree, and BLS notes some employers prefer internship or co-op experience. A PE license lets engineers sign off on projects and oversee others' work. BLS puts consulting's median at $101,840 and engineering services at $109,040; Payscale lists an average base near $75K for environmental engineers at one large consulting employer (self-reported).",
+      salary: "BLS medians: $101,840 (consulting) · $109,040 (engineering services)",
     },
     {
       path: "Water & Wastewater Treatment",
@@ -303,8 +303,8 @@ const data = {
       color: T.sky,
       roles: ["Process Engineer", "Design Engineer", "Plant Engineer", "Utility Eng. Manager"],
       reality:
-        "The single largest technical base of the field — designing treatment trains for consulting firms or engineering the utilities that deliver drinking water and treat sewage. Stable, recession-resistant, and mission-driven: every city needs it, in every economy. Utility and municipal roles trade top-end pay for security, pensions, and predictable hours. A master's focused on process design is a strong differentiator here.",
-      salary: "$65K–$85K start · $100K–$135K senior",
+        "Designing treatment systems for consulting firms, or running the utilities that deliver drinking water and treat sewage. UW notes its alumni manage drinking-water and wastewater plants, and treatment appears in nearly every master's program reviewed. No source gave pay specific to treatment roles; the nearest BLS proxies are local government (7% of jobs, median $104,140) and engineering services (24% of jobs, median $109,040).",
+      salary: "Nearest BLS medians: $104,140 (local gov.) · $109,040 (eng. services)",
     },
     {
       path: "Site Remediation & Geoenvironmental",
@@ -312,8 +312,8 @@ const data = {
       color: "#8a5a2b",
       roles: ["Field Engineer", "Remediation Engineer", "Risk Assessor", "Program Manager"],
       reality:
-        "Investigating and cleaning up contaminated groundwater and soil — brownfields, Superfund sites, industrial spills, and now PFAS. The work is field-heavy early (sampling, drilling oversight, monitoring) and shifts toward modeling and client management later. Demand is durable because contamination doesn't disappear and regulation keeps widening; PFAS liability in particular is fueling a fresh wave of assessment and cleanup work.",
-      salary: "$62K–$80K start · $100K–$140K senior",
+        "Investigating and cleaning up contaminated groundwater and soil; Brown lists site characterization, risk assessment, and soil and groundwater remediation among its master's topics. PFOA and PFOS remain CERCLA hazardous substances (EPA kept that designation in September 2025, and a D.C. Circuit challenge is pending). Federal drinking-water rules are shifting, though: a May 2026 proposal would extend the PFOA and PFOS compliance deadline from April 2029 to April 2031 and rescind limits on four other PFAS, while several states are adding their own PFAS rules. No source gave pay specific to remediation.",
+      salary: "No path-specific data · BLS all env. engineers $69,990–$162,220 (10th–90th)",
     },
     {
       path: "Corporate EHS & Sustainability",
@@ -321,8 +321,8 @@ const data = {
       color: T.signal,
       roles: ["EHS Engineer", "Compliance Engineer", "Sustainability Engineer", "EHS / ESG Manager"],
       reality:
-        "Working inside manufacturers, energy, tech, and pharma to keep operations compliant and cut environmental impact. This is quietly where much of the money is: energy, mining, utilities, and manufacturing pay environmental engineers a median well above green consulting — roughly $118K–$150K. The tension is real, too — some of the best-paid environmental-engineering jobs sit at the very industries the field exists to regulate. ESG-reporting requirements have expanded these roles sharply.",
-      salary: "$65K–$85K start · $118K–$150K industry median",
+        "Working inside manufacturers, energy and utility companies, and other industries to keep operations compliant. BLS shows manufacturing as the best-paid of the five largest industries (median $115,220, 7% of jobs). Self-reported Glassdoor data go further, putting energy, mining, and utilities near $150.8K in median total pay, but government data do not confirm a premium that large. Payscale's EHS engineer base pay spans about $64K to $120K (10th to 90th percentile).",
+      salary: "BLS manufacturing median $115,220 · Payscale EHS base $64K–$120K (10th–90th)",
     },
     {
       path: "Government & Regulatory",
@@ -330,8 +330,8 @@ const data = {
       color: "#4a7a5c",
       roles: ["Staff Engineer", "Permit Engineer", "Program Engineer", "Supervisory Engineer"],
       reality:
-        "The EPA, state environmental agencies, the Army Corps, and municipalities employ engineers to permit, inspect, model, and enforce environmental law. Pay is capped below consulting and industry, but federal roles are solid (median near $121K) with strong stability, benefits, and pensions — plus unusual leverage over how the whole field actually operates. The catch: federal hiring is politically cyclical and can swing hard with administrations.",
-      salary: "$70K–$90K start · $110K–$140K senior (federal)",
+        "State government is the second-largest employer of environmental engineers in BLS data (20% of jobs, median $102,160), and local government adds 7% (median $104,140). The BLS page shows no federal row; a secondary source puts the federal median near $120,830. Federal staffing is in flux: in July 2025 EPA announced it would cut more than 3,700 positions (nearly 23%, to 12,448) and eliminate its Office of Research and Development.",
+      salary: "BLS medians: $102,160 (state) · $104,140 (local) · federal ~$120,830 (secondary)",
     },
     {
       path: "Water Resources & Climate Resilience",
@@ -339,8 +339,8 @@ const data = {
       color: "#1b8ca0",
       roles: ["Water Resources Engineer", "Hydrologist", "Stormwater Engineer", "Resilience Planner"],
       reality:
-        "Modeling watersheds, designing stormwater and flood-control systems, and planning infrastructure for a changing climate. It sits at the civil–environmental border and leans heavily on hydrology and GIS. Federal infrastructure funding plus intensifying floods and droughts make demand steady. Strong modeling skills — HEC-RAS, GIS, Python — are what separate the well-paid from the entry-level in this path.",
-      salary: "$62K–$82K start · $100K–$135K senior",
+        "Modeling watersheds and designing stormwater and flood-control systems. Programs list hydrology, stormwater, and climate-risk work (Columbia's Water Resources and Climate Risks specialization; Kansas's hydroclimatology area). EPA's SWMM is used for flood-control design, floodplain mapping (it is FEMA-approved for flood insurance studies), and combined sewer overflow reduction. No source gave pay specific to this path.",
+      salary: "No path-specific data · BLS all env. engineers $69,990–$162,220 (10th–90th)",
     },
     {
       path: "Environmental Data & Modeling",
@@ -348,8 +348,8 @@ const data = {
       color: "#5a6ab8",
       roles: ["Environmental Modeler", "Data Scientist", "GIS Analyst", "Modeling Lead"],
       reality:
-        "A fast-growing niche for engineers strong in Python, GIS, and simulation — building air-dispersion and groundwater models, digital twins, and environmental data pipelines for consulting firms, water-tech, and agencies. It overlaps with data science, so you compete with CS grads, but domain knowledge (what the numbers physically mean) is the moat. It typically pays a premium over traditional roles at the same experience level.",
-      salary: "$70K–$90K start · $120K–$160K senior",
+        "A growing research area rather than a measured job category. A review of 147 studies found digital-twin papers in the water sector rising from one in 2015 to 41 in 2024, and ASCE's water institute formed an ML and AI task committee at the end of 2024. Python, R, GIS, and data-management tools such as EQuIS appear in environmental software lists. Whether this is a distinct hiring track, and whether it pays a premium, was not confirmed.",
+      salary: "No path-specific data · BLS all env. engineers $69,990–$162,220 (10th–90th)",
     },
     {
       path: "Research & Academia",
@@ -357,8 +357,8 @@ const data = {
       color: T.deep,
       roles: ["PhD Researcher", "Postdoc", "Research Scientist", "Professor"],
       reality:
-        "Requires a PhD and, for the tenure track, usually a postdoc and a strong publication record. Tenure-track positions are scarce and fiercely competitive; most PhDs instead land in national labs, water-tech R&D, or senior consulting — a normal, well-paid outcome rather than a consolation prize. Academic pay lags industry, offset by autonomy and the chance to work on frontier problems like PFAS destruction and potable water reuse.",
-      salary: "Postdoc $55K–$70K · Professor $95K–$160K · Industry PhD $110K–$160K+",
+        "Requires a PhD; Berkeley's program typically runs four to five years after the master's. Civil and environmental engineering departments post faculty searches (USC, UCF, and UMass Amherst among those seen), but no source quantified tenure-track competitiveness or typical postdoc pay. Federal research hiring is unsettled after EPA's July 2025 decision to eliminate its Office of Research and Development. The salary figures shown come from a single CU Boulder posting for a geotechnical position, so they are indicative only.",
+      salary: "One CU Boulder posting: Asst. $110K–$125K · Assoc. $125K–$150K · Prof. $145K–$200K",
     },
   ],
 };
@@ -524,7 +524,7 @@ export default function EnvironmentalEngineeringRoadmap() {
           fontFamily: T.fontBody, fontSize: 15.5, color: T.slate,
           marginTop: 14, marginBottom: 20, maxWidth: 580, lineHeight: 1.55,
         }}>
-          The engineering of clean water, air, and soil — small, mission-driven, and unusually porous, sharing its job pool with civil and chemical grads. The one engineering field where the master's, not the license, is often the real lever.
+          The engineering of clean water, air, and soil. A small occupation that draws on civil, chemical, and environmental degrees alike: a bachelor's is the entry credential, and the PE license and a master's are what sources point to for senior work.
         </p>
 
         {/* Treatment-train signature */}
@@ -550,10 +550,10 @@ export default function EnvironmentalEngineeringRoadmap() {
           overflow: "hidden", background: T.surface,
         }}>
           {[
-            { label: "BLS Median", value: "$104,170", color: T.water },
-            { label: "Growth ’24–’34", value: "4%", color: T.sky },
-            { label: "Openings / Year", value: "~3,000", color: T.deep },
-            { label: "US Jobs (2024)", value: "39,400", color: T.signal },
+            { label: "BLS Median", value: "$107,110", color: T.water },
+            { label: "Growth ’25–’35", value: "6%", color: T.sky },
+            { label: "Openings / Year", value: "~2,300", color: T.deep },
+            { label: "US Jobs (2025)", value: "39,100", color: T.signal },
           ].map((s, i) => (
             <div key={s.label} style={{
               padding: "12px 15px",
@@ -703,7 +703,7 @@ export default function EnvironmentalEngineeringRoadmap() {
                 lineHeight: 1.7, margin: 0, maxWidth: 700,
                 borderLeft: `3px solid ${T.signal}`, paddingLeft: 15,
               }}>
-                Environmental engineering spans clean water, contaminated soil, air quality, and climate — but two truths cut across nearly every path. The PE license is optional here in a way it isn't for civil (only about 30% of grads pursue it), and the highest-paid roles are often inside the industries the field exists to regulate, not in green consulting. Tap any card for the honest picture.
+                Environmental engineering spans clean water, contaminated soil, air quality, and climate, and two points cut across nearly every path. BLS says licensure is not required for entry-level environmental engineers; the PE license matters later, for signing off on projects. And pay differences by industry are modest in BLS data (medians from about $102K to $115K across the five largest industries), while self-reported sites claim larger premiums in energy and utilities. Salary chips show the nearest sourced figure and say when none exists. Tap any card for details.
               </p>
             </div>
 
@@ -733,7 +733,7 @@ export default function EnvironmentalEngineeringRoadmap() {
           fontFamily: T.fontMono, fontSize: 10, color: T.muted,
           margin: 0, letterSpacing: "0.04em",
         }}>
-          Tap any item to expand · Salary data: BLS OEWS May 2024, Glassdoor & Payscale 2026, industry sources · Figures are indicative ranges
+          Tap any item to expand · Data: BLS OOH (May 2025 wages, 2025 to 2035 projections), Payscale and Glassdoor 2026 (self-reported), university program pages · Sources in research/environmental-engineering-research.md
         </p>
       </footer>
     </div>

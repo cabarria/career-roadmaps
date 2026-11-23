@@ -51,54 +51,54 @@ const data = {
       color: C.undergrad,
       colorDim: C.undergradDim,
       intro:
-        "An education degree is unusual: it's a professional-entry degree. Where most majors are a foundation you build on later, a teacher-prep bachelor's is engineered to make you employable and licensable on day one. The core braids three strands — pedagogy coursework, your content area (what you'll actually teach), and escalating time in real classrooms that builds toward a full semester of supervised student teaching. The real gate isn't a weeder course; it's admission to the Educator Preparation Program (a GPA threshold, background check, and basic-skills test) and then passing your state's licensure exams. Budget for 4.5–5 years once student teaching and testing are counted.",
+        "An education degree is unusual: it's a professional-entry degree. Where most majors are a foundation you build on later, a teacher-prep bachelor's is engineered to make you employable and licensable on day one. The core braids three strands — pedagogy coursework, your content area (what you'll actually teach), and escalating time in real classrooms that builds toward a full semester of supervised student teaching. The main gates are admission to the Educator Preparation Program (a minimum GPA, background checks, and logged field-experience hours) and then passing your state's licensure exams. Plan for summer sessions or a fifth year: degree plans of 122 or more hours can count as five-year programs.",
       sections: [
         {
           title: "Core Curriculum",
           icon: "📚",
           items: [
-            { name: "Educational Psychology & Human Development", detail: "How children develop cognitively, socially, and emotionally, plus the learning theories (behaviorism, constructivism, Piaget, Vygotsky) that underlie everything you'll do. One of the most universally required courses in the major." },
-            { name: "Foundations of Education", detail: "The history, philosophy, and sociology of schooling — how the American system is structured and funded, and the debates that shape it. Where you form your own sense of what education is for." },
+            { name: "Educational Psychology & Human Development", detail: "How children develop physically, cognitively, socially, and emotionally from infancy through adolescence, plus theories of learning, instruction, and motivation. One of the most commonly required courses in the major." },
+            { name: "Foundations of Education", detail: "The philosophy and history of education: the theory behind teaching and learning, and how schooling developed. Where you form your own sense of what education is for." },
             { name: "Methods / Curriculum & Instruction", detail: "Subject-specific 'methods' courses: how to actually teach reading, math, or science. The point where theory becomes lesson plans, usually taken alongside a field placement." },
-            { name: "Classroom Management", detail: "The single skill new teachers most wish they'd learned better — routines, behavior systems, and running a room of 25+ students. Painful to learn cold on the job without it." },
+            { name: "Classroom Management", detail: "Routines, behavior systems, and running a full classroom. It deserves attention: in RAND's 2026 teacher survey, student behavior was the most commonly named source of job stress, ahead of low pay." },
             { name: "Assessment & Measurement", detail: "Designing tests and rubrics, formative vs. summative assessment, and reading student data. Increasingly central as schools are held accountable for outcomes." },
             { name: "Teaching Diverse & Multilingual Learners", detail: "Differentiation, special-education basics (IEPs, inclusion), and instruction for emergent-bilingual students. Nearly universal, often paired with a dedicated multicultural-education course." },
-            { name: "Literacy & the Science of Reading", detail: "Phonics, phonemic awareness, and comprehension — an area reshaped by the 'science of reading' movement. A pedagogical and political flashpoint, and heavily tested on licensure exams." },
-            { name: "Content-Area Coursework", detail: "The subject you'll teach. Secondary candidates often come close to a second major in their field (math, biology, history); elementary candidates take broad surveys across all subjects." },
+            { name: "Literacy & the Science of Reading", detail: "Phonics, phonemic awareness, and comprehension, an area reshaped by the science of reading movement. As of 2025, 43 states required prep programs to address it for at least some candidates, and in 2024 31 states required elementary teachers to pass an exam measuring it." },
+            { name: "Content-Area Coursework", detail: "The subject you will teach. Many states require middle and high school teachers to have majored in a content area, and Texas State pairs secondary certification with a second major. Elementary candidates certify across the core subjects." },
           ],
         },
         {
           title: "In the Classroom",
           icon: "🍎",
           items: [
-            { name: "Escalating Field Placements", detail: "Most programs put you in real classrooms early: observing, then tutoring, then co-teaching. Hours are logged and often state-mandated (frequently 50+ before you're admitted to the prep program)." },
-            { name: "Student Teaching (Clinical Practice)", detail: "The capstone — a full 12–16 week semester teaching under a mentor teacher and a university supervisor, typically unpaid and full-time. The make-or-break experience of the whole degree." },
-            { name: "Lesson Planning & Backward Design", detail: "Writing standards-aligned lesson and unit plans that run objectives → assessment → activities. The daily craft you'll produce endlessly for the rest of your career." },
-            { name: "The Teaching Portfolio & edTPA", detail: "Assembling artifacts and lesson samples, and in many states completing the edTPA — a video-plus-commentary performance assessment scored for initial licensure." },
-            { name: "Learning from Mentor Teachers", detail: "The informal craft that's in no textbook: pacing, tone, parent communication, and the hundred small judgment calls that separate surviving from thriving." },
+            { name: "Escalating Field Placements", detail: "Programs pair coursework with concurrent classroom placements. St. Olaf, for example, moves students from observer to teacher's assistant to tutor before student teaching, and WTAMU documents a minimum of 50 field-experience hours." },
+            { name: "Student Teaching (Clinical Practice)", detail: "The capstone: a full-time semester teaching under a mentor teacher. Required length varies by state, from at least 10 weeks in Connecticut to 12 in Pennsylvania and Minnesota and 15 in Maine. It has traditionally been unpaid, though at least nine states had statewide paid programs by December 2025, and Illinois barred programs from requiring it to be unpaid in 2025." },
+            { name: "Lesson Planning", detail: "Writing lesson and unit plans for the subjects and standards you teach. BLS lists creating lesson plans first among teachers' duties, and you will produce them constantly." },
+            { name: "Performance Assessments (edTPA and Alternatives)", detail: "Many programs end with an assessment of real teaching. By 2019, 19 states required a standardized one, most often edTPA, but about half of those states have since dropped the mandate and programs now often use their own. edTPA is being redesigned as edTPA Essentials from August 2026, so check your state's current rule." },
+            { name: "Learning from Mentor Teachers", detail: "Student teaching places you with a mentor teacher, and BLS notes that experienced teachers can advance into mentor and lead-teacher roles themselves. Watching a mentor handle pacing, tone, and parent communication is where much of the practical craft is learned." },
           ],
         },
         {
           title: "Tools & AI",
           icon: "🧭",
           items: [
-            { name: "Learning Management Systems", detail: "Canvas, Google Classroom, and Schoology are where assignments, grading, and communication now live. Fluency is simply expected by the time you start student teaching." },
-            { name: "The AI Inflection", detail: "Generative AI moved into classrooms fast — by 2025 educator use jumped sharply year-over-year, mostly for lesson planning, generating exercises, and differentiating materials. Districts are shifting from banning it to integrating it." },
+            { name: "Learning Management Systems", detail: "Learning management systems and online gradebooks are where assignments, grading, and communication live. BLS says teachers must be comfortable using and learning new technology, including tools for communicating with parents and running online discussions." },
+            { name: "The AI Inflection", detail: "In a spring 2025 Gallup and Walton Family Foundation survey, 60% of public school teachers had used AI that school year and 32% used it weekly. Weekly users reported saving about 5.9 hours a week, mostly on preparing lessons, making worksheets, and modifying materials. Only 19% said their school had an AI policy, and 68% reported no AI training." },
             { name: "The Integrity Problem", detail: "Students adopt AI faster than teachers do. A live challenge is redesigning assessment so it rewards genuine thinking rather than what a chatbot can produce — which has, in some ways, made teaching harder." },
-            { name: "Data & Assessment Platforms", detail: "Gradebooks, standardized-test dashboards, and progress-monitoring tools. Reading and acting on student data is now a routine part of the job, not an add-on." },
-            { name: "Accessibility & Assistive Tech", detail: "Text-to-speech, translation, and Universal Design for Learning practices that make instruction reachable for students with disabilities and multilingual learners." },
+            { name: "Data & Assessment Platforms", detail: "Gradebooks, state-test results, and progress-monitoring tools. BLS notes that accountability for test scores and graduation rates means schools may increasingly turn to instructional coordinators, so comfort with student data pays off." },
+            { name: "Accessibility & Assistive Tech", detail: "Assistive tools such as screen readers, plus Universal Design for Learning, which edtech employers list as a preferred skill. Penn State prepares all of its teacher candidates to work with emergent bilingual students and students with special needs." },
           ],
         },
         {
           title: "Beyond the Classroom",
           icon: "✦",
           items: [
-            { name: "Get Licensed — the real goal", detail: "Plan backward from your state's requirements: pass the Praxis (or state equivalent) content and pedagogy exams, finish the prep program, clear the background check. Certification is what actually makes you hireable." },
-            { name: "Substitute & Paraprofessional Work", detail: "Paid classroom time before you're certified. It builds your résumé, sharpens your instincts, and confirms the career fits before you commit fully to it." },
-            { name: "Tutoring, Camps & Coaching", detail: "Low-barrier ways to rack up hours with kids and test whether you love the work — and a reliable fallback income stream throughout the career." },
-            { name: "Know Your Market", detail: "Teacher supply swings wildly by subject and region. Math, science, special education, and bilingual/ESL are chronic-shortage areas — often with signing bonuses or loan forgiveness — while elementary and social studies are oversupplied in many metros." },
-            { name: "Understand Alternative Certification", detail: "You don't strictly need an education degree to teach: many enter through alt-cert routes (Teach For America, district residencies, post-bacc programs) after a content degree. Worth knowing your competition and your options." },
-            { name: "Professional Organizations", detail: "Student NEA, Kappa Delta Pi (the education honor society), and subject-area associations for early networking, mentorship, and a professional identity before you graduate." },
+            { name: "Get Licensed — the real goal", detail: "Plan backward from your state's requirements. BLS lists the typical set: a minimum GPA, completed student teaching, a background check, and passing a general teaching test plus a subject test (Texas uses TExES exams). Certification is what makes you hireable in public schools, where all states require teachers to be licensed or certified." },
+            { name: "Substitute & Paraprofessional Work", detail: "Teacher assistant jobs (median pay $36,780 in May 2025) and substitute teaching are common ways into schools; NCES found 15% of traditionally prepared teachers had substituted before their first year. It builds your résumé and tests the fit before you commit." },
+            { name: "Tutoring, Camps & Coaching", detail: "Low-barrier ways to log time with kids and test whether you like the work. Many working teachers also coach teams or advise clubs, which BLS notes usually happens before or after school." },
+            { name: "Know Your Market", detail: "Shortages are real but uneven. For 2024-25, states most often reported shortage areas in special education (45 states), science (41), and math (40), with bilingual instruction in 31. LPI found the deepest shortage positions in special education, elementary education, language arts, and career and technical education. BLS projects flat K-12 teacher employment, so openings come mostly from turnover. Shortage fields can also unlock loan forgiveness (see the Master's tab)." },
+            { name: "Understand Alternative Certification", detail: "All states offer an alternative route for people who hold a bachelor's degree but lack education coursework (BLS), and NCES found 18% of public school teachers in 2015-16 had entered that way. Some programs let candidates start teaching under supervision. Worth knowing your competition and your options." },
+            { name: "Professional Organizations", detail: "Teacher and education associations (NEA and AFT, AASA for superintendents, AERA for researchers) fund or publish much of the survey data and policy analysis behind this roadmap, which makes them a good place to watch how the profession and its pay are changing." },
           ],
         },
       ],
@@ -112,29 +112,29 @@ const data = {
       color: C.masters,
       colorDim: C.mastersDim,
       intro:
-        "In education the master's plays a role it plays in almost no other field: it's frequently a salary decision, not a research one. Most district pay scales bump you automatically for a master's — a low-to-mid five-figure raise over a career — so a large share of teachers earn one within a few years of starting, usually part-time and online while working. Three broad flavors exist: an initial-licensure MAT for career-changers who already hold a content degree; an M.Ed. for practicing teachers to specialize or move toward leadership; and research MAs that bridge to a PhD. The catch is funding: unlike lab sciences, most education master's are self-funded, which is exactly why the ROI case rests on that salary bump.",
+        "In education the master's often plays a role it plays in few other fields: it can be a pay decision more than a research one. Many public districts pay a premium through step-and-lane salary schedules, 15 states mandate one, and some states require a master's after you are certified and employed. The premium is smaller than people assume: NCTQ's 2025 sample averaged about $3,600 for a novice teacher and about $9,300 at 25 years, and NCTQ summarizes research finding teachers with master's degrees are no more effective on average. Three broad flavors exist: an initial-licensure MAT for career-changers who already hold a content degree; an M.Ed. for practicing teachers to specialize or move toward leadership; and research MAs that bridge to a PhD. Since July 2026, federal borrowing for most master's programs is capped at $20,500 a year and $100,000 total, so the cost versus the pay premium matters more than it used to.",
       sections: [
         {
           title: "Program Types",
           icon: "📋",
           items: [
             { name: "Master of Arts in Teaching (MAT)", detail: "An initial-licensure degree for people who hold a bachelor's in a content field and want to become teachers. Includes student teaching — the classic career-changer route into the classroom." },
-            { name: "Master of Education (M.Ed.)", detail: "For already-certified teachers: specialize in literacy, special ed, TESOL, or ed tech, add endorsements, or begin the pivot toward coaching and leadership. The most common education master's." },
+            { name: "Master of Education (M.Ed.)", detail: "For already-certified teachers: specialize in literacy, special ed, TESOL, or ed tech, add endorsements, or begin the pivot toward coaching and leadership. TCU's M.Ed. specializations are 30-credit programs with full-time or part-time options and evening classes." },
             { name: "Educational Leadership / Administration", detail: "The credential path to becoming a principal or administrator, paired with state administrative licensure. A deliberate move off the teaching track and onto the income ladder." },
             { name: "Curriculum & Instruction", detail: "Deepen expertise in how subjects are taught and assessed. A natural route toward instructional-coordinator, curriculum-specialist, and coaching roles at the school or district level." },
-            { name: "Research MA (PhD bridge)", detail: "A thesis-based master's for those aiming at doctoral study and academic research. Less common as a standalone step, since many strong candidates go straight from BA to PhD." },
-            { name: "Counseling & School Psychology (adjacent)", detail: "Related graduate paths that gate specific licensed roles — school counselor, school psychologist. Different training, often better-paid, and worth knowing they exist as options." },
+            { name: "Research MA (PhD bridge)", detail: "A thesis-based master's for those aiming at doctoral study and academic research. In education the master's is usually already in hand by the doctorate: 96% of 2024 education doctorate recipients held one, and the median recipient finished about 16 years after the bachelor's." },
+            { name: "Counseling & School Psychology (adjacent)", detail: "Related graduate paths that gate licensed school roles: school counselor (master's, median $64,330 in May 2025) and school psychologist (median $84,940 in May 2023, with a May 2025 aggregator relay showing about $96K). Different training and separate credentials." },
           ],
         },
         {
           title: "Funding Reality",
           icon: "💰",
           items: [
-            { name: "Mostly Self-Funded", detail: "Unlike funded lab-science master's, education master's are typically paid out of pocket. The financial case rests on the district salary bump and forgiveness programs, not a stipend during study." },
-            { name: "The Salary-Schedule Bump", detail: "Most public districts pay on a 'steps and lanes' grid; a master's moves you a lane, often worth a five-figure raise compounded over a career. This is the core financial logic of the degree." },
-            { name: "Loan-Forgiveness Levers", detail: "Public Service Loan Forgiveness, Teacher Loan Forgiveness, and TEACH Grants can substantially offset costs for those teaching in qualifying — often high-need — schools." },
-            { name: "Employer & Shortage-Area Support", detail: "Some districts subsidize coursework, and shortage-area endorsements (special ed, bilingual) sometimes come with funded or discounted pathways. Timing the degree to your employment matters." },
-            { name: "Wait, Usually", detail: "Because the raise is what pays it back, many teachers wait until they're employed and eligible for district support rather than paying for a master's up front." },
+            { name: "Mostly Self-Funded", detail: "Many education master's are built for working teachers, with part-time schedules and evening classes. Grad PLUS loans ended for new borrowers on July 1, 2026, and federal loans for most master's programs are now capped at $20,500 a year and $100,000 total." },
+            { name: "The Salary-Schedule Bump", detail: "Most districts pay on a step-and-lane grid, and a master's moves you to another lane. NCTQ's 2025 sample averaged a premium of about $3,600 for novices and $9,300 at 25 years, but districts vary widely: Albuquerque paid a new teacher with a master's just $547 more. NCTQ also describes districts where bachelor's-lane teachers are capped at step 7, so the degree matters far more later in a career." },
+            { name: "Loan-Forgiveness Levers", detail: "Teacher Loan Forgiveness cancels up to $17,500 for special education teachers and secondary math or science teachers (up to $5,000 for other teachers) after five straight years at a qualifying low-income school. PSLF forgives the balance after 120 qualifying payments, and revised PSLF rules took effect July 1, 2026. TEACH Grants give up to $4,000 a year in exchange for four years teaching a high-need field at a low-income school." },
+            { name: "Employer & Shortage-Area Support", detail: "Shortage areas change which aid you can use: TEACH Grants and loan-forgiveness rules key off federally approved shortage fields (Texas's 2025-26 list included bilingual and ESL, secondary career and technical education, computer science, and special education). District tuition support was not documented in this research, so ask the district." },
+            { name: "Timing the Degree", detail: "The premium grows with experience (about $3,600 for novices versus $9,300 at 25 years in NCTQ's sample), and some states require the degree only after you are certified and employed. The lane change is written into your district's salary schedule, so look it up before you enroll." },
           ],
         },
         {
@@ -145,7 +145,7 @@ const data = {
             { name: "Reading & Evaluating Research", detail: "Moving from consuming education research to critically evaluating it — understanding what 'evidence-based' really means and how to tell strong claims from weak ones." },
             { name: "Coaching & Mentoring", detail: "Instructional-coaching skills: observing peers, modeling lessons, and leading professional development. The bridge from teaching students to leading teachers." },
             { name: "Program & Assessment Design", detail: "Designing curricula and assessments at the school or district scale, not just for a single classroom — the skill set behind coordinator and curriculum-director roles." },
-            { name: "Action Research / Capstone", detail: "Most M.Ed. programs end in an applied project studying a problem in your own practice, rather than an original-contribution thesis. Practical by design." },
+            { name: "Action Research / Capstone", detail: "Many master's programs end with a research project or thesis, and some let you choose. TCU, for example, offers a research emphasis or a teaching-and-learning emphasis." },
           ],
         },
       ],
@@ -165,23 +165,23 @@ const data = {
           title: "EdD vs PhD",
           icon: "⚖️",
           items: [
-            { name: "The EdD — practice", detail: "Built for working professionals solving real problems in their organizations: leadership, policy, and applied research. Often part-time and online; the common route to superintendent and higher-education administration." },
+            { name: "The EdD — practice", detail: "Built for working professionals solving real problems in their organizations: leadership, policy, and applied research. Often part-time and online. Typical goals include school superintendent, principal, and curriculum designer, and EdD cohorts are usually working administrators and educators." },
             { name: "The PhD — research", detail: "The terminal research degree: qualifying exams, a research apprenticeship, and an original-contribution dissertation. The path to a tenure-track professorship in a school of education." },
             { name: "Dissertation vs. Dissertation-in-Practice", detail: "PhDs produce original scholarship for the field's knowledge base. EdDs typically produce an applied study that resolves a concrete 'problem of practice' in a real institution." },
-            { name: "Duration & Format", detail: "EdDs commonly finish in 3–4 years part-time; PhDs run 4–6 years full-time. Online options are far more common for EdDs than for research PhDs." },
-            { name: "The Funding Split", detail: "PhD programs may offer assistantships and tuition waivers. EdDs are usually self-funded by mid-career professionals, sometimes with employer support — a very different financial model." },
+            { name: "Duration & Format", detail: "EdDs commonly finish in 3 to 4 years part-time; PhDs run 4 to 6 years. Online options are easier to find for EdDs than for research PhDs. Across all US education doctorates in 2024, the median recipient finished about 16 years after the bachelor's (18 years in leadership and administration)." },
+            { name: "The Funding Split", detail: "Full-time PhD programs may offer assistantships and tuition waivers (Drexel's full-time PhD covers tuition and pays a stipend), while Inside Higher Ed calls full funding for an EdD rare. EdD students usually keep full-time jobs and may get employer tuition support. Federal loans for either degree now fall under the $20,500 a year and $100,000 graduate cap." },
           ],
         },
         {
           title: "Research Frontiers",
           icon: "🔭",
           items: [
-            { name: "The Science of Reading", detail: "The biggest recent shift in K-12: a research-driven return to phonics and structured literacy that is rewriting curricula and licensure exams across the country." },
+            { name: "The Science of Reading", detail: "As of August 2026, 43 states and DC have passed laws or policies on evidence-based reading instruction since 2013, and a federal bill passed the House in September 2026. Whether the laws raise achievement is still unclear, and NCTQ found about 1 in 5 prep programs still use outdated practices. A parallel wave is under way in math, with 23 states acting since 2022." },
             { name: "Learning Sciences & Analytics", detail: "An interdisciplinary study of how people learn, merging cognitive science, design, and data. Learning analytics mines LMS data to model and support learning at scale." },
-            { name: "AI & Education Research", detail: "How generative AI reshapes teaching, tutoring, assessment, and integrity — a fast-moving, heavily funded frontier carrying at least as much hype as hard evidence right now." },
-            { name: "Equity, Policy & Outcomes", detail: "Causal research on what actually closes achievement gaps — funding, tracking, teacher quality, school choice — often using econometrics and large administrative datasets." },
-            { name: "Learning Loss & Chronic Absenteeism", detail: "A live post-pandemic research-and-policy emergency: measuring lost learning and testing interventions that work at the scale of whole districts and states." },
-            { name: "Special Education & Neurodiversity", detail: "Intervention research, inclusive-design practice, and assistive technology — a durable, well-funded, and chronically under-staffed research area." },
+            { name: "AI & Education Research", detail: "How generative AI changes teaching, tutoring, assessment, and integrity. A 2025 study in Frontiers in Education notes that research on how teachers actually experience and shape AI use is limited, and 68% of teachers in Gallup's 2025 survey reported no AI training. Fast-moving, with little settled evidence." },
+            { name: "Equity, Policy & Outcomes", detail: "Large-data work on achievement and policy, such as the Education Scorecard from Harvard, Stanford, and Dartmouth, which compares learning recovery across more than 5,000 districts. It found federal relief dollars boosted gains in the highest-poverty districts and that recovery has been U-shaped, with middle-income districts improving least." },
+            { name: "Learning Loss & Chronic Absenteeism", detail: "The 2026 Education Scorecard found 23% of students were chronically absent in 2024-25, against a pre-pandemic rate of 15%. It also found reading declines began before the pandemic: from 2015 to 2025, 83% of districts lost ground in reading, with early signs of recovery between 2024 and 2025." },
+            { name: "Special Education & Neurodiversity", detail: "Intervention research, inclusive design, and assistive technology, tied to the field's deepest workforce gap: 45 states reported special education shortage areas for 2024-25. Federal support is uncertain: the 2025 IES cuts suspended the review panels that assess funding applications for the National Center for Special Education Research." },
           ],
         },
         {
@@ -189,9 +189,10 @@ const data = {
           icon: "🎓",
           items: [
             { name: "Coursework & Qualifying Exams", detail: "A front-loaded core in research methods, statistics, and your specialization, gated by comprehensive or qualifying exams before you advance to candidacy." },
-            { name: "Quantitative & Qualitative Methods", detail: "Education research spans both — causal inference and multilevel modeling on one side, ethnography and interview-based inquiry on the other. Methodological range is a genuine advantage." },
-            { name: "The Research Apprenticeship", detail: "For PhDs, the true training: working on a faculty member's grants, presenting at AERA, and publishing. It matters far more to your career than coursework does." },
-            { name: "Advisor & Cohort Fit", detail: "EdD programs run in supportive cohorts; PhD programs hinge on a single advisor relationship. Either way, fit shapes the experience more than the program's ranking does." },
+            { name: "Quantitative & Qualitative Methods", detail: "Education research spans both, and PhD coursework typically emphasizes qualitative and quantitative methods (USC). Skills with large datasets and analysis software also transfer outside academia. Methodological range is a genuine advantage." },
+            { name: "The Research Apprenticeship", detail: "For PhDs, the practical training is publishing in journals, presenting at national conferences, and learning to teach future educators (Northeastern). Funded students typically hold research or teaching assistantships (Drexel)." },
+            { name: "Advisor & Cohort Fit", detail: "EdD programs often run as cohorts of working professionals who take classes together (Rutgers GSE, Inside Higher Ed). For a PhD, ask about advisor fit and how projects are funded before you apply." },
+            { name: "Research Funding Turbulence", detail: "In February 2025 the Education Department canceled IES contracts (89 by its count, about 170 by AERA's), and AERA reports IES staff were cut by roughly 90%. No new IES grant competitions launched in fiscal 2026, and $224 million of fiscal 2025 funds held back for over a year was released in May 2026. Funding may be coming back online, but details are unclear, so ask prospective advisors how their work is funded." },
           ],
         },
       ],
@@ -205,8 +206,8 @@ const data = {
       color: C.undergrad,
       roles: ["Teacher", "Lead / Mentor Teacher", "Dept. Chair", "Instructional Coach"],
       reality:
-        "The default destination and the most accessible one: a bachelor's plus state licensure makes you employable, and shortage subjects (math, science, special ed, bilingual) hire aggressively, sometimes with bonuses or loan forgiveness. But pay is modest and compressed — a median in the low-$60Ks with a hard ceiling near $100K even after decades — and burnout and attrition are real. It's a stable, unionized, mission-driven career, not a high-earning one.",
-      salary: "Median ~$62K–$65K (elem/middle/high); 10th pct ~$46K, top decile ~$100K–$105K · shortage subjects hire best (BLS, May 2024)",
+        "The default destination and the most accessible one: a bachelor's plus state licensure makes you employable in public schools, and shortage fields (special education, science, math, bilingual) are where states most often report gaps. Pay is modest: May 2025 medians run from about $64K for elementary teachers to $72K for high school teachers, and the top 10% earn roughly $103K to $108K. Projected employment is flat, with about 200,000 openings a year across elementary, middle, and high school teaching, almost all from turnover. Most states have tenure laws. Stress runs high: in RAND's 2026 survey 55% of teachers reported frequent job-related stress versus 34% of similar working adults, and 18% planned to leave their job by the end of 2025-26.",
+      salary: "Median $63,970 elementary, $64,370 middle, $72,040 high school (BLS, May 2025) · bottom 10% under ~$48K · top 10% over ~$103K–$108K",
     },
     {
       path: "School & District Leadership",
@@ -214,8 +215,8 @@ const data = {
       color: C.career,
       roles: ["Assistant Principal", "Principal", "Curriculum Director", "Superintendent"],
       reality:
-        "The clearest income ladder in education, gated by administrative licensure and usually a master's or EdD. Principals earn a median around $104K; superintendents commonly clear $150K and go far higher in large districts. The trade-off is real: you leave the classroom for budgets, politics, personnel, and accountability pressure, and the jobs are demanding, high-turnover, and intensely local.",
-      salary: "Principals median ~$104K (BLS 2024); superintendents commonly $150K+ · scales sharply with district size",
+        "The clearest income ladder in education, gated by a master's, administrative licensure, and several years of experience (BLS: a master's and 5 or more years). Principals earn a median of $105,870, but there are only about 20,600 openings a year across 343,800 jobs. Superintendents had a median salary of $158,721 in AASA's 2024-25 study, which trails inflation-adjusted 2013 pay, and the 500 largest districts saw 23% superintendent turnover in 2024-25. The trade-off: principals work year-round with no summers off, and the jobs carry budget, personnel, and accountability pressure.",
+      salary: "Principals median $105,870 (BLS, May 2025) · superintendents median $158,721, mean $169,343 (AASA, 2024-25)",
     },
     {
       path: "Instructional Design & L&D",
@@ -223,8 +224,8 @@ const data = {
       color: C.masters,
       roles: ["Instructional Designer", "L&D Specialist", "Sr. Designer", "L&D Manager"],
       reality:
-        "The most common exit from the classroom into industry, and often the best-paid non-leadership path. Designers build training and e-learning for companies, universities, and edtech using tools like Articulate Storyline, Rise, and Captivate and the ADDIE/SAM frameworks. A strong portfolio matters more than any specific degree. It's competitive to break into cold, but teaching experience translates well and remote roles are common.",
-      salary: "~$60K entry → ~$90K typical → $120K+ senior; highest in tech-hub metros (market data, 2025)",
+        "A path into corporate training, higher education, and edtech. Designers build training and e-learning with tools like Articulate Storyline and Rise, Captivate, and Camtasia, using frameworks such as ADDIE and SAM. A bachelor's is commonly the minimum, a master's helps for leadership and higher-ed roles, and a portfolio showing design rationale and results can outweigh a list of tools. Postings often ask for 2 or more years of experience, and the work means juggling projects, reviewers, and tight timelines.",
+      salary: "~$54K–$65K entry · ~$78K–$90K typical · ~$89K–$122K senior (Research.com, 2025 postings) · BLS training and development specialists median $69,280, managers $133,000 (May 2025)",
     },
     {
       path: "Curriculum & Instructional Coordination",
@@ -232,8 +233,8 @@ const data = {
       color: C.undergrad,
       roles: ["Curriculum Specialist", "Instructional Coordinator", "Assessment Lead", "Director of C&I"],
       reality:
-        "The district-level curriculum-and-coaching path: designing curricula, training teachers, and aligning instruction to standards and test data. It requires a master's and classroom experience, and pay runs to a median around $75K, up past $115K in large districts and state roles. More stable and less volatile than the principalship, though tied to district budgets and slow-growing.",
-      salary: "Median ~$75K (BLS 2024); 10th pct ~$47K, top decile ~$115K+ · government roles pay above school-district roles",
+        "The district-level curriculum-and-coaching path: developing curricula, training and coaching teachers, and analyzing student test data. BLS lists a master's and 5 or more years of related experience as typical entry requirements. Pay is highest in government roles outside school districts, and demand is tied to budgets: BLS projects 2% growth with about 23,100 openings a year, and notes that state and local budget constraints may limit demand.",
+      salary: "Median $77,440 · bottom 10% under $47,980 · top 10% over $121,670 · government $89,920, local school districts $82,130 (BLS, May 2025)",
     },
     {
       path: "Higher Education & Academic Research",
@@ -241,8 +242,8 @@ const data = {
       color: C.research,
       roles: ["Doctoral Researcher", "Postdoc", "Assistant → Full Professor", "Dean"],
       reality:
-        "The PhD track: training future teachers, running research, and shaping policy from a school of education. Education-professor pay sits around $80K–$90K median, but the tenure-track market is tight and shrinking, with many roles now contingent or adjunct. Higher-ed administration — deans, provosts, student-affairs leadership — is the better-paid, EdD-friendly cousin, and postsecondary administrators earn a median near $104K, topping $200K at the high end.",
-      salary: "Ed professors ~$80K–$90K median (tight tenure market); postsec. administrators median ~$104K, top decile $212K+ (BLS 2024)",
+        "The PhD track: training future teachers, running research, and shaping policy from a school of education. The most recent BLS OEWS profile I could verify (May 2023) put the median for postsecondary education teachers near $73K. Tenure lines are scarce across higher education: only 31.8% of US faculty held full-time tenured or tenure-track jobs in fall 2023, against 53.1% in 1987 (AAUP, all fields). Higher-ed administration, covering deans, registrars, and student-affairs leadership, pays more: postsecondary education administrators earned a median of $104,590 in May 2025 and typically need a master's. No education-specific tenure-track placement data was found.",
+      salary: "Postsecondary education teachers median $73,240, top 10% over $130,000 (BLS OEWS, May 2023; newer figure not found) · postsecondary education administrators median $104,590, top 10% over $215,620 (BLS, May 2025)",
     },
     {
       path: "Education Policy & Nonprofit",
@@ -250,17 +251,17 @@ const data = {
       color: C.career,
       roles: ["Program Associate", "Policy Analyst", "Research Associate", "Program Director"],
       reality:
-        "Shaping education from outside the classroom — think tanks, foundations, advocacy groups, state education agencies, and testing and curriculum organizations. Work ranges from research and data analysis to program management and government relations. It often wants a master's (policy, ed leadership, or a quantitative field) and rewards strong writing and data skills. Pay spans widely, from nonprofit-modest to competitive foundation and federal salaries.",
-      salary: "Roughly $50K–$100K+ by sector · foundations and federal agencies pay best, grassroots nonprofits least",
+        "Shaping education from outside the classroom, at think tanks, associations, advocacy groups, and state agencies. The postings found ask for 1 to 3 years of K-12 policy experience at analyst level and 5 to 7 years at manager level, and a postgraduate degree is often preferred but not required. Work centers on research, 50-state comparisons, policy briefs, and support for state leaders. BLS has no category for education policy analysts, so pay here comes from posted ranges.",
+      salary: "Analyst postings $50K–$90K · senior and manager postings $80K–$105K (posted ranges, 2025-26; no BLS category)",
     },
     {
       path: "EdTech & Learning Products",
       icon: "🌐",
       color: C.masters,
-      roles: ["Curriculum Developer", "Learning Experience Designer", "Product Manager", "Teacher-in-Residence"],
+      roles: ["Learning Experience Designer", "Curriculum Designer", "Principal Learning Designer", "Product Designer"],
       reality:
-        "Building the products teachers and students actually use: curriculum companies, learning platforms, and AI-tutoring startups hire former educators as curriculum leads, learning designers, user researchers, and 'teacher-in-residence' product roles. It rewards classroom credibility plus comfort with product and data. Pay tracks tech more than education — often the highest ceiling of any path here — but hiring is cyclical and roles cluster in a few hubs and remote teams.",
-      salary: "~$70K–$140K+ · tech-scale pay and equity at larger firms, but hiring runs hot and cold",
+        "Building the products teachers and students use: curriculum publishers and learning platforms hire learning designers and curriculum writers, usually asking for classroom or curriculum experience (one Newsela posting wants 5 or more years in secondary ELA curriculum, an Edmentum principal role wants 7 or more). Posted pay varies widely: $53K to $75K for entry and mid-level learning designer roles, $75K to $115K for instructional and senior curriculum roles, $120K to $130K for a principal learning designer, and up to $145K at one workforce-learning firm. Several postings mention equity, and many roles are remote.",
+      salary: "~$53K–$75K entry to mid · ~$75K–$115K senior curriculum · $120K–$130K principal · up to $145K at some firms (posted ranges, 2026)",
     },
     {
       path: "Specialized & Licensed Roles",
@@ -268,8 +269,8 @@ const data = {
       color: C.research,
       roles: ["Special Ed Teacher", "Reading Specialist", "School Counselor", "School Psychologist"],
       reality:
-        "Credentialed niches that pay above the generalist teacher scale and are in chronic demand. Special-education teachers, reading specialists, school counselors, and — with a specialist degree — school psychologists each require specific endorsements or licenses. School psychologists in particular are severely short-staffed and better-paid. The trade-off is additional, targeted graduate training and a separate license for each role.",
-      salary: "Special ed ~$62K–$70K; school counselors ~$61K median; school psychologists ~$80K–$85K median (BLS 2024)",
+        "Credentialed roles that each need their own endorsement or license. Special education is the most consistently reported shortage field (45 states for 2024-25), and its median pay sits just above elementary and middle school teachers and below high school teachers. School counselors need a master's and earn about what teachers do. School psychologists are the clear pay step up, though the figures differ by data year (see the salary line). States may require special education teachers to earn a master's in special education after they are hired.",
+      salary: "Special ed teachers median $67,170 · school and career counselors $64,330 (BLS, May 2025) · school psychologists $84,940 (BLS OEWS, May 2023; an aggregator relay of May 2025 shows ~$96K, unverified)",
     },
   ],
 };
@@ -534,8 +535,8 @@ export default function EducationRoadmap() {
           <h1 className="cb-title">Education &amp; <em>Teaching</em></h1>
           <div className="cb-tagline">
             A professional-entry field with an unusual shape — where the bachelor's
-            already makes you a teacher, the master's is mostly a raise, and the real
-            money lives outside the classroom. Here's the honest map.
+            already makes you a teacher, the master's is mostly a pay-schedule decision, and the higher
+            pay mostly sits outside the classroom. Here's the honest map.
           </div>
           <div className="cb-chalkline" />
         </header>
@@ -610,8 +611,8 @@ export default function EducationRoadmap() {
             <>
               <div className="cb-intro" style={{ "--phase-color": C.career }}>
                 Eight distinct destinations for an education graduate. The classroom is the
-                default — but the highest ceilings sit in leadership, instructional design,
-                and edtech, and several paths require their own license or degree. Tap any
+                default — but the highest pay sits in leadership, training management, and
+                some edtech roles, and several paths require their own license or degree. Tap any
                 card for the full competitive picture and current pay.
               </div>
               <div className="cb-careers">

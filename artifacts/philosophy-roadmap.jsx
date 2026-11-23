@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 /* ------------------------------------------------------------------ *
- *  PHILOSOPHY — Field Roadmap
- *  Aesthetic: "The Examined Page" — iron-gall ink on cool rag paper,
+ *  PHILOSOPHY: Field Roadmap
+ *  Aesthetic: "The Examined Page": iron-gall ink on cool rag paper,
  *  jewel-toned marginalia (lapis / oxblood / verdigris / brass), and a
  *  structural motif drawn from the field's own material: the logical
  *  operators of argument (⊢ premise-set, ∴ therefore). Structure here
- *  encodes something true — philosophy is the analysis of argument.
+ *  encodes something true: philosophy is the analysis of argument.
  * ------------------------------------------------------------------ */
 
 const C = {
@@ -35,48 +35,48 @@ const data = {
       mark: "⊢",
       color: "#2E5E8C", // lapis
       intro:
-        "Philosophy is a small major in credits and a heavy one in reading and writing. The skill it drills is defending a position without hand-waving: reconstruct an argument, find the weak premise, and rebuild it better. It is also, quietly, one of the best-paying and highest-testing humanities degrees.",
+        "Philosophy is a small major in credits and a heavy one in reading and writing. The skill it drills is defending a position without hand-waving: reconstruct an argument, find the weak premise, and rebuild it better. Its majors also score near the top on the LSAT, second only to economics among large majors.",
       sections: [
         {
           title: "Core Curriculum",
           icon: "📖",
           items: [
-            { name: "Symbolic / Formal Logic", detail: "Propositional and predicate logic, proofs, and validity. The technical spine of the major and the single most transferable course you'll take." },
-            { name: "History of Philosophy", detail: "Plato and Aristotle through Descartes, Hume, and Kant — read as primary texts, closely, not as summaries." },
-            { name: "Ethics & Value Theory", detail: "Consequentialism, deontology, and virtue ethics, plus applied strands: bioethics, environmental, and technology ethics." },
-            { name: "Metaphysics & Epistemology", detail: "What exists and how we can know it — mind, causation, knowledge, and the problem of skepticism." },
-            { name: "Philosophy of Science / Language / Mind", detail: "Where philosophy meets other rigorous fields: how meaning, reference, and explanation actually work." },
-            { name: "Senior Seminar or Thesis", detail: "A capstone built around one original, argued essay; at many schools it also satisfies the advanced-writing requirement." },
+            { name: "Symbolic / Formal Logic", detail: "Propositional and predicate logic, proofs, and validity. Columbia and Yale require it by name, most other programs checked require a logic course, and Yale advises taking it by fall of junior year." },
+            { name: "History of Philosophy", detail: "Ancient through early modern philosophy. Columbia requires two history courses, Yale three (including two intro surveys), and NYU requires both Ancient and Early Modern." },
+            { name: "Ethics & Value Theory", detail: "Yale requires two courses in ethics and value, and NYU requires an ethics or values course. Columbia's requirement can be met with ethics, social and political philosophy, or aesthetics." },
+            { name: "Metaphysics & Epistemology", detail: "Utah treats this as one of its four required areas and Yale requires two courses in it. Columbia and NYU let it share a requirement with philosophy of language, science, or mind." },
+            { name: "Philosophy of Science / Language / Mind", detail: "NYU requires a mind or language course, and Princeton groups logic with philosophy of science. MIT and Princeton offer linguistics and philosophy options." },
+            { name: "Senior Seminar or Thesis", detail: "Utah's Senior Seminar satisfies its advanced writing requirement, Princeton requires a senior thesis, and Yale's senior requirement is a third seminar or an independent project." },
           ],
         },
         {
           title: "The Hard Parts",
           icon: "⚠︎",
           items: [
-            { name: "Symbolic logic proofs", detail: "Where humanities students hit a wall — it's closer to math than to essay-writing, and it can't be bluffed." },
-            { name: "Kant & the idealists", detail: "Dense, technical, and famously punishing to read. The unofficial 'can you actually do this' filter for the major." },
-            { name: "The seminar cold-call", detail: "Defending your reading aloud while a room looks for the hole in it. Uncomfortable, and formative." },
-            { name: "Writing that survives objections", detail: "Grades reward anticipating counterarguments, not asserting opinions — a hard reset for many strong writers." },
+            { name: "Symbolic logic proofs", detail: "Logic is mathematical enough that MIT lets students take a logic course in Mathematics, and Berkeley's logic minor has a Mathematics track. Expect formal proof work, not essay work." },
+            { name: "Gated advanced seminars", detail: "Columbia requires four philosophy courses before any 4000-level course, and Utah requires at least three courses at the 5000 level. Upper-level work assumes the foundations." },
+            { name: "Independent work", detail: "Princeton adds a junior independent-work group, a spring junior paper, and a senior thesis. Yale's senior requirement can be a one- or two-term independent project." },
+            { name: "Writing that survives objections", detail: "Princeton's department says its courses teach students to write without advocating a view that lacks an argument behind it, and to listen to arguments from the other side." },
           ],
         },
         {
           title: "Skills You'll Build",
           icon: "🛠",
           items: [
-            { name: "Argument reconstruction", detail: "Turning messy prose into explicit premises and a conclusion, then testing whether it actually holds together." },
-            { name: "Analytic writing", detail: "Precise, structured, objection-anticipating prose — the concrete skill law schools and employers pay for." },
-            { name: "Conceptual analysis", detail: "Pulling apart words like 'cause,' 'know,' and 'fair' until the hidden ambiguities show themselves." },
-            { name: "Charitable reading", detail: "Steel-manning a view you disagree with before you criticize it — rarer and more valuable than it sounds." },
+            { name: "Reasoned argument", detail: "Princeton's department describes the discipline as a commitment to reasoned argument and the evidence of experience, without appeal to tradition or authority." },
+            { name: "Analytic writing", detail: "Princeton says courses in every area teach students to write without advocating a view that lacks an argument. Utah's Senior Seminar counts as advanced writing." },
+            { name: "Formal methods", detail: "Utah names Logic and Formal Methods as one of its four areas, and formal epistemology applies probability theory and modal logic to questions about evidence and belief." },
+            { name: "Listening to the other side", detail: "Princeton's department says philosophy is distinguished by being prepared to listen to arguments from the other side." },
           ],
         },
         {
           title: "Beyond the Classroom",
           icon: "🎯",
           items: [
-            { name: "Journals & essay prizes", detail: "Placing in an undergraduate philosophy journal or essay competition signals seriousness for graduate admissions." },
-            { name: "Ethics Bowl & debate", detail: "Team argumentation contests that build the on-your-feet reasoning employers and law schools notice." },
-            { name: "Strategic double-majoring", detail: "Philosophy pairs powerfully with CS, economics, political science, or a lab science — the combination is the real advantage." },
-            { name: "Pre-law / pre-med advising", detail: "Philosophy majors post top LSAT scores and strong med-school acceptance rates; start the advising track early." },
+            { name: "An original paper", detail: "80,000 Hours advises writing an original paper before graduate school, polished to 4,000 to 10,000 words (journal-article length), and asking professors for honest feedback." },
+            { name: "Ethics Bowl", detail: "Many departments run Intercollegiate Ethics Bowl teams, including Tufts, Indiana, UC Santa Cruz, William and Mary, Vanderbilt, and Oklahoma." },
+            { name: "Built-in pairings", detail: "Yale has a psychology concentration, NYU a cognitive science major shared with linguistics and psychology, USC a Philosophy, Politics and Law major, and MIT a linguistics and philosophy track." },
+            { name: "Pre-law track", detail: "FIU offers a major track for law, religion, or psychology. Philosophy averaged 157.2 on the LSAT in 2017-18, second to economics (158.9) among large majors, though LSAC cautions that major averages do not show a major prepares students better." },
           ],
         },
       ],
@@ -88,35 +88,35 @@ const data = {
       mark: "→",
       color: "#8C2F39", // oxblood
       intro:
-        "Philosophy breaks the usual mold: a master's is rarely a job credential. Most funded MAs are bridges — the 'PhD reset' — built to strengthen a late-blooming or non-target profile before applying to top doctoral programs. The exceptions are applied professional MAs, which do lead directly to work.",
+        "Philosophy breaks the usual mold: a master's is mostly a bridge. Many funded MAs coach students toward PhD applications, while others serve students headed to teaching, law school, or government and nonprofit work. Funding varies widely, so the stated purpose of each program matters more than the degree title.",
       sections: [
         {
           title: "Why a Master's",
           icon: "🧭",
           items: [
-            { name: "The 'PhD reset'", detail: "Funded terminal MAs (Georgia State, Tufts, Brandeis, Milwaukee, Northern Illinois, Houston) let students re-apply to stronger PhD programs with a better writing sample." },
-            { name: "Rarely terminal by design", detail: "Few people stop at a philosophy MA for the job market — in this field it's a stepping stone far more than a destination." },
-            { name: "Applied & professional MAs", detail: "Bioethics, applied ethics, and philosophy-and-public-policy degrees are the exception: they map onto actual job titles." },
-            { name: "Funding is the dividing line", detail: "Fully funded (tuition + stipend) vs. self-funded professional MA is the single most important thing to verify before enrolling." },
+            { name: "PhD preparation", detail: "Northern Illinois and Virginia Tech describe writing seminars and feedback on writing samples. Northern Illinois faculty report that 80 of 90 MA graduates who applied to PhD programs over a decade were admitted with full funding (self-reported)." },
+            { name: "Not only a PhD bridge", detail: "CUNY's MA prepares students to teach at community colleges or secondary schools, SF State serves students who want to teach, advance, or change careers, and Montana reports placing students in law school, government, and nonprofits." },
+            { name: "Bioethics and applied programs", detail: "FSU offers a graduate certificate in bioethics, and in a 2023 survey, full-time clinical ethics consultants with a master's averaged $113,625." },
+            { name: "Funding varies widely", detail: "Virginia Tech lists $25,200 and Georgia State at least $10,000, while Tufts averages about 60% tuition remission and CUNY and Texas A&M offered little or none as of 2022. Check each program directly." },
           ],
         },
         {
           title: "What You Study",
           icon: "📐",
           items: [
-            { name: "The writing sample", detail: "Everything orbits one polished, original paper of roughly 4,000–10,000 words at near-publishable quality — your ticket into a PhD." },
-            { name: "Graduate seminars", detail: "Small, intense, reading-heavy courses where you're expected to contribute at close to a professional level." },
-            { name: "Area specialization", detail: "You begin staking out a subfield — ethics, epistemology, philosophy of mind, logic, or a historical period." },
-            { name: "A language or formal tool", detail: "Many programs require reading German, French, Greek, or Latin, or real facility with formal logic, for research." },
+            { name: "The writing sample", detail: "80,000 Hours advises a polished original paper of 4,000 to 10,000 words, the length of a journal article. DePaul's application also asks for a writing sample." },
+            { name: "Distribution requirements", detail: "Loyola Chicago's MA requires courses in five of seven distribution areas, spanning contemporary analytic, contemporary continental, ancient, medieval, and modern philosophy." },
+            { name: "Concentrations", detail: "FSU offers a philosophy of science concentration within its MA." },
+            { name: "Languages and logic", detail: "Language requirements are mostly PhD-level: Boston College and DePaul require two languages, while Loyola Chicago's MA has none. Harvard sets a logic requirement for its PhD." },
           ],
         },
         {
           title: "Funding Norms",
           icon: "💰",
           items: [
-            { name: "Fully funded PhD-track", detail: "Top programs cover tuition and pay a stipend (~$21k–$43k) for 5–7 years. You should not pay out of pocket for a research PhD." },
-            { name: "Funded terminal MA", detail: "A growing number of MA programs offer tuition waivers plus a modest teaching-assistant stipend (~$13k–$21k a year)." },
-            { name: "Self-funded professional MA", detail: "Bioethics and applied programs are often unfunded — weigh the cost against the specific job the credential opens." },
+            { name: "Funded PhD programs", detail: "Stipends at programs checked: Loyola Chicago $28,000, DePaul $31,981, and Penn at least $43,050 (2025-26). Funding runs five to seven years." },
+            { name: "Funded terminal MA", detail: "Listed stipends run from $9,751 (UW-Milwaukee) to $25,200 (Virginia Tech), usually with a tuition waiver. Many listings are over five years old, so confirm with the program." },
+            { name: "Little or no funding", detail: "Some programs offer little or no funding, including CUNY and Texas A&M as of 2022. Weigh the cost against the specific job the credential opens." },
           ],
         },
       ],
@@ -128,37 +128,47 @@ const data = {
       mark: "∎",
       color: "#2F6E5E", // verdigris
       intro:
-        "The philosophy PhD is long, fully funded at good programs, and built around one thing: an original, book-length dissertation. Admission is brutally selective, and the academic job market on the far side is harsher still. Going in with clear eyes about the odds is itself a philosophical exercise.",
+        "The philosophy PhD is long, funded at the programs checked, and built around one thing: an original, book-length dissertation. Admission is selective, and the academic job market on the far side is tight: about 40% of PhDs from 2015 onward hold a permanent academic job. Going in with clear eyes about the odds is itself a philosophical exercise.",
       sections: [
         {
           title: "The Doctoral Path",
           icon: "🎓",
           items: [
-            { name: "Coursework (Years 1–2)", detail: "Roughly a dozen graduate seminars across areas, a logic requirement, and often a substantial second-year paper." },
-            { name: "The qualifying / topical exam", detail: "The gate into candidacy (ABD) — usually a special paper or oral defense of a dissertation prospectus rather than a timed test." },
-            { name: "The dissertation", detail: "A sustained, original monograph (or set of papers) on one narrow problem. This is the real work of years three through six." },
-            { name: "Teaching apprenticeship", detail: "Most students fund themselves by TAing, then teaching their own courses; a pedagogy seminar is now a standard part of the path." },
+            { name: "Coursework (Years 1–2)", detail: "Twelve courses at Harvard, Cornell, and Syracuse and sixteen at Boston College. Harvard adds a second-year paper and a logic requirement." },
+            { name: "The qualifying / topical exam", detail: "Cornell's A exam is an oral exam on the prospectus, Loyola Chicago's candidacy exam covers a dissertation proposal with a first chapter, and Columbia's final M.Phil. requirement is a proposal defense." },
+            { name: "The dissertation", detail: "Syracuse requires a book-length dissertation. Columbia places it in year five and possibly years six and seven, and DePaul allows eight months to two years after candidacy." },
+            { name: "Teaching apprenticeship", detail: "Harvard requires a pedagogy seminar in the first year a student teaches, DePaul has a teaching practicum in years two and three, and Boston College runs a teaching seminar." },
           ],
         },
         {
           title: "Research Frontiers",
           icon: "🔬",
           items: [
-            { name: "Ethics & epistemology of AI", detail: "Machine agency, alignment, algorithmic fairness, and what large language models mean for knowledge, testimony, and trust." },
-            { name: "Formal epistemology & decision theory", detail: "Bayesian methods, rational choice, and probability brought to bear on how belief should track evidence." },
-            { name: "Experimental philosophy (x-phi)", detail: "Using empirical surveys and cognitive science to test the intuitions philosophers once simply assumed." },
-            { name: "Expanding the canon", detail: "Fast-growing work in non-Western, feminist, and critical philosophy of race is broadening what counts as the field." },
-            { name: "Mind, consciousness & neuroscience", detail: "Perception, the mind–body problem, and the nature of consciousness in live dialogue with the empirical sciences." },
+            { name: "Ethics & epistemology of AI", detail: "A 2025 review argues that new ethical theories of distributed agency, where responsibility is shared among designers, firms, and software, can advance AI ethics. MIT Sloan authors argue philosophy also shapes what AI models should achieve and what counts as knowledge." },
+            { name: "Formal epistemology & decision theory", detail: "The Stanford Encyclopedia describes using probability theory, modal logic, and computer simulation on questions such as confirming scientific theories and the problem of induction." },
+            { name: "Experimental philosophy (x-phi)", detail: "The Stanford Encyclopedia describes a methodological naturalist approach using vignette questionnaires, corpus studies, and behavioral, qualitative, and brain-imaging methods to test empirical assumptions in philosophical theorizing." },
+            { name: "Expanding the canon", detail: "FIU requires a non-Western philosophy course, and Loyola Chicago lists feminism and critical philosophy of race among its strengths." },
+            { name: "Consciousness", detail: "In 2025 an adversarial collaboration tested two leading consciousness theories and found no winner, and researchers writing in Frontiers in Science argued that AI and neurotechnology make explaining consciousness urgent." },
+          ],
+        },
+        {
+          title: "Tools & AI",
+          icon: "🧰",
+          items: [
+            { name: "Citation & typesetting", detail: "Philosophers in a 2025 Daily Nous comment thread named Zotero for citation management and LaTeX with BibLaTeX for typesetting." },
+            { name: "Formal tools", detail: "Formal epistemology uses probability theory, modal logic, and computer simulation. Course catalogs list probability and rational choice courses at MIT, Utah, and FIU." },
+            { name: "How philosophers use AI", detail: "In a 2025 thread of reader comments (not a survey), some used AI for teaching materials, editing, and testing objections, others limited it to narrow tasks such as reformatting a bibliography, and others avoided it on ethical grounds. Tools named included ChatGPT, Claude, Gemini, NotebookLM, and Perusall." },
+            { name: "Hallucinated citations", detail: "Several commenters in the same thread raised hallucinated citations, including a thesis bibliography with invented references." },
           ],
         },
         {
           title: "The Hard Truths",
           icon: "⚖︎",
           items: [
-            { name: "Admission ~4–8%", detail: "Top programs admit a handful from hundreds of applicants; a strong writing sample matters more than grades or test scores." },
-            { name: "Tenure-track is scarce", detail: "Programs mint far more PhDs than there are permanent jobs. Only about 30% land a permanent academic post." },
-            { name: "Years of limbo", detail: "A common trajectory is 5–7 years of PhD, then 2–3 years of postdocs or visiting jobs before (maybe) a tenure line." },
-            { name: "Non-academic exits are normalizing", detail: "Around 20% now go outside academia — and report job satisfaction on par with permanent faculty." },
+            { name: "Admission ~4–8%", detail: "Reported rates were about 6% at Michigan, 8% at UCLA, and 4% to 5% at Yale (2018-19 figures). Applications also ask for a writing sample, and DePaul does not use the GRE." },
+            { name: "Tenure-track is scarce", detail: "About 40% of PhDs from 2015 onward hold a permanent academic job, and about 32% are on the tenure track or equivalent. Another 42% are in temporary academic work and 18% are outside academia." },
+            { name: "Years of limbo", detail: "80,000 Hours describes five to seven years of PhD, two to three years of postdocs or short-term jobs, then five to nine years on the tenure track before tenure." },
+            { name: "Non-academic exits", detail: "About 18% of PhDs from 2015 onward work outside academia, and their job satisfaction is no different from permanent academics' in APDA's 2025 survey. Both report more satisfaction than temporary academics." },
           ],
         },
       ],
@@ -171,8 +181,8 @@ const data = {
       color: "#2F6E5E",
       roles: ["Adjunct / Lecturer", "Visiting Asst. Professor", "Assistant Professor (TT)", "Associate / Full Professor"],
       reality:
-        "The dream job and the longest odds. After a 5–7 year funded PhD, only about 30% reach a permanent academic post, often after years of postdocs and visiting positions and frequently far from where they'd choose to live. Teaching-focused and community-college lines outnumber research jobs. Those who make it report high satisfaction; the path there is arbitrary and demoralizing even for excellent candidates.",
-      salary: "$45k adjunct (per-course) · $70–100k TT start · $150k+ full professor",
+        "The long-odds path. Of PhDs from 2015 onward, about 40% hold a permanent academic job and about 42% are in temporary academic work, often after years of postdocs and visiting positions. BLS counts about 26,800 philosophy and religion teaching jobs and projects 2% growth through 2035. Permanent academics are more satisfied than temporary ones, but no more satisfied than PhDs working outside academia.",
+      salary: "$80k median philosophy and religion teacher (BLS, 2025) · $51k avg temporary academic · $82k avg permanent academic (APDA, 2023)",
     },
     {
       path: "Law & Legal Practice",
@@ -180,8 +190,8 @@ const data = {
       color: "#2E5E8C",
       roles: ["Paralegal", "JD Student", "Associate Attorney", "Partner / Counsel"],
       reality:
-        "The best-trodden path. Philosophy majors post among the highest LSAT scores of any large-volume major, and law schools value the logic-and-argument training directly. A JD (three years) is required to practice; the degree is expensive and the market is sharply stratified between big-law and everything else — but philosophy is genuinely strong preparation for the work itself.",
-      salary: "$70k small firm · $120k public interest · $215k+ big-law first-year",
+        "The best-trodden path. Philosophy ranked second behind economics among large majors on the LSAT in 2017-18, though LSAC cautions that major averages do not show a major prepares students better. A JD (three years) and a bar exam are required to practice, and pay differs sharply by employer: NALP's Class of 2025 had a median starting salary of $100,000 and 92.8% employment.",
+      salary: "$75k public interest · $81k government · $84k small firm · $225k firms of 500+ lawyers (NALP, Class of 2025 medians)",
     },
     {
       path: "AI Ethics & Governance",
@@ -189,8 +199,8 @@ const data = {
       color: "#B07A16",
       roles: ["Trust & Safety Analyst", "AI Policy Analyst", "Responsible AI Lead", "AI Ethics Officer"],
       reality:
-        "The newest and fastest-growing destination — and one where a philosophy background is an explicit asset, with roughly a third of these hires coming from philosophy or ethics. Demand badly outstrips supply. But roles increasingly want fluency with data, ML basics, and regulation (the EU AI Act, the NIST framework) alongside ethical reasoning. Concentrated at large tech firms, AI labs, consultancies, and government.",
-      salary: "$70k entry · $120–170k mid · $200k+ governance lead",
+        "The newest destination, and still taking shape. IAPP's 2025 survey found AI governance sitting mostly with legal and compliance (22%) and IT (17%), with ethics and compliance primary in 6%, and it does not report philosophy backgrounds. Expect to pair ethical reasoning with fluency in regulation and data; frameworks named in recent literature include the EU AI Act, the NIST AI Risk Management Framework, and ISO/IEC 42001.",
+      salary: "$151,800 median for AI governance roles (IAPP 2025-26, global) · $221k median for technical AI governance roles in tech",
     },
     {
       path: "Consulting & Strategy",
@@ -198,8 +208,8 @@ const data = {
       color: "#8C2F39",
       roles: ["Analyst", "Consultant", "Strategy Manager", "Corporate Strategist"],
       reality:
-        "Firms hire philosophy majors for structured problem-solving and clear writing, not domain knowledge. Breaking into top-tier consulting from a non-target school is competitive and often runs through an MBA or a strong internship record — but the analytic reputation of the major genuinely helps. Mid-career earnings for philosophy grads in business rival supposedly more 'practical' majors.",
-      salary: "$75k analyst · $100–130k consultant · $200k+ with MBA / partner track",
+        "BLS lists a bachelor's as the typical entry degree for management analysts, the closest official category, so this path does not require graduate school. Pay spreads widely, and BLS data say nothing about hiring routes at top firms, which vary by firm.",
+      salary: "$101,860 median management analyst (BLS, 2025) · $60,640 at the 10th percentile · $171,640 at the 90th",
     },
     {
       path: "Policy, Nonprofit & Public Sector",
@@ -207,8 +217,8 @@ const data = {
       color: "#4A6A7A",
       roles: ["Research Assistant", "Policy Analyst", "Program Manager", "Director / Advisor"],
       reality:
-        "Ethics, political philosophy, and clear argumentation transfer well to think tanks, NGOs, government, and international bodies. Many roles want or reward a Master of Public Policy or a JD layered on top of the bachelor's. Pay is modest next to tech or law, but the work is mission-driven and comparatively stable.",
-      salary: "$45k entry · $70–95k analyst · $120k+ senior / director",
+        "Policy analyst roles at agencies and think tanks generally prefer a master's in public policy or economics. BLS lists a master's as typical for political scientists, a small occupation of about 6,100 jobs with a projected 2% decline. Nonprofit and NGO work was among the sectors where non-academic PhDs reported higher satisfaction than permanent academics. No source describes a philosophy-specific route.",
+      salary: "$55–75k policy analyst entry (aggregator ranges, conflicting) · $142k median political scientist (BLS, 2025, small occupation)",
     },
     {
       path: "Writing, Media & Communications",
@@ -216,17 +226,17 @@ const data = {
       color: "#6E4A7A",
       roles: ["Editor", "Technical / UX Writer", "Content Strategist", "Communications Lead"],
       reality:
-        "The analytic-writing skill is the product here. Philosophy grads land in editing, journalism, UX writing, and content strategy — work where anticipating a reader's objections and structuring an argument is literally the job. Entry pay is low and the field is crowded, but writing-heavy tech roles (UX and documentation) pay meaningfully more.",
-      salary: "$40k entry · $65–90k mid · $120k+ senior / UX in tech",
+        "BLS projects flat or falling employment through 2035: writers and authors 0%, editors -1%, and technical writers 1%. Practitioners report that AI now produces first drafts in technical writing and that writers are shifting toward review.",
+      salary: "$76,910 writers · $77,920 editors · $90,390 technical writers (BLS medians, 2025)",
     },
     {
       path: "Bioethics & Medical Ethics",
       icon: "⚕︎",
       color: "#A2506A",
-      roles: ["Research Coordinator", "Clinical Ethics Fellow", "Hospital Ethicist / IRB", "Bioethics Faculty"],
+      roles: ["Clinical Ethics Fellow", "Clinical Ethics Consultant", "Assistant Professor of Bioethics"],
       reality:
-        "One of the few philosophy specialties with a defined professional track. Hospitals, research institutions, and review boards employ ethicists to navigate consent, end-of-life, and research-ethics questions. Most roles want a graduate degree (an MA or PhD in bioethics or philosophy), sometimes paired with a clinical or legal background. Steady, but concentrated in academic medical centers.",
-      salary: "$60k coordinator · $85–90k TT bioethicist · $130k+ senior / clinical",
+        "A defined professional track, though small and uneven. In a 2023 survey of 133 clinical ethics consultants, most worked full time, others held ethics as part of another job, and about a quarter were uncompensated, mostly clinical doctorate holders consulting beside patient care. Respondents held master's or clinical or nonclinical doctorates, and nonclinical doctorate holders tended to have more formal ethics training. The survey does not say what employers require.",
+      salary: "$113,625 master's · $146,134 nonclinical doctorate · $188,310 clinical doctorate (full-time averages, 2023) · $85–90k tenure-track bioethics posting (2025)",
     },
     {
       path: "Data, Tech & Product",
@@ -234,8 +244,8 @@ const data = {
       color: "#2E8C8C",
       roles: ["UX Researcher", "Product Analyst", "Product Manager", "Founder"],
       reality:
-        "A less obvious but real path: philosophy's logic and modeling training transfers to product management, UX research, and even software — usually after a bootcamp or serious self-teaching. Reid Hoffman (LinkedIn) and Stewart Butterfield (Slack) are the famous cases. Tech pays the best of any exit, but you compete partly on skills the major doesn't directly teach, so a technical supplement helps.",
-      salary: "$75k entry · $110–150k mid · $200k+ senior PM / founder",
+        "No source shows a philosophy-specific route into product or research roles, so expect to compete on skills the major does not teach. Reid Hoffman (LinkedIn), who holds a master's in philosophy from Oxford, and Stewart Butterfield (Slack), who studied philosophy, are the well-known examples. Non-academic PhDs in technology reported higher satisfaction than permanent academics.",
+      salary: "$77k avg associate PM base, $55–108k total pay (Payscale, 2025) · about $174k avg total at Meta, entry level (Levels.fyi, 2026)",
     },
   ],
 };
@@ -338,7 +348,7 @@ export default function PhilosophyRoadmap() {
             Philosophy
           </h1>
 
-          {/* SIGNATURE: the field's own material — an argument, set in its notation */}
+          {/* SIGNATURE: the field's own material, an argument, set in its notation */}
           <div
             style={{
               marginTop: 20,
@@ -374,7 +384,7 @@ export default function PhilosophyRoadmap() {
                   lineHeight: 1.4,
                 }}
               >
-                A map of where the examined life actually leads — and what the market pays for it.
+                A map of where the examined life actually leads, and what the market pays for it.
               </span>
             </div>
           </div>
@@ -585,7 +595,7 @@ export default function PhilosophyRoadmap() {
                 ∴&nbsp;&nbsp;WHERE THE DEGREE LEADS
               </div>
               <p style={{ margin: 0, color: C.ink, fontSize: 16.5, lineHeight: 1.62, maxWidth: 760 }}>
-                Eight genuine destinations, from the longest-odds academic track to the fastest-growing one in AI. The through-line is the same skill: taking an argument apart and putting it back together, in writing, under objection.
+                Eight destinations, from the longest-odds academic track to the newest one in AI governance. The through-line is the same skill: taking an argument apart and putting it back together, in writing, under objection.
               </p>
             </div>
 
@@ -720,7 +730,7 @@ export default function PhilosophyRoadmap() {
           }}
         >
           <span style={{ color: C.dim }}>⊢</span>
-          Tap any item or card to expand it. Salaries are U.S. ranges and shift by region, institution, and year.
+          Tap any item or card to expand it. Pay figures are mostly U.S. figures and shift by region, employer, and year.
         </div>
       </main>
     </div>
