@@ -46,12 +46,12 @@ const data = {
             {
               name: "There is no required major",
               detail:
-                "Law schools admit from every discipline and the ABA recommends no particular one. Political science is the most common choice at roughly 18% of applicants, which also makes it the hardest major to stand out in.",
+                "Law schools admit from every discipline and the ABA recommends no particular one. Political science has long been the most common choice (about 18% of applicants in LSAC's 2015-16 breakdown, the latest found), which also makes it the hardest major to stand out in.",
             },
             {
               name: "Economics, philosophy, and history test well",
               detail:
-                "In LSAC's applicant data these majors post some of the highest average LSAT scores and admission rates, while criminal justice and generic pre-law programs sit near the bottom. Some of that is self-selection, but the training in argument and evidence is real.",
+                "In LSAC's 2017-18 applicant data these majors post some of the highest average LSAT scores and admission rates, while criminal justice and generic pre-law programs sit near the bottom. Some of that is self-selection, but the training in argument and evidence is real.",
             },
             {
               name: "Reading-heavy and writing-heavy courses",
@@ -71,7 +71,7 @@ const data = {
             {
               name: "Protect the GPA from the first semester",
               detail:
-                "LSAC recalculates your GPA from every college transcript you have ever earned, including transfer and summer credits. A weak first year cannot be hidden, and a later master's degree does not replace it.",
+                "LSAC recalculates your GPA from every undergraduate transcript, including transfer credits. Graduate coursework is not counted, so a weak first year cannot be hidden and a later master's degree does not replace it. Starting with the 2027-28 cycle, college credits earned in high school drop out of the calculation.",
             },
           ],
         },
@@ -113,7 +113,7 @@ const data = {
             {
               name: "The LSAT, scored 120 to 180",
               detail:
-                "Since August 2024 the test has two scored Logical Reasoning sections and one Reading Comprehension section, with the old logic games removed. Starting with the August 2026 test, US takers sit it in person at test centers.",
+                "Since August 2024 the test has two scored Logical Reasoning sections and one Reading Comprehension section, with the old logic games removed. Starting with the August 2026 test, almost all takers sit it in person at test centers, with limited exceptions such as some disability accommodations.",
             },
             {
               name: "Score inflation at the top",
@@ -123,7 +123,7 @@ const data = {
             {
               name: "The GRE as an alternative",
               detail:
-                "Every ABA school accepts the LSAT. Only some accept the GRE, and schools still see any LSAT score you have on file, so the GRE mainly helps applicants also weighing other graduate programs.",
+                "Every ABA school accepts the LSAT. Over 130 accept the GRE too, by ETS's count, and schools still see any LSAT score you have on file, so the GRE mainly helps applicants also weighing other graduate programs.",
             },
             {
               name: "Apply early in a rolling cycle",
@@ -262,7 +262,7 @@ const data = {
             {
               name: "Clinics and externships",
               detail:
-                "Representing real clients under supervision. The ABA currently requires six experiential credits, and a contested proposal to double that to twelve has been under review since 2025.",
+                "Representing real clients under supervision. The ABA currently requires six experiential credits, and a proposal to double that to twelve was withdrawn in August 2025 after pushback from deans. It has not been adopted since.",
             },
             {
               name: "Law review and journals",
@@ -288,7 +288,7 @@ const data = {
             {
               name: "Large-firm hiring has moved into first year",
               detail:
-                "Firms now contact students as early as the fall of first year and many fill second-summer classes on one semester of grades. In the 2025 cycle only about 20% of summer offers came through school-run interview programs.",
+                "Some firms now recruit as early as the first semester of law school, so summer classes can be filled on very little coursework. Participants in these programs receive return offers about 96 to 98% of the time (LSAC).",
             },
             {
               name: "The summer associate pipeline",
@@ -319,12 +319,12 @@ const data = {
             {
               name: "Sticker prices",
               detail:
-                "Average tuition and fees run about $56,000 a year at private schools and $33,000 at public schools, before living costs. Average total cost of attendance was already about $217,000 in 2023–24.",
+                "Average tuition runs about $46,000 a year across ABA schools, with public in-state tuition near $31,000 (fall 2024), before living costs. Tuition plus living expenses for a three-year degree averages about $217,000.",
             },
             {
               name: "The new federal loan ceiling",
               detail:
-                "Grad PLUS loans ended for new borrowers on July 1, 2026. Law students can now borrow $50,000 a year in federal loans, $200,000 lifetime, which works out to $150,000 across a three-year JD. The rest must come from scholarships, savings, or private loans.",
+                "Grad PLUS loans ended for new borrowers on July 1, 2026. Law students can now borrow $50,000 a year in federal loans, $200,000 in total (undergraduate loans do not count against it), which works out to $150,000 across a three-year JD. The rest must come from scholarships, savings, or private loans.",
             },
             {
               name: "Debt against a two-peaked salary curve",
@@ -334,7 +334,7 @@ const data = {
             {
               name: "Public Service Loan Forgiveness and LRAPs",
               detail:
-                "PSLF forgives remaining federal loans after ten years of qualifying payments in government or nonprofit work, and many schools add their own repayment assistance. Repayment plan rules changed in 2026, so check current terms rather than older guides.",
+                "PSLF forgives remaining federal loans after ten years of qualifying payments in government or nonprofit work, and many schools add their own repayment assistance. On July 1, 2026 the new Repayment Assistance Plan became the income-driven option that counts for new loans, and a new rule lets the Department disqualify employers it finds engaged in activity with a 'substantial illegal purpose.' Check current terms rather than older guides.",
             },
           ],
         },
@@ -350,12 +350,12 @@ const data = {
             {
               name: "The NextGen bar exam",
               detail:
-                "A redesigned exam that tests skills such as research, drafting, and client counseling alongside doctrine. It debuted in July 2026 in ten jurisdictions, and the old exam is retired after February 2028. Students starting now will take the new one almost everywhere.",
+                "A redesigned exam that tests skills such as research, drafting, and client counseling alongside doctrine. It debuted in July 2026 in ten jurisdictions, and most other jurisdictions switch in July 2028 (New York and New Jersey keep the old exam through February 2028). Students starting now will take the new one almost everywhere.",
             },
             {
               name: "States that go their own way",
               detail:
-                "Not every state follows the national exam. Nevada is launching its own three-part process, Louisiana tests its civil-law system, and a few states now offer supervised-practice routes to a license.",
+                "Not every state follows the national exam. Nevada is launching its own three-part exam in February 2027, and Oregon and Utah now offer supervised-practice routes to a license.",
             },
             {
               name: "The MPRE",
@@ -406,7 +406,7 @@ const data = {
             {
               name: "You are responsible for every citation",
               detail:
-                "Courts have sanctioned lawyers for filing briefs with cases an AI tool invented. The durable skill is checking output against the source, and the new bar exam tests that kind of verification.",
+                "Courts have sanctioned lawyers for filing briefs with cases an AI tool invented, and one tracker counted more than 700 such decisions worldwide by late 2025. The durable skill is checking output against the source.",
             },
           ],
         },
@@ -463,7 +463,7 @@ const data = {
             {
               name: "The credential bar has risen",
               detail:
-                "Among reported entry-level tenure-track hires in 2026, about 66% had held a fellowship, about 58% had a higher degree beyond the JD, and about 41% had clerked. In 2011 only about a quarter of new hires held an advanced degree.",
+                "Among reported entry-level tenure-track hires in 2026, about 66% had held a fellowship, about 58% had a higher degree beyond the JD, and about 41% had clerked.",
             },
             {
               name: "Fellowships and visiting assistant professorships",
@@ -569,8 +569,8 @@ const data = {
       color: C.blue,
       roles: ["Associate", "Senior associate", "Partner", "Solo practitioner"],
       reality:
-        "Where the largest share of lawyers actually work: family law, criminal defense, personal injury, real estate, estates, immigration, and local business. Entry is far more open than at large firms and clients arrive sooner, but starting pay is modest and income depends on building your own book of business. About one lawyer in eight is self-employed.",
-      salary: "About $80K median at firms of 1 to 10 lawyers (Class of 2024). $159,670 median for all US lawyers (BLS, May 2025).",
+        "Where the largest share of lawyers actually work: family law, criminal defense, personal injury, real estate, estates, immigration, and local business. Entry is far more open than at large firms and clients arrive sooner, but starting pay is modest and income depends on building your own book of business. About 11% of lawyers are self-employed.",
+      salary: "About $84K median at firms of 1 to 10 lawyers (NALP, Class of 2025). $159,670 median for all US lawyers (BLS, May 2025).",
     },
     {
       path: "Government and prosecution",
@@ -588,7 +588,7 @@ const data = {
       roles: ["Staff attorney", "Public defender", "Supervising attorney", "Legal director"],
       reality:
         "Legal aid offices, public defenders, civil rights and advocacy organizations. The most prestigious nonprofits are as selective as large firms, often hiring through competitive fellowships. Caseloads are heavy and salaries grow slowly, so loan forgiveness and school repayment programs usually decide whether the path is affordable.",
-      salary: "$64K to $70K median at entry, depending on employer type (NALP 2023 survey). Public defenders reach about $107K at 11 to 15 years.",
+      salary: "$75K median for public interest jobs (NALP, Class of 2025). In NALP's 2023 survey, entry pay was about $69.6K at public defender offices and $64.2K in civil legal services; public defenders reach about $107K at 11 to 15 years.",
     },
     {
       path: "Clerkships and the bench",
@@ -597,7 +597,7 @@ const data = {
       roles: ["Judicial law clerk", "Staff attorney", "Magistrate or administrative law judge", "Judge"],
       reality:
         "A clerkship is a one-year or two-year job researching and drafting for a judge straight out of school. Federal clerkships are highly competitive and act as a career accelerator. Becoming a judge comes much later, typically after 10 to 20 years of practice, through election or appointment depending on the state. Federal judgeships require presidential nomination and Senate confirmation.",
-      salary: "About $75K to $87K for a new federal clerk, by location. $117,860 median for administrative law judges. $249,900 for a federal district judge (2026).",
+      salary: "From about $75K for a new federal clerk (JSP-11), more in high-cost cities. $117,860 median for administrative law judges. $249,900 for a federal district judge (2026).",
     },
     {
       path: "In-house counsel and compliance",
@@ -606,7 +606,7 @@ const data = {
       roles: ["Counsel", "Senior counsel", "Associate general counsel", "General counsel"],
       reality:
         "Lawyers employed directly by a company, bank, hospital, or university. Most positions go to lawyers with three to seven years at a firm, so this is usually a second job rather than a first. Hours are more predictable and the work is closer to business decisions. Compliance roles in finance, health care, and privacy are a related route that does not always require bar admission.",
-      salary: "About $200K to $220K median base for senior counsel. General counsel median $500K (private) to $739K (public) in base plus bonus. Compliance officers: $80,730 median.",
+      salary: "About $270K median total cash for senior counsel or counsel (MLA 2026). General counsel median total cash $500K (private) to $739K (public). Compliance officers overall: $80,730 median (BLS).",
     },
     {
       path: "Legal academia",
@@ -614,8 +614,8 @@ const data = {
       color: C.green,
       roles: ["Fellow or visiting assistant professor", "Assistant professor", "Tenured professor", "Dean"],
       reality:
-        "A very small market: roughly 150 entry-level tenure-track hires were reported nationwide in 2026, and they come overwhelmingly from a handful of law schools. Most had a fellowship, a doctorate, or both, plus published articles. Law professors are paid better than most academics, which is part of why the competition is so severe.",
-      salary: "About $154K average (Payscale 2026), with wide variation. One top public school lists $196K to $322K for entry-level tenure-track posts.",
+        "A very small market: 146 tenure-track hires were reported nationwide in 2026, and they come overwhelmingly from a handful of law schools. Most had a fellowship, a doctorate, or both, plus published articles. Law has historically been among the best-paid academic fields, which is part of why the competition is so severe.",
+      salary: "Payscale's 2026 self-reported averages run from about $115K for assistant professors of law to about $152K for professors of law, with wide variation by school.",
     },
     {
       path: "Legal operations, technology, and dispute resolution",
@@ -624,7 +624,7 @@ const data = {
       roles: ["Legal operations specialist", "E-discovery or legal tech manager", "Mediator or arbitrator", "Head of legal operations"],
       reality:
         "Jobs where a JD helps but a license is not the point: running the budget and technology of a legal department, building and selling legal software, managing document review, or resolving disputes outside court. Demand is rising as firms and companies adopt AI tools. Full-time mediation and arbitration work is scarce and usually comes after a long career in practice or on the bench.",
-      salary: "$75K to $120K for legal operations specialists and managers (Robert Half 2026). $75,530 median for mediators and arbitrators. Heads of legal operations averaged $226K (2025).",
+      salary: "About $75K to $120K for legal operations specialists and managers, and $152K to $200K for directors (Robert Half 2026). $75,530 median for mediators and arbitrators (BLS).",
     },
   ],
 };

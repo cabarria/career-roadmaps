@@ -54,7 +54,7 @@ const data = {
             {
               name: "Intro to Neuroscience / Brain & Behavior",
               detail:
-                "The gateway course. Many programs gate the whole major on earning a B or B− here before you can register for upper-level neuroscience courses.",
+                "The gateway course. Some programs gate the major on it: Pitt requires a B− or better here before any other core course, and Penn requires its intro course to declare.",
             },
             {
               name: "Cellular & Molecular Neuroscience",
@@ -79,7 +79,7 @@ const data = {
             {
               name: "Statistics & Research Methods",
               detail:
-                "Experimental design, IRB ethics, and the stats (t-tests, ANOVA, regression) every later step depends on. Your grade here is a top signal for graduate admissions.",
+                "Experimental design, IRB ethics, and the stats (t-tests, ANOVA, regression) every later step depends on. Required at most programs checked, including Duke, Oregon, Michigan, Northwestern, and Penn.",
             },
           ],
         },
@@ -90,22 +90,22 @@ const data = {
             {
               name: "Organic Chemistry",
               detail:
-                "The classic pre-health filter, required by most programs and a common track-changer. Rarely used again in neuroscience proper, but it screens hard.",
+                "The classic pre-health filter. It appears in Penn's and Pitt's requirement lists but not in Berkeley's listed prerequisites, so check your program. Student accounts call it intentionally difficult and memorization heavy.",
             },
             {
-              name: "Cellular / Molecular Neuro",
+              name: "General Biology & Chemistry",
               detail:
-                "Ion-channel biophysics and signaling cascades in volume. The first course that separates 'likes brains' from 'will grind through the mechanism.'",
+                "The intro science sequence is the one students name as a deliberate filter in the first two years. No pass-rate data was found, so treat this as reputation, not statistics.",
             },
             {
-              name: "Physics + Calculus",
+              name: "Grade gates in the major",
               detail:
-                "A required quantitative foundation that surprises students who expected a purely biological major — and the seed of the field's computational side.",
+                "Pitt requires a B− or better in its intro course before any other core course. Oregon requires a C or better in every major course. Virginia Tech allows three attempts, withdrawals included, in its core science and math courses.",
             },
             {
-              name: "Neuroanatomy Practicals",
+              name: "Neuroanatomy",
               detail:
-                "Timed lab identification of structures and tracts. Pure memorization under pressure; the workload catches a lot of people off guard.",
+                "Often taught with a lab, and Oregon names a dedicated neuroanatomy course as its preferred option. Heavy memorization is its reputation; no pass-rate data was found.",
             },
           ],
         },
@@ -116,22 +116,22 @@ const data = {
             {
               name: "Wet-lab technique",
               detail:
-                "Pipetting, cell culture, immunohistochemistry, microscopy, and sometimes electrophysiology or animal handling — the manual literacy of a working lab.",
+                "PCR, microscopy, and whatever your lab runs day to day. Entry-level guidance names these as the manual literacy of a working lab; what you actually learn depends on the lab you join.",
             },
             {
               name: "Neuroimaging & recording literacy",
               detail:
-                "Reading and processing fMRI, EEG, and calcium-imaging data — the modalities that turn brain activity into analyzable signal.",
+                "Reading and processing fMRI and EEG data, which job guides list as core competencies. Many programs pair cognitive neuroscience with a lab component.",
             },
             {
               name: "Programming (Python / R / MATLAB)",
               detail:
-                "For data analysis and modeling. Increasingly the single most valuable practical skill a neuroscience graduate can add — it opens data, industry, and neurotech doors.",
+                "For data analysis and modeling. Job guides list Python or MATLAB as core competencies, and Northwestern requires a programming course. It opens data, industry, and neurotech doors.",
             },
             {
               name: "Statistics & scientific writing",
               detail:
-                "Designing analyses and writing in the format of a real paper. The honors-thesis loop is where these two skills fuse into something employers notice.",
+                "Designing analyses and writing in the format of a real paper. The honors thesis (offered at Yale, Pitt, and Berkeley) is where these two skills come together.",
             },
           ],
         },
@@ -142,22 +142,22 @@ const data = {
             {
               name: "Undergraduate research",
               detail:
-                "The non-negotiable. Get into a lab early — a strong PI letter and a poster or publication outweigh raw GPA for PhD admissions.",
+                "The non-negotiable. Get into a lab early: Columbia's PhD FAQ calls research experience arguably the most important factor in an application and sets no hard GPA cutoff.",
             },
             {
               name: "Summer research programs (REUs)",
               detail:
-                "Funded, competitive summer research (NIH, NSF, and university programs) that builds your CV, your technique, and your network all at once.",
+                "NSF REUs pay stipends and often help with housing, meals, and travel. They are limited to US citizens, permanent residents, and nationals, so check eligibility first.",
             },
             {
               name: "Honors thesis",
               detail:
-                "An original project defended before faculty — the closest undergraduate analog to graduate research and a genuine differentiator on applications.",
+                "Offered at Yale, Pitt, and Berkeley. Pitt's departmental honors require a 3.50 overall and major GPA, a research project, a presentation, and a senior thesis.",
             },
             {
               name: "Society for Neuroscience (SfN)",
               detail:
-                "The field's giant annual meeting and its student chapters, and home of the NeuroJobs board — where the community and the opportunities concentrate.",
+                "The field's annual meeting and home of the NeuroJobs board, with on-site recruiting. SfN says its candidate pool is nearly 36,000 neuroscientists.",
             },
           ],
         },
@@ -169,7 +169,7 @@ const data = {
       years: "Years 5–7",
       color: C.violet,
       intro:
-        "In neuroscience the master's is not the standard gateway it is in some fields — funded PhD programs admit straight from a bachelor's, so many people skip it entirely. It earns its place in specific cases: as a competitiveness boost for applicants who need research experience or a GPA reset, as a professional or terminal credential for industry and clinical work, or as a bridge into a quantitative specialization like computational neuroscience. Unlike the PhD, most master's programs are self-funded — a real cost to weigh before committing.",
+        "In neuroscience the master's is not the standard gateway it is in some fields — funded PhD programs admit straight from a bachelor's, so many people skip it entirely. It earns its place in specific cases: as a competitiveness boost for applicants who need research experience or a GPA reset, as a professional or terminal credential for industry and clinical work, or as a bridge for applicants who need a research record first. Unlike the PhD, the master's programs checked here are self-funded or only partly funded, a real cost to weigh before committing.",
       sections: [
         {
           title: "Types of Programs",
@@ -178,22 +178,22 @@ const data = {
             {
               name: "Research / thesis MS",
               detail:
-                "A mentored project ending in a thesis. The classic 'strengthen my PhD application' route for people who need more bench time and a research letter.",
+                "A mentored project ending in a thesis. Stony Brook's takes 1.5 to 2 years, and well over half of its alumni went on to PhD programs.",
             },
             {
               name: "Professional / coursework MS",
               detail:
-                "Applied and often terminal, aimed at industry, clinical, or regulatory roles — e.g. translational or clinical neuroscience degrees built for the job market.",
+                "Brandeis designs its program for one year full time, with an optional thesis. Admission to its PhD afterward is not guaranteed, though MS courses can count toward the PhD if you get in.",
             },
             {
               name: "Computational neuroscience MS",
               detail:
-                "Quantitative, modeling- and coding-heavy. A bridge for biologists moving toward data and theory, or for engineers and physicists moving into brains.",
+                "Quantitative, modeling- and coding-heavy. Offerings vary by school and none were verified in this research, so check the curriculum before counting on one.",
             },
             {
-              name: "Post-bacc / 'reset' year",
+              name: "Accelerated BS-to-MS",
               detail:
-                "Used to accumulate research experience and repair a transcript before applying to a funded PhD — sometimes cheaper and just as effective as a full MS.",
+                "Some universities let strong undergraduates count graduate credits toward both degrees. UT Dallas allows up to 15 graduate credits in Applied Cognition and Neuroscience.",
             },
           ],
         },
@@ -204,17 +204,17 @@ const data = {
             {
               name: "Mostly self-funded",
               detail:
-                "Unlike the PhD, terminal master's degrees rarely come with a stipend. Budget tuition plus one to two years of foregone income before you commit.",
+                "Brandeis states its MS has no stipends, merit scholarships, or assistantships. Stony Brook offers no direct aid, though many students find TA jobs with a stipend and a one-course tuition waiver. Budget tuition plus one to two years of foregone income.",
             },
             {
               name: "When it's worth it",
               detail:
-                "Clearest return when the degree unlocks a specific job (clinical or industry) or is the only realistic route into a funded PhD after a weak start.",
+                "Clearest return when the degree unlocks a specific job or is your route into a funded PhD. At Stony Brook, about a quarter of alumni went into biomedical industry research and well over half into PhD programs.",
             },
             {
               name: "When to skip it",
               detail:
-                "If you can instead get research experience as a paid lab tech or research assistant, that's often a stronger — and far cheaper — PhD on-ramp.",
+                "If you can instead get research experience as a paid lab tech or research assistant, that may be a cheaper on-ramp, since research experience is what PhD programs weigh most.",
             },
           ],
         },
@@ -247,7 +247,7 @@ const data = {
       years: "Years 8+",
       color: C.magenta,
       intro:
-        "The PhD is the real gateway to independent neuroscience research, and — importantly — it's almost always fully funded: tuition waived plus a living stipend, roughly $34K–$52K depending on institution and cost of living. Expect a boot camp, two to three lab rotations in year one before choosing a thesis lab, a qualifying exam (often an NIH-style grant proposal) around years 2–3, then three to four years of dissertation research. Five to six years total is typical. Know the destination math going in: far more neuroscience PhDs are produced each year than there are tenure-track jobs.",
+        "The PhD is the real gateway to independent neuroscience research, and — importantly — it's almost always fully funded: tuition waived plus a living stipend, roughly $31K–$52K depending on institution and cost of living. Expect a boot camp, two to four lab rotations in year one before choosing a thesis lab, a qualifying exam (often an NIH-style grant proposal) around years 2–3, then three to four years of dissertation research. Five to six years total is typical. Know the destination math going in: far more neuroscience PhDs are produced each year than there are tenure-track jobs.",
       sections: [
         {
           title: "How the PhD Works",
@@ -256,17 +256,17 @@ const data = {
             {
               name: "Fully funded",
               detail:
-                "Stipend, tuition waiver, and health insurance for the duration. You are paid to do research, not paying tuition to do it — a defining feature of the field.",
+                "Columbia, Utah, Brandeis, BU, and UCSD describe full funding (tuition plus stipend) while students make progress. Examples: Harvard $51,500 (2025-26), Utah $39,254 (2026-27), UT Austin $40,000 guaranteed for five years.",
             },
             {
               name: "Lab rotations",
               detail:
-                "Two to three short rotations in year one to find your thesis lab. This is the single most consequential choice you'll make in the whole degree.",
+                "Programs run two to four rotations (UT Austin 2 to 3 at eight weeks each, UCSD and Utah 3, Brandeis 4) to choose a home lab. Some programs open with a boot camp.",
             },
             {
               name: "Qualifying exam",
               detail:
-                "Usually a written and oral defense of an original proposal in NIH grant format, taken around year 2–3 to advance from student to doctoral candidate.",
+                "Formats vary: UCSF uses an NIH-format proposal, UCSD examines the dissertation proposal, UT Austin uses breadth finals plus a review paper. Timing runs from the end of year two (Utah, Brandeis) to year three (Tulane).",
             },
             {
               name: "Dissertation & defense",
@@ -282,22 +282,22 @@ const data = {
             {
               name: "Connectomics",
               detail:
-                "Mapping the brain's wiring at scale. The complete fruit-fly brain connectome (2024) landed as a milestone, with mammalian efforts now expanding rapidly.",
+                "Mapping the brain's wiring at scale. In October 2024 the FlyWire consortium published the complete adult fruit-fly brain wiring diagram: nearly 140,000 neurons and more than 50 million synapses. NIH calls it a stepping stone to maps in larger animals.",
             },
             {
               name: "Brain organoids & assembloids",
               detail:
-                "iPSC-derived 3D 'mini-brains' — and fused, multi-region assembloids — used to model human brain development and neuropsychiatric disease in a dish.",
+                "iPSC-derived 3D 'mini-brains' and fused, multi-region assembloids, used to model human brain development and disease. Limits: restricted vascularization, variability between organoids, and open ethical questions.",
             },
             {
               name: "NeuroAI & brain foundation models",
               detail:
-                "Large models trained on neural and imaging data (BrainLM, POYO, TRIBE), plus deep networks used as predictive models of the brain itself. A genuine paradigm shift.",
+                "Large models trained on neural and imaging data (BrainLM, POYO, TRIBE). Authors call it a possible paradigm shift, while practitioners warn that a model can predict well and still be wrong about mechanism.",
             },
             {
               name: "Brain–computer interfaces",
               detail:
-                "High-density recording and neural decoding — from Neuralink and Blackrock to academic labs — aimed at restoring movement, speech, and vision.",
+                "High-density recording and neural decoding, from Neuralink and Synchron to academic labs. A 2025 report counted only about 100 people worldwide using BCIs in clinical trials.",
             },
             {
               name: "Circuit tools",
@@ -318,7 +318,7 @@ const data = {
             {
               name: "Neuropixels & electrophysiology",
               detail:
-                "High-density silicon probes that record hundreds of neurons at once — the workhorse of modern systems neuroscience.",
+                "High-density silicon probes with nearly 1,000 recording sites per shank (about a third usable at once on version 1.0). They had shipped to more than 450 labs by 2021.",
             },
             {
               name: "Optogenetics & imaging",
@@ -328,12 +328,12 @@ const data = {
             {
               name: "The Python / ML stack",
               detail:
-                "The analysis idiom: Python, PyTorch, spike-sorting pipelines, LaTeX, and preprints on bioRxiv/arXiv. Coding fluency is now table stakes.",
+                "The analysis idiom: Python or MATLAB, machine-learning libraries, and preprints on bioRxiv and arXiv. Job guides list coding as a core competency.",
             },
             {
               name: "The funding treadmill",
               detail:
-                "Research runs on grants. Learning to write NIH/NSF proposals — starting with the qualifying exam — is a core, career-long part of the training.",
+                "Research runs on grants. Learning to write NIH/NSF proposals, starting with the qualifying exam, is a core part of the training. UT Austin expects a predoctoral NRSA or similar fellowship submission in years three to five.",
             },
           ],
         },
@@ -347,10 +347,10 @@ const data = {
       color: C.teal,
       roles: ["PhD Student", "Postdoc", "Research Scientist", "Assistant Prof", "Tenured Prof"],
       reality:
-        "The default aspiration and the hardest to reach. A PhD is mandatory, followed by one or more postdocs that can stretch the timeline past a decade. Only ~14% of biological-science PhDs hold a tenure-track post 5–6 years out; Harvard's own neuroscience program reports ~13% of graduates in faculty roles. Grant-writing eats a third of a PI's time and geographic mobility is minimal. Choose it for the questions, not the odds or the pay.",
+        "The default aspiration and the hardest to reach. A PhD is mandatory, followed by one or more postdocs that can stretch the timeline past a decade. Only ~14% of biological-science PhDs hold a tenure-track post 5–6 years out; Harvard's own neuroscience program reports ~13% of graduates in faculty roles and ~26% in postdocs. Grant-writing eats a third or more of a PI's time and geographic mobility is minimal. Choose it for the questions, not the odds or the pay.",
       ai:
         "AI is a research tool here, not a threat — it accelerates analysis and modeling. The real competition is human: publish-or-perish against a very deep applicant pool.",
-      salary: "PhD stipend ~$34K–$52K · postdoc ~$56K–$70K · assistant prof ~$80K–$110K · tenured full prof $130K+",
+      salary: "PhD stipend ~$31K–$52K · postdoc ~$56K–$77K (NIH FY2026 scale $63,480–$77,076) · biological-science faculty median ~$85K across all ranks (BLS); neuroscience pay by rank not found",
     },
     {
       path: "Biotech & Pharma R&D",
@@ -358,10 +358,10 @@ const data = {
       color: C.violet,
       roles: ["Research Associate", "Scientist", "Senior Scientist", "Principal Scientist", "Director"],
       reality:
-        "The largest destination for neuroscience PhDs and a strong one — Harvard's program sends ~19% straight into biotech and therapeutics. Work spans drug discovery, target validation, and clinical development at neuro-focused pharma and CROs. Industry research pays well above academia and rewards the same skills without the tenure lottery. A bachelor's opens the door as a research associate; the scientist ladder generally wants a PhD.",
+        "A major destination: in Harvard's neuroscience program more graduates (~19%) go into biotech and therapeutics than into faculty roles (~13%). Work spans drug discovery, target validation, and clinical development at neuro-focused pharma and CROs. Industry research pays well above academia and rewards the same skills without the tenure lottery. A bachelor's opens the door as a research associate; the scientist ladder generally wants a PhD.",
       ai:
         "Computational drug discovery and ML-driven target ID are growing fast. The wet-lab-plus-code hybrid is the most defensible profile in the whole sector.",
-      salary: "RA (BS/MS) $55K–$80K · PhD Scientist $95K–$140K · Senior/Principal $150K–$220K+ · Director $200K+",
+      salary: "Medical scientists (BLS, May 2025): median $103,410, range $64,800–$177,780 · life-science R&D median $125,700 vs ~$75K–$81K at universities · senior and director pay not found",
     },
     {
       path: "Neurotech & BCI",
@@ -369,10 +369,10 @@ const data = {
       color: C.cyan,
       roles: ["Neuroengineer", "Neural Data Scientist", "BCI Engineer", "Research Scientist", "Tech Lead"],
       reality:
-        "The field's most magnetic frontier — Neuralink, Blackrock Neurotech, Synchron, and a wave of startups building brain–computer interfaces. Roles are deeply interdisciplinary: neural signal processing, ML decoding, embedded hardware, and clinical translation. Highly competitive and concentrated in a few hubs; the strongest candidates pair neuroscience with real engineering or ML. Total comp at top-tier companies runs high, though many roles are more modest.",
+        "The field's most magnetic frontier — Neuralink, Blackrock Neurotech, Synchron, and a wave of startups building brain–computer interfaces. Roles are deeply interdisciplinary: neural signal processing, ML decoding, embedded hardware, and clinical translation. Small, highly competitive, and concentrated in a few hubs; the strongest candidates pair neuroscience with real engineering or ML. About 100 people worldwide were in BCI trials in a 2025 report.",
       ai:
         "Largely AI-native — decoding neural signals is fundamentally a machine-learning problem. Building those models keeps you on the safe side of automation.",
-      salary: "Entry neuroengineer / data roles ~$90K–$130K · senior $150K–$250K · top-tier SWE/ML total comp up to ~$315K+",
+      salary: "Neuralink (Glassdoor, June 2026): ~$115K engineer to ~$206K member of technical staff; small single-company samples, entry and senior bands elsewhere not found",
     },
     {
       path: "Clinical & Health",
@@ -383,7 +383,7 @@ const data = {
         "Neuroscience is a popular pre-health major. With a bachelor's you can work as a neurodiagnostic (EEG/EMG) technologist or clinical research coordinator; the clinical-provider roles require separate professional training. Clinical neuropsychology needs a psychology doctorate plus a two-year fellowship and licensure but pays a specialty premium. Neurology is a full MD-plus-residency path. The credential gates are steep — but so is the pay on the far side.",
       ai:
         "AI is strong at pattern recognition in EEG/MRI diagnostics but augments rather than replaces licensed clinicians. The licensure gate is protective here.",
-      salary: "Neurodiagnostic tech $60K–$90K · clinical research coordinator $55K–$85K · neuropsychologist median ~$108K (top $165K+) · neurologist ~$286K",
+      salary: "Neurodiagnostic tech ~$60K–$90K · clinical research coordinator ~$50K–$90K (weak sources) · neuropsychologist median ~$108K (estimate) · neurologist median $248,560 (BLS, May 2025)",
     },
     {
       path: "Data Science & Analytics",
@@ -391,10 +391,10 @@ const data = {
       color: C.amber,
       roles: ["Data Analyst", "Data Scientist", "Sr. Data Scientist", "ML Engineer", "Analytics Lead"],
       reality:
-        "One of the most common and least-advertised pivots. The neuro toolkit — statistics, Python/R/MATLAB, big messy datasets — maps directly onto data-science roles in tech, healthcare, and biotech, with no PhD required. It's often the highest-paying route open to a bachelor's- or master's-level graduate, and demand is broad. The catch: you're competing with CS and stats grads, so lean hard into the coding.",
+        "A natural pivot. The neuro toolkit — statistics, Python/R/MATLAB, big messy datasets — maps directly onto data-science roles in tech, healthcare, and biotech, with no PhD required. BLS lists a bachelor's as typical entry education for data scientists and projects 35% growth from 2025 to 2035. The catch: you're competing with CS and stats grads, so lean hard into the coding.",
       ai:
         "Routine analysis is increasingly automated; the durable version of this job is engineering the pipelines and models, not running one-off analyses.",
-      salary: "Analyst $65K–$100K · data scientist ~$100K–$140K · senior / ML $150K–$200K+",
+      salary: "Data scientists (BLS, May 2025): median $120,230, range $67,240–$199,130 · biotech/healthcare analyst ~$65K–$100K · entry neuroscience data analyst ~$55K–$75K (weak source)",
     },
     {
       path: "SciComm & Policy",
@@ -402,10 +402,10 @@ const data = {
       color: C.coral,
       roles: ["Science Writer", "Medical Writer", "Comms Lead", "Policy Analyst", "Program Officer"],
       reality:
-        "A real destination for people who love the field but not the bench. Medical and regulatory writing — translating trials and mechanisms for regulators, clinicians, and the public — is in steady demand and pays surprisingly well. Science journalism and museum work are smaller and more competitive. Policy and program-officer roles at agencies and funders (NIH, NSF) help decide which research even happens. A PhD helps but isn't always required.",
+        "A real destination for people who love the field but not the bench. Medical and regulatory writing — translating trials and mechanisms for regulators, clinicians, and the public — is the best-paid branch, though BLS projects technical writing to grow only 1% from 2025 to 2035. Science journalism and museum work are smaller and more competitive. Policy and program-officer roles at agencies and funders (NIH, NSF) help decide which research even happens. A PhD helps but isn't always required.",
       ai:
         "Generative AI drafts fast, which raises the bar rather than removing the job — the value is accuracy, judgment, and credibility that AI still gets wrong.",
-      salary: "Science writer $55K–$90K · medical writer $80K–$130K · policy analyst / program officer $70K–$120K+",
+      salary: "Medical writer ~$80K entry average (PayScale, $61K–$103K) and ~$110K–$166K employed means (AMWA 2023) · technical writer median $90,390 (BLS) · AAAS policy fellow stipend ~$101K–$131K",
     },
     {
       path: "Patent Law & Consulting",
@@ -413,10 +413,10 @@ const data = {
       color: C.blue,
       roles: ["Technical Specialist", "Patent Agent", "Patent Attorney", "Consultant", "Partner"],
       reality:
-        "The high-earning exit few undergraduates know about. Life-science patent law and scientific/management consulting both pay a premium for people who can actually read the science — a neuroscience PhD is a strong entry credential. Patent agents can sit the USPTO exam without a law degree; patent attorneys add a JD. Consulting firms recruit PhDs directly. Competitive to break into, but the pay ceiling is genuinely high.",
+        "The high-earning exit few undergraduates know about. Life-science patent law and scientific/management consulting both pay a premium for people who can actually read the science — advanced life-sciences degrees sit at the top of patent-agent pay. Patent agents can sit the USPTO exam without a law degree; patent attorneys add a JD. Consulting is a separate route, and PhD-specific hiring was not researched here. Competitive to break into, but the pay ceiling is genuinely high.",
       ai:
         "Low direct exposure — these are judgment-, persuasion-, and relationship-heavy roles where the science degree is leverage, not the task being automated.",
-      salary: "Patent agent $90K–$160K · patent attorney $160K–$300K+ · consulting (PhD entry) $100K–$200K+",
+      salary: "Patent agent ~$70K–$110K before registration, ~$120K–$160K+ with an advanced life-sciences degree (2026 estimate) · all lawyers median $159,670 (BLS) · management analysts median $101,860 (BLS) · patent-attorney and top-firm consulting pay not found",
     },
   ],
 };
@@ -858,7 +858,7 @@ export default function NeuroscienceRoadmap() {
           }}
         >
           <span style={{ color: accent }}>▸</span>
-          Tap any item to expand it. Salary ranges are current-market estimates and vary widely by region,
+          Tap any item to expand it. Figures are US-based (BLS May 2025 where available) and vary widely by region,
           institution, and sector.
         </footer>
       </div>

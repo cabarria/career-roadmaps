@@ -63,7 +63,7 @@ const data = {
             {
               name: "General Chemistry + lab (1 year)",
               detail:
-                "The first real filter. Not the hardest course you'll take conceptually, but the one where the largest share of intended pre-meds quietly leaves the track.",
+                "Often the first real filter. Not the hardest course you'll take conceptually, but a common point where intended pre-meds reconsider the track.",
             },
             {
               name: "Organic Chemistry + lab (1 year)",
@@ -73,7 +73,7 @@ const data = {
             {
               name: "Physics + lab (1 year)",
               detail:
-                "Mechanics, fluids, optics, electricity. It carries a quarter of the MCAT and it's how ventilators, imaging, and hemodynamics actually work under the hood.",
+                "Mechanics, fluids, optics, electricity. It is tested in the MCAT's Chemical and Physical Foundations section, and it's how ventilators, imaging, and hemodynamics actually work under the hood.",
             },
             {
               name: "Biochemistry (1 semester)",
@@ -88,7 +88,7 @@ const data = {
             {
               name: "Psychology & Sociology",
               detail:
-                "Added to most lists because a full quarter of the MCAT tests behavioral science. It's the section people assume is easy and then lose points on.",
+                "Added to most lists because one of the MCAT's four sections tests behavioral science. It's the section people assume is easy and then lose points on.",
             },
             {
               name: "English / writing (1 year)",
@@ -104,12 +104,12 @@ const data = {
             {
               name: "The GPA arithmetic",
               detail:
-                "AMCAS computes two GPAs: cumulative and BCPM (bio/chem/physics/math). 2025 MD matriculants averaged 3.81 overall; applicants averaged 3.67. That 0.14 gap is where most of the rejection lives.",
+                "AMCAS computes two GPAs: cumulative and BCPM (bio/chem/physics/math). 2025 MD matriculants averaged 3.81 overall; applicants averaged 3.67. That 0.14 gap is a rough measure of how far the admitted group sits above the applicant pool.",
             },
             {
               name: "The 16.5% finding",
               detail:
-                "A College Board dataset across 102 institutions found only 16.5% of intended pre-meds graduated with the prerequisites complete. Attrition peaks in year one and drops sharply after organic.",
+                "A College Board dataset across 102 institutions found only 16.5% of intended pre-meds graduated with the prerequisites complete. The study followed 15,442 students across those schools.",
             },
             {
               name: "Organic Chemistry II",
@@ -124,7 +124,7 @@ const data = {
             {
               name: "The one-bad-semester problem",
               detail:
-                "There's no dropping your low grade. Because BCPM is computed from every science course you ever take, a single bad term can take two years of A's to dilute back out.",
+                "There's no dropping your low grade. AMCAS counts every attempt of every course in your GPAs, so a retake adds a second grade rather than erasing the first.",
             },
           ],
         },
@@ -135,12 +135,12 @@ const data = {
             {
               name: "Clinical hours",
               detail:
-                "Advisors converge on ~150 hours as a floor and 200–300+ as competitive, in roles with real patient contact — scribe, EMT, CNA, medical assistant — not passive observation.",
+                "Commercial advising sites commonly cite ~150 hours as a floor and 200–300+ as competitive, in roles with real patient contact — scribe, EMT, CNA, medical assistant — not passive observation.",
             },
             {
               name: "Shadowing",
               detail:
-                "Most applicants report 50–100 hours across a few specialties; DO schools weight it more heavily. It is also the cheapest possible way to discover you hate the job before you owe $250K.",
+                "Advising sites commonly cite 50–100 hours across a few specialties. It is also the cheapest possible way to discover you hate the job before you owe six figures.",
             },
             {
               name: "Research",
@@ -171,12 +171,12 @@ const data = {
             {
               name: "AMCAS / AACOMAS / TMDSAS",
               detail:
-                "Three separate application systems — MD, DO, and Texas. Applicants averaged about 19.5 schools in the 2025–26 cycle, and verification takes weeks, so a June submission beats a September one.",
+                "Three separate application systems — MD, DO, and Texas. Applicants averaged about 19.5 schools in the 2025–26 cycle, and verification takes weeks and many schools review on a rolling basis, so advisors generally recommend submitting early in the cycle.",
             },
             {
               name: "The acceptance math",
               detail:
-                "About 52,400 MD applicants for roughly 23,400 seats — near 45% get in somewhere; DO runs about 63%. Those are per-applicant rates. Any individual school's rate is usually under 5%.",
+                "About 52,400 MD applicants for roughly 23,400 seats — near 45% get in somewhere; DO runs about 63%. Those are per-applicant rates. Per-school odds are far lower, which is why applicants apply broadly.",
             },
             {
               name: "Secondaries, CASPer & the MMI",
@@ -191,7 +191,7 @@ const data = {
             {
               name: "MD-PhD / MSTP",
               detail:
-                "About 2,040 applicants versus 54,699 for MD — roughly thirty times fewer. Programs run 7–8 years and are typically fully funded, tuition plus stipend, in exchange for a research career.",
+                "About 2,040 applicants versus 54,699 for MD — about 27 times fewer. Programs run 7–8 years and are typically fully funded, tuition plus stipend, in exchange for a research career.",
             },
           ],
         },
@@ -204,7 +204,7 @@ const data = {
       badge: "MEDICAL STUDENT · MS1–MS4",
       color: C.crimson,
       intro:
-        "Four years, split roughly in half. MS1–MS2 is the preclinical firehose — anatomy, physiology, pathology, pharmacology — ending in Step 1, which has been pass/fail since 2022. MS3 is clerkships: you rotate through the core specialties and, in the process, pick the rest of your life. MS4 is sub-internships, away rotations, and the Match. The price is not abstract: the class of 2026 faces a median four-year cost of attendance near $298K at public schools and $408K at private ones, and about 70% of graduates leave with debt — median roughly $223K, up 5% year over year.",
+        "Four years, split roughly in half. MS1–MS2 is the preclinical firehose — anatomy, physiology, pathology, pharmacology — ending in Step 1, which has been pass/fail since 2022. MS3 is clerkships: you rotate through the core specialties and, in the process, pick the rest of your life. MS4 is sub-internships, away rotations, and the Match. The price is not abstract: the class of 2026 faces a median four-year cost of attendance near $298K at public schools and $408K at private ones, and about 70% of graduates leave with debt — median roughly $223K (sources put it between $215K and $223K). Federal borrowing for professional students is also capped from July 1, 2026 ($50,000 per year and $200,000 in total, per the AMA), below that cost of attendance, so private loans or other funding fill the gap.",
       sections: [
         {
           title: "Preclinical (MS1–MS2)",
@@ -243,7 +243,7 @@ const data = {
             {
               name: "OMM (DO students only)",
               detail:
-                "Osteopathic manipulative medicine adds roughly 200 hours of hands-on structural training MD students never do, plus a parallel board series (COMLEX) on top of USMLE.",
+                "Osteopathic manipulative medicine adds hands-on structural training that MD students typically do not do, plus a parallel board series (COMLEX) on top of USMLE.",
             },
             {
               name: "The volume problem",
@@ -259,7 +259,7 @@ const data = {
             {
               name: "Internal medicine",
               detail:
-                "Usually the longest core rotation and the analytic heart of the wards — differential diagnosis, workup, management. It's also the biggest specialty by far: 11,632 residency positions offered in 2026.",
+                "A large core rotation and the analytic heart of the wards — differential diagnosis, workup, management. It's also the biggest specialty by far: 11,632 residency positions offered in 2026.",
             },
             {
               name: "Surgery",
@@ -284,7 +284,7 @@ const data = {
             {
               name: "Family medicine",
               detail:
-                "Broadest scope in medicine, most continuity, and the widest access to residency: 5,491 positions offered in 2026, and consistently the largest share of unfilled ones.",
+                "Broadest scope in medicine, most continuity, and the widest access to residency: 5,491 positions offered in 2026.",
             },
             {
               name: "Neurology",
@@ -315,7 +315,7 @@ const data = {
             {
               name: "USMLE Step 2 CK — the new Step 1",
               detail:
-                "Now the main objective metric; over 80% of program directors said it would carry more weight after the Step 1 change. The catch is that it's taken during clerkships, when you have the least time.",
+                "Now the main objective metric; over 80% of program directors said it would carry more weight after the Step 1 change. The catch is that it is usually taken after the core clerkships, with little protected study time.",
             },
             {
               name: "COMLEX (DO students)",
@@ -340,12 +340,12 @@ const data = {
             {
               name: "The IMG picture",
               detail:
-                "In 2026 foreign-born IMGs needing visa sponsorship matched at 54.4% — a five-year low — while foreign-born IMGs not needing sponsorship hit a five-year high of 67.9%. Policy, not merit, moved that gap.",
+                "In 2026 foreign-born IMGs needing visa sponsorship matched at 54.4% — a five-year low — while foreign-born IMGs not needing sponsorship hit a five-year high of 67.9%. The gap between the two groups shifted sharply year over year.",
             },
             {
               name: "SOAP",
               detail:
-                "The Supplemental Offer and Acceptance Program: the four-day scramble that places unmatched applicants into unfilled positions. 2,851 positions ran through it in 2026.",
+                "The Supplemental Offer and Acceptance Program: the Match Week scramble that places unmatched applicants into unfilled positions. NRMP reports 2,581 positions were offered through it in 2026, up 330 from 2025.",
             },
           ],
         },
@@ -356,7 +356,7 @@ const data = {
             {
               name: "Anki",
               detail:
-                "Spaced-repetition flashcards, and the de facto operating system of medical school. Shared community decks are how most of a class actually learns the preclinical years.",
+                "Spaced-repetition flashcards, and for many students the core of their study routine. In one survey study, 87.8% believed Anki significantly contributed to their module success.",
             },
             {
               name: "UWorld & NBME practice",
@@ -366,7 +366,7 @@ const data = {
             {
               name: "Sketchy, Pathoma, Boards & Beyond",
               detail:
-                "A parallel third-party curriculum that most students buy on top of tuition. That this shadow syllabus exists at all is a quiet indictment of the official one.",
+                "A parallel third-party curriculum that many students buy on top of tuition. That this shadow syllabus exists at all is a quiet indictment of the official one.",
             },
             {
               name: "UpToDate",
@@ -376,7 +376,7 @@ const data = {
             {
               name: "Epic and the EHR",
               detail:
-                "You'll spend more career hours here than with any instrument. Physicians average roughly two hours of EHR and desk work per hour of direct patient care — the central grievance of modern practice.",
+                "You'll spend more career hours here than with any instrument. A 2016 time-motion study found roughly two hours of EHR and desk work per hour of direct patient care — the central grievance of modern practice.",
             },
             {
               name: "Point-of-care ultrasound (POCUS)",
@@ -396,7 +396,7 @@ const data = {
             {
               name: "Imaging & diagnostic AI",
               detail:
-                "Most mature in radiology and pathology; the FDA cleared over 950 AI-enabled devices in 2024 alone. It reads first and flags — a licensed human still signs, which is exactly where the moat is.",
+                "Most mature in radiology and pathology; the FDA's list of cleared AI-enabled devices passed roughly 950 by 2024 (a cumulative, vendor-reported count). It reads first and flags — a licensed human still signs, which is exactly where the moat is.",
             },
           ],
         },
@@ -409,7 +409,7 @@ const data = {
       badge: "RESIDENT PHYSICIAN · PGY-1",
       color: C.teal,
       intro:
-        "Graduation makes you a doctor. Residency makes you a physician who can practice independently. Three years for family medicine, internal medicine, or pediatrics; five for general surgery or radiology; seven for neurosurgery — with optional fellowship stacked on top. You're paid a stipend, not a salary: PGY-1 averaged $68,166 across 114,361 residents in the 2025 AAMC survey, for 60–80-hour weeks. This stage is also the system's true bottleneck. Medicare's cap on funded residency slots has been frozen since 1997, which is why medical schools can keep expanding while the physician supply can't.",
+        "Graduation makes you a doctor. Residency makes you a physician who can practice independently. Three years for family medicine, internal medicine, or pediatrics; five for general surgery or radiology; seven for neurosurgery — with optional fellowship stacked on top. You're paid a stipend, not a salary: PGY-1 averaged $68,166 across 114,361 residents in the 2025 AAMC survey, under an 80-hour weekly cap. AAMC argues this stage is the system's bottleneck: Medicare's cap on funded residency slots dates to 1997 while medical school enrollment has grown. Even so, 2,862 positions went unfilled on Match Day 2026.",
       sections: [
         {
           title: "Intern Year Onward",
@@ -418,7 +418,7 @@ const data = {
             {
               name: "PGY-1 (intern year)",
               detail:
-                "The hardest year of most physicians' lives. You hold a real license, carry real patients, and are simultaneously the least experienced person on the team by a wide margin.",
+                "The hardest year of most physicians' lives. You practice on a training license, carry real patients, and are simultaneously the least experienced person on the team by a wide margin.",
             },
             {
               name: "The 80-hour rule",
@@ -428,7 +428,7 @@ const data = {
             {
               name: "The stipend",
               detail:
-                "AAMC's 2025 survey: $68,166 at PGY-1, $73,301 at PGY-3, $94,215 by PGY-8. Nominal pay is rising while real wages slipped slightly — and on an hourly basis it's often near minimum wage.",
+                "AAMC's 2025 survey: $68,166 at PGY-1, $73,301 at PGY-3, $94,215 by PGY-8.",
             },
             {
               name: "Graduated autonomy",
@@ -459,12 +459,12 @@ const data = {
             {
               name: "3–4 years — emergency medicine",
               detail:
-                "Shift-based with no clinic tail, which is the appeal. Also the highest burnout rate of any specialty at roughly 62%, and one of the few fields AAMC models a possible surplus in.",
+                "Shift-based with no clinic tail, which is the appeal. It is also one of the few fields where AAMC models a possible surplus.",
             },
             {
-              name: "4 years — anesthesiology, psychiatry, OB/GYN, neurology, PM&R, pathology",
+              name: "4 years — anesthesiology, psychiatry, OB/GYN, neurology, pathology",
               detail:
-                "The middle tier by length. Anesthesiology has been among the fastest-growing in compensation recently; psychiatry among the fastest-growing in competitiveness.",
+                "The middle tier by length, spanning very different day-to-day work. PM&R is listed as 3 to 4 years depending on whether the preliminary year is counted.",
             },
             {
               name: "5 years — general surgery, radiology, urology, orthopedics",
@@ -474,12 +474,12 @@ const data = {
             {
               name: "7 years — neurosurgery",
               detail:
-                "The longest standard residency in medicine, and it commonly precedes a fellowship. Doximity data put average neurosurgeon pay near $749K — roughly $520K above pediatric endocrinology.",
+                "The longest standard residency in medicine. Doximity's 2026 data put average neurosurgeon pay near $829K, the highest of the specialties it reported.",
             },
             {
-              name: "Then fellowship: +1 to +3 years",
+              name: "Then fellowship: usually +1 to +3 years",
               detail:
-                "Cardiology, GI, heme/onc, critical care, and surgical subspecialties all sit behind a fellowship. Common finishing ages run 32–38 depending on the stack.",
+                "Cardiology, GI, heme/onc, critical care, and surgical subspecialties all sit behind a fellowship. Starting medical school at the average age of 24, the arithmetic gives about 28 at graduation and roughly 32 to 38 after residency and fellowship. That is arithmetic from the stage lengths, not a surveyed figure.",
             },
           ],
         },
@@ -495,7 +495,7 @@ const data = {
             {
               name: "USMLE Step 3",
               detail:
-                "Usually taken during intern year — the last USMLE, and the one required for full unrestricted licensure. Passing it is what converts a training license into a real one.",
+                "Usually taken during intern year — the last USMLE, and the one required for full unrestricted licensure, though states differ on when they want it passed.",
             },
             {
               name: "Board certification",
@@ -513,14 +513,14 @@ const data = {
                 "Prescribing controlled substances needs a DEA number; working at any hospital needs credentialing and privileges. Both are per-site, per-renewal paperwork nobody warns you about.",
             },
             {
-              name: "The GME cap — the real bottleneck",
+              name: "The GME cap, AAMC's central argument",
               detail:
-                "The Balanced Budget Act of 1997 froze Medicare-funded residency slots. Congress added 1,200 across 2021 and 2023 — the first increases in about 25 years. Pending legislation would add 14,000 over seven years.",
+                "The Balanced Budget Act of 1997 froze Medicare-funded residency slots. Congress added 1,200 across 2021 and 2023 — the first increases in about 25 years. AAMC is advocating legislation to add 14,000 over seven years.",
             },
             {
               name: "Why that cap matters to you",
               detail:
-                "AAMC projects a shortage of up to 86,000 physicians by 2036, including 20,200–40,400 in primary care. The shortage isn't a shortage of applicants; it's a shortage of funded training positions.",
+                "AAMC projects a shortage of 13,500 to 86,000 physicians by 2036 (an advocacy organization's projection), including 20,200–40,400 in primary care. AAMC attributes much of it to limited funded training positions, though 2,862 positions still went unfilled on Match Day 2026 and AAMC models possible surpluses in some specialties, including emergency medicine.",
             },
           ],
         },
@@ -551,12 +551,12 @@ const data = {
             {
               name: "The physician-scientist math",
               detail:
-                "About 91% of the physician-scientist workforce holds no PhD. Of MD-PhD graduates studied nationally, roughly 52% held full-time faculty appointments — and average MD-PhD training has stretched from ~6.7 to just over 8 years.",
+                "About 91% of the physician-scientist workforce holds no PhD. Of MD-PhD graduates studied nationally (2000 to 2005 cohort), roughly 52% held full-time faculty appointments — and average MD-PhD training has stretched from ~6.7 to just over 8 years.",
             },
             {
               name: "Dual degrees: MD/MPH, MD/MBA",
               detail:
-                "Usually one extra year, often taken between MS3 and MS4. They're credentials for the non-clinical exits — public health leadership, hospital administration, industry — not for the wards.",
+                "Commonly add about a year, depending on the school. They're credentials for the non-clinical exits — public health leadership, hospital administration, industry — not for the wards.",
             },
           ],
         },
@@ -570,7 +570,7 @@ const data = {
       color: C.navy,
       roles: ["Attending Physician", "Hospitalist", "Medical Director", "Section Chief", "Partner"],
       reality:
-        "The destination almost everyone pictures, and still where the large majority land. Once you're board-certified, employment is close to guaranteed — the constraint was never getting hired, it was getting through the door years earlier. The trade is real: median debt around $223K, 49-hour average weeks, and a burnout rate that's fallen four straight years but sits roughly ten points above pre-pandemic norms. Note that intraspecialty pay variation exceeds interspecialty variation — where and how you practice can matter more than what you practice.",
+        "The destination almost everyone pictures, and still where the large majority land. Once you're board-certified, employment is close to guaranteed — the constraint was never getting hired, it was getting through the door years earlier. The trade is real: median debt of roughly $215K to $223K among graduates who borrow, and a burnout rate that has declined each year since its pandemic peak but still sits roughly ten points above pre-pandemic levels. Physician-finance writers also argue that pay varies more within a specialty than between specialties (an observation, not a result of this research) — where and how you practice can matter more than what you practice.",
       ai: "Documentation is being automated fast; judgment, procedures, and legal accountability aren't. The license is the moat, and it's a strong one.",
       salary:
         "Average physician $386K (Medscape 2026) · primary care $298K · specialists $417K · orthopedics $611K · eight specialties now above $500K",
@@ -581,10 +581,10 @@ const data = {
       color: C.crimson,
       roles: ["Categorical Resident", "Fellow", "Attending Surgeon", "Division Chief"],
       reality:
-        "The highest ceiling and the steepest entry. Dermatology, integrated plastics, orthopedics, ENT, and neurosurgery fill at or near 100% every year, with matched applicants clustering above 250 on Step 2 CK and carrying the heaviest research output in the Match — and none of these fields expanded materially in 2026. Training runs 5–7 years plus fellowship, so you may not draw an attending's paycheck until 33–38. Procedural income is durable precisely because it's physical.",
+        "The highest ceiling and the steepest entry. Dermatology, integrated plastics, orthopedics, ENT, and neurosurgery are among the most competitive fields in the Match, with mean Step 2 CK scores for matched US MD seniors above 250 in dermatology, plastics, orthopedics, and ENT. Training runs 5–7 years plus fellowship, so by the arithmetic of the stage lengths you may be well into your 30s before an attending's paycheck. Procedural income is durable precisely because it's physical.",
       ai: "The lowest exposure in medicine. Nothing on the horizon operates. Preoperative planning and imaging get smarter; the hands stay yours.",
       salary:
-        "Orthopedics ~$611K · neurosurgery ~$749K (Doximity) · plastics and other surgical subspecialties commonly $500K+",
+        "Orthopedics ~$611K (Medscape 2026) · neurosurgery ~$829K (Doximity 2026) · Doximity counts 16 specialties above $500K, Medscape eight (different methods)",
     },
     {
       path: "Primary Care & Underserved",
@@ -592,9 +592,9 @@ const data = {
       color: C.teal,
       roles: ["Family Physician", "General Internist", "Pediatrician", "Community Health CMO"],
       reality:
-        "The widest door and the greatest need. Family medicine offered 5,491 positions in 2026 and internal medicine 11,632 — you can reach practice in three years, faster than any other route. AAMC projects a shortage of 20,200–40,400 primary care physicians by 2036. The honest cost: it pays the least of the clinical paths, burnout in family and internal medicine sits in the top tier, and rural or safety-net practice comes with real isolation. Loan repayment programs (NHSC, state equivalents) meaningfully change the math for service commitments.",
+        "The widest door and the greatest need. Family medicine offered 5,491 positions in 2026 and internal medicine 11,632 — you can reach practice in three years, faster than any other route. AAMC projects a shortage of 20,200–40,400 primary care physicians by 2036. The honest cost: it pays toward the low end of the clinical specialties, and rural or safety-net practice can come with real isolation. Loan repayment programs (NHSC, state equivalents) meaningfully change the math for service commitments.",
       ai: "Highest documentation burden means the biggest gains from ambient scribes — 70% of UCSF physicians already use them. Relief, not replacement.",
-      salary: "Family medicine ~$288K · pediatrics and general IM in the high-$200Ks · primary care average $298K (Medscape 2026)",
+      salary: "Family medicine ~$288K · primary care average $298K (Medscape 2026)",
     },
     {
       path: "Academic Medicine & Research",
@@ -602,10 +602,10 @@ const data = {
       color: C.violet,
       roles: ["Instructor", "Assistant Professor", "Physician-Scientist", "Division Chief", "Dean"],
       reality:
-        "The path for people who want to make the knowledge, not just apply it. MD-PhD/MSTP training is fully funded — tuition plus stipend — but runs 7–8 years before residency, and modeling in JCI Insight found the lifetime earnings gap against a straight MD is real and mostly understated. Roughly 52% of MD-PhD graduates end up in full-time faculty roles. The most underappreciated fact here: about 91% of the working physician-scientist workforce holds no PhD at all — research years and K awards during or after residency are a legitimate alternate route.",
+        "The path for people who want to make the knowledge, not just apply it. MD-PhD/MSTP training is fully funded — tuition plus stipend — but runs 7–8 years before residency. In one national cohort (2000 to 2005 graduates), roughly 52% held full-time faculty appointments, though some commercial sources say closer to 75%. The most underappreciated fact here: about 91% of the working physician-scientist workforce holds no PhD at all — research years and K awards during or after residency are a legitimate alternate route.",
       ai: "Computation is reshaping what's askable — imaging, genomics, trial design. The bottleneck is grant funding, and that's a political variable, not a technical one.",
       salary:
-        "Physician-scientist average ~$208K · academic pay runs below clinical for equivalent seniority; grants supplement rather than replace it",
+        "No verified average in this research · academic pay is generally described as below clinical pay for equivalent seniority (qualitative, unsourced)",
     },
     {
       path: "Pharma, Biotech & Medical Affairs",
@@ -613,10 +613,10 @@ const data = {
       color: C.slate,
       roles: ["Medical Science Liaison", "Medical Advisor", "Medical Director", "VP Medical Affairs", "CMO"],
       reality:
-        "The largest and best-paid non-clinical exit, and the one pre-meds know least about. Medical science liaison roles are field-based, often home-based with travel, and open relatively early; medical director is the standard physician entry point. Advancement is faster than in medicine — promotion cycles of 18–24 months are normal — and senior roles clear what most specialties never will. The catch: you leave patient care, you're subject to layoffs and pipeline risk in a way clinicians aren't, and going back gets harder each year you're out.",
+        "The largest and best-paid non-clinical exit, and the one pre-meds know least about. Medical science liaison roles are field-based and are commonly filled by PharmD and PhD holders as well as physicians, so they are not a physician-only track; medical director is the more typical physician entry point. Advancement can be faster than in clinical medicine (one non-clinical careers guide cites 18 to 24 months between promotions), and senior roles can pay more than most specialties. The catch: you leave patient care, you're subject to layoffs and pipeline risk in a way clinicians aren't, and going back gets harder each year you're out.",
       ai: "AI is deep in drug discovery and evidence synthesis, but the value here is regulatory judgment and physician-to-physician credibility. Low direct exposure.",
       salary:
-        "MSL median ~$210K (Glassdoor; GSK median postings ~$248K) · pharma medical director ~$232K average, $250–300K entry-level for physicians · senior roles $750K+ with equity",
+        "MSL average ~$210K (Glassdoor; GSK median postings ~$248K) · pharma medical director average ~$232K (ZipRecruiter); one careers guide cites $250K to $300K for entry-level physician medical directors · commercial and self-reported figures, low confidence",
     },
     {
       path: "Clinical Informatics & Health Tech",
@@ -627,7 +627,7 @@ const data = {
         "Board-certified since 2011 and open to physicians from any primary specialty — informatics layers onto your home field rather than replacing it. It's the most direct route to hospital executive roles (CMIO, CHIO) and the most credible physician profile at health-tech and AI companies. The gate just tightened: as of 2025, board eligibility requires a two-year ACGME-accredited fellowship, which is a genuine opportunity cost against attending income. Many physicians do the work informally as an EHR 'physician champion' without ever certifying.",
       ai: "This is the specialty that decides how AI enters a health system. The most direct exposure in medicine — as the person doing the deploying, not the one being displaced.",
       salary:
-        "Physician informaticist average ~$217K, top earners $300K+ · CMIO roles higher · informatics fellows ~$132K–$238K",
+        "Physician informaticist average ~$217K, top earners $300K+ (single secondary source; CMIO and fellowship pay not verified)",
     },
     {
       path: "Public Health, Policy & Government",
@@ -638,7 +638,7 @@ const data = {
         "Population-scale rather than patient-scale — outbreak investigation at CDC's Epidemic Intelligence Service, drug and device review at FDA, program leadership at NIH, or a state or county health department. Usually paired with an MPH and often a preventive-medicine residency. You trade a large amount of income for genuine reach, and the work is exposed to political and budget cycles in ways clinical practice isn't. Federal roles also carry pay ceilings that private practice does not.",
       ai: "Surveillance, forecasting, and signal detection are being transformed. The scarce skill is a physician who can interpret a model and defend it in front of a legislature.",
       salary:
-        "Public health / preventive medicine physicians commonly ~$150K–$250K · CDC medical officers reported up to ~$300K · well below clinical peers",
+        "No verified range in this research · pay varies by agency and grade and is generally described as below clinical peers (qualitative, unsourced)",
     },
     {
       path: "Consulting & Health Ventures",
@@ -646,10 +646,10 @@ const data = {
       color: C.rust,
       roles: ["MBB Associate", "Engagement Manager", "VP Strategy", "Startup CMO", "Partner"],
       reality:
-        "MBB firms actively recruit physicians into dedicated tracks, and clinical credibility is instant currency with hospital and pharma clients. Compensation starts near a specialist's and climbs fast on two-to-three-year promotion cycles. Most consultants leave within two to four years, and the MD-plus-MBB combination is one of the most portable profiles in healthcare — it feeds pharma CMO and VP Strategy roles directly. The founder route is real but genuinely high-variance; most digital-health startups don't work, and clinical skills atrophy while you find out.",
+        "MBB firms (McKinsey, Bain, BCG) hire physicians into healthcare practices, and clinical credibility carries weight with hospital and pharma clients. Reported starting pay sits well below the average specialist's and closer to a primary care physician's, and it rises with promotion. The MD-plus-consulting combination is a portable profile in healthcare, though this research did not document the exit routes. The founder route is real but genuinely high-variance; most digital-health startups don't work, and clinical skills atrophy while you find out.",
       ai: "Consulting output is exactly what generative models draft well. The durable part is the client relationship and the clinical judgment behind the recommendation.",
       salary:
-        "MBB associate median total ~$243K–$259K, rising with each promotion cycle · digital-health CMO highly variable, typically $250K–$400K plus equity",
+        "McKinsey associate median total pay ~$243K to $259K (Glassdoor, self-reported; snippets differ) · other firms and digital-health CMO roles not verified",
     },
   ],
 };
@@ -844,7 +844,7 @@ export default function MedicineRoadmap() {
                 Medicine
               </h1>
               <p style={{ margin: "0 0 16px", color: C.graphite, fontSize: 17, maxWidth: 460, lineHeight: 1.5 }}>
-                Eleven to fifteen years, and every one of them gated by a credential. Here's the honest map from
+                Eleven to fifteen years before fellowship, and every one of them gated by a credential. Here's the honest map from
                 first-year chemistry to attending — and the eight places it can actually end.
               </p>
               <Seam color={C.stitchUp} style={{ maxWidth: 300 }} />
@@ -1191,8 +1191,8 @@ export default function MedicineRoadmap() {
           }}
         >
           <span style={{ color: accent }}>▸</span>
-          Tap any item to expand it. Figures from AAMC, AACOM, NRMP, and the 2026 Medscape Physician Compensation
-          Report; US pathway only, and ranges vary widely by region, specialty, and setting.
+          Tap any item to expand it. Figures from AAMC, NRMP, Medscape and Doximity, mostly via secondary summaries (see medicine-premed-research.md for sources and caveats).
+          This covers the US pathway only, and ranges vary widely by region, specialty, and setting.
         </footer>
       </div>
     </div>

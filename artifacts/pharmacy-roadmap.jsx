@@ -36,15 +36,15 @@ const font = {
 /* the SIG readout — workforce stats set like directions on a Rx label */
 const sig = [
   { k: "PHARMACIST MEDIAN", v: "$140,910", tone: "up" },
-  { k: "JOB GROWTH ’24–34", v: "+5%", tone: "up" },
-  { k: "OPENINGS / YR", v: "~14,200", tone: "up" },
+  { k: "JOB GROWTH ’25–35", v: "+5%", tone: "up" },
+  { k: "OPENINGS / YR", v: "~12,500", tone: "up" },
   { k: "NAPLEX PASS ’25", v: "86.8%", tone: "up" },
-  { k: "MSL MEDIAN", v: "~$181K", tone: "up" },
-  { k: "HOSPITAL SHARE", v: ">30% ▲", tone: "up" },
-  { k: "RETAIL JOBS", v: "DECLINING", tone: "warn" },
-  { k: "BURNOUT RATE", v: "~78%", tone: "warn" },
+  { k: "MSL PAY (GLASSDOOR)", v: "~$181K", tone: "up" },
+  { k: "HOSPITAL JOBS ’25", v: "+3.0%", tone: "up" },
+  { k: "RETAIL JOBS ’25", v: "−4.8%", tone: "warn" },
+  { k: "HOSPITAL MEDIAN", v: "$157,290", tone: "up" },
   { k: "CALIFORNIA MEAN", v: "$162,340", tone: "up" },
-  { k: "TIME TO LICENSE", v: "6–8 YRS", tone: "up" },
+  { k: "GRADS WHO BORROW", v: "81.5%", tone: "warn" },
 ];
 
 /* a repeating dispensing-line pattern of capsules & tablets */
@@ -71,7 +71,7 @@ const data = {
       years: "ENTRY · YRS 1–8",
       color: C.amber,
       intro:
-        "Pharmacy doesn't follow the bachelor's-then-master's arc. You complete two to four years of pre-pharmacy prerequisites, then a four-year Doctor of Pharmacy (PharmD) — a professional doctorate that leaves you licensed and employable, with no separate bachelor's or master's gate. The counterintuitive part: after a decade of oversupply, applications have fallen so far that getting in is now the easiest it's been in a generation — which is exactly why choosing a strong program matters more than ever.",
+        "Pharmacy doesn't follow the bachelor's-then-master's arc. You complete pre-pharmacy prerequisites (how long that takes varies by school, and nearly half of applicants already hold a bachelor's degree), then a typically four-year Doctor of Pharmacy (PharmD), a professional doctorate that leaves you eligible for licensure, with no separate bachelor's or master's gate. The counterintuitive part: programs accept more than 80% of applicants, so getting in is rarely the hard part. The differences show up later, in licensure pass rates and attrition, which is why scrutinizing a program matters.",
       sections: [
         {
           title: "Getting In",
@@ -80,22 +80,22 @@ const data = {
             {
               name: "Pre-pharmacy prerequisites",
               detail:
-                "General & organic chemistry, biology, anatomy & physiology, microbiology, calculus, physics, and statistics — usually two years minimum, though many applicants finish a full bachelor's first. A grade of C or better is required; a cumulative GPA around 3.0+ is competitive.",
+                "Requirements are school-specific. One advising page lists four semesters of chemistry, calculus I, biology, microbiology, and anatomy & physiology; check each program for anything beyond that. Mercer, for example, requires a C or better in science-major courses and prefers a cumulative and science GPA of at least 3.0.",
             },
             {
               name: "The PCAT is gone",
               detail:
-                "The Pharmacy College Admission Test was retired in January 2024. No U.S. pharmacy school requires it anymore. Admission is now holistic — GPA, prerequisites, experience, letters, and an interview carry the weight a test score once did.",
+                "The Pharmacy College Admission Test was retired in January 2024. Admission now rests on GPA, prerequisites, work and extracurricular experience, and letters of recommendation.",
             },
             {
               name: "Pharmacy experience first",
               detail:
-                "Working as a pharmacy technician or intern is the single highest-value pre-pharmacy move. It confirms you actually like the work before the debt, and it's what strengthens an application most now that the PCAT is gone.",
+                "Half of accepted applicants had worked as pharmacy technicians (AACP). It also lets you confirm you like the work before taking on the debt, and programs such as Mercer weigh work experience.",
             },
             {
-              name: "The buyer's market",
+              name: "Open admission, uneven outcomes",
               detail:
-                "Applicant pools have shrunk sharply; enrollment is down ~15% since 2019, and many schools now have open or near-open acceptance. Easier entry is real — but weaker programs post lower licensure pass rates, so program quality is the thing to scrutinize.",
+                "Applications rose 6% from fall 2024 to fall 2025, and programs accept more than 80% of applicants (AACP). Total enrollment fell 4.7% in fall 2024, and attrition rose to 19.7% from 15.3%. Outcomes differ by school: Pitt's class of 2023 passed the NAPLEX at 91.5% against a 78.6% national figure Pitt cites, while one Nova Southeastern campus posted 68.6% for 2024 graduates.",
             },
           ],
         },
@@ -116,7 +116,7 @@ const data = {
             {
               name: "Pharmaceutics & Pharmacokinetics",
               detail:
-                "Dosage-form design, sterile and non-sterile compounding, and the math of how drugs move through the body — absorption, distribution, dosing. Quantitative and notoriously demanding.",
+                "Dosage-form design, compounding, and the math of how drugs move through the body: absorption, distribution, dosing. Research.com names advanced pharmacokinetics among the hard electives.",
             },
             {
               name: "Pharmacy Law & Ethics",
@@ -126,7 +126,7 @@ const data = {
             {
               name: "The first-semester wall",
               detail:
-                "18–19 lecture hours a week with one to three exams most weeks. The jump from undergrad is the shock students most often name as the single hardest part of the whole program.",
+                "One 2016 graduate described 19 lecture hours a week with one to three quizzes or exams most weeks, and called the jump from undergrad the hardest academic transition of their schooling. That is a single account; separately, AACP reports attrition rose to 19.7% from 15.3%.",
             },
           ],
         },
@@ -137,17 +137,17 @@ const data = {
             {
               name: "IPPE — Introductory rotations",
               detail:
-                "Early, part-time practice experiences in community and hospital settings woven through the first three years — often a recurring 'Wednesdays in practice' day alongside classwork.",
+                "Early practice experiences woven through the first years. Washington runs a 'Wednesdays in Practice' series from the start through fall of year three, plus two 3-week introductory rotations.",
             },
             {
               name: "APPE — Advanced rotations",
               detail:
-                "The entire final year: eight or more five-week rotations across acute care, ambulatory care, community, and elective specialties. Where classroom knowledge finally becomes practice.",
+                "Rotations after the classroom years. Washington runs eight advanced rotations over 48 weeks; Minnesota and Maryland describe six semesters of coursework followed by a year of rotations. Maryland reports more than 700 preceptors across community pharmacies, hospitals, nursing homes, government agencies, and pharmaceutical companies.",
             },
             {
               name: "Skills labs",
               detail:
-                "Filling and checking prescriptions, the 'top 200/300 drugs,' patient counseling, sterile compounding, and immunization certification — the hands-on craft, reinforced through every year.",
+                "Binghamton's skills lab covers evaluating and filling prescriptions, the top 300 drugs, and medication counseling; Colorado lists compounding of dosage forms. The hands-on craft, practiced alongside the classroom years.",
             },
           ],
         },
@@ -158,17 +158,17 @@ const data = {
             {
               name: "NAPLEX",
               detail:
-                "The national competency exam. First-time pass rates slid from ~82% (2017–19) to ~76% (2022–24) as weaker programs expanded, then rebounded to 86.8% in 2025. Program quality shows up plainly here.",
+                "The national competency exam. NABP's first-time pass rates for ACPE-accredited graduates were 87.0%, 88.2%, and 87.0% in 2017 to 2019, fell to 75.9% by 2024, then rose to 86.8% in 2025. NABP gives no reason for the change. School-level results vary widely.",
             },
             {
               name: "MPJE",
               detail:
-                "The Multistate Pharmacy Jurisprudence Exam — a separate law exam for each state you want to license in (~74% first-time pass). Practicing across state lines means sitting it again.",
+                "The Multistate Pharmacy Jurisprudence Exam, the pharmacy law exam. First-time pass rates ran 72.7% to 75.3% from 2022 to 2025 (NABP).",
             },
             {
               name: "The debt reality",
               detail:
-                "PharmD tuition runs roughly $30K–$50K per year, and most graduates leave with $100K–$200K+ in loans. Unlike a funded research PhD, this is professional-school debt you carry from day one.",
+                "PharmD tuition runs roughly $30K to $50K per year (Research.com), and 81.5% of 2026 graduating-survey respondents said they borrowed for the degree (AACP). No current average debt figure was found; one 2018 graduate account put typical debt above $100,000. Unlike a funded research PhD, this is professional-school debt.",
             },
           ],
         },
@@ -180,7 +180,7 @@ const data = {
       years: "PGY1 · PGY2 · YRS ~9–10",
       color: C.green,
       intro:
-        "Here's what's changed most. For retail, the PharmD alone still gets you hired. But the clinical, hospital, and industry jobs everyone now wants increasingly require postgraduate training the degree used to cover on its own. A one-year residency (PGY1), often a specialized second year (PGY2), an industry fellowship, or board certification has quietly become the real gate to the best-paid, most durable roles — and it's optional in name only.",
+        "Postgraduate training is common, but how far it is a job requirement is only partly documented. One PCOM faculty member says most hospitals require at least one year of residency while community and retail jobs generally do not, and Pitt reports 59% of its class of 2024 went on to a residency or fellowship. No posting-level data was found. The paths: a one-year residency (PGY1), often a specialized second year (PGY2), an industry fellowship, or board certification.",
       sections: [
         {
           title: "Residency",
@@ -189,22 +189,22 @@ const data = {
             {
               name: "PGY1 — the broad year",
               detail:
-                "A one-year hospital or health-system residency building broad clinical skills across a patient population. It has become effectively required for hospital and clinical pharmacist jobs.",
+                "A one-year residency building pharmacotherapy skills across a broad patient population. PCOM faculty say most hospitals require at least one year of residency training; that is one account, not posting data.",
             },
             {
               name: "PGY2 — the specialty year",
               detail:
-                "A second, specialized year: oncology, critical care, infectious diseases, cardiology, psychiatry, ambulatory care, and more. The route to specialist clinical roles and the highest clinical pay.",
+                "A second, more specialized year. PCOM faculty say some institutions require a PGY2 for specialist roles such as critical care or infectious diseases.",
             },
             {
               name: "The Match",
               detail:
-                "Residencies fill through the ASHP Match, and it's competitive — national PGY1 match rates run ~74–81%, so a meaningful share of applicants don't place on the first try and scramble in Phase II.",
+                "Residencies fill through the ASHP Match. In 2026, across Phases I and II combined, 3,787 of 4,486 active applicants matched (about 84%, my calculation from ASHP's totals) and 699 did not.",
             },
             {
-              name: "Paid, but modest",
+              name: "Paid, and it varies",
               detail:
-                "Residents earn a stipend (~$45K–$55K), well below staff-pharmacist pay — a one-to-two-year investment that trades near-term income for access to specialized roles.",
+                "Stipends differ by program: PGY1 is $57,600 at Inova (2026-27 estimate) and $79,344 at UC San Diego, against a $140,910 median for all pharmacists (BLS).",
             },
           ],
         },
@@ -215,17 +215,17 @@ const data = {
             {
               name: "What it opens",
               detail:
-                "A one-to-two-year postdoctoral program inside a pharma or biotech company — the on-ramp to industry roles in medical affairs, regulatory, drug safety, clinical development, and health economics.",
+                "Most fellowships run one to two years. Industry fellowships sit inside companies and cover functions such as drug information, pharmacoeconomics, outcomes research, and clinical research, with rotations across functional areas.",
             },
             {
               name: "Fellowship vs. residency",
               detail:
-                "A resident is a practitioner giving direct patient care; a fellow works in a corporate setting on drug development and access — indirect care at global scale. Different worlds, different day-to-day.",
+                "Residencies are typically about 80% clinical, while academic fellowships are research-focused (up to 80% research). Most fellowships, unlike most residencies, are not accredited.",
             },
             {
               name: "How they're structured",
               detail:
-                "Many top fellowships pair a university with a company (the Rutgers model is the best known), rotating fellows across functional areas. They're highly sought-after and application is competitive.",
+                "Academic fellowships usually follow a PGY1 and a PGY2, then add a year-long research fellowship. Industry roles often prioritize candidates with extra expertise or research experience, and an industry fellowship is one on-ramp.",
             },
           ],
         },
@@ -234,19 +234,19 @@ const data = {
           icon: "🎖️",
           items: [
             {
-              name: "The 14 BPS specialties",
+              name: "The 16 BPS specialties",
               detail:
-                "The Board of Pharmacy Specialties recognizes 14 areas — Pharmacotherapy (BCPS), Oncology (BCOP), Infectious Diseases (BCIDP), Psychiatric (BCPP), Ambulatory Care, Critical Care, and more.",
+                "The Board of Pharmacy Specialties recognized 16 specialties as of December 2025, with pharmacy informatics the newest. Examples include Pharmacotherapy (BCPS), Oncology (BCOP), Infectious Diseases (BCIDP), and Psychiatric (BCPP).",
             },
             {
-              name: "Increasingly expected",
+              name: "Sometimes required",
               detail:
-                "Employers now often require or prefer certification for clinical roles. Keep the post-nominals straight: BCPS is pharmacotherapy, BCPP is psychiatric — they're different credentials and easy to confuse.",
+                "PCOM faculty say some employers require certification for clinical roles. Keep the post-nominals straight: BCPS is pharmacotherapy, BCPP is psychiatric. They are different credentials and easy to confuse.",
             },
             {
               name: "How you qualify",
               detail:
-                "A license plus experience (completing a residency shortens the experience requirement), then a specialty exam. It certifies clinical competence by examination, and recertification is ongoing.",
+                "Required experience depends on whether you completed a residency: PCOM faculty say candidates need at least one year of residency or three or more years of practice, then a specialty exam.",
             },
           ],
         },
@@ -258,7 +258,7 @@ const data = {
       years: "PhD · PharmD/PhD · YRS ~9+",
       color: C.plum,
       intro:
-        "A separate track entirely. The PharmD trains you to practice; a PhD in the pharmaceutical sciences trains you to discover. Some students combine both in a PharmD/PhD; others enter a pharmaceutical-sciences PhD directly. Unlike the PharmD, this doctorate is typically funded through assistantships — and it points toward drug discovery, academia, and the research frontier rather than the pharmacy counter.",
+        "A separate track. The PharmD trains you to practice; a PhD in the pharmaceutical sciences trains you to do research. Some schools offer a PharmD-to-PhD pathway or dual degrees (Lipscomb with Vanderbilt, Colorado, Maryland), while others admit directly into a PhD. Unlike the PharmD, the programs checked fund their students: Michigan and Wisconsin both cover stipend and tuition.",
       sections: [
         {
           title: "The Doctoral Path",
@@ -267,12 +267,12 @@ const data = {
             {
               name: "Pharmaceutical Sciences PhD",
               detail:
-                "A research doctorate, usually 4–6 years and funded via assistantships, in medicinal chemistry, pharmacology/toxicology, pharmaceutics and drug delivery, or pharmacometrics.",
+                "Michigan reports an average of 5.3 years to defense, with stipend, benefits, and tuition covered. Year 1 is coursework, research rotations, and a pre-candidacy research exam; later years are research, a dissertation, and defense. Wisconsin funds students through fellowships and assistantships, expects a preliminary exam before year three, and requires 51 credits.",
             },
             {
               name: "PharmD/PhD dual pathway",
               detail:
-                "Combines clinical licensure with research training — the classic route to a pharmacist-scientist or tenure-track academic career, bridging the clinic and the bench.",
+                "Lipscomb runs a PharmD-to-PhD pathway into a pharmacological sciences PhD at Vanderbilt, and Colorado and Maryland advertise dual-degree options. Check each program's structure and funding.",
             },
             {
               name: "Research fellowship (distinct)",
@@ -288,22 +288,22 @@ const data = {
             {
               name: "Pharmacometrics & PK/PD modeling",
               detail:
-                "Quantitative modeling of drug behavior to guide dosing and trial design. One of the field's hottest and most computational subfields, and a bridge to data-science careers.",
+                "Michigan names pharmacokinetics and pharmacodynamics as a research area, and UConn lists pharmaceutical modeling (PK/PD, PBPK, quantitative systems pharmacology) as a career pathway.",
             },
             {
               name: "Drug delivery & formulation",
               detail:
-                "mRNA and lipid nanoparticles, biologics, long-acting injectables — the science behind how modern therapies actually reach their target. Reshaped dramatically by the COVID vaccine era.",
+                "Michigan names nucleic acid delivery and therapeutics, antibody-drug conjugates, nanotechnology, pulmonary delivery, controlled release, and delivery of biologics. Wisconsin adds formulation, drug targeting, and molecular imaging.",
             },
             {
-              name: "Pharmacogenomics & precision dosing",
+              name: "Drug discovery & drug action",
               detail:
-                "Tailoring drug therapy to a patient's genome. Moving out of the lab and into practice, and a frontier where research and clinical pharmacy genuinely overlap.",
+                "Wisconsin groups research into drug discovery (medicinal chemistry, natural products, chemical biology, rational drug design) and drug action (pharmacology, toxicology, disease mechanisms).",
             },
             {
-              name: "AI in drug discovery",
+              name: "Regulatory science",
               detail:
-                "Machine learning for candidate screening, toxicity prediction, and trial optimization — transforming the earliest, most expensive stages of the drug pipeline.",
+                "Michigan lists regulatory science among its research areas. The work centers on making sure medicines and devices are safe, effective, and meet quality standards before distribution.",
             },
           ],
         },
@@ -314,12 +314,12 @@ const data = {
             {
               name: "The faculty ladder",
               detail:
-                "Clinical-track faculty (PharmD plus residency) and research-track faculty (PhD) teach the next generation and generate the profession's evidence base — often splitting time across teaching, research, and practice.",
+                "PCOM faculty recommend a residency for faculty careers, and a residency director says a research-heavy faculty role needs an academic fellowship. AACP counted about 6,400 faculty in fall 2024, up 3.2%.",
             },
             {
-              name: "The pay catch",
+              name: "Pay and vacancies: not established",
               detail:
-                "As in nursing, a faculty shortage exists and research-track academic pay often trails clinical and industry roles. It's a calling more than a payday — and that gap is itself a bottleneck on training capacity.",
+                "No pharmacy faculty salary or vacancy figure was found. AACP's faculty profile and vacancy survey are the places to look before assuming a pay gap or a shortage.",
             },
           ],
         },
@@ -333,9 +333,9 @@ const data = {
       color: C.amber,
       roles: ["Staff Pharmacist", "Pharmacy Manager", "District Manager", "Independent Owner"],
       reality:
-        "The historic default — dispensing, counseling, immunizing, and running a store's pharmacy — and still the largest single employer of pharmacists. But it's a shrinking one: the two national chains have closed nearly 3,000 stores since 2018, Rite Aid liquidated, and retail employment has fallen to its lowest level since 2010. The PharmD alone still gets you hired here, but expect volume pressure (200–300 scripts a day), understaffing, and the field's highest burnout. Independent and supermarket pharmacies are the brighter corners.",
-      ai: "High on the dispensing side — robotic dispensing and auto-verification are built to cut headcount — but counseling, immunizing, and clinical services stay human.",
-      salary: "~$131,640 median (retail); overall pharmacist median $140,910",
+        "The largest setting, but a shrinking one. Retail pharmacist employment fell 4.8% in 2025 to about 162,000, the lowest since Drug Channels began tracking in 2010, and the two remaining national chains have closed nearly 3,000 locations since 2018. Rite Aid liquidated. PCOM faculty say community and retail jobs generally do not require a residency. Pay differs by employer type: BLS medians run from $132,940 at pharmacies and drug retailers to $151,370 at general merchandise retailers.",
+      ai: "Moderate to high on the dispensing side (editorial read). Robotic dispensing is established, and a Pharmacy Times commentary expects automation to reduce retail pharmacist jobs; counseling, immunizing, and clinical services remain human work.",
+      salary: "$132,940 median at pharmacies and drug retailers (BLS, May 2025); all pharmacists $140,910",
     },
     {
       path: "Hospital / Health-System",
@@ -343,9 +343,9 @@ const data = {
       color: C.blue,
       roles: ["Staff Pharmacist", "Clinical Pharmacist", "Pharmacy Supervisor", "Director of Pharmacy"],
       reality:
-        "The field's growth engine. Hospital employment surged from ~68,000 in 2010 to nearly 100,000 in 2024 — now more than 30% of all pharmacists — as health systems chase specialty-pharmacy revenue. The work spans order verification, sterile compounding, and increasingly clinical rounds with medical teams. The catch: these jobs now essentially require a PGY1 residency, so the 'employable on the PharmD alone' promise doesn't extend here.",
-      ai: "Moderate — AI handles order verification and inventory, freeing pharmacists toward clinical work; the clinical-judgment core is protected.",
-      salary: "~$120K–$145K depending on role, system, and region",
+        "The growth setting. Hospital employment rose from about 68,000 in 2010 to nearly 100,000 in 2024 and to about 102,000 in 2025 (+3.0%), as health systems pursue specialty-pharmacy revenue (Drug Channels, which notes its hospital counts likely understate hospital pharmacists). PCOM faculty say most hospitals require at least one year of residency; that is one account with no posting data behind it. At Pitt, 6% of the class of 2024 went straight into hospital or long-term-care practice.",
+      ai: "Moderate (editorial read). Pharmacy Times reports 87.3% of hospitals use basic analytics and up to 73% use verification tools allowing remote oversight and low-risk auto-approvals; clinical judgment is not automated.",
+      salary: "$157,290 median (BLS hospitals, May 2025); about $151K mean (Drug Channels)",
     },
     {
       path: "Clinical / Ambulatory Care",
@@ -353,9 +353,9 @@ const data = {
       color: C.green,
       roles: ["Clinical Pharmacist", "Ambulatory Care", "MTM Pharmacist", "BCPS / BCOP Specialist"],
       reality:
-        "The patient-facing clinical role — managing chronic disease (diabetes, anticoagulation, oncology) in clinics, running medication therapy management, and collaborating directly on drug regimens. Demand is rising as care shifts outpatient, but it's selective: nearly always requires a PGY1 (often PGY2) plus board certification. This is where the profession is trying to move — from dispensing toward direct care — and where the residency investment pays off.",
-      ai: "Low — the clinical judgment and patient relationship are the protected work; AI assists with data, not the decision.",
-      salary: "~$120K–$150K; higher with subspecialty certification",
+        "Patient-facing work managing chronic conditions such as diabetes, asthma, and heart disease in clinics, including medication therapy management. BLS has stated that demand is projected to increase for pharmacists in some settings, including hospitals and clinics (seen in an earlier excerpt; not rechecked on the current page). PCOM faculty say some employers require PGY1 or PGY2 training and some require board certification for clinical roles.",
+      ai: "Low (editorial read). Clinical judgment and the patient relationship are the protected work.",
+      salary: "$153,920 median for ambulatory healthcare services (BLS, May 2025; industry-level, not role-specific)",
     },
     {
       path: "Industry / Medical Affairs",
@@ -363,9 +363,9 @@ const data = {
       color: C.plum,
       roles: ["Medical Science Liaison", "Medical Affairs", "Drug Safety", "Clinical Development"],
       reality:
-        "The corporate wing — pharma and biotech roles in medical affairs, regulatory, drug safety, and clinical trials. The marquee job is the Medical Science Liaison, a scientific bridge to leading physicians (median ~$181K). These pay the best in the field but are competitive and usually gated by an industry fellowship or strong clinical experience; entry straight from the PharmD is rare and getting rarer.",
-      ai: "Low-to-moderate — relationship-building and scientific translation resist automation, though AI accelerates the research behind it.",
-      salary: "MSL ~$181K; other industry roles generally $130K+",
+        "Pharma and biotech roles in medical information, pharmacovigilance, research and development, clinical trials, regulatory affairs, and sales and marketing. Industry roles often prioritize candidates with extra expertise or research experience, and an industry fellowship is one on-ramp. The marquee job is the Medical Science Liaison (Glassdoor, as quoted by Sermo, puts the median near $181K; self-reported). No source was found on how often PharmD graduates enter industry directly.",
+      ai: "Low to moderate (editorial read). Relationship-building and scientific translation resist automation.",
+      salary: "MSL ~$181K (Glassdoor via Sermo, self-reported); industry pharmacists $130K+ (Pharmacy Times)",
     },
     {
       path: "Regulatory & Government",
@@ -373,9 +373,9 @@ const data = {
       color: "#3F6A7D",
       roles: ["Regulatory Affairs", "FDA Reviewer", "VA / PHS Pharmacist", "Policy Advisor"],
       reality:
-        "Using medication expertise to shepherd drugs through approval and to write and enforce the rules — at pharma companies or agencies like the FDA, VA, CMS, and Public Health Service. Specialized and stable; the narrower candidate pool means noticeably less competition than retail. Government roles trade lower base pay for strong benefits, pension, and predictable hours.",
-      ai: "Low — regulatory judgment and accountability sit with humans; AI is a drafting-and-review tool, not a substitute.",
-      salary: "~$110K–$160K; senior regulatory roles higher",
+        "The U.S. government employs pharmacists at the FDA, VA, Indian Health Service, CMS, Public Health Service, NIH, and the armed forces. Regulatory science centers on making sure medicines and devices are safe, effective, and meet quality standards before distribution. No source was found on how competitive these roles are or how government pay compares with other settings.",
+      ai: "Low (editorial read). Regulatory accountability sits with people.",
+      salary: "No role-specific source found; all pharmacists $140,910 median (BLS, May 2025)",
     },
     {
       path: "Managed Care / PBM",
@@ -383,9 +383,9 @@ const data = {
       color: "#3E8C86",
       roles: ["Managed Care Pharmacist", "Formulary Manager", "Prior-Auth Clinician", "Clinical Advisor"],
       reality:
-        "The insurance and pharmacy-benefit-manager side — formulary decisions, drug-utilization review, prior authorization, and specialty-pharmacy oversight. A business-and-strategy role for pharmacists who prefer systems to the counter, and one of the more remote-friendly paths. Growing with PBM consolidation, though the sector is under sustained regulatory and political scrutiny.",
-      ai: "Moderate — automates utilization review and prior-auth triage, shifting pharmacists toward oversight and complex cases.",
-      salary: "~$120K–$150K; frequently remote",
+        "The insurance and pharmacy-benefit-manager side: formulary management, coverage determination and prior authorization, drug-utilization review, clinical advisory work, and specialty pharmacy. No source on hiring trend, competitiveness, or remote share was found.",
+      ai: "Moderate (editorial read). Utilization review and prior-authorization triage are the most automatable parts.",
+      salary: "No role-specific source found; all pharmacists $140,910 median (BLS, May 2025)",
     },
     {
       path: "Nuclear / Specialty",
@@ -393,9 +393,9 @@ const data = {
       color: "#B5842B",
       roles: ["Nuclear Pharmacist", "Compounding Pharmacist", "Infusion Pharmacist", "Specialty-Drug"],
       reality:
-        "The niche, high-skill corners. Nuclear pharmacists prepare radiopharmaceuticals for imaging and cancer therapy — often on pre-dawn shifts at commercial radiopharmacies. Compounding and infusion pharmacists prepare sterile, patient-specific medications. Smaller candidate pools and specialized training (nuclear requires extra certification) mean less competition and solid, stable pay for those who want a technical, hands-on practice.",
-      ai: "Low — radioactive and sterile preparation is hands-on, safety-critical, and heavily regulated.",
-      salary: "Nuclear ~$134K–$154K; specialty varies",
+        "The niche corners. Nuclear pharmacists prepare and dispense radiopharmaceuticals for imaging and treatment at commercial radiopharmacies and hospitals with nuclear medicine, and nuclear pharmacy is a BPS-recognized specialty. Infusion pharmacists prepare sterile medications for patients who cannot take oral drugs, and compounding pharmacists prepare patient-specific products. No source on competitiveness was found.",
+      ai: "Low (editorial read). The work is hands-on and safety-critical.",
+      salary: "Nuclear ~$129K average, $99K to $147K range (Payscale, 18 profiles, Jan 2026)",
     },
     {
       path: "Pharmacy Informatics",
@@ -403,9 +403,9 @@ const data = {
       color: "#6E56C8",
       roles: ["Informatics Pharmacist", "Clinical Analyst", "Medication-Safety Officer", "CMIO track"],
       reality:
-        "The bridge between clinical pharmacy and health IT — configuring EHRs and e-prescribing, managing automated dispensing systems, and turning medication data into safer workflows. A natural, growing landing spot as automation and AI spread, and one of the few roles that's a net beneficiary of the same technology squeezing dispensing jobs: someone has to select, implement, and govern it.",
-      ai: "A beneficiary — the person who oversees the AI tools reshaping pharmacy, not the one they replace.",
-      salary: "~$120K–$150K+; strong upward trajectory",
+        "Work on electronic health records, e-prescribing, and automated dispensing cabinets to improve medication safety and efficiency. The Board of Pharmacy Specialties recognized pharmacy informatics as its 16th specialty in December 2025. The work involves selecting and governing the same automation that is changing dispensing, though no source measured demand for informatics roles.",
+      ai: "Low (editorial read). The role oversees these tools, but this is inference, not a measured trend.",
+      salary: "$149,262 median (Salary.com estimate, Nov 2026); middle range $143K to $158K",
     },
   ],
 };
@@ -534,7 +534,7 @@ export default function PharmacyRoadmap() {
         <p style={{ color: C.dim, fontSize: 16, maxWidth: 680, margin: 0, lineHeight: 1.55 }}>
           One professional doctorate, licensed on graduation — then a field quietly splitting in
           two: a shrinking retail counter and a growing clinical, industry, and research world that
-          increasingly asks for a residency. The full path, priced honestly, with an AI read on
+          often involves postgraduate training. The full path, priced honestly, with an AI read on
           every destination.
         </p>
       </header>
@@ -748,8 +748,8 @@ export default function PharmacyRoadmap() {
               </div>
               <p style={{ margin: 0, fontSize: 15.5, lineHeight: 1.62, color: C.ink, maxWidth: 760 }}>
                 Eight destinations from one PharmD — from the retail counter that's contracting to
-                the hospital, clinical, and industry roles absorbing the shift. Every card carries an
-                honest read on what it now takes to get there, and how exposed it is to automation.
+                the hospital, clinical, and industry roles absorbing the shift. Every card carries a
+                short read on what it takes to get there, plus an editorial AI-exposure line (a judgment, not a measurement).
               </p>
             </div>
 
@@ -862,8 +862,8 @@ export default function PharmacyRoadmap() {
             lineHeight: 1.6,
           }}
         >
-          TAP ANY ITEM OR CARD TO EXPAND · SOURCES: BLS OEWS MAY 2025 (RELEASED MAY 2026), DRUG
-          CHANNELS 2025, NABP NAPLEX/MPJE TABLES, ASHP MATCH, GLASSDOOR · COMPILED JUL 2026
+          TAP ANY ITEM OR CARD TO EXPAND · SOURCES: BLS OOH (MAY 2025 DATA), DRUG
+          CHANNELS 2026, NABP, AACP, ASHP MATCH 2026, GLASSDOOR VIA SERMO · VERIFIED NOV 2026 · AI EXPOSURE LINES ARE EDITORIAL
         </footer>
       </main>
     </div>
