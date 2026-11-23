@@ -33,16 +33,16 @@ const data = {
       years: "Years 1–4",
       color: "#146C5B",
       intro:
-        "The BBA / BSBA is one of the few genuinely bachelor's-employable degrees — the diploma opens the door, but internships, recruiting pipelines, and your school's employer relationships do most of the work. Roughly 120 credits split between a business core and general education.",
+        "The BBA / BSBA is a bachelor's-employable degree. Programs run about 120 credits, split between a business core and general education, and the internships and employer relationships your school offers shape where the degree leads.",
       sections: [
         {
           title: "Core Curriculum",
           icon: "📘",
           items: [
-            { name: "Financial & Managerial Accounting", detail: "The \"language of business\" and the course that filters the most students; you learn to read and build the three financial statements before anything else clicks." },
+            { name: "Financial & Managerial Accounting", detail: "The \"language of business\" and a course Michigan Ross students count among their hardest, because exams apply the concepts to unfamiliar scenarios; you learn to read and build the three financial statements before anything else clicks." },
             { name: "Micro & Macroeconomics", detail: "The supply-demand, incentives, and market logic that underpins every later finance and strategy course." },
             { name: "Business Statistics & Data Analytics", detail: "Probability, regression, and decision modeling — increasingly taught in Excel, R, or Python as the analytical backbone of modern management." },
-            { name: "Corporate Finance", detail: "Time value of money, NPV, and cost of capital; a genuine weeder for the math-averse and the gateway to finance careers." },
+            { name: "Corporate Finance", detail: "Time value of money, NPV, and cost of capital; the gateway to finance careers." },
             { name: "Principles of Marketing", detail: "Segmentation, positioning, the 4 Ps, and consumer behavior — the creative-analytical hinge of the degree." },
             { name: "Management & Organizational Behavior", detail: "How people, teams, and incentives actually work inside firms; the human counterweight to the quant core." },
             { name: "Operations & Management Science", detail: "Process design, quality, and optimization — how goods and services actually get produced and delivered." },
@@ -54,7 +54,7 @@ const data = {
           title: "Skills You'll Build",
           icon: "🧠",
           items: [
-            { name: "Financial modeling in Excel", detail: "Building and auditing spreadsheets is the single most portable hard skill a BBA leaves with; recruiters test it directly." },
+            { name: "Financial modeling in Excel", detail: "Building and auditing spreadsheets is a portable hard skill, and some schools (Emory, for one) require an Excel course before entry; on its own, though, Excel is no longer a differentiator." },
             { name: "Data-driven decision making", detail: "Turning messy data into a defensible recommendation — the core of analyst work across every function." },
             { name: "Structured problem-solving", detail: "Framing an ambiguous business problem, sizing it, and arguing a path forward under time pressure." },
             { name: "Presentation & persuasion", detail: "Building a clean deck and defending it to a room is what separates the analyst who gets promoted." },
@@ -65,22 +65,22 @@ const data = {
           title: "Tools & AI",
           icon: "🧰",
           items: [
-            { name: "Excel & Google Sheets", detail: "Still the universal tool of business; fluency here is non-negotiable and assumed on day one of any job." },
-            { name: "SQL, Tableau & Power BI", detail: "Querying databases and building dashboards has moved from \"nice to have\" to a baseline analytics expectation." },
+            { name: "Excel & Google Sheets", detail: "Still the universal tool of business; fluency is a baseline expectation, though no longer a differentiator on its own." },
+            { name: "SQL, Python & Tableau", detail: "Querying databases and building dashboards has moved from \"nice to have\" to a common expectation in tech-forward roles, and Python is becoming the new Excel in finance." },
             { name: "Decks (PowerPoint / Slides)", detail: "The primary output format of consulting and corporate work; structure and clarity matter more than students expect." },
-            { name: "Generative AI (ChatGPT, Copilot)", detail: "Now embedded in coursework and hiring — AI skills carry a ~56% pay premium, but the tasks AI does best are exactly the ones juniors used to learn on." },
-            { name: "ERP & CRM (SAP, Salesforce)", detail: "The enterprise platforms that run real companies; exposure via internships is worth more than any classroom demo." },
+            { name: "Generative AI (ChatGPT, Copilot)", detail: "Increasingly part of coursework and hiring. A PwC study (as reported by NDNU) puts the pay premium for AI skills at 56%, and HBR reports AI is dismantling the large junior classes firms used to train." },
+            { name: "ERP & CRM (SAP, Salesforce)", detail: "The enterprise platforms that run real companies; exposure usually comes through internships and electives." },
           ],
         },
         {
           title: "Beyond the Classroom",
           icon: "🎯",
           items: [
-            { name: "Internships (the real degree)", detail: "In a bachelor's-employable field the internship-to-return-offer pipeline matters more than GPA; the junior-summer internship is the primary hiring funnel." },
-            { name: "Case competitions", detail: "Team competitions judged by real firms — a direct audition for consulting and corporate recruiting." },
-            { name: "Professional & alumni networks", detail: "Business fraternities, clubs, and alumni drive access; who you know genuinely moves the needle here." },
-            { name: "Leadership in student orgs", detail: "Running a club or a student-managed fund signals the initiative recruiters screen for more than coursework does." },
-            { name: "The school's employer pipeline", detail: "Which firms recruit on your campus can matter as much as the degree — choose the program for its outcomes, not its brochure." },
+            { name: "Internships and return offers", detail: "In finance recruiting, applications for junior-summer internships open as early as sophomore fall, and summer programs convert to full-time offers at roughly 70-80% in strong markets. Recruiting calendars in other functions vary." },
+            { name: "Case competitions", detail: "Team competitions often judged by practitioners; practice for case-style interviews and a way to meet recruiters." },
+            { name: "Professional & alumni networks", detail: "Business fraternities, clubs, and alumni networks are a recognized route to referrals, especially in finance recruiting." },
+            { name: "Leadership in student orgs", detail: "Running a club or a student-managed fund shows initiative and gives you concrete experience to discuss in interviews." },
+            { name: "The school's employer pipeline", detail: "Which firms recruit on your campus shapes your early options; compare programs on placement outcomes, not the brochure." },
           ],
         },
       ],
@@ -91,17 +91,17 @@ const data = {
       years: "Years ~5–7",
       color: "#9C5A2B",
       intro:
-        "The MBA is the field's signature graduate degree — but rarely a straight-through step. Top full-time programs expect 2–5 years of work experience first; the Executive MBA wants 10+. Specialized master's fill the from-undergrad gap. Funding flips from the undergrad model: MBAs are largely self-funded, justified by post-degree compensation.",
+        "The MBA is the field's signature graduate degree — but rarely a straight-through step. Most MBA candidates are working professionals rather than straight-from-undergrad students, and the Executive MBA typically wants 10+ years of experience. Specialized master's fill the from-undergrad gap. Funding flips from the undergrad model: MBAs are largely self-funded, justified by post-degree compensation.",
       sections: [
         {
           title: "Program Types",
           icon: "🎓",
           items: [
-            { name: "Two-year full-time MBA", detail: "The immersive, recruiting-heavy flagship — best for career switchers, but it expects 2–5 years of prior work experience to get in." },
-            { name: "One-year accelerated MBA", detail: "Faster and cheaper for those who don't need a summer internship to pivot; less recruiting runway." },
+            { name: "Two-year full-time MBA", detail: "The immersive, recruiting-heavy flagship — best for career switchers; most candidates arrive with work experience, and requirements vary by school." },
+            { name: "One-year accelerated MBA", detail: "A compressed format that gets you back to work sooner, with less time for recruiting and pivoting." },
             { name: "Part-time / online MBA", detail: "Keep your job and income; 400+ AACSB schools now offer it online, some under $30k total." },
             { name: "Executive MBA (EMBA)", detail: "For senior leaders with 10+ years' experience; evaluates organizational scope over test scores, on a weekend/modular schedule." },
-            { name: "Specialized master's (MS)", detail: "MS in Analytics, Finance, or Management — built for younger candidates who lack the work experience an MBA demands." },
+            { name: "Specialized master's (MS)", detail: "MS in Analytics, Finance, or Management: shorter and narrower than an MBA. GMAC data reported by Forbes puts median MBA pay more than $25k above other business master's." },
             { name: "Dual degrees (MBA+JD/MD/MS)", detail: "For leaders at the intersection of business and a regulated or technical field; cross-functional credibility." },
           ],
         },
@@ -112,7 +112,7 @@ const data = {
             { name: "The case method", detail: "Learning strategy by dissecting real company decisions with cold-called classmates — the signature MBA pedagogy." },
             { name: "Corporate finance & valuation", detail: "DCFs, LBOs, and capital allocation at a depth well beyond the undergraduate course." },
             { name: "Competitive strategy", detail: "Frameworks for where to play and how to win, stress-tested against real cases and a capstone simulation." },
-            { name: "Advanced analytics & AI for decisions", detail: "Every top program now runs AI strategy, machine learning, and data-ethics electives as core, not optional." },
+            { name: "Advanced analytics & AI for decisions", detail: "Leading programs such as Tepper, MIT Sloan, and NYU Stern's Tech MBA are building AI and analytics into the curriculum, and AI strategy electives are common." },
             { name: "Leadership & negotiation", detail: "Structured practice in the influence, presence, and negotiation skills the classroom uniquely provides." },
             { name: "Experiential consulting projects", detail: "Live client engagements where cohorts solve a real company's problem for credit." },
           ],
@@ -121,20 +121,20 @@ const data = {
           title: "Funding & ROI",
           icon: "💵",
           items: [
-            { name: "Mostly self-funded", detail: "Unlike a funded PhD, the MBA is an investment you pay for: ~$60k on average, but $200k–$250k+ at top programs." },
-            { name: "The comp bump", detail: "Median post-MBA starting salary runs ~$125k (GMAC); MBA holders average ~$165k — the ROI is real but concentrated." },
-            { name: "Where ROI concentrates", detail: "Consulting, investment banking, private equity, and tech product management deliver the fastest payback; many other roles don't." },
-            { name: "Demand is healthy", detail: "90%+ of employers planned to hire MBAs in 2025 and applications rose 7% — but brand and recruiting access drive outcomes, not the format." },
+            { name: "Mostly self-funded", detail: "Unlike a funded PhD, the MBA is an investment you pay for: about $60k on average, and about $253k on average at top-ranked US programs." },
+            { name: "The comp bump", detail: "GMAC data reported by Forbes projects a 2025 median MBA salary of about $125k, roughly $50k above bachelor's holders; the payoff is concentrated in certain career paths." },
+            { name: "Where ROI concentrates", detail: "Forbes (citing GMAC) calls the MBA clearly worth it for consulting, investment banking, private equity, and tech product management; elsewhere the payoff depends on your goals." },
+            { name: "Demand is healthy", detail: "90%+ of employers planned to hire MBAs in 2025 and applications at leading schools rose 7%, but outcomes still vary by school and career path." },
           ],
         },
         {
           title: "Is It Worth It?",
           icon: "⚖️",
           items: [
-            { name: "It's the pipeline, not the classroom", detail: "Most of an MBA's value is the recruiting funnel, the pivot it enables, and the network — not the coursework itself." },
-            { name: "Opportunity cost is the hidden price", detail: "Two years of forgone salary often dwarfs tuition; the full-time MBA only pencils out if you need its recruiting access." },
+            { name: "The payoff depends on the destination", detail: "The clearest returns are in consulting, banking, private equity, and tech product management; elsewhere the value depends on whether the degree unlocks the specific role you want." },
+            { name: "Opportunity cost is the hidden price", detail: "Lost wages, fees, travel, and living costs add to tuition, so weigh the full cost, especially for a full-time program." },
             { name: "Misalignment is the real risk", detail: "A general MBA with no target pathway can underdeliver; the format should match the exact outcome you want." },
-            { name: "The cheap path can still work", detail: "An online or part-time MBA under $30k can beat a $250k program on ROI if you don't need elite recruiting." },
+            { name: "The cheap path can still work", detail: "Some online programs cost under $30k in total, which changes the math if you don't need elite recruiting access." },
           ],
         },
       ],
@@ -145,13 +145,13 @@ const data = {
       years: "Years ~8+",
       color: "#3A4DA0",
       intro:
-        "Two very different doctorates share the name. The PhD is a 4–7 year, fully-funded, theory-driven research apprenticeship aimed at tenure-track academia — and, unusually, it lands in one of the strongest, best-paid academic markets of any discipline. The DBA is a ~3-year, self-funded, part-time practitioner doctorate for working executives; it does not lead to the research-tenure track.",
+        "Two very different doctorates share the name. The PhD is a roughly 4–7 year, usually funded, theory-driven research apprenticeship aimed at tenure-track academia; faculty pay is high relative to most academic fields, though the market for new doctorates is described as competitive. The DBA is a ~3-year, self-funded, part-time practitioner doctorate for working executives; it is aimed at practice rather than the research-tenure track.",
       sections: [
         {
           title: "PhD vs DBA",
           icon: "🔀",
           items: [
-            { name: "PhD: the funded research track", detail: "4–7 years, full-time, with a stipend and tuition waiver in exchange for research and teaching; aims squarely at tenure-track academia." },
+            { name: "PhD: the funded research track", detail: "4–7 years, full-time; many programs pay a stipend and tuition waiver in exchange for research and teaching, and the degree aims at tenure-track academia." },
             { name: "DBA: the self-funded practitioner track", detail: "~3 years, part-time, cohort-based, for working executives; an applied dissertation on a real organizational problem." },
             { name: "Different destinations", detail: "The PhD produces professors and researchers; the DBA produces Professors of Practice, consultants, and C-suite leaders — and if it teaches, usually off the tenure track." },
             { name: "Pick a discipline, not just \"business\"", detail: "PhD students specialize early: accounting, finance, marketing, management/OB, operations, information systems, or strategy." },
@@ -161,10 +161,10 @@ const data = {
           title: "What the Work Looks Like",
           icon: "🔬",
           items: [
-            { name: "Theory + methods coursework", detail: "Two years of seminars plus heavy training in econometrics, causal inference, experimental design, or psychometrics depending on the field." },
+            { name: "Theory + methods coursework", detail: "Roughly two years of seminars built on a common research-methods core; finance PhDs add asset pricing, corporate finance, and econometrics." },
             { name: "Comprehensive exams", detail: "Qualifying exams that gate the transition from student to doctoral candidate." },
             { name: "The job-market paper", detail: "A single flagship paper you'll be hired on; publishing in top journals is the currency of the field." },
-            { name: "The long publication clock", detail: "Papers routinely take 3+ years from idea to a top-tier journal, through multiple rejections and revisions." },
+            { name: "The long publication clock", detail: "In accounting, papers take at least three years from start to a top-tier journal, through several revisions, and publications are the main tenure criterion." },
             { name: "Teaching duties", detail: "Most funded students teach or assist, building the record they'll be evaluated on at tenure time." },
           ],
         },
@@ -172,23 +172,23 @@ const data = {
           title: "Research Frontiers",
           icon: "🧭",
           items: [
-            { name: "AI & algorithmic management", detail: "How AI reshapes work, hiring, and the very structure of firms is among the hottest current research areas." },
-            { name: "Platform & gig-economy strategy", detail: "Two-sided markets, network effects, and how platforms compete and get regulated." },
-            { name: "Behavioral finance & operations", detail: "Applying psychology to markets and to operational decisions — a mature but still-active frontier." },
-            { name: "ESG, sustainability & governance", detail: "Stakeholder capitalism, climate risk, and what actually drives corporate behavior." },
-            { name: "Causal inference with big data", detail: "Squeezing credible cause-and-effect claims out of massive observational datasets." },
-            { name: "Entrepreneurship & innovation ecosystems", detail: "How new ventures, venture capital, and regional clusters actually create growth." },
+            { name: "AI & human-AI collaboration at work", detail: "Academy of Management scholars' 2026 predictions point to leaders adopting AI efficiencies, the risks of human-like AI at work, and human-AI collaboration." },
+            { name: "AI adoption: widespread but shallow", detail: "Recent NBER work finds AI use is widespread but shallow, and interviews with consultants study how well generative AI fits specific tasks." },
+            { name: "AI and entry-level employment", detail: "Stanford researchers report employment of 22 to 25 year olds fell 11% in high-AI-exposure occupations and rose 10% in low-exposure ones; they do not claim the data proves AI caused the gap." },
+            { name: "Performance management & leadership practice", detail: "AOM's 2026 predictions also name the growing role of line managers, performance evaluation practices, interpersonal ties, and a rethink of DEI models." },
+            { name: "Climate, ESG & private-markets finance", detail: "Finance research areas include climate and ESG finance, household finance, FinTech, and private credit, with behavioral finance still active." },
+            { name: "Machine learning meets econometrics", detail: "Hybrid machine-learning and econometric methods are growing in computational finance, alongside entrepreneurial finance and venture capital research." },
           ],
         },
         {
           title: "The Academic Job Market",
           icon: "🏛️",
           items: [
-            { name: "The anti-humanities story", detail: "Unlike most PhDs, business faculty are in chronic short supply — especially accounting and finance — so placement is strong." },
-            { name: "The pay is unusually high", detail: "Assistant professors of accounting average ~$149k for nine months, with the top quartile above $188k; finance is comparable." },
-            { name: "Faster-than-average growth", detail: "BLS projects ~7% growth for postsecondary business teachers over the decade." },
-            { name: "But the front door is narrow", detail: "Top PhD programs admit a tiny handful per specialization each year; getting in is far harder than getting placed." },
-            { name: "It's still a grind", detail: "A full research career with an up-or-out tenure clock and relentless publishing pressure — the strong market doesn't remove that." },
+            { name: "A competitive market for new PhDs", detail: "AACSB's 2026 faculty report says the new-doctorate market remains competitive and that many institutions face salary and hiring freezes. Older claims of a chronic faculty shortage date from 2014 to 2020." },
+            { name: "The pay is high relative to most fields", detail: "AACSB 2025-26 assistant professor averages run about $170k in accounting, $180k in finance, $147k in marketing, $142k in information systems, and $133k in management." },
+            { name: "BLS outlook: steady, not booming", detail: "BLS projects 6% growth for postsecondary business teachers from 2025 to 2035 (about 6,100 jobs), with a median of $99,080 across all institution types." },
+            { name: "Positions are limited", detail: "BLS expects a limited number of full-time tenure and non-tenure positions in all disciplines, and funded PhD programs admit a limited number of students." },
+            { name: "Publishing drives tenure", detail: "Publications are the main tenure criterion (reported for accounting), and the long publication clock applies whatever the market looks like." },
           ],
         },
       ],
@@ -201,8 +201,8 @@ const data = {
       color: "#3A4DA0",
       roles: ["Analyst / Associate", "Consultant", "Engagement Manager", "Principal", "Partner"],
       reality:
-        "The most-coveted MBA destination and among the highest-paying entries — Class of 2025 MBAs entering consulting had median starting comp around $205k. But it's a genuine tournament: MBB (McKinsey / Bain / BCG) admit rates run in the low single digits, the up-or-out pyramid is steep, and AI is now hollowing the analyst tier that used to be the on-ramp — firms increasingly expect AI proficiency and hire smaller junior classes.",
-      salary: "Undergrad analyst $90k–$110k · MBB post-MBA ~$205k total · Partner $1M+",
+        "Among the highest-paying MBA destinations: Class of 2025 MBAs who took any consulting job had a median starting salary plus bonus of $205,310 (Bloomberg). Entry to MBB (McKinsey / Bain / BCG) is roughly a 1% funnel. HBR reports AI is dismantling the large junior classes firms used to rely on, and MBB firms expect AI proficiency.",
+      salary: "Undergrad ~$100k base at many firms ($90k–$132k total) · MBB MBA hires $200k base (2027 starts) · Any-firm MBA median $205k start + bonus",
     },
     {
       path: "Corporate Finance & IB",
@@ -210,8 +210,8 @@ const data = {
       color: "#0E7A5F",
       roles: ["Financial Analyst", "IB Analyst", "Associate", "Finance Manager / VP", "CFO"],
       reality:
-        "Two lanes. Corporate finance (FP&A, treasury, corporate development) is broadly accessible and stable — financial managers earn a median ~$162k with fast 15% projected growth. Investment banking is the high-intensity, high-pay lane: first-year analysts clear ~$150k–$200k all-in but work brutal hours, with seats concentrated at a handful of banks. AI is already reshaping the junior's modeling-and-deck work, pushing value toward judgment and client relationships.",
-      salary: "Corp finance $70k–$160k+ · IB analyst $150k–$200k all-in · MD $500k–$1M+ (BLS undercounts front office)",
+        "Two lanes. Corporate finance (FP&A, treasury, corporate development) is broadly accessible: financial managers earn a median of about $167k (BLS, May 2025) with 10% projected growth for 2025 to 2035, and financial and investment analysts about $103k. Investment banking is the high-intensity, high-pay lane: first-year analysts earn about $170k–$195k all-in for 60 to 80 hour weeks. Columbia Business School flags financial analyst work as the main MBA-relevant area seeing early AI impact.",
+      salary: "Fin. analyst ~$103k · Fin. manager ~$167k median · IB analyst $170k–$195k all-in · IB associate $300k–$450k",
     },
     {
       path: "Marketing & Brand",
@@ -219,8 +219,8 @@ const data = {
       color: "#B23A6B",
       roles: ["Coordinator", "Brand / Product Mktg Manager", "Marketing Manager", "Director", "CMO"],
       reality:
-        "A broad, creative-meets-analytical path. Marketing managers earn a median ~$161k (BLS), though entry coordinator roles start far lower and pay is unusually variable by industry, company stage, and specialization — product marketing tends to top the range. AI fluency now adds a documented 15–22% premium as the function goes data- and automation-heavy; the roles most exposed are routine content and analytics tasks, not brand strategy.",
-      salary: "Coordinator $55k–$70k · Manager ~$161k median · CMO $250k+ · top 10% >$239k (BLS)",
+        "A broad, creative-meets-analytical path. Marketing managers earn a median of about $167k (BLS, May 2025; $161k in May 2024), with wide variation: in May 2024 the 10th percentile was below $81,900 and the 90th above $239,200. Market research analysts and marketing specialists earn about $79k. One industry blog puts product marketing managers at the top of the range.",
+      salary: "Mktg specialist / analyst ~$79k · Manager ~$167k median · top 10% >$239k (BLS)",
     },
     {
       path: "Operations & Supply Chain",
@@ -228,8 +228,8 @@ const data = {
       color: "#C2721C",
       roles: ["Operations Analyst", "Supply Chain Manager", "Ops / Plant Manager", "Director of Ops", "COO / CSCO"],
       reality:
-        "The backbone path — every company that makes or moves anything needs it, which makes it unusually recession-resistant. General and operations managers earn a median ~$103k (BLS), but specialized supply-chain leaders clear six figures easily and directors often top $225k in total comp; logistician roles are projected to grow 17% (nearly 5x average). It rewards analytics (SQL, SAP/Oracle, planning tools) and is being reshaped — not replaced — by AI-driven forecasting.",
-      salary: "Analyst $60k–$80k · Supply chain mgr $95k–$150k · Director $180k–$225k+ · CSCO $300k–$500k+",
+        "The backbone path: every company that makes or moves anything needs it. General and operations managers earn a median of about $106k (BLS, May 2025) and logisticians $82,320, with logistician employment projected to grow 18% from 2025 to 2035 (about 26,600 openings a year). A recruiter blog citing ASCM puts directors above $225k in total compensation.",
+      salary: "Logistician $82k median · Gen. & ops manager ~$106k · Director often $225k+ total comp · CSCO $300k–$500k+ (recruiter data)",
     },
     {
       path: "Product Management",
@@ -237,8 +237,8 @@ const data = {
       color: "#6D45C9",
       roles: ["Associate PM", "Product Manager", "Senior PM", "Group PM / Director", "VP / CPO"],
       reality:
-        "Where business training meets tech — PMs own the \"why and what\" of a product, sitting between engineering, design, and the business. Total comp at established tech firms runs ~$150k–$250k+, with senior and principal roles well past $300k, but it's fiercely competitive and usually rewards a technical or analytical adjacency; breaking in cold from a generalist BBA is hard. Ironically it's also a role AI is expanding — \"AI product manager\" is a fast-growing hybrid title.",
-      salary: "APM $110k–$140k · PM total comp $150k–$250k+ · Principal/Director $300k+ (big tech)",
+        "Where business training meets tech — PMs own the \"why and what\" of a product, sitting between engineering, design, and the business. Pay spreads very widely: Payscale's all-employer figure for entry-level associate PMs is a $77k average base, while Meta (one high-paying employer) averages about $174k total at the entry level and about $612k at L6 (Levels.fyi). A sponsored article names \"AI product manager\" as an emerging hybrid role.",
+      salary: "Entry APM avg base $77k (Payscale, all employers) · Meta total comp $174k (L3) to $612k (L6), one high-paying employer",
     },
     {
       path: "Human Resources & People Ops",
@@ -246,8 +246,8 @@ const data = {
       color: "#2A7DA3",
       roles: ["HR Generalist", "HR Business Partner", "HR Manager", "Director of People", "CHRO"],
       reality:
-        "Often underestimated on pay — HR managers earn a median ~$140k (BLS), rising to ~$164k in tech and professional services, with the top decile above $239k. Entry generalist roles start modestly, and advancement rewards specialization (comp & benefits, talent, org development) and a strategic, data-literate approach. It's among the more automation-resistant business functions, because the core work is judgment, negotiation, and human relationships.",
-      salary: "Generalist $55k–$70k · HR manager ~$140k median · CHRO $250k+ · top 10% >$239k (BLS)",
+        "Often underestimated on pay: HR managers earn a median of about $149k (BLS, May 2025; $140k in May 2024), and in May 2024 the top-paying industry was professional, scientific and technical services at about $164k. In May 2024 the 10th percentile was below $83,790 and the 90th above $239,200. HR specialists earn about $76k, Payscale reports entry-level \"HR manager\" titles averaging about $59k in total compensation, and BLS projects 5% growth from 2024 to 2034.",
+      salary: "HR specialist ~$76k · HR manager ~$149k median · top 10% >$239k (BLS)",
     },
     {
       path: "General Management & C-Suite",
@@ -255,8 +255,8 @@ const data = {
       color: "#172A46",
       roles: ["Operations Manager", "General Manager", "VP / GM", "COO / President", "CEO"],
       reality:
-        "The classic destination the whole degree points toward — running a unit, a region, or a company. General and operations managers earn a median ~$103k, while chief executives sit at a median ~$206k (BLS) — but that figure badly undercounts the ceiling, since public-company CEO packages run into the millions once equity is counted. There's no straight line here: it's built over 15–25 years through P&L results, and an MBA is common but not required.",
-      salary: "GM $100k–$180k · Chief exec ~$206k median (BLS) · public-company CEO $1M–$20M+",
+        "The classic destination the whole degree points toward: running a unit, a region, or a company. General and operations managers earn a median of about $106k and chief executives about $214k (BLS, May 2025), but those figures cover employers of every size; S&P 500 CEOs had median pay of $17.7 million in 2025 (AP/Equilar). Forbes notes chief executives at large corporations often hold MBAs, but there is no single route.",
+      salary: "Gen. & ops manager ~$106k · Chief exec ~$214k median (BLS) · S&P 500 CEO median $17.7M (2025)",
     },
     {
       path: "Entrepreneurship",
@@ -264,8 +264,8 @@ const data = {
       color: "#C2410C",
       roles: ["Founder", "Co-Founder / CEO", "Small-Business Owner", "Franchisee", "Serial Entrepreneur"],
       reality:
-        "The highest-variance path by far — no salary floor, no ceiling, and roughly 90% of startups ultimately fail. Early founder pay is often below what the same person could earn employed, and the real return (if it comes) is equity years later. What's changed: AI is sharply lowering the cost of building and testing, letting tiny teams do what once took specialists. Business training helps most with the unglamorous parts — unit economics, cash flow, and hiring.",
-      salary: "Highly variable · often <$50k early (or $0) · return is equity-driven, not salary",
+        "The highest-variance path: no salary floor and no ceiling. BLS tracked private-sector establishments opened in 2013: 79.6% were still open after one year, 50.6% after five, and 34.7% after ten (these count establishments, not just firms). The real return, if it comes, is equity years later. One sponsored article argues AI is lowering the barrier to starting a company.",
+      salary: "No reliable median · pay is irregular early on · return is equity-driven, not salary",
     },
   ],
 };
@@ -563,7 +563,7 @@ export default function BusinessAdministrationRoadmap() {
 
         <footer className="ba-footer">
           Tap any item or card to expand · Figures are U.S., 2026<br />
-          Sources: BLS OEWS (May 2024 & May 2025), GMAC, AACSB, Bloomberg, HBR & industry compensation data
+          Sources: BLS OEWS & OOH (May 2024 & May 2025), GMAC via Forbes, AACSB 2025-26, Bloomberg, HBR, AP/Equilar, Levels.fyi, Payscale<br />Full citations: research/business-administration-research.md
         </footer>
       </div>
     </div>

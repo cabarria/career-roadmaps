@@ -27,30 +27,30 @@ const PHASES = [
     years: "Years 1–4",
     accent: "#33477A", // manuscript indigo
     intro:
-      "The English major is built on close reading — the disciplined, attentive interpretation of texts — plus a great deal of writing. Expect team-taught surveys tracing literature from the medieval period to the present, a required methods gateway, distribution across historical periods and genres, and (for the doctoral-bound) a foreign language. It ends in a capstone seminar and a long research paper.",
+      "The English major is built on close reading — the disciplined, attentive interpretation of texts — plus a great deal of writing. Expect team-taught surveys tracing literature from the medieval period to the present, a required methods gateway, distribution across historical periods and genres, and (for the doctoral-bound) a foreign language. Requirements differ by school, but many programs end in a capstone or senior seminar.",
     sections: [
       {
         title: "Core Curriculum",
         mark: "§",
         items: [
-          { name: "Methods gateway", detail: "A required entry course — 'Approaches to Literary Study,' 'Critical Practice' — that drills close reading and the conventions of critical writing. Take it early; later seminars assume it." },
+          { name: "Methods gateway", detail: "A required entry course ('Approaches to Literary Study' at Columbia, 'Critical Practice' at UW) that drills close reading and the conventions of critical writing. Columbia urges taking it in the first or second year, though it is not a prerequisite for most courses." },
           { name: "Historical survey sequence", detail: "Team-taught surveys mapping British, American, and Anglophone literature from the Middle Ages to the present, giving you the landscape before you specialize." },
-          { name: "Period distribution", detail: "Coverage across eras is usually mandatory. A pre-1700 requirement typically forces at least one Chaucer, Milton, or Shakespeare course — the ones students brace for." },
-          { name: "Critical theory", detail: "Formalism, structuralism, psychoanalysis, Marxist, postcolonial, feminist, queer, and critical-race approaches — the interpretive lenses that define graduate-level study, and the course many find hardest." },
-          { name: "Genre courses (poetry, narrative, drama)", detail: "Focused study of how form makes meaning. Poetry courses in particular teach scansion and meter — the mechanical, technical side most students underestimate." },
-          { name: "Foreign language requirement", detail: "Most PhD programs require reading knowledge of at least one language (often French, German, or Latin). If a doctorate is possible, start the sequence as a freshman." },
-          { name: "Senior capstone / thesis", detail: "A final research seminar producing a substantial essay — your first sustained scholarship and a key writing sample for graduate or job applications." },
+          { name: "Period distribution", detail: "Coverage across eras is usually mandatory, but the cutoffs differ. Columbia requires two courses on literature before 1700 (at most one on Shakespeare), NYU asks for pre-1640, 1640 to 1900, and post-1900 courses, and USC splits at 1800." },
+          { name: "Critical theory", detail: "Required in some form at NYU (Critical Theory), UW, and USC (lens courses on race, gender, and sexuality, and on genre and media): the interpretive frameworks that define graduate-level study." },
+          { name: "Genre courses (poetry, narrative)", detail: "Focused study of how form makes meaning. NYU's literature track requires a Genre course, and Stanford's core covers poetry, narrative, and methodology." },
+          { name: "Foreign language requirement", detail: "Cornell's guide says most PhD programs require reading knowledge of at least one foreign language, usually French or German, sometimes two or more, and some require Latin. If a doctorate is possible, consider starting the sequence early." },
+          { name: "Senior capstone / thesis", detail: "UW, NYU, and USC end the major with a capstone or senior seminar. Expect a substantial essay: your first sustained scholarship." },
         ],
       },
       {
         title: "Skills You'll Build",
         mark: "✎",
         items: [
-          { name: "Close reading", detail: "Extracting argument, tone, and structure from a text word by word. The discipline's signature method — and the one that transfers most directly to law, editing, and analysis." },
+          { name: "Close reading", detail: "Extracting argument, tone, and structure from a text word by word. The discipline's signature method. Kentucky alumni quoted by the department say it carried over to the LSAT and to law school." },
           { name: "Argument-driven writing", detail: "Building and defending an interpretive thesis with textual evidence, repeated across dozens of papers until it becomes reflex." },
-          { name: "Research & citation", detail: "Finding, weighing, and synthesizing scholarly sources; mastering MLA (and later Chicago) citation and the ethics of attribution." },
-          { name: "Historical & cultural analysis", detail: "Situating a text in its moment — the politics, print culture, and intellectual currents that shaped it." },
-          { name: "Rhetoric & persuasion", detail: "Understanding how language moves an audience. Increasingly its own track (rhetoric & composition), which holds the strongest academic job market in the field." },
+          { name: "Research & citation", detail: "Finding, weighing, and synthesizing print and digital sources, and crediting them properly (a listed learning outcome at UMD)." },
+          { name: "Historical & cultural analysis", detail: "Situating a text in its time and tradition, another listed learning outcome at UMD." },
+          { name: "Rhetoric & persuasion", detail: "Understanding how language moves an audience. UMD offers a language, writing, and rhetoric track, and at Ohio State 77% of Writing, Rhetoric, and Literacy PhDs reached tenure-track jobs in 2018-22, against 17% of literature PhDs." },
           { name: "Editing & revision", detail: "Line-editing your own and others' prose — the core competency behind every editorial, publishing, and content career." },
         ],
       },
@@ -58,21 +58,21 @@ const PHASES = [
         title: "Tools & AI",
         mark: "⌨",
         items: [
-          { name: "Citation managers & databases", detail: "Zotero, EndNote, JSTOR, the MLA International Bibliography, and EEBO are the day-to-day research infrastructure of the major." },
-          { name: "Digital humanities, introduced", detail: "Text-analysis tools (Voyant, Python/NLTK) let you study patterns across thousands of texts at once — a growing niche pairing literary training with data skills." },
-          { name: "Generative AI, honestly", detail: "AI can draft and summarize, but departments treat unattributed AI writing as plagiarism. The newly valued skill is editing and fact-checking AI output, not generating from it." },
-          { name: "The detection arms race", detail: "AI detectors are unreliable and produce false positives. Expect courses to shift toward in-class writing, oral defense, and process-based grading." },
+          { name: "Scholarly databases", detail: "JSTOR, Project MUSE, the MLA International Bibliography, and ABELL are the core databases named in a major university library's English research guide." },
+          { name: "Digital humanities, introduced", detail: "Library guides list digital humanities journals (DHQ, Journal of Digital Humanities, Digital Studies), and Stanford offers a data-science track within the English major." },
+          { name: "Generative AI, honestly", detail: "Policies vary by course and instructor. The University of Minnesota's teaching guidance recommends syllabus statements on ethical AI use and grading that rewards originality and analysis. Practitioners in technical writing report that reviewing and correcting AI drafts is becoming the core task." },
+          { name: "The detection arms race", detail: "The University of Minnesota says detector scores are far from conclusive, can wrongly accuse students, and are not recommended. It suggests drafts, outlines, and in-class writing submitted with final work, and a conversation with the student." },
         ],
       },
       {
         title: "Beyond the Classroom",
         mark: "❡",
         items: [
-          { name: "Literary magazines & journals", detail: "Editing the campus lit mag or an undergraduate journal is the single best portfolio-builder for publishing and editorial careers." },
-          { name: "Undergraduate research & conferences", detail: "Honors theses and undergraduate literature conferences signal seriousness to PhD admissions committees." },
-          { name: "Publishing & editorial internships", detail: "Summer internships at presses, magazines, or literary agencies are how most publishing careers actually begin. The industry hires on experience, not GPA." },
-          { name: "Writing center tutoring", detail: "Tutoring builds teaching credentials and pairs naturally with the rhetoric-and-composition track." },
-          { name: "Double majors & minors", detail: "English pairs powerfully with a second field — CS, economics, a science — widening options far past the 'English major' stereotype." },
+          { name: "Literary magazines & journals", detail: "Cornell notes that many majors write for campus literary magazines. It is a natural way to build editing experience and writing samples for publishing and editorial careers." },
+          { name: "Undergraduate research & conferences", detail: "UMD's honors program is built around a sustained research or creative project." },
+          { name: "Publishing & editorial internships", detail: "UMD allows up to six credits of internship (ENGL 388) toward the major, and BLS says experience from internships and school newspapers helps writers and authors. Summer internships at presses and magazines are worth seeking." },
+          { name: "Study abroad", detail: "USC majors can study Anglophone literature abroad, for example at Queen Mary University of London." },
+          { name: "Double majors & minors", detail: "USC notes that many English majors double major, Stanford offers a data-science track, and UMD offers an English and Secondary Education double major (125 credits) that leads to a grades 7 to 12 teaching certificate." },
         ],
       },
     ],
@@ -83,26 +83,26 @@ const PHASES = [
     years: "Years ~5–7",
     accent: "#8C2F27", // oxblood / editorial red
     intro:
-      "There is no single English master's. An MA in literature bridges to the PhD (or credentials teaching and publishing); an MFA is a terminal studio degree for producing a book; and rhetoric/composition and professional-writing MAs feed directly into stable jobs. Funding varies enormously — and paying full price for a standalone literature MA is often a poor bet.",
+      "There is no single English master's. An MA in literature is often a bridge to the PhD; an MFA is a terminal, craft-focused degree built on workshops and a creative thesis; and master's programs in writing add editing, publishing, and pedagogy. No outcome or earnings data was found for standalone master's degrees, so weigh the cost carefully. Funding varies enormously.",
     sections: [
       {
         title: "Types of Master's",
         mark: "§",
         items: [
-          { name: "MA in Literature", detail: "Coursework in literary history and theory plus a thesis. A bridge to the PhD or a credential for community-college and secondary teaching — and usually the stronger choice for eventual doctoral admission." },
-          { name: "MFA in Creative Writing", detail: "A terminal studio degree built on workshops and a book-length thesis (a novel, story collection, or poetry manuscript). Qualifies you to teach creative writing; the best programs are fully funded." },
-          { name: "MA in Rhetoric & Composition", detail: "Trains you to teach writing and design writing programs. Quietly the most employable English track, with by far the strongest tenure-track placement." },
-          { name: "MA in Professional/Technical Writing", detail: "A career-oriented degree in documentation, content, and UX writing — the most direct route from English into a well-paid industry role." },
-          { name: "Publishing & Editing MA", detail: "Focused programs (and 4+1 BA/MA options) in the business of books and editorial practice. Valuable, but rarely necessary if you already have internship experience." },
+          { name: "MA in Literature", detail: "Coursework in literary analysis, theory, and linguistics. Often used as a bridge to the PhD, and BLS says a master's can be enough for some community-college teaching jobs. Secondary teaching needs a bachelor's plus a state license, not a master's." },
+          { name: "MFA in Creative Writing", detail: "A terminal, craft-focused degree built on workshops and a creative thesis. Funded examples: Michigan (full tuition waiver, $23,000 stipend), UT Austin's Michener Center ($29,500 fellowship plus tuition), and Arizona (three years of funding through a teaching assistantship, about $22,500 in 2025-26)." },
+          { name: "MA in Rhetoric & Composition", detail: "Trains you to teach writing. The strong placement figures found belong to the PhD track at one program (Ohio State: 77% of Writing, Rhetoric, and Literacy PhDs reached tenure-track jobs in 2018-22). No master's-level outcome data was found." },
+          { name: "MA in Writing & Editing", detail: "Master's programs in writing often add editing, publishing, and pedagogy electives. BLS says technical writers may benefit from a background in engineering or science. No outcome data for these degrees was found." },
+          { name: "Publishing & Editing MA", detail: "USC offers a progressive degree in Literary Editing and Publishing that earns a BA and MA in five years. No evidence was found on how much the degree adds beyond internship experience." },
         ],
       },
       {
         title: "Advanced Skills",
         mark: "✎",
         items: [
-          { name: "Workshop critique (MFA)", detail: "Giving and receiving rigorous feedback on drafts in a room of peers — the core pedagogy of the MFA, and a skill that transfers to any editorial role." },
-          { name: "Archival & scholarly method", detail: "Working with manuscripts, special collections, and scholarly editions to produce publishable literary criticism." },
-          { name: "Pedagogy & composition theory", detail: "How writing is learned and taught — the foundation of the rhet/comp track and a genuinely marketable teaching credential." },
+          { name: "Workshop critique (MFA)", detail: "Giving and receiving feedback on drafts in a room of peers: the workshop is the core of the MFA." },
+          { name: "Literary analysis & theory", detail: "Coursework in literary analysis and theory is the core of the literature MA." },
+          { name: "Pedagogy & composition theory", detail: "How writing is learned and taught: pedagogy electives appear in master's programs in writing." },
           { name: "Specialization", detail: "Committing to a period, genre, or theoretical approach that will anchor a PhD application or a dissertation." },
         ],
       },
@@ -110,19 +110,19 @@ const PHASES = [
         title: "Funding Realities",
         mark: "¤",
         items: [
-          { name: "Funded vs. self-funded", detail: "Funded PhD-track MAs and top MFAs pay a stipend for teaching. Many terminal MAs and low-residency MFAs are self-funded and can mean real debt for modest earning gains." },
-          { name: "The MFA funding gap", detail: "Fully funded MFAs (Iowa, Michigan, UT-Austin, and the like) are extraordinarily competitive. Unfunded programs cost tens of thousands with no salary attached to the degree." },
-          { name: "Terminal MA caution", detail: "A standalone literature MA rarely raises earnings on its own. Pursue it funded, as a PhD bridge, or paired with a concrete career target — not by default." },
-          { name: "Assistantships", detail: "Teaching and writing-center assistantships both fund the degree and build the teaching record that later job applications require." },
+          { name: "Funded vs. self-funded", detail: "Some MFAs pay a stipend for teaching (Michigan, Michener, Arizona). No data was found on how many master's programs are funded, or on tuition at unfunded ones, so check each program's funding page before applying." },
+          { name: "MFA funding examples", detail: "Michigan lists a full tuition waiver, a $23,000 stipend, $5,000 of summer funding, and health care. Michener lists a $29,500 fellowship plus tuition. Iowa lists financial assistance for all students without a figure. No acceptance rates were found." },
+          { name: "Terminal MA caution", detail: "No earnings or placement data for standalone literature MAs was found. Pursue one funded, as a PhD bridge, or with a concrete career target rather than by default." },
+          { name: "Assistantships", detail: "At Arizona, funded MFA students teach three courses a year and complete a ten-day training and a first-semester preceptorship before teaching." },
         ],
       },
       {
         title: "Tools & AI",
         mark: "⌨",
         items: [
-          { name: "Scholarly databases & editions", detail: "Deep, fluent use of the MLA Bibliography, ProQuest, EEBO/ECCO, and critical editions is what separates graduate work from undergraduate." },
-          { name: "Digital humanities methods", detail: "Text mining, mapping, and computational analysis (Python, R, Voyant) increasingly appear in literature programs and open alt-ac and data-adjacent careers." },
-          { name: "AI in the writing classroom", detail: "Comp/rhet programs now study how to teach writing in an AI world — policy design, AI literacy, and process-based assessment are live research areas." },
+          { name: "Scholarly databases & editions", detail: "The MLA International Bibliography, JSTOR, Project MUSE, and ABELL remain the core databases. No source described master's-specific tools." },
+          { name: "Digital humanities methods", detail: "Library guides list digital humanities journals (DHQ, Journal of Digital Humanities, Digital Studies). No source named specific software or methods taught at the master's level." },
+          { name: "AI in the writing classroom", detail: "University teaching guidance (Minnesota) says AI detectors are unreliable and recommends syllabus statements, drafts and in-class writing, and grading that rewards originality and analysis." },
         ],
       },
     ],
@@ -133,48 +133,48 @@ const PHASES = [
     years: "Years ~8+",
     accent: "#2C5545", // bottle green / library cloth
     intro:
-      "An English PhD is five to seven-plus years of coursework, comprehensive exams over a large reading list, and a book-length dissertation of original argument — typically funded by teaching. The intellectual work can be extraordinary. But enter with clear eyes: the tenure-track market is one of the hardest in all of academia.",
+      "An English PhD combines coursework, a language requirement, qualifying exams, and a dissertation, typically supported by teaching-funded packages. Median time to degree for humanities and arts PhDs is about 6.8 years. The intellectual work can be extraordinary, but the tenure-track market is small and uneven by subfield.",
     sections: [
       {
         title: "What the PhD Looks Like",
         mark: "§",
         items: [
-          { name: "Coursework & fields", detail: "Two to three years of seminars building expertise in a primary period or field plus one or two secondary areas, alongside language exams." },
-          { name: "Comprehensive exams", detail: "Written and/or oral exams over a reading list of dozens to hundreds of texts — the gateway to candidacy and the dissertation." },
-          { name: "The dissertation", detail: "A book-length work of original scholarship, often the seed of a first academic book, directed by a committee over several years." },
-          { name: "Teaching load", detail: "Most funding comes with teaching composition or literature sections — real labor that pays for the degree and builds your CV." },
-          { name: "Duration & attrition", detail: "Median time-to-degree runs six to nine years, and attrition is high — often invisible in the placement statistics programs publish." },
+          { name: "Coursework & fields", detail: "Brown requires 13 courses over three years and a language requirement. Notre Dame requires 14 courses within a roughly five-year plan and proficiency in two languages other than English (or fluency in one)." },
+          { name: "Qualifying exams", detail: "At Brown, a qualifying exam by April 15 of year three combines a field essay of up to 2,500 words with a two-hour oral exam before three faculty. Notre Dame schedules exams before Thanksgiving of year three, then a prospectus defense in spring." },
+          { name: "The dissertation", detail: "At Brown, the dissertation begins after a proposal and first chapter are approved and ends with a defense before three faculty." },
+          { name: "Funding & teaching", detail: "Brown guarantees six years: a fellowship in year one, teaching in years two, three, five, and six, and a dissertation fellowship in year four. Notre Dame assigns service in years two to four and none in year five." },
+          { name: "Duration & attrition", detail: "Median time to degree for humanities and arts PhDs was 6.8 years in 2020 and has been 6.8 years or longer every year from 2003 to 2020. A 2015 study noted that published placement data do not capture attrition." },
         ],
       },
       {
         title: "Research Frontiers",
         mark: "✺",
         items: [
-          { name: "Computational literary studies", detail: "Distant reading, large text corpora, and now LLM-based analysis are reshaping method — and fueling fierce debate about what counts as literary knowledge." },
-          { name: "Newer critical currents", detail: "Ecocriticism and the environmental humanities, critical race and ethnic studies, disability studies, queer and trans studies, and global Anglophone / postcolonial work." },
-          { name: "Book history & media studies", detail: "The history of print, the material text, and comparative media — from manuscript to platform — is a vibrant and relatively employable subfield." },
-          { name: "Medical & health humanities", detail: "Literature-and-medicine programs place PhDs in medical schools and hospitals, one of the field's genuine growth areas." },
-          { name: "AI and the humanities", detail: "Scholars now study generative AI itself — authorship, creativity, and bias — while debating its use as a research tool." },
+          { name: "Digital humanities", detail: "Library guides list digital humanities journals (DHQ, Journal of Digital Humanities, Digital Studies), and Stanford offers a data-science track within the English major." },
+          { name: "Current research areas", detail: "Bristol's English department lists Race and Ethnicity, Gender and Sexuality, Literatures of the Global South, Literature and the Environment, and Poetry and Poetics among its research areas (a UK department, one sample)." },
+          { name: "Material texts & spatial humanities", detail: "Material and Digital Texts and Spatial Humanities appear among Bristol's research areas. No source ranked subfields by employability." },
+          { name: "Medical & health humanities", detail: "Bristol lists Literature, Science and Medical Humanities as a research area, and NYU's placement list includes a medical-humanities postdoc. No source measured growth." },
+          { name: "A caveat on this list", detail: "These frontiers rest on one UK department's page, one US library guide, one Stanford track, and a few placement lists. They are a sample, not a ranked map of the field." },
         ],
       },
       {
         title: "The Job Market — Honestly",
         mark: "!",
         items: [
-          { name: "The core numbers", detail: "In a recent year U.S. departments produced ~1,144 new English PhDs against ~469 advertised assistant-professorships. Over decades, fewer than half of English PhDs have landed a tenure-track job." },
-          { name: "Prestige gates the market", detail: "Placement is dominated by top-ranked programs. Graduates of lower-ranked departments face long odds for research-university jobs and often teach undergraduates at teaching-focused schools — if placed at all." },
-          { name: "Literature vs. rhet/comp", detail: "The starkest divide in the field: at one large program (2018–22), 77% of rhetoric/composition PhDs landed tenure-track jobs versus 17% of literature PhDs. Subfield choice matters enormously." },
-          { name: "The adjunct trap", detail: "Many PhDs end up in contingent roles paid roughly $3,000–$7,000 per course with no benefits. Over 30% of non-tenure-track faculty earn under $25,000 a year." },
-          { name: "Plan for alt-ac", detail: "The healthiest programs now train students explicitly for careers beyond the professoriate — in publishing, ed-tech, UX, policy, and industry research." },
+          { name: "The core numbers", detail: "In 2022 there were about 1,144 new English PhDs and 469 advertised assistant-professorships, and the MLA counted 911 English ads in 2022-23, 61.8% of them tenure-track. A 2015 study found that over the prior 35 years fewer than half of English PhDs landed tenure-track jobs on graduation." },
+          { name: "Prestige gates the market", detail: "A 2015 study found top-10 programs gave students a reasonable chance at tenure-track jobs at research universities and top liberal-arts colleges, while chances from lower-ranked programs were close to nil." },
+          { name: "Literature vs. rhet/comp", detail: "At Ohio State (2018-22), 77% of Writing, Rhetoric, and Literacy PhDs (17 of 22) reached tenure-track jobs, versus 17% of literature PhDs (10 of 58). One program and small samples, but the gap is large. Overall tenure-track rates were similar at Ohio State (31%), UT Austin (30%), Michigan (28%), and Maryland (32%)." },
+          { name: "The adjunct trap", detail: "Adjuncts are generally paid $3,000 to $7,000 per class and rarely get health care. A 2019 AFT survey found over 30% of non-tenure-track educators in higher education earned under $25,000 a year." },
+          { name: "Plan for alt-ac", detail: "Duke runs an annual 'Translating the PhD' colloquium, and its recent graduates include secondary teachers, university staff, and nonprofit and private-industry workers. NYU's placements include a think-tank policy analyst." },
         ],
       },
       {
         title: "Tools & AI",
         mark: "⌨",
         items: [
-          { name: "Corpus & text-analysis tools", detail: "Python, R, spaCy, and platforms like Voyant support computational work over large literary corpora." },
-          { name: "Archival & digital editions", detail: "TEI/XML markup, digital scholarly editions, and archival databases are standard in book-history and DH work." },
-          { name: "LLMs as objects and instruments", detail: "The frontier debate: using AI to accelerate research versus studying it as a cultural and authorial phenomenon in its own right." },
+          { name: "Databases", detail: "No source named a standard software stack for doctoral work. Library guides point to JSTOR, Project MUSE, the MLA International Bibliography, and ABELL." },
+          { name: "Digital humanities journals", detail: "A university library guide lists DHQ, the Journal of Digital Humanities, and Digital Studies as places digital humanities work appears." },
+          { name: "What is not known", detail: "No source found described how AI is reshaping doctoral research in English, so none is claimed here. Minnesota's teaching guidance (detectors unreliable, syllabus statements, drafts) is the best-sourced reference for the classroom." },
         ],
       },
     ],
@@ -188,8 +188,8 @@ const CAREERS = [
     color: "#2C5545",
     roles: ["Adjunct / Lecturer", "Visiting Asst. Professor", "Assistant Professor (TT)", "Associate Professor", "Full Professor / Chair"],
     reality:
-      "The dream that draws most English PhDs — and the hardest to reach. Tenure-track lines are scarce, prestige-gated, and geographically unpredictable; you go where the one job is. Rhetoric/composition candidates fare dramatically better than literature candidates. For many, expect years of contingent work, and treat a tenure-track offer as a real achievement rather than a default outcome.",
-    salary: "$62K–$100K+ TT · median postsecondary teacher ~$84K · adjuncts often $20K–$40K",
+      "The dream that draws most English PhDs, and the hardest to reach: about 1,144 new PhDs against 469 advertised assistant-professorships in 2022. Placement splits sharply by subfield (at Ohio State, 77% of rhetoric PhDs versus 17% of literature PhDs reached tenure-track jobs in 2018-22), and many PhDs spend years in contingent roles. BLS projects no growth in English postsecondary teaching jobs through 2035.",
+    salary: "English postsecondary teachers median $78,760 (BLS, May 2025) · adjuncts often $3,000–$7,000 per course · no tenure-track range found",
   },
   {
     path: "Publishing & Editorial",
@@ -197,8 +197,8 @@ const CAREERS = [
     color: "#8C2F27",
     roles: ["Editorial Assistant", "Copyeditor", "Associate Editor", "Senior Editor", "Editorial Director"],
     reality:
-      "The classic English-major destination: acquiring, editing, and shepherding books and articles. Entry is competitive and concentrated in a few expensive cities (New York above all), with famously low starting pay that rises slowly. Internships and a demonstrated eye for prose matter far more than grades. Digital and audiobook growth has added roles beyond traditional print.",
-    salary: "Editors median ~$75K · assistants ~$40K–$50K to start · senior/director $100K+",
+      "The classic English-major destination: planning, reviewing, and revising content for publication. BLS projects a 1% decline in editor employment from 2025 to 2035 (about 105,000 jobs). Campus literary magazines and credit-bearing internships are available on-ramps. Starting pay and the geography of publishing jobs were not found in the research.",
+    salary: "Editors median $77,920 (BLS, May 2025) · bottom 10% under $41,250 · top 10% over $153,700",
   },
   {
     path: "Content Design & UX Writing",
@@ -206,8 +206,8 @@ const CAREERS = [
     color: "#33477A",
     roles: ["Content Designer", "UX Writer", "Content Strategist", "Senior Content Designer", "Content Design Lead"],
     reality:
-      "The best-paid mainstream path for a strong writer — shaping the words inside apps and products. Employers value clear thinking about language and structure over pedigree, and English training transfers directly. The catch: it's a tech-cyclical field that saw real layoffs in 2023–24, and a portfolio of product work — not essays — is the price of entry.",
-    salary: "~$110K median (2025 survey) · US ~$75K–$150K+ with equity at large tech firms",
+      "Shaping the words inside apps and products. A 2025 survey reported a global median near $110,000, and 58% of respondents said AI had improved their work; it also found layoffs in the prior 24 months, mostly in the US. A hiring site expects a strong portfolio of clear, effective UX writing and lists English among useful degrees.",
+    salary: "~$110K global median (2025 survey) · US UX content strategists: middle half $72K–$110K, top 10% ~$136K (ZipRecruiter, Nov 2025)",
   },
   {
     path: "Technical & Professional Writing",
@@ -215,8 +215,8 @@ const CAREERS = [
     color: "#8A5A2B",
     roles: ["Junior Technical Writer", "Technical Writer", "Senior Technical Writer", "Documentation Lead", "Docs / Content Manager"],
     reality:
-      "Translating complex products into clear documentation — historically one of the most stable, well-paid homes for English majors. AI has hit this field hard: routine drafting is now automated, entry-level roles are thinning, and survivors work as 'editors-in-chief' of AI output embedded in engineering teams. Deep domain knowledge (APIs, security, compliance) is now the moat.",
-    salary: "Median ~$92K · top 10% >$130K · entry roles softening under AI",
+      "Translating complex products into clear documentation. BLS projects 1% growth from 2025 to 2035 on 46,400 jobs. Practitioners report that AI now produces first drafts by default and writers spend more time reviewing and correcting, with junior roles under the most pressure and developer and compliance documentation seen as safer niches. The strongest displacement claims are forecasts, not measurements.",
+    salary: "Median $90,390 (BLS, May 2025) · bottom 10% under $57,440 · top 10% over $145,270",
   },
   {
     path: "Secondary & K–12 Teaching",
@@ -224,8 +224,8 @@ const CAREERS = [
     color: "#6E3B5C",
     roles: ["Student Teacher", "English Teacher (7–12)", "Department Head", "Curriculum Specialist", "Instructional Coach"],
     reality:
-      "A stable, meaningful path with real demand — many districts face English-teacher shortages. It requires state licensure, usually a credential program or education coursework beyond the English degree. Pay is modest and varies sharply by region, but the job market is far friendlier than academia's, with genuine security once tenured.",
-    salary: "~$50K–$75K by state and district · higher in high-cost regions and with seniority",
+      "Public school teachers need a state-issued license or certification, and a bachelor's is the typical entry degree. BLS projects flat employment from 2025 to 2035 with about 63,500 openings a year, mostly replacements, and says falling school-age enrollment constrains demand. UMD's English and Secondary Education double major builds certification into the degree.",
+    salary: "High school teachers (all subjects) median $72,040 (BLS, May 2025) · bottom 10% under $48,780 · top 10% over $107,600",
   },
   {
     path: "Law & Legal",
@@ -233,8 +233,8 @@ const CAREERS = [
     color: "#2A3A57",
     roles: ["Paralegal", "Law Student (JD)", "Associate Attorney", "Litigator / Counsel", "Partner / General Counsel"],
     reality:
-      "English is one of the strongest pre-law majors: the close reading, argument, and writing it drills are exactly what the LSAT and law school reward — English majors post some of the highest average LSAT scores of any field. It's a three-year JD and significant debt, but the earnings ceiling is among the highest open to a humanities graduate, and writing-heavy work (appellate, contracts) suits English backgrounds especially well.",
-    salary: "Lawyers median ~$150K+ · large-firm associates $200K+ · wide spread by market",
+      "A bachelor's in any major, then a three-year JD and a bar exam; BLS says the path usually takes seven years after high school. English is a strong feeder at one documented school (Kentucky, fall 2014 class: English majors averaged 162 on the LSAT, highest among arts and sciences majors), but LSAC cautions against reading major averages as proof that a major prepares students better. Pay is high and widely spread.",
+    salary: "Lawyers median $159,670 (BLS, May 2025) · bottom 10% under $78,360 · top 10% over $351,600 · new-graduate median $100,000 (NALP, Class of 2025)",
   },
   {
     path: "Communications, Marketing & PR",
@@ -242,8 +242,8 @@ const CAREERS = [
     color: "#1C7268",
     roles: ["Comms Coordinator", "Copywriter", "PR Specialist", "Content Marketing Manager", "Director of Communications"],
     reality:
-      "A broad, reliable landing spot: every organization needs people who write clearly and shape a message. English majors compete well against communications and marketing graduates. Entry is accessible; advancement rewards strategic thinking and measurable results. AI now drafts routine copy, pushing value toward brand strategy, editing, and judgment.",
-    salary: "PR specialists median ~$70K · managers/directors $90K–$150K+",
+      "A broad landing spot: BLS counts about 314,500 public relations specialists and projects 2% growth from 2025 to 2035. Industry write-ups say AI now drafts routine copy, pushing value toward editing and strategy. No source compared English graduates with communications graduates.",
+    salary: "PR specialists median $74,750 (BLS, May 2025) · bottom 10% under $44,110 · top 10% over $135,150",
   },
   {
     path: "Writing, Journalism & Media",
@@ -251,8 +251,8 @@ const CAREERS = [
     color: "#B24A2E",
     roles: ["Staff Writer", "Reporter / Journalist", "Freelance Writer", "Author / Novelist", "Editor-in-Chief"],
     reality:
-      "The path many picture when they imagine 'English major' — and the most precarious. Staff journalism jobs have contracted for two decades; freelancing means juggling clients and, lately, a ~35% drop in basic content gigs to AI. Success tends to come from a distinctive voice, a niche expertise, and entrepreneurial hustle. A few reach real prominence; most piece together income.",
-    salary: "Writers/authors median ~$72K · highly bimodal — many earn less, a few far more",
+      "The path many picture when they imagine 'English major.' Salaried writing jobs generally ask for a bachelor's in English, communications, or journalism, and experience from school papers, internships, or blogging helps. BLS projects no growth for writers and authors from 2025 to 2035, and freelancers juggle several projects while continually looking for work. Reporters and journalists are a separate BLS occupation and are not priced here.",
+    salary: "Writers and authors median $76,910 (BLS, May 2025) · bottom 10% under $44,310 · top 10% over $139,870",
   },
 ];
 
@@ -466,8 +466,8 @@ export default function EnglishRoadmap() {
                 Where an English degree actually leads. Eight distinct destinations, laddered from
                 entry to senior, each with an honest read on how accessible it is and what it really
                 pays. The through-line: writing and judgment travel further than the &ldquo;what can
-                you do with English?&rdquo; clich&eacute; suggests — but almost every path has been
-                reshaped by AI.
+                you do with English?&rdquo; clich&eacute; suggests, though the research found AI changing the work
+                in several of these paths.
               </p>
             </div>
 
@@ -526,7 +526,7 @@ export default function EnglishRoadmap() {
         <span style={S.footRule} />
         <p style={S.footText}>
           <span style={S.footMono}>[ tap any entry to read the gloss ]</span>
-          &nbsp;&nbsp;Salary figures: U.S. BLS OEWS (May 2024) plus industry surveys.
+          &nbsp;&nbsp;Salary figures: U.S. BLS OEWS (May 2025) plus industry surveys.
           Ranges are national medians — regional and institutional variation is large.
         </p>
       </footer>
