@@ -185,7 +185,7 @@ const data = {
           icon: "◆",
           items: [
             { name: "Internships & Co-ops (the #1 lever)", detail: "The single strongest predictor of a job at graduation. Target medical-device firms (Medtronic, Stryker, Boston Scientific, Abbott), biotech, and hospitals. Because the BME bachelor's is broad, real regulated-industry experience is what converts the degree into offers — pursue it relentlessly from sophomore year." },
-            { name: "Undergraduate Research & REUs", detail: "Paid summer research (NSF REUs, ~$6,000–$8,000 for 10 weeks) in tissue engineering, imaging, or neural engineering. Essential if you're aiming at a PhD or research career; strongly boosts grad admissions." },
+            { name: "Undergraduate Research & REUs", detail: "Paid summer research (NSF REUs, ~$6,000–$6,500 for 10 weeks, varying by site) in tissue engineering, imaging, or neural engineering. Essential if you're aiming at a PhD or research career; strongly boosts grad admissions." },
             { name: "BMES (Biomedical Engineering Society)", detail: "The field's main student society — conferences, networking, design competitions, and a direct line to industry recruiters. Officer roles signal initiative." },
             { name: "iGEM & Design Competitions", detail: "The International Genetically Engineered Machine competition (synthetic biology) and BME design challenges give hands-on, team-based project experience that stands out to both employers and admissions committees." },
             { name: "A Hard Adjacent Skill", detail: "The highest-leverage undergrad move: build a genuine ME, EE, or CS competency (FEA, embedded firmware, or ML), or deep wet-lab expertise. It's how you out-compete both generalist BMEs and the ME/EE grads applying for the same device roles." },
@@ -372,7 +372,7 @@ const data = {
       roles: ["PhD Researcher", "Postdoc", "Research Scientist", "Assistant → Full Professor", "Lab Director"],
       reality:
         "The PhD-gated path — running a lab, winning grants, and pushing the frontier in tissue engineering, neural interfaces, imaging, or immunoengineering. Faculty roles are highly competitive, with multi-year postdocs now standard and large applicant pools per opening. National labs, the NIH, and the FDA offer more accessible research and technical careers with strong stability. The reward is intellectual autonomy and impact; the trade is compensation and a long, uncertain runway to a permanent position.",
-      salary: "$55K postdoc → $160K+ tenured",
+      salary: "$63K postdoc → ~$107K median faculty",
     },
     {
       path: "Medicine (MD / MD-PhD)",
@@ -381,7 +381,7 @@ const data = {
       roles: ["Pre-Med → Medical Student", "Resident", "Physician", "Physician-Scientist (MD-PhD)", "Attending / Faculty"],
       reality:
         "BME is a common, well-regarded pre-med major — physiology and device training map cleanly onto medicine, and many students use it as a launchpad to an MD. For those drawn to both medicine and research, funded MD-PhD (MSTP) programs train physician-scientists over ~7–8 years. It's a fully separate, long, and demanding path with its own gates (GPA, MCAT, residency match), but the engineering foundation is a genuine asset in specialties like radiology, surgery, and biomedical innovation.",
-      salary: "$65K resident → $250K+ physician",
+      salary: "$68K resident → ~$387K avg physician",
     },
   ],
 };

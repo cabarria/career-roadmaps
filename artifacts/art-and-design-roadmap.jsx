@@ -26,14 +26,14 @@ const C = {
 };
 
 const swatches = [
-  { c: C.ultramarine, stat: "$150K+", label: "SENIOR PRODUCT DESIGNER" },
-  { c: C.vermilion, stat: "−33%", label: "GRAPHIC DESIGN POSTINGS · 2025" },
-  { c: C.crimson, stat: "$111,040", label: "ART DIRECTOR · MEDIAN" },
-  { c: C.aubergine, stat: "$99,800", label: "SFX ARTIST / ANIMATOR · MEDIAN" },
-  { c: C.viridian, stat: "57%", label: "FINE ARTISTS SELF-EMPLOYED" },
-  { c: C.ochre, stat: "44%", label: "ARTS MASTER'S AT LOAN RISK" },
-  { c: C.slate, stat: "$79,450", label: "INDUSTRIAL DESIGNER · MEDIAN" },
-  { c: C.sienna, stat: "No.1", label: "\"DESIGN\" · TOP AI-POSTING SKILL" },
+  { c: C.ultramarine, stat: "$159K", label: "PRODUCT DESIGNER · 8+ YRS AVG" },
+  { c: C.vermilion, stat: "−2%", label: "GRAPHIC DESIGNERS · PROJECTED 2025–35" },
+  { c: C.crimson, stat: "$114,850", label: "ART DIRECTOR · MEDIAN" },
+  { c: C.aubergine, stat: "$102,030", label: "SFX ARTIST / ANIMATOR · MEDIAN" },
+  { c: C.viridian, stat: "58%", label: "FINE ARTISTS SELF-EMPLOYED" },
+  { c: C.ochre, stat: "2028", label: "FIRST MASTER'S LOAN CUTS POSSIBLE" },
+  { c: C.slate, stat: "$83,910", label: "INDUSTRIAL DESIGNER · MEDIAN" },
+  { c: C.sienna, stat: "−1%", label: "CRAFT & FINE ARTISTS · PROJECTED 2025–35" },
 ];
 
 const data = {
@@ -44,7 +44,7 @@ const data = {
       years: "YRS 1–4",
       color: C.vermilion,
       intro:
-        "A BFA is the professional degree — roughly 70% studio credits — while a BA is the liberal-arts version and a BS leans technical. But the piece of paper isn't what gets you hired: the portfolio is. Year one is a shared 'foundation' in the grammar of making, and the field's real weeder isn't a course — it's the critique, where you stand up and defend your work in the room.",
+        "A BFA is the professional degree (the College Art Association sets at least 70 credits, about 60%, in the specialization) while a BA is the liberal-arts version and a BS leans technical. But the piece of paper isn't what gets you hired: the portfolio is. Year one is a shared 'foundation' in the grammar of making, and the field's real weeder isn't a course — it's the critique, where you stand up and defend your work in the room.",
       sections: [
         {
           title: "Foundation & Core",
@@ -63,7 +63,7 @@ const data = {
             {
               name: "Design Principles & Typography",
               detail:
-                "Gestalt, hierarchy, grid, and the craft of setting type. Typography is the single most transferable skill across graphic, UX, and editorial work.",
+                "Gestalt, hierarchy, grid, and the craft of setting type. Typography carries across graphic, UX, and editorial work.",
             },
             {
               name: "Art & Design History",
@@ -99,7 +99,7 @@ const data = {
             {
               name: "The portfolio — your real credential",
               detail:
-                "Employers consistently rank a strong, original portfolio above GPA or school name. Everything you make in four years is auditioning for this document.",
+                "BLS calls portfolios essential for artists and expects industrial designers to show one. Everything you make in four years is auditioning for this document.",
             },
             {
               name: "The BFA thesis exhibition",
@@ -125,7 +125,7 @@ const data = {
             {
               name: "Figma — learn it early",
               detail:
-                "The default tool for anything on a screen, and what UX and product designers use more than any other. Figma fluency opens the highest-paying door in the field.",
+                "UX and product designers use Figma more than other designers do (Fast Company). Fluency opens product design, the best-paid mainstream route found.",
             },
             {
               name: "Motion & 3D",
@@ -140,7 +140,7 @@ const data = {
             {
               name: "Generative AI — learn to direct it",
               detail:
-                "Roughly 60% of design programs now embed AI (Midjourney, Firefly, DALL·E). The skill that matters isn't prompting for fun — it's art-directing model output to a brief.",
+                "Image tools such as Midjourney, Firefly, and DALL·E exist, and BLS expects AI to reduce demand for some design work. The skill worth building is art-directing model output to a brief.",
             },
             {
               name: "Physical craft",
@@ -223,17 +223,17 @@ const data = {
             {
               name: "Funded MFAs exist",
               detail:
-                "Top public programs offer teaching assistantships and fellowships with tuition remission plus stipends of roughly $30,000–$40,000. If you go, aim for full funding.",
+                "Some programs cover tuition and pay a stipend: Notre Dame's three-year MFA waives tuition and pays $28,500 a year. If you go, aim for full funding.",
             },
             {
               name: "The debt trap",
               detail:
-                "Unfunded programs routinely run $100,000+. Critics inside the field are blunt: there are too many MFA programs and too many graduates for the market to absorb.",
+                "Critics inside the field, such as Hyperallergic's essay on the art school debt trap, argue that MFA programs are marketed as gateways to success while the fine print tells a different story. Ask about funding before you apply.",
             },
             {
-              name: "The 2025 earnings test",
+              name: "The federal earnings test",
               detail:
-                "A new federal rule ties graduate loan eligibility to out-earning a bachelor's holder. An estimated 44% of arts master's programs are projected to fail — versus 6% of programs overall — risking loss of federal loans as soon as 2028.",
+                "A federal rule effective July 1, 2026 requires master's programs to show graduates out-earn bachelor's holders. Calculations begin in 2027, and failing programs can lose Direct Loan eligibility, with the earliest designations in the 2028–29 award year. Early Education Department modelling put about 4% of master's programs at risk overall, with fine arts among the most exposed fields.",
             },
             {
               name: "Compare funding, not prestige",
@@ -326,7 +326,7 @@ const data = {
             {
               name: "The freelance business",
               detail:
-                "57% of fine artists are self-employed. Contracts, rates, scope, and taxes become as important as the work — most artists run a small business whether they meant to or not.",
+                "58% of craft and fine artists are self-employed. Contracts, rates, scope, and taxes become as important as the work — most artists run a small business whether they meant to or not.",
             },
           ],
         },
@@ -342,7 +342,7 @@ const data = {
             {
               name: "Practice-based / research PhD",
               detail:
-                "A doctorate combining studio work with written research, well established in the UK and Europe and growing in the US. For design-research and theory careers, not industry.",
+                "A doctorate combining studio work with written research. Few exist in the US, such as Northeastern's Interdisciplinary Design and Media PhD and Texas Tech's praxis-based program. For design-research and theory careers, not industry.",
             },
             {
               name: "Art history & education doctorates",
@@ -413,9 +413,9 @@ const data = {
       color: C.ultramarine,
       roles: ["UX Designer", "Product Designer", "Sr. Product Designer", "Design Lead", "Director of Design"],
       reality:
-        "The single most lucrative — and most AI-resilient — destination for a design graduate. Entry roles start around $70K; mid-career product designers earn $114K–$150K, senior product designers $150K–$200K+, and big-tech total comp can top $300K with equity. A strong portfolio and Figma fluency matter more than any degree. The catch: entry-level is crowded thanks to a bootcamp glut, so juniors must prove real user-research and systems thinking, not just pretty screens.",
-      ai: "Most resilient design path — AI can't run user research, information architecture, or cross-functional judgment. Production UI tasks are exposed; strategy is not.",
-      salary: "$70K entry → $114K–$150K mid (product) → $150K–$200K+ senior · $300K+ total comp at big tech",
+        "The best-paid mainstream destination found for a design graduate. A Fast Company analysis of job listings has product designers offered about $70K at entry, $149,850 at four to five years of experience, and $197,579 at eight or more; UX designers were offered $123,720 and $153,920 at the same stages. A strong portfolio and Figma fluency matter more than any degree.",
+      ai: "Fast Company's analysis found UX design more vulnerable to AI than product design. Production UI work looks the most exposed; research and cross-functional judgment are harder to hand to a model (an inference, not a measured result).",
+      salary: "~$70K entry → ~$124K UX / ~$150K product at 4–5 yrs → ~$154K UX / ~$198K product at 8+ yrs (Fast Company 2025) · Salary.com avg $112K",
     },
     {
       path: "Graphic & Visual Design",
@@ -423,9 +423,9 @@ const data = {
       color: C.vermilion,
       roles: ["Junior Designer", "Designer", "Senior Designer", "Art Director"],
       reality:
-        "The classic path — and now the most disrupted. There are ~266,000 graphic-design jobs, but projected growth is just 2% and job postings fell 33% in 2025. Commodity production (social graphics, banners, simple layouts) is being commoditized fastest by generative tools. The designers who survive move up into brand, strategy, and art direction, where taste and judgment still command a premium.",
-      ai: "Highest displacement risk in the field for production work — roughly 88% risk without AI skills. The brand/art-direction ceiling stays human.",
-      salary: "$37,600–$103,030 · median $61,300 (BLS 2024) · art director median $111,040",
+        "The classic path, and one BLS projects to shrink. There are 253,100 graphic-design jobs, projected growth is -2% through 2035, and the roughly 16,000 yearly openings all come from replacing people who leave. BLS expects AI design tools to make designers more productive and reduce the need for them, while branding and layout work continue. Twenty percent are self-employed. Art direction, which BLS says typically takes five or more years of related experience, is the step up.",
+      ai: "BLS: automated design tools such as AI are projected to reduce the need for graphic designers. Production work looks the most exposed; the view that brand and art direction stay human is an inference.",
+      salary: "$39,520–$104,910 · median $62,960 (BLS May 2025) · art director median $114,850",
     },
     {
       path: "Illustration & Concept Art",
@@ -433,9 +433,9 @@ const data = {
       color: C.ochre,
       roles: ["Illustrator", "Concept Artist", "Senior Illustrator", "Art Lead"],
       reality:
-        "Mostly freelance and self-employed, and among the hardest-hit corners of the field. Generative image models have compressed rates and evaporated commodity commissions at the low end. What survives — and even thrives — is a signature, unfakeable personal style paired with a direct audience relationship. Income is bimodal: a thin top tier does well; most piece it together.",
-      ai: "Front line of disruption. A distinctive hand and voice are the moat; generic 'stock-style' illustration is being automated first.",
-      salary: "Folded into craft/fine artists (median $56,260) · freelance $20–$150/hr, highly variable",
+        "Mostly freelance and self-employed. BLS says AI-generated illustrations may compete with illustrators, and it reports no illustrator-specific pay. A distinctive personal style paired with a direct audience relationship is the likely hedge. Pay in the wider craft and fine artist group runs from under $31,490 to over $131,810.",
+      ai: "BLS names illustrators as the group AI-generated images may compete with. A distinctive hand and voice is the likely hedge (an inference, not a measured result).",
+      salary: "Folded into craft/fine artists (median $55,290, BLS May 2025) · no illustrator-specific pay found",
     },
     {
       path: "Animation, Motion & VFX",
@@ -443,9 +443,9 @@ const data = {
       color: C.aubergine,
       roles: ["Motion Designer", "Animator", "VFX Artist", "Animation Director"],
       reality:
-        "Film, TV, games, and advertising. Special-effects artists and animators earn a median of $99,800 — one of the best-paid creative roles — but hiring is cyclical and geographically concentrated (LA, Vancouver, Atlanta). Roughly 21% of film/TV/animation jobs are projected to face generative-AI pressure by 2026, and special-effects tasks score among the highest AI-exposure of any creative work.",
-      ai: "High exposure for mid-pipeline tasks (in-betweening, cleanup, effects). Creative direction and complex character animation are more durable.",
-      salary: "median $99,800 (BLS 2024) · ~$50K entry → $130K+ senior; studio and pipeline dependent",
+        "Film, TV, games, and advertising. Special-effects artists and animators earn a median of $102,030, one of the best-paid creative roles, but the range runs from under $58,600 to over $177,110, projected growth is 0%, and 63% are self-employed. BLS says AI may dampen demand.",
+      ai: "BLS says AI may dampen demand. The sources did not establish which tasks are most exposed; creative direction and complex character animation are likely more durable (an inference).",
+      salary: "median $102,030 · $58,600–$177,110 (BLS May 2025)",
     },
     {
       path: "Industrial & Product Design",
@@ -453,9 +453,9 @@ const data = {
       color: C.slate,
       roles: ["Jr. Industrial Designer", "Industrial Designer", "Senior Designer", "Design Manager"],
       reality:
-        "Designing physical objects — furniture, appliances, consumer hardware, toys. A small field (~35,000 jobs, ~2,500 openings a year) that rewards engineering-adjacent skills: CAD, materials, ergonomics, manufacturing. Because it touches the physical world, it's more insulated from generative AI than screen design — but pay has trailed inflation over the last decade.",
-      ai: "Lower exposure — physical constraints, prototyping, and manufacturing knowledge protect it. AI assists ideation more than execution.",
-      salary: "$49,390–$134,840 · median $79,450 (BLS 2024)",
+        "Designing physical objects: furniture, appliances, consumer hardware, toys. A small field (35,400 jobs, about 2,800 openings a year, +2% growth) that expects a bachelor's in industrial design, architecture, engineering, or fine arts, an electronic portfolio, and CAD skills. Adobe's analysis found real pay 8.0% below its 2015 level in 2025.",
+      ai: "BLS names no AI effect on this occupation. Physical constraints and manufacturing knowledge probably limit exposure, but that is an inference, not a measured result.",
+      salary: "$53,460–$139,770 · median $83,910 (BLS May 2025)",
     },
     {
       path: "Art Direction & Creative Leadership",
@@ -463,9 +463,9 @@ const data = {
       color: C.crimson,
       roles: ["Senior Designer", "Art Director", "Creative Director", "VP / Chief Creative Officer"],
       reality:
-        "The management ceiling for the entire field. Art directors set the visual direction of campaigns and lead teams of designers; median pay is $111,040 with the top 10% above $211,410. It's not an entry point — it requires years of craft first, plus taste, communication, and the ability to sell an idea. Precisely because it's judgment and direction, it's among the most AI-resilient roles here.",
-      ai: "Resilient — this is the 'own the strategy and the taste' tier. AI accelerates the team's output; it doesn't set the direction.",
-      salary: "median $111,040 · $61,060–$211,410 (BLS 2024) · CD/CCO $150K–$300K+",
+        "The management ceiling for the field. Art directors set the visual direction of campaigns and lead teams of designers; median pay is $114,850 with the top 10% above $213,050, growth is 4%, and BLS lists five or more years of related experience as typical. It's not an entry point: it requires years of craft first, plus taste, communication, and the ability to sell an idea.",
+      ai: "No BLS statement on AI for art directors was found. The judgment-and-direction nature of the work suggests resilience, but that is an inference.",
+      salary: "median $114,850 · $64,900–$213,050 (BLS May 2025) · creative directors avg ~$146K (Indeed, aggregator)",
     },
     {
       path: "Fine Art & Studio Practice",
@@ -473,9 +473,9 @@ const data = {
       color: C.viridian,
       roles: ["Working Artist", "Exhibiting Artist", "Represented Artist", "+ Teaching"],
       reality:
-        "The romantic path and the hardest to monetize. Median pay for craft and fine artists is $56,260 with essentially flat growth, 57% are self-employed, and most sustain a practice with a second job. Success depends on reputation, exhibition history, grants, and gallery access far more than any credential — the market is severe and success is bimodal.",
-      ai: "Your hand and vision are the point; AI is more a conceptual provocation than a threat — though it does flood the low-end print/decor market.",
-      salary: "median $56,260 (BLS 2024) · income highly bimodal; most modest, a small top tier substantial",
+        "The romantic path and the hardest to monetize. Median pay for craft and fine artists is $55,290 with projected growth of -1%, 58% are self-employed, and pay runs from under $31,490 to over $131,810. BLS says portfolios are essential. Success depends on reputation, exhibition history, grants, and gallery access far more than any credential.",
+      ai: "BLS flags AI competition for illustrators. For fine art, your hand and vision are the point, though that view is an inference.",
+      salary: "median $55,290 · $31,490–$131,810 (BLS May 2025) · 58% self-employed",
     },
     {
       path: "Art Education & Museums",
@@ -483,9 +483,9 @@ const data = {
       color: C.sienna,
       roles: ["Teaching Artist", "K-12 Art Teacher", "Professor", "Curator", "Museum Director"],
       reality:
-        "The stable, mission-driven path. K-12 art teaching requires a state license; college teaching requires the MFA. Curatorial and museum roles are growing faster than the field (~11–12%) but are competitive and credential-heavy. Pay is modest and institutional, but the work is durable and among the least exposed to automation in the whole discipline.",
-      ai: "Low exposure — human-facing, pedagogical, and institutional work that automation reaches slowly.",
-      salary: "art teachers ~$50K–$65K · curators ~$61K median · professors vary widely by institution",
+        "The mission-driven path. K-12 art teaching requires a bachelor's and a state license; college teaching generally expects the MFA. Curators typically need a master's, and BLS projects 5% growth for curators with a median of $63,420. Pay is institutional and these roles are competitive.",
+      ai: "No BLS statement on AI for teachers or curators was found. Human-facing, pedagogical work is probably slower to automate (an inference).",
+      salary: "curators median $63,420 · high school teachers (all subjects) $72,040 (BLS May 2025) · no art-specific K-12 pay found · professors vary by institution",
     },
   ],
 };
@@ -783,12 +783,12 @@ export default function ArtDesignRoadmap() {
                   marginBottom: 8,
                 }}
               >
-                DESTINATIONS · SALARY: BLS OEWS MAY 2024 + INDUSTRY SOURCES
+                DESTINATIONS · SALARY: BLS OEWS MAY 2025 + INDUSTRY SOURCES
               </div>
               <p style={{ margin: 0, fontSize: 17, lineHeight: 1.6, color: C.ink, maxWidth: 780 }}>
                 Eight swatches across the field's range — from the six-figure product-design ceiling
-                to the flat, self-employed reality of studio practice. Screen-and-strategy work pays
-                and resists automation; commodity production is being compressed fastest.
+                to the flat, self-employed reality of studio practice. Screen-and-strategy work pays the most;
+                BLS projects graphic design, the largest production occupation here, to shrink.
               </p>
             </div>
 
@@ -917,8 +917,8 @@ export default function ArtDesignRoadmap() {
             lineHeight: 1.6,
           }}
         >
-          TAP ANY ITEM OR SWATCH TO EXPAND · SALARY SOURCES: BLS OEWS MAY 2024, GLASSDOOR, FAST
-          COMPANY, ADOBE / FIGMA INDUSTRY REPORTS · COMPILED JUL 2026
+          TAP ANY ITEM OR SWATCH TO EXPAND · SALARY SOURCES: BLS OEWS MAY 2025, SALARY.COM, FAST
+          COMPANY, ADOBE, INDEED · COMPILED NOV 2026
         </footer>
       </main>
     </div>

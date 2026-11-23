@@ -37,18 +37,18 @@ const font = {
 
 /* the DRAWING SCHEDULE — workforce data set like notes in a title block */
 const schedule = [
-  { k: "ARCHITECT MEDIAN", v: "$96,690", tone: "up" },
-  { k: "JOB GROWTH ’24–34", v: "+4%", tone: "up" },
-  { k: "OPENINGS / YR", v: "~7,800", tone: "up" },
+  { k: "ARCHITECT MEDIAN", v: "$99,280", tone: "up" },
+  { k: "JOB GROWTH ’25–35", v: "+4%", tone: "up" },
+  { k: "OPENINGS / YR", v: "~6,900", tone: "up" },
   { k: "AVG TIME TO LICENSE", v: "12.9 YRS", tone: "warn" },
   { k: "LICENSED IN U.S.", v: "~116,000", tone: "up" },
   { k: "ARE DIVISIONS", v: "6", tone: "up" },
-  { k: "PRINCIPAL MEDIAN", v: "~$155K", tone: "up" },
+  { k: "ARCHITECT JOBS", v: "124,600", tone: "up" },
   { k: "10-YR ATTRITION", v: "36–38%", tone: "warn" },
-  { k: "BILLINGS INDEX", v: "CONTRACTING", tone: "warn" },
-  { k: "AI TASK EXPOSURE", v: "37–49%", tone: "warn" },
-  { k: "LARGE-FIRM AI USE", v: "64%", tone: "up" },
-  { k: "HEALTHCARE PREMIUM", v: "+18–30%", tone: "up" },
+  { k: "BILLINGS INDEX OCT ’26", v: "44.9", tone: "warn" },
+  { k: "FIRMS USING AI IN 2025", v: "74%", tone: "up" },
+  { k: "REGULAR AI USE, PROFESSION", v: "6%", tone: "up" },
+  { k: "MEDICAL PLANNER PAY ’23–25", v: "+14%", tone: "up" },
 ];
 
 /* a repeating building-section elevation: rooflines of varying height + window grids */
@@ -130,7 +130,7 @@ const data = {
       years: "STUDIO · YRS 1–5",
       color: C.terra,
       intro:
-        "Architecture doesn't follow a clean bachelor's-then-master's arc. Two routes lead to the accredited professional degree: a five-year Bachelor of Architecture (B.Arch) straight from high school, or a four-year pre-professional B.S./B.A. that later feeds a Master of Architecture. Whichever you pick, one thing dominates all five years — the design studio. Expect the heaviest workload of any major on campus, a public critique culture, and a slow shift from hand-drawn lines to full digital building models.",
+        "Architecture doesn't follow a clean bachelor's-then-master's arc. Two routes lead to the accredited professional degree: a five-year Bachelor of Architecture (B.Arch) straight from high school, or a four-year pre-professional B.S./B.A. that later feeds a Master of Architecture. Whichever you pick, one thing dominates all five years — the design studio. Expect one of the heaviest workloads on campus, a public critique culture, and a slow shift from hand-drawn lines to full digital building models.",
       sections: [
         {
           title: "Core Studio & Curriculum",
@@ -157,9 +157,9 @@ const data = {
                 "Daylighting, acoustics, heating and cooling, energy, and increasingly embodied carbon and net-zero design. The performance layer that separates a pretty drawing from a habitable building.",
             },
             {
-              name: "The weeder: Structures",
+              name: "The hard part: cumulative, not one course",
               detail:
-                "Structures and building-systems courses are where students who came for pure aesthetics hit a wall. The math is unforgiving and it can't be hand-waved — a beam either carries the load or it doesn't.",
+                "No single course stands out as the weeder in the sources. The difficulty is cumulative: open-ended problems with no right answer, public critiques, and sustained output every semester for five years. Building technology and structures add a quantitative load that design-first students can underestimate.",
             },
           ],
         },
@@ -196,7 +196,7 @@ const data = {
             {
               name: "AutoCAD & Revit (BIM)",
               detail:
-                "AutoCAD for 2D drafting and Revit for Building Information Modeling — the intelligent 3D model that runs modern practice. Revit fluency is one of the most-requested skills on entry-level job postings.",
+                "AutoCAD for 2D drafting and Revit for Building Information Modeling — the intelligent 3D model that runs modern practice. Both are named as standard tools across the career guides reviewed.",
             },
             {
               name: "Rhino + Grasshopper",
@@ -211,7 +211,7 @@ const data = {
             {
               name: "AI concept tools",
               detail:
-                "Midjourney and Stable Diffusion for rapid mood-boards and concept imagery, Autodesk Forma for early site and environmental analysis. Powerful for ideation, useless for a construction document — know the line.",
+                "Midjourney and Stable Diffusion for rapid mood-boards and concept imagery, Autodesk Forma for early site and environmental analysis. Powerful for ideation, but they lack the precision a construction document needs, so know the line.",
             },
           ],
         },
@@ -237,7 +237,7 @@ const data = {
             {
               name: "The workload reality",
               detail:
-                "Studies repeatedly rank architecture students as the hardest-working on campus — 40–60 hours a week is normal, with all-nighter spikes before reviews. The culture is slowly reforming, but go in clear-eyed.",
+                "A 2017 ranking reported architecture students working longer hours than any other major, and one college guide puts a normal week at 40–60 hours including class time, with spikes before reviews. Reform is under way (AIAS has campaigned against all-nighters since 2000), but go in clear-eyed.",
             },
           ],
         },
@@ -258,7 +258,7 @@ const data = {
             {
               name: "The 4+2 path",
               detail:
-                "A four-year pre-professional B.S./B.A. in architecture, then a two-year M.Arch with advanced standing. The most common route for students who started in an architecture program but didn't do the five-year B.Arch.",
+                "A four-year pre-professional B.S./B.A. in architecture, then a two-year M.Arch with advanced standing. The route for students who start in a pre-professional architecture program rather than a five-year B.Arch.",
             },
             {
               name: "The 3-year M.Arch",
@@ -278,7 +278,7 @@ const data = {
             {
               name: "The funding reality",
               detail:
-                "Unlike a funded research PhD, the professional M.Arch is largely self-financed — this is professional-school debt you carry from day one, against a field whose starting salaries are modest. Weigh it honestly.",
+                "Professional M.Arch programs are long and credit-heavy (Cornell's is 113 graduate credits, Georgia Tech's 3.5-year track 102 semester hours), and this research did not establish typical funding. Compare each program's aid against a BLS median architect salary of about $99,280, and weigh it honestly.",
             },
           ],
         },
@@ -289,7 +289,7 @@ const data = {
             {
               name: "AXP — the experience program",
               detail:
-                "The Architectural Experience Program: roughly 3,700 hours of documented, supervised work across six practice areas, logged through NCARB. It's the single biggest place candidates stall — finding hours in every category can drag for years.",
+                "The Architectural Experience Program: 3,740 hours of documented, supervised work across six practice areas, logged through NCARB. It's the single biggest place candidates stall — finding hours in every category can drag for years.",
             },
             {
               name: "ARE — six divisions",
@@ -304,12 +304,12 @@ const data = {
             {
               name: "2025 rule changes",
               detail:
-                "NCARB retired the five-year exam 'rolling clock,' reinstated thousands of expired passes, and now lets candidates test while still logging experience. The path is getting meaningfully shorter and more forgiving.",
+                "NCARB retired the five-year expiration on passed ARE divisions, reinstated thousands of expired passes, and in November 2025 moved AXP to a policy of full credit for experience reported within a year and 75% afterward. Some states, including California and Texas, now let candidates test before finishing experience. The path is getting more forgiving.",
             },
             {
               name: "What the license unlocks",
               detail:
-                "Only a licensed architect can legally use the title and stamp drawings. It also pays: licensure adds 18–35% to salary and is the gate to project-architect and principal roles. It's the highest-ROI move in the field.",
+                "BLS says all states and D.C. license architects, and only a licensed architect can use the title. It also pays: AIA found most firms give a raise at licensure (80% of small, 79% of mid-size, and 69% of large firms). The license is typically the gate to project-architect and principal roles.",
             },
           ],
         },
@@ -335,7 +335,7 @@ const data = {
             {
               name: "Parametric & computational design",
               detail:
-                "Algorithmic form-finding and data-driven design using scripting. Graduate studios are where this shifts from a novelty to a genuine specialization that firms will pay a premium for.",
+                "Algorithmic form-finding and data-driven design using scripting. Graduate studios are where this shifts from a novelty to a genuine specialization; career guides say firms want scripts and parametric projects, not only studio work.",
             },
           ],
         },
@@ -346,7 +346,7 @@ const data = {
             {
               name: "BIM coordination",
               detail:
-                "Revit plus Navisworks for clash detection across architecture, structure, and MEP. Coordinating a model that dozens of consultants build into is a core, employable graduate-level skill.",
+                "Revit and its plug-ins for clash detection across architecture, structure, and MEP. Coordinating a model that dozens of consultants build into is a core, employable graduate-level skill.",
             },
             {
               name: "Parametric scripting",
@@ -356,12 +356,12 @@ const data = {
             {
               name: "Generative site planning",
               detail:
-                "TestFit and Autodesk Forma generate hundreds of code-compliant site layouts — massing, parking, setbacks — in minutes. This is where AI is delivering real, un-hyped value in practice today.",
+                "TestFit and Autodesk Forma generate hundreds of code-compliant site layouts — massing, parking, setbacks — in minutes. Vendor and trade accounts point to this as one of the most concrete AI uses in practice today.",
             },
             {
               name: "AI in the office — honestly",
               detail:
-                "64% of large firms now use AI tools, and a McKinsey estimate flags 37–49% of architecture/engineering tasks as automatable. But it excels at concepts and analysis, not construction docs, code compliance, or liability — the parts that stay human.",
+                "The numbers depend on what is counted: AIA found 6% of the profession using AI regularly and 8% of firms with AI solutions implemented (March 2025), while its 2026 firm survey found 74% of firms using AI in day-to-day operations in 2025. Practitioner accounts say it excels at concepts, visualization, and site analysis, not construction documents, code compliance, or liability. No source measured job loss.",
             },
           ],
         },
@@ -373,7 +373,7 @@ const data = {
       years: "DOCTORATE · YRS ~8+",
       color: C.graphite,
       intro:
-        "A PhD in architecture is not a practice degree — you don't need it to design buildings, and it won't make you a better architect in the licensure sense. It's for people who want to produce new knowledge and teach: historians and theorists, building scientists, and computational researchers. Unlike the professional M.Arch, doctoral study is typically funded through assistantships. The catch is the destination: most graduates aim at academia, where tenure-track positions are genuinely scarce.",
+        "A PhD in architecture is not a practice degree — you don't need it to design buildings, and it won't make you a better architect in the licensure sense. It's for people who want to produce new knowledge and teach: historians and theorists, building scientists, and computational researchers. Doctoral study is typically funded through assistantships and fellowships. The catch is the destination: most graduates aim at academia, where BLS expects limited full-time tenure and tenure-track openings across most disciplines.",
       sections: [
         {
           title: "What a PhD Is For",
@@ -387,17 +387,17 @@ const data = {
             {
               name: "History, Theory & Criticism",
               detail:
-                "The largest track: studying architecture's ideas, movements, and cultural context through archival and interpretive research. Roughly 90% of these graduates head into university teaching and research.",
+                "Studying architecture's ideas, movements, and cultural context through archival and interpretive research. At Georgia Tech, about 90% of recent graduates in its history and culture tracks hold teaching and research posts.",
             },
             {
               name: "Building Science & Technology",
               detail:
-                "Energy, materials, structures, acoustics, and environmental performance investigated with scientific method and simulation. Graduates split more evenly between academia and industry R&D labs.",
+                "Energy, materials, structures, acoustics, and environmental performance investigated with scientific method and simulation. Virginia Tech lists building science and architectural acoustics among its research areas, and Berkeley's faculty work spans passive design, thermal comfort, and embodied carbon.",
             },
             {
               name: "Computational Design & Fabrication",
               detail:
-                "Generative design, robotics, digital fabrication, and machine learning applied to the built environment. The most industry-facing track, and the one growing fastest as firms build research arms.",
+                "Generative design, robotics, digital fabrication, and machine learning applied to the built environment. Princeton's Embodied Computation Lab houses an industrial robotic arm, and Berkeley and Georgia Tech list computational design and digital fabrication among their research areas.",
             },
           ],
         },
@@ -413,17 +413,17 @@ const data = {
             {
               name: "Funded, with teaching",
               detail:
-                "Most programs fund students through teaching and research assistantships covering tuition plus a stipend. In exchange you'll teach — often leading design studios or lecturing in history surveys.",
+                "Georgia Tech funds students through research and teaching assistantships, and Yale expects students to teach or assist for four terms, normally in years three and four. Check each program's funding terms before applying.",
             },
             {
-              name: "Four to six years",
+              name: "Roughly five years, by program",
               detail:
-                "The typical timeline, longer if the dissertation runs deep or teaching loads are heavy. It's a serious multi-year commitment on a modest stipend during your prime earning years.",
+                "Princeton describes a five-year program (two years of coursework and independent study, then a general examination), and IIT requires at least 52 credit hours after a master's and completion within six years of admission to candidacy. Timelines vary, and the years fall during your prime earning years.",
             },
             {
               name: "Where graduates land",
               detail:
-                "Tenure-track faculty positions are the goal but are scarce and hard-won. Building-science and computation grads increasingly land in firm research groups, national labs, and technology companies instead.",
+                "Teaching is the main destination: BLS lists a doctorate as typical for postsecondary teachers and expects limited full-time openings in most disciplines. Georgia Tech reports about 40% of its design computing and building technology graduates went to industry and national research laboratories.",
             },
           ],
         },
@@ -434,22 +434,22 @@ const data = {
             {
               name: "Embodied carbon & net-zero",
               detail:
-                "Cutting the carbon locked into materials and construction, not just operational energy. Named one of the technologies most likely to move the built environment toward net-zero — and a booming research area.",
+                "Cutting the carbon locked into materials and construction, not just operational energy. Berkeley's building-science faculty list embodied carbon among their research areas.",
             },
             {
-              name: "Robotic fabrication & mass timber",
+              name: "Robotic fabrication & digital making",
               detail:
-                "Robotic arms assembling non-standard geometry, 3D-printed concrete, and engineered timber replacing steel and concrete. Where digital design finally meets physical making at building scale.",
+                "Robotic arms and digital fabrication for non-standard geometry, a focus of Princeton's Embodied Computation Lab and of robotic-manufacturing research at Berkeley. Where digital design meets physical making at building scale.",
             },
             {
-              name: "Generative AI & digital twins",
+              name: "Generative AI & computation",
               detail:
-                "Machine-learning design generation and live 'digital twin' models that mirror a building's real-time performance. The frontier where architecture, data science, and computation converge.",
+                "A 2026 Springer paper argues generative AI changes how architects explore and develop ideas, not only how fast they work. Parametric, generative, and computational design are named research areas at Berkeley and Georgia Tech.",
             },
             {
-              name: "Adaptive reuse & housing",
+              name: "Housing, urbanism & preservation",
               detail:
-                "Retrofitting existing buildings instead of demolishing them, and rethinking affordable, dense housing. Research driven by the climate math: the greenest building is often the one already standing.",
+                "IIT's faculty research covers housing and emerging urbanisms, and Virginia Tech lists historic preservation among its research areas. Questions of retrofit and density sit between design, policy, and climate.",
             },
           ],
         },
@@ -460,12 +460,12 @@ const data = {
             {
               name: "Environmental simulation",
               detail:
-                "Ladybug/Honeybee, EnergyPlus, and CFD tools to model energy, daylight, airflow, and comfort. The quantitative instruments of building-science research.",
+                "Energy, daylight, and thermal simulation, plus acoustics modeling and measurement, as named in Berkeley's and Virginia Tech's building-science research areas. The quantitative instruments of the field.",
             },
             {
               name: "Robotics & digital fabrication",
               detail:
-                "Industrial robot arms, CNC mills, and 3D printers in dedicated fabrication labs — the physical apparatus of computational-design research.",
+                "Industrial robotic arms and digital-fabrication labs, as at Princeton and Berkeley — the physical apparatus of computational-design research.",
             },
             {
               name: "Computation & machine learning",
@@ -489,19 +489,19 @@ const data = {
       color: C.blue,
       roles: ["Intern Architect", "Architect I–III", "Project Architect", "Principal / Partner"],
       reality:
-        "The traditional core: designing buildings inside a firm, from schematic design through construction administration. It's the path the whole education points at — but the economics are sobering. The BLS median is $96,690, modest against the decade of study and licensure it demands, and pay climbs slowly: unlicensed associates start around $52K–$78K, licensure lifts you to the $90K–$110K range, and principals reach ~$155K plus firm equity. Passion for the craft, not the paycheck, is what keeps people here.",
+        "The traditional core: designing buildings inside a firm, from schematic design through construction administration. It's the path the whole education points at — but the economics are sobering. The BLS median is $99,280 (10th percentile under $62,300, 90th over $161,420), modest against the decade of study and licensure it demands, and pay climbs slowly: AIA reports architect compensation rising under 3% a year from 2023 to 2025, billings are contracting, and most firms give a raise at licensure. Passion for the craft, not the paycheck, is what keeps people here.",
       ai: "Moderate — AI accelerates concepts, drawings, and rendering, but design judgment, code, coordination, and legal liability stay firmly human.",
-      salary: "Median $96,690 · entry ~$52K–$78K · principal ~$155K + equity",
+      salary: "BLS median $99,280 · 10th pct. under $62,300 · 90th pct. over $161,420",
     },
     {
       path: "Specialized / Technical Design",
       icon: "🏥",
       color: "#2C7A88",
-      roles: ["Healthcare Architect", "Lab Planner", "Data-Center Designer", "Net-Zero Lead"],
+      roles: ["Medical Planner", "Healthcare Architect", "Specification Writer", "Lab Planner"],
       reality:
-        "The best-paid corner of practice itself. Complex, technically demanding building types — hospitals, research labs, data centers, and high-performance sustainable buildings — command premiums of 18–35% over general practice because the expertise is scarce and the stakes (and budgets) are high. Healthcare architects with a decade of experience can reach $140K–$180K in major markets. The trade-off is depth over breadth: you become the person who knows one hard thing exceptionally well.",
+        "Specialist corners of practice, such as healthcare planning, labs, and specification writing, where expertise is scarce and the stakes are high. AIA's 2025 compensation data show medical planners' pay up 14% and specification writers' up 11% from 2023 to 2025, faster than the under-3%-a-year growth for architects overall, though no national salary range for these specialties was found. The trade-off is depth over breadth: you become the person who knows one hard thing exceptionally well.",
       ai: "Low-to-moderate — deep code, safety, and systems knowledge resists automation; AI assists with modeling and analysis around the edges.",
-      salary: "~$110K–$180K · healthcare +18–30% · data-center/lab +20–35%",
+      salary: "No sourced national range · AIA 2023–25 pay growth: medical planners +14%, specification writers +11%",
     },
     {
       path: "Computational Design & Tech",
@@ -509,19 +509,19 @@ const data = {
       color: "#6E56C8",
       roles: ["Computational Designer", "BIM Manager", "Design Technologist", "Façade Specialist"],
       reality:
-        "The bridge between architecture and code. These practitioners use parametric modeling and scripting (Grasshopper, Dynamo, Python) to solve geometry, fabrication, and automation problems the design team can't do by hand, and BIM managers own the digital infrastructure of the whole firm. It's one of the few architecture paths that's a net beneficiary of the AI wave — someone has to build, deploy, and govern the tools. Firms will not hire you here on a studio portfolio alone; they want scripts and parametric projects.",
+        "The bridge between architecture and code. These practitioners use parametric modeling and scripting (Grasshopper, Dynamo, Python) to solve geometry, fabrication, and automation problems the design team can't do by hand, and BIM managers own the digital infrastructure of the whole firm. It may be one of the architecture paths best placed for the AI wave, since someone has to build, deploy, and govern the tools (an editorial judgment, not a measured one). Career guides say firms want scripts and parametric projects, not a studio portfolio alone.",
       ai: "A beneficiary — you become the person building and managing the tools reshaping the field, not the one they displace.",
-      salary: "~$90K–$150K+ · strong upward trajectory, tech-adjacent premiums",
+      salary: "BIM manager avg. base ~$97K (10th–90th pct. $66K–$127K, Payscale) · no computational-designer figure found",
     },
     {
       path: "Real Estate Development",
       icon: "🏗️",
       color: C.terra,
-      roles: ["Development Associate", "Project Manager", "Development Director", "Principal"],
+      roles: ["Development Associate", "Senior Associate", "Development Manager", "Director of Development"],
       reality:
-        "The owner's side of the table — deciding what gets built, financing it, and capturing the value, rather than being hired to design it. It's the highest-ceiling exit from architecture: an architect's grasp of feasibility, zoning, and construction is a real edge, and development compensation runs well past firm salaries at the top, often with equity and deal profits. The catch is that it's a different discipline — finance, pro formas, and risk — so a real estate master's or an MBA usually accelerates the move.",
+        "The owner's side of the table — deciding what gets built, financing it, and capturing the value, rather than being hired to design it. An architect's grasp of feasibility, zoning, and construction is a real edge; the two postings found prefer construction, architecture, engineering, or project-management experience, and one lists a master's or real estate certificate as preferred. The catch is that it's a different discipline — finance, pro formas, and risk — so a real estate master's or certificate can help.",
       ai: "Low — deal-making, capital, and risk judgment are relationship- and market-driven, not automatable.",
-      salary: "~$70K–$110K entry · $200K+ at director/principal, plus deal upside",
+      salary: "Two postings: senior associate $120K–$150K + bonus (Dallas) · director $150K–$175K (Washington, D.C.) · no national dataset",
     },
     {
       path: "Construction Management",
@@ -529,9 +529,9 @@ const data = {
       color: C.gold,
       roles: ["Field Engineer", "Project Engineer", "Construction Manager", "Owner's Rep"],
       reality:
-        "Running the build rather than drawing it — schedule, budget, trades, and getting the thing constructed on time. Architecture graduates advance fast here because they read drawings fluently and understand design intent, and the pay is notably better than early firm practice: the construction-manager median is $104,900. No additional degree is required to make the jump, which makes it one of the most accessible and lucrative pivots out of the drafting chair.",
+        "Running the build rather than drawing it — schedule, budget, trades, and getting the thing constructed on time. Career guides say architecture graduates move into it because they read drawings fluently and understand design intent, and the median construction manager earns $114,990 (BLS May 2025), about $15,700 above the architect median, with 9% projected growth. BLS lists a bachelor's in construction, business, engineering, or a related field as typical and does not name architecture, so check whether a given employer wants construction experience or a credential.",
       ai: "Low — coordinating people, trades, and a physical site in real time is stubbornly hands-on work.",
-      salary: "Median $104,900 · owner's-rep and senior CM roles higher",
+      salary: "BLS median $114,990 · 10th pct. under $69,690 · 90th pct. over $189,440",
     },
     {
       path: "Urban Planning & Design",
@@ -539,9 +539,9 @@ const data = {
       color: C.green,
       roles: ["Urban Designer", "City Planner", "Transportation Planner", "Director of Planning"],
       reality:
-        "Zooming out from one building to the scale of blocks, districts, and cities — zoning, land use, transit, and the physical form of neighborhoods. Architecture graduates bring spatial-design skills that pure planning grads often lack, making them strong urban designers. Most policy and planning roles, though, want planning knowledge, public-process experience, GIS, or an MUP, so the cleanest route pairs your architecture degree with a planning master's. (Landscape architecture, a licensed sibling profession, is an adjacent path at ~$79,660 median.)",
+        "Zooming out from one building to the scale of blocks, districts, and cities — zoning, land use, transit, and the physical form of neighborhoods. Architecture graduates bring spatial-design skills that pure planning grads often lack, making them strong urban designers. Most policy and planning roles, though, want planning knowledge, public-process experience, GIS, or an MUP, so the cleanest route pairs your architecture degree with a planning master's. (Landscape architecture, a licensed sibling profession, is an adjacent path at ~$79,870 median.)",
       ai: "Low-to-moderate — data and mapping get automated, but public process, politics, and judgment remain human.",
-      salary: "Planners ~$81,800–$83,720 median · often requires an MUP",
+      salary: "BLS median $89,320 · 10th pct. under $60,010 · 90th pct. over $134,490 · master's typical",
     },
     {
       path: "Academia & Research",
@@ -549,9 +549,9 @@ const data = {
       color: C.graphite,
       roles: ["Adjunct / Lecturer", "Assistant → Full Professor", "Researcher", "Dean"],
       reality:
-        "Teaching studio and seminars, and producing scholarship on history, theory, building science, or computation — usually gated by a PhD (or a strong practice reputation for design faculty). The intellectual freedom is real, but so is the scarcity: tenure-track lines are few and fiercely contested, and many early-career academics string together adjunct work at low pay before landing something stable. A labor of love with a narrow, competitive top end.",
+        "Teaching studio and seminars, and producing scholarship on history, theory, building science, or computation — usually gated by a doctorate. The intellectual freedom is real, but so is the scarcity: BLS expects colleges to hire more part-time teachers and to offer limited full-time tenure and non-tenure positions in most disciplines, and tenure can take up to seven years. Only about 8,350 people held postsecondary architecture-teaching jobs in BLS's May 2023 data. A labor of love with a narrow, competitive top end.",
       ai: "Low — original scholarship and teaching are human work; AI is a research aid, not a substitute.",
-      salary: "Adjunct ~$45K–$70K · tenured professor ~$95K–$160K+",
+      salary: "BLS (May 2023, architecture teachers) median $105,770 · 10th–90th pct. $60,610–$174,390",
     },
     {
       path: "Design-Adjacent & Creative",
@@ -559,9 +559,9 @@ const data = {
       color: C.red,
       roles: ["Interior Architect", "Production Designer", "Viz Artist", "Product Designer"],
       reality:
-        "The creative diaspora — interiors and adaptive reuse, film and game production design, architectural visualization, exhibition and furniture design, even UX and spatial computing. Architecture's blend of spatial reasoning, material knowledge, and visual communication transfers unusually well, and the pace of seeing built results is often faster than in a firm. It's also the corner most exposed to AI: visualization especially is being reshaped, rewarding artists who pair core craft with AI fluency rather than resisting it.",
+        "The creative diaspora — interiors and adaptive reuse, film and game production design, architectural visualization, exhibition and furniture design, even UX and spatial computing. Architecture's blend of spatial reasoning, material knowledge, and visual communication transfers well. It's also the corner where the sources discuss AI most directly: visualization especially is being reshaped, rewarding artists who pair core craft with AI fluency rather than resisting it.",
       ai: "High for visualization — concept imagery and rendering are being automated fast; hybrid 'AI-augmented' artists thrive, purists struggle.",
-      salary: "~$55K–$120K+ depending on niche, city, and reputation",
+      salary: "No sourced range · pay varies widely by niche, city, and reputation",
     },
   ],
 };
@@ -876,13 +876,13 @@ export default function ArchitectureRoadmap() {
                   marginBottom: 6,
                 }}
               >
-                DESTINATIONS · SALARY: BLS OEWS MAY 2024 + AIA COMPENSATION 2025
+                DESTINATIONS · SALARY: BLS OOH MAY 2025 + NAMED SOURCES
               </div>
               <p style={{ margin: 0, fontSize: 15.5, lineHeight: 1.62, color: C.ink, maxWidth: 770 }}>
                 One of the most transferable design educations there is. Eight destinations from an
-                architecture degree — from the licensed firm track it's built around to the higher-ceiling
-                exits in development, construction, and tech. Every card carries an honest read on pay and
-                on how exposed the work is to automation.
+                architecture degree — from the licensed firm track it's built around to exits in development,
+                construction, planning, and tech. Every card carries an honest read on pay and
+                on how exposed the work is to automation (the AI lines are editorial judgments). Where no source was found, the card says so.
               </p>
             </div>
 
@@ -1001,8 +1001,8 @@ export default function ArchitectureRoadmap() {
             lineHeight: 1.6,
           }}
         >
-          TAP ANY ITEM OR CARD TO EXPAND · SOURCES: BLS OOH/OEWS MAY 2024, NCARB NBTN 2025, AIA
-          COMPENSATION & BENEFITS 2025, NAAB, MCKINSEY 2025 · COMPILED JUL 2026
+          TAP ANY ITEM OR CARD TO EXPAND · SOURCES: BLS OOH (MAY 2025) + OEWS, NCARB AXP + NBTN 2025, AIA
+          COMPENSATION 2025 + AI REPORT + FIRM SURVEY 2026, NAAB, PAYSCALE · VERIFIED NOV 2026
         </footer>
       </main>
     </div>

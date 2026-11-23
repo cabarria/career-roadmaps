@@ -42,7 +42,7 @@ const data = {
       years: "YRS 1–4",
       color: C.blue,
       intro:
-        "Data science barely existed as a bachelor's degree a decade ago and is now one of the fastest-growing majors in the country — which is both the opportunity and the problem. The BLS projects roughly 34% growth for data scientists through 2034, about 23,400 openings a year, one of the strongest outlooks of any occupation. But degrees and certificates are being awarded far faster than that, and the crowding lands almost entirely at the entry level. The transcript gets you screened; an internship, a public portfolio, and one domain you actually understand get you hired.",
+        "Data science is a young bachelor's degree that has grown quickly, which is both the opportunity and the problem. The BLS projects 35% growth for data scientists from 2025 to 2035, about 24,800 openings a year, and lists a bachelor's as the typical entry credential. But degrees and certificates are being awarded in large numbers, and the crowding lands almost entirely at the entry level. The transcript gets you screened; an internship, a public portfolio, and one domain you actually understand get you hired.",
       sections: [
         {
           title: "Core Curriculum",
@@ -51,7 +51,7 @@ const data = {
             {
               name: "Calculus Sequence & Linear Algebra",
               detail:
-                "Single and multivariable calculus plus matrix theory. Linear algebra is the one that matters most later — every model you'll meet, from regression to transformers, is linear algebra with extra steps.",
+                "Single and multivariable calculus plus matrix theory (Stanford requires Math 51 and 52; Northwestern requires MATH 220, 230, and 240 linear algebra). Linear algebra is the one that matters most later: every model you'll meet, from regression to transformers, is linear algebra with extra steps.",
             },
             {
               name: "Probability Theory",
@@ -61,42 +61,42 @@ const data = {
             {
               name: "Statistical Inference",
               detail:
-                "Estimation, hypothesis testing, confidence intervals, maximum likelihood. Universally required and increasingly the part of the degree AI cannot substitute for.",
+                "Estimation, hypothesis testing, confidence intervals, maximum likelihood. Required across the programs checked, and a prerequisite for declaring the major at Rutgers.",
             },
             {
               name: "Programming for Data Science",
               detail:
-                "Almost always Python (Stanford, Northwestern, and Rutgers all gate the major behind a Python course). R appears alongside it in stats-housed programs.",
+                "Almost always Python (Stanford's gateway course DATASCI 112 uses Python, and Northwestern requires STAT 201, programming for data science). R appears alongside it in stats-housed programs.",
             },
             {
               name: "Data Structures & Algorithms",
               detail:
-                "Borrowed straight from the CS major — arrays, trees, hashing, Big-O. Required in most DS programs and tested in nearly every technical interview you'll sit.",
+                "Borrowed straight from the CS major: arrays, trees, hashing, Big-O. Grand Valley State requires it (CIS 263), and Maryland's data science specialization requires CMSC 351 in the CS major.",
             },
             {
               name: "Regression & Statistical Learning",
               detail:
-                "Linear and logistic models, regularization, resampling, tree ensembles. The methodological spine: most production 'ML' in industry is still a well-specified regression or a gradient-boosted tree.",
+                "Linear and logistic models, regularization, resampling, tree ensembles. The methodological spine. One 2026 stack guide says scikit-learn covers about 80% of enterprise classification and regression tasks.",
             },
             {
               name: "Databases & SQL",
               detail:
-                "Relational modeling, joins, indexing, query optimization. Unglamorous and non-negotiable — SQL is the single most-used skill in every data job on this page.",
+                "Relational modeling, joins, indexing, query optimization. Unglamorous and non-negotiable: SQL appears in nearly every job-posting snippet and interview guide reviewed.",
             },
             {
               name: "Data Visualization",
               detail:
-                "Grammar of graphics, perceptual encoding, and when a chart lies. Often the course that most improves your hireability, because it's really a communication course.",
+                "Grammar of graphics, perceptual encoding, and when a chart lies. Grand Valley State requires a dedicated visualization course (CIS 320). Treat it as a communication course.",
             },
             {
-              name: "Data Ethics & Data in Context",
+              name: "Data Ethics Requirement",
               detail:
-                "Now a distinct required course at most programs (Stanford, Rutgers, Northwestern all mandate one). Consent, bias, privacy, and the provenance of the datasets you'll be handed.",
+                "Stanford requires a data, technology, and ethics course, and Northwestern lists a one-unit ethics elective. Consent, bias, privacy, and the provenance of the datasets you'll be handed.",
             },
             {
               name: "Domain Application Requirement",
               detail:
-                "Most DS majors force 6+ credits in an applied field — biology, economics, public health, business. Take this seriously: domain knowledge is the most reliable differentiator in the job market.",
+                "Grand Valley State requires 6 credits in an applied domain, Northwestern requires two units of technical and domain electives, and Stanford requires neuroscience and cognitive psychology. Hiring guides stress industry-specific knowledge.",
             },
           ],
         },
@@ -105,29 +105,29 @@ const data = {
           icon: "△",
           items: [
             {
-              name: "Mathematical Statistics",
+              name: "Probability",
               detail:
-                "The classic weeder. Proof-based probability and inference at a level most students haven't seen — the difficulty is rigor, not topic difficulty, and it arrives suddenly.",
+                "One student-facing guide names probability and linear algebra as the hardest courses, calling them the mathematical backbone of machine learning.",
             },
             {
               name: "Linear Algebra Done Properly",
               detail:
-                "Eigendecompositions, projections, and vector spaces as abstractions rather than recipes. Students who coast through the computational version pay for it in machine learning.",
+                "The same guide calls it the steepest climb for students who struggle with abstract math, and the backbone of machine learning.",
             },
             {
               name: "Algorithms",
               detail:
-                "DS majors take the CS department's algorithms course alongside CS majors, without the CS majors' two prior semesters of systems practice. Expect the heaviest coding load of the degree.",
+                "Maryland's data science specialization sits inside the CS major and requires CMSC 351. The same guide says debugging often takes longer than writing code.",
             },
             {
               name: "Your First Genuinely Messy Dataset",
               detail:
-                "Not a course — a rite. Duplicate keys, silent encoding failures, undocumented nulls, a timestamp column in three formats. Roughly 60–70% of real data work is this, and no class fully prepares you.",
+                "Not a course, a rite. Duplicate keys, silent encoding failures, undocumented nulls, a timestamp column in three formats. One student guide calls cleaning messy real-world data tedious and discouraging.",
             },
             {
               name: "Proof-Writing",
               detail:
-                "Several programs (Stanford among them) require a dedicated proof course. It's the gate to graduate statistics and the thing self-taught candidates most conspicuously lack.",
+                "Stanford requires a dedicated proof-writing course. Check whether your program does.",
             },
           ],
         },
@@ -138,32 +138,32 @@ const data = {
             {
               name: "SQL Fluency",
               detail:
-                "Window functions, CTEs, query plans. If you can only be excellent at one thing by graduation, make it this — it's the common denominator across analyst, scientist, and engineer roles.",
+                "Window functions, CTEs, query plans. SQL shows up in nearly every posting and interview guide reviewed, across analyst, scientist, and engineer roles.",
             },
             {
               name: "Python: pandas, NumPy, scikit-learn",
               detail:
-                "The working stack. Polars (Rust-based, 5–50× faster than pandas on large frames) is increasingly worth learning as a second dataframe library.",
+                "The working stack. One 2026 stack guide reports Polars running 5 to 50 times faster than pandas on common operations.",
             },
             {
               name: "Reproducible Workflow",
               detail:
-                "Git, virtual environments, and the discipline of moving analysis out of notebooks into scripts. The single clearest signal separating trained candidates from bootcamp output.",
+                "Git, virtual environments, and the discipline of moving analysis out of notebooks into scripts. Hiring guides list a public GitHub as part of the portfolio bar.",
             },
             {
               name: "Data Cleaning & Validation",
               detail:
-                "Schema checks, missingness diagnosis, outlier judgment. The task most often handed to juniors and now partially automated — which means the judgment layer is what you sell.",
+                "Schema checks, missingness diagnosis, outlier judgment. One 2026 salary guide says LLMs now handle routine SQL and basic feature engineering, so the judgment layer is what you sell.",
             },
             {
               name: "Communicating to Non-Technical Audiences",
               detail:
-                "Writing the two-paragraph version of a model result for someone who will make a decision from it. Repeatedly named by hiring managers as the top differentiator among technically equal candidates.",
+                "Writing the two-paragraph version of a model result for someone who will make a decision from it. Listed as a requirement in Glassdoor posting snippets for experimentation roles.",
             },
             {
               name: "Experiment Design Basics",
               detail:
-                "Randomization, power, multiple comparisons. Undergraduates who arrive already comfortable with A/B testing methodology are unusual and immediately more employable in tech.",
+                "Randomization, power, multiple comparisons. A 2026 product data scientist interview guide says experiment design and metric reasoning dominate the interview loop.",
             },
           ],
         },
@@ -172,29 +172,29 @@ const data = {
           icon: "⌗",
           items: [
             {
-              name: "Jupyter, Quarto & the Notebook Problem",
+              name: "Jupyter & the Notebook Problem",
               detail:
-                "Notebooks are how you'll explore and a bad way to ship. Learn both the notebook and how to graduate code out of it; Quarto is the current standard for reproducible reports.",
+                "Notebooks are how you'll explore and a bad way to ship. Learn both the notebook and how to graduate code out of it.",
             },
             {
               name: "R and the tidyverse",
               detail:
-                "Still dominant in biostatistics, epidemiology, social science, and academic research. Being bilingual in Python and R opens the entire health and policy sector to you.",
+                "A 2025 Akkodis blog says SAS has long dominated clinical-trial programming, with R and Python increasingly used alongside it. Being bilingual in Python and R keeps the health and policy sector open to you.",
             },
             {
               name: "Tableau or Power BI",
               detail:
-                "Enterprise BI tools you'll almost certainly touch in your first job. Low ceiling, but not knowing one is a visible gap on an analyst résumé.",
+                "Both appear on 2026 lists of leading data science tools, and one salary guide says analysts who combine SQL, a BI tool, and Python earn more than those with Excel and SQL alone.",
             },
             {
-              name: "LLM Assistants — the honest read",
+              name: "LLM Assistants: the honest read",
               detail:
-                "Claude and similar tools now handle routine SQL, exploratory plotting, and basic feature engineering reliably. That was the traditional scope of a junior hire, which is exactly why the entry rung has thinned. Use them, and be able to catch them when they're confidently wrong.",
+                "One 2026 salary guide says LLMs now handle routine SQL, exploratory plotting, and basic feature engineering reliably, and ties that to a compressed junior market. Use them, and be able to catch them when they're confidently wrong.",
             },
             {
               name: "AutoML and its trap",
               detail:
-                "Model-building is the most automatable part of the pipeline — low open-endedness, low context dependence. Practitioners consistently report that overconfident AutoML output causes more bad decisions than slow analysis ever did.",
+                "A survey of data science automation work classes model-building as the most easily automated category, being less open-ended and less dependent on context. One practitioner essay says he has seen more business decisions torpedoed by overconfident AutoML users than he can count.",
             },
           ],
         },
@@ -203,34 +203,34 @@ const data = {
           icon: "◇",
           items: [
             {
-              name: "Internships — the actual gate",
+              name: "Internships: the actual gate",
               detail:
-                "Recruiters report that roles which two years ago went to a student with coursework now require at least one internship plus a public portfolio plus a real reference. Apply in sophomore year for junior-summer placement.",
+                "One recruiter reports that junior analyst roles which two years ago went to a student with a coursework portfolio now ask for at least one internship, a public GitHub or published Kaggle notebook, and a real recommendation.",
             },
             {
               name: "ASA DataFest",
               detail:
-                "A nationally coordinated 48-hour undergraduate competition on a large real dataset from an actual company. Free, open to any major, and specifically watched by recruiters who attend to see how students think under pressure.",
+                "A nationally coordinated undergraduate data analysis competition run by local hosts (48 hours at ASU, three days at RIT). Open to any major at the hosts checked, free at ASU, with professionals attending to recruit.",
             },
             {
-              name: "Kaggle — with a caveat",
+              name: "Kaggle, with a caveat",
               detail:
-                "Useful for technique and visible as a portfolio. But a Titanic notebook is the single most common artifact in the entry-level applicant pool; only a genuinely original problem or a strong competition finish signals anything.",
+                "Some employers value it, but many interns have never used it. A 2026 career guide describes the crowded entry pool as full of course certificates and Titanic-dataset projects, so only original work signals much.",
             },
             {
               name: "Undergraduate Research or an REU",
               detail:
-                "The route into a funded PhD and the strongest signal for research-track roles. Statistics, biostatistics, and computational-science labs all take undergraduates who can code.",
+                "The route into a funded PhD. 2026 examples: UMBC's online Big Data REU (June 1 to July 24, teams of 4 to 5) and SMU's Advancing Data Science in the Public Interest REU (Dallas, paid, same dates). Both are limited to US citizens and permanent residents (UMBC also admits nationals).",
             },
             {
               name: "One End-to-End Deployed Project",
               detail:
-                "Ingest real data, model it, ship it somewhere a stranger can use, monitor it. One of these outweighs five notebook analyses because almost no applicant has done it.",
+                "Ingest real data, model it, ship it somewhere a stranger can use, monitor it. Hiring guides say candidates must show real-world project experience.",
             },
             {
               name: "A Domain, Not Just a Toolkit",
               detail:
-                "Healthcare, credit risk, supply chain, energy, sports, public policy. The candidates clearing the entry-level crowd are almost always the ones who can talk about a business, not just a model.",
+                "Industries named as hiring in 2026 guides include healthcare, finance, retail, automotive, and energy, and the guides say candidates need industry-specific knowledge.",
             },
           ],
         },
@@ -242,7 +242,7 @@ const data = {
       years: "YRS 5–6",
       color: C.green,
       intro:
-        "Data science is one of the fields where the master's functions as the working credential rather than an optional extra — but almost nobody gets it funded. These are professional degrees, and the cost spread is the most extreme in higher education: Georgia Tech's online analytics MS runs roughly $10K total for the same diploma as its on-campus program, while comparable private programs run $80–120K. The degree also does double duty as the standard career-change instrument for people arriving from economics, biology, physics, or nursing.",
+        "The master's is common but not a gate: BLS lists a bachelor's as the typical entry credential for data scientists, and one profile dataset puts the split at 51% bachelor's, 34% master's, and 13% doctorate. Professional programs are generally self-funded, and the cost spread is wide. Georgia Tech's online analytics MS runs roughly $14K to $16K all-in for the same diploma as its on-campus program (about $12K tuition plus per-semester fees), while the on-campus version is estimated at $42K to $74K and top private programs run $120K or more.",
       sections: [
         {
           title: "Program Types",
@@ -251,32 +251,32 @@ const data = {
             {
               name: "MS in Data Science (professional)",
               detail:
-                "Coursework-based, 1–2 years, capstone rather than thesis. The default. Quality varies enormously — check whether the faculty are researchers or adjuncts, and whether the capstone involves a real external client.",
+                "Coursework-based, usually 1 to 2 years, often with a capstone rather than a thesis. Check the faculty, and whether the capstone involves a real external client.",
             },
             {
               name: "MS in Statistics or Biostatistics",
               detail:
-                "Theory-first and the most respected credential for inference-heavy work. Biostatistics in particular is the direct entry ticket to pharma, CROs, and academic medical centers — a narrower door but a far less crowded one.",
+                "Theory-first. BLS lists a master's as the typical entry credential for statisticians, and biostatistics is the direct route to pharma, CROs, and academic medical centers: a narrower door (BLS counts 31,300 statisticians against 275,600 data scientists).",
             },
             {
               name: "MS in Analytics",
               detail:
-                "Business-facing, optimization and decision-science heavy. Georgia Tech's OMSA is the archetype: 36 credits, part-time, taken while working, with tracks from business analytics to computational data analytics.",
+                "Analytics, modeling, and decision-science focused. Georgia Tech's online OMSA is the archetype: 36 credits (12 courses), usually taken part-time while working.",
             },
             {
               name: "MS in CS with an ML concentration",
               detail:
-                "The engineering-heavy route, and the better one if the goal is machine learning engineering rather than analysis. Expect systems, distributed computing, and deep learning over inference.",
+                "NC State's Foundations of Data Science MS has a computer science concentration with Artificial Intelligence I and Neural Networks and Deep Learning among its electives, on a core of statistics, mathematics, algorithms, databases, and machine learning (30 credit hours).",
             },
             {
               name: "Thesis-track research MS",
               detail:
-                "Smaller, sometimes partially funded, and explicitly a PhD bridge. Worth pursuing only if you want research — many US PhD programs admit straight from a bachelor's and won't transfer your credits anyway.",
+                "A PhD bridge, though most US PhD programs admit straight from a bachelor's and many do not transfer master's credits.",
             },
             {
               name: "Online and part-time programs",
               detail:
-                "No longer a compromise. Georgia Tech, UT Austin (~$10K, 30 credits), and Berkeley's MIDS have made the online MS the default choice for working professionals, with identical diplomas.",
+                "Georgia Tech lists the same diploma for online and on-campus. A 2026 roundup reports UT Austin's online program at about $10K for 30 credits (a secondary figure, not checked against UT) and names Berkeley's MIDS and Johns Hopkins as premium options.",
             },
           ],
         },
@@ -287,27 +287,27 @@ const data = {
             {
               name: "Assume self-funded",
               detail:
-                "Unlike a PhD, professional data science master's degrees rarely come with tuition waivers or stipends. TA and RA positions exist but are scarce and usually reserved for thesis-track students.",
+                "Unlike a PhD, professional data science master's degrees rarely come with tuition waivers or stipends. Check each program's funding page before assuming otherwise.",
             },
             {
-              name: "The $10K vs $120K spread",
+              name: "The $15K vs $120K spread",
               detail:
-                "Georgia Tech OMSA and UT Austin's online MSDS sit around $10K total. Top private on-campus programs run $80–120K. The employer signal difference does not scale with the price difference.",
+                "Georgia Tech's online OMSA runs about $12K in tuition plus $212 to $531 per semester in fees, roughly $14K to $16K all-in (our arithmetic). On-campus is estimated at $42K to $74K, and top private programs run $120K or more. Georgia Tech lists the same diploma for both.",
             },
             {
               name: "Employer tuition benefits",
               detail:
-                "The most underused funding route in this field. Many large employers reimburse $5–10K a year, which fully covers a low-cost online MS taken over three years while you keep earning.",
+                "Part-time online programs are built for people who keep working, so employer tuition assistance is worth asking about. Amounts vary by employer and were not researched.",
             },
             {
               name: "The honest ROI math",
               detail:
-                "One salary survey puts data scientists with a bachelor's at ~$101K and a master's at ~$109K. An $8K annual premium justifies a $10K degree quickly and a $120K degree slowly. Run the arithmetic before you enroll.",
+                "One salary survey (Zippia, via Coursera) puts data scientists with a bachelor's at about $101K and a master's at about $109K. An $8K annual premium repays a roughly $15K degree in about two years and a $120K degree in about fifteen, before tax. Run the arithmetic before you enroll.",
             },
             {
               name: "What the degree actually buys",
               detail:
-                "Screening. It gets a résumé past filters that reject bachelor's-only applicants and reframes a non-technical background. It does not substitute for experience, and programs that imply otherwise are selling something.",
+                "Career guides call the master's the standard credential for mid-level roles, while a bachelor's alone still qualifies for junior analyst and junior data scientist roles. It does not substitute for experience.",
             },
           ],
         },
@@ -323,32 +323,32 @@ const data = {
             {
               name: "Causal Inference",
               detail:
-                "Potential outcomes, instrumental variables, difference-in-differences, propensity methods. Repeatedly named as one of the genuinely scarce skills in the 2026 market — and one AI is worst at.",
+                "Potential outcomes, instrumental variables, difference-in-differences, propensity methods. Named in 2026 hiring guides as a scarce skill, and one recruiter puts a $30K to $60K premium on genuine causal inference.",
             },
             {
               name: "Experimental Design at Scale",
               detail:
-                "CUPED variance reduction, sequential testing, interference between units, multiple-comparison control across hundreds of concurrent tests. The core technical content of product data science in tech.",
+                "A 2026 interview guide lists A/B testing, CUPED, sequential testing, and causal inference as the core technical foundation of product data science.",
             },
             {
               name: "Bayesian Methods",
               detail:
-                "Hierarchical models, MCMC, Stan or PyMC. Dominant in pharma, marketing mix modeling, and any setting with small samples and strong priors.",
+                "Hierarchical models, MCMC, Stan or PyMC. Listed as a plus for product-science roles in one 2026 interview guide.",
             },
             {
               name: "Time Series & Forecasting",
               detail:
-                "ARIMA through state-space models and modern gradient-boosted forecasting. Demand planning, energy, and finance run on this, and it carries a documented pay premium.",
+                "ARIMA through state-space models and modern gradient-boosted forecasting. One 2026 interview guide puts the premium for forecasting skills at about $10K for product-science roles.",
             },
             {
               name: "Deep Learning",
               detail:
-                "CNNs, transformers, attention, fine-tuning. Essential for computer vision and NLP roles — and notably not what most enterprise data science jobs actually require day to day.",
+                "CNNs, transformers, attention, fine-tuning. Role-specific: mainly AI, computer vision, and NLP positions.",
             },
             {
               name: "MLOps & Production ML",
               detail:
-                "Feature stores, model registries, monitoring, drift detection, retraining. The gap between a notebook model and a deployed one is where most junior candidates are exposed.",
+                "Feature stores, model registries, monitoring, drift detection, retraining. Hiring guides name MLOps and production ML among the scarce skills, with senior and MLOps roles taking four to six months to fill.",
             },
           ],
         },
@@ -359,22 +359,22 @@ const data = {
             {
               name: "Snowflake or Databricks",
               detail:
-                "The two platform poles. Snowflake is SQL-first and lower friction for analytics; Databricks is the lakehouse choice for teams training custom models, with MLflow and GPU clusters built in.",
+                "The two platform poles. Per one 2026 comparison, Snowflake is SQL-first while Databricks is built around the ML lifecycle, with MLflow and GPU clusters.",
             },
             {
               name: "dbt",
               detail:
-                "Brought version control, testing, and documentation to SQL transformations and effectively created the analytics engineer role. Now integrated across every major warehouse.",
+                "Brings version control, testing, and documentation to SQL transformations, and supports Snowflake, BigQuery, Redshift, Databricks, and Postgres.",
             },
             {
               name: "Airflow, Dagster & orchestration",
               detail:
-                "Scheduling and dependency management for pipelines. Airflow 3.0 remains the incumbent; Dagster is the preferred choice on newer Python-first stacks.",
+                "Scheduling and dependency management for pipelines. Airflow 3.0 (released April 2025) and Dagster, the latter for Python-first stacks, per one 2026 tools guide.",
             },
             {
               name: "PyTorch",
               detail:
-                "The de facto deep learning standard, with torch.compile now stable. Meanwhile XGBoost and LightGBM still beat neural networks on the structured tabular data most companies actually have.",
+                "A leading deep learning framework, with torch.compile now stable per one 2026 tools guide. XGBoost and LightGBM remain the usual boosted-tree tools for tabular data.",
             },
             {
               name: "MLflow & Weights and Biases",
@@ -384,7 +384,7 @@ const data = {
             {
               name: "Docker, Kubernetes & cloud ML",
               detail:
-                "SageMaker, Vertex AI, or Azure ML. Cloud fluency is worth a documented $14–18K premium on top of the role baseline — one of the cheapest skills to acquire relative to its return.",
+                "SageMaker, Vertex AI, or Azure ML. Cloud fluency is worth a documented $14–18K premium on top of the role baseline in one 2026 guide.",
             },
             {
               name: "The AI/RAG stack",
@@ -401,7 +401,7 @@ const data = {
       years: "YRS 7+",
       color: C.purple,
       intro:
-        "A PhD is not required for most data science jobs and is a genuinely bad investment if you want one. It is the entry ticket to a specific and narrow set of roles: research scientist at an industry lab, faculty, quantitative research at a systematic fund. Programs run 4–6 years, live in statistics, computer science, biostatistics, or information schools rather than a single department, and are fully funded with a tuition waiver and stipend. If a program asks you to pay, that is diagnostic — walk away.",
+        "A PhD is not required for most data science jobs: BLS lists a bachelor's as typical, and the Zippia split cited by Coursera puts about 13% of data scientists at the doctorate level. It is the entry ticket to a narrower set of roles, mainly research scientist roles at big tech and industry labs, plus faculty. Programs run 4 to 6 years, are housed in data science, computer science, statistics, engineering, information, business, and applied mathematics units, and research programs are typically fully funded with a tuition waiver and stipend. One guide treats a request to pay tuition as a red flag.",
       sections: [
         {
           title: "How the PhD Works",
@@ -410,32 +410,32 @@ const data = {
             {
               name: "Admission straight from a bachelor's",
               detail:
-                "Most US programs admit undergraduates directly. A separate master's can even slow you down, since many programs don't transfer those credits. Research experience matters more than grades past a threshold.",
+                "Most US programs admit undergraduates directly. Many programs do not transfer master's credits.",
             },
             {
               name: "Rotations & advisor matching",
               detail:
-                "Year one is heavy coursework, and in many programs you rotate through two or three labs before committing. Advisor fit predicts completion and timeline more than institutional prestige does.",
+                "Year one is heavy coursework, and some programs have you rotate through two or three labs before committing.",
             },
             {
               name: "Qualifying exams",
               detail:
-                "Usually year one or two, testing breadth across probability, inference, and computing. Passing makes you a candidate; failing is the most common exit point.",
+                "Usually year one or two, testing breadth of knowledge or research potential, per two program guides. A thesis proposal follows in year two or three.",
             },
             {
               name: "Conference-driven dissertations",
               detail:
-                "In ML-leaning programs the thesis is a stapled set of NeurIPS, ICML, or ICLR papers on a six-month review cycle. Statistics-housed programs still run on slower journal timelines — a real difference in daily rhythm.",
+                "Guides describe submitting papers to major conferences from about year three. The scale is large: NeurIPS 2025 received 21,575 valid submissions (up from 9,467 in 2020) and accepted 5,290, or 24.52%.",
             },
             {
-              name: "Full funding, always",
+              name: "Full funding is the norm",
               detail:
-                "Tuition waiver plus a stipend, typically via a mix of teaching and research assistantships. Compare stipends against local cost of living, not nominally — $35K in a cheap city beats $50K in the Bay Area.",
+                "Research programs typically offer a tuition waiver, stipend, health insurance, and research or conference funding. Compare stipends against local cost of living: one guide says $35K in a low-cost city can beat $50K in San Francisco.",
             },
             {
               name: "Median time to degree: 5–6 years",
               detail:
-                "Applied ML tends toward five; theory and systems run six or more. Very few finish in four. Industry internships during years three and four are standard and are how most graduates get hired.",
+                "Applied ML tends toward five; theory and systems run six or more; very few finish in four. One guide places internships around year four.",
             },
           ],
         },
@@ -446,37 +446,37 @@ const data = {
             {
               name: "Foundation model evaluation & agents",
               detail:
-                "How to measure capability honestly, benchmark contamination, and whether agentic systems can do open-ended analysis. Recent benchmark work finds AI agents strong on model-building subtasks and much weaker on open-ended, context-dependent ones.",
+                "Can agentic systems do open-ended data science? AgentDS (17 challenges across six industries, 29 teams in an open competition) found AI-only baselines below the strongest human-AI teams, with agents defaulting to standard modeling strategies and weakest on image and PDF data.",
             },
             {
               name: "Causal machine learning",
               detail:
-                "Double machine learning, causal forests, heterogeneous treatment effects. The most commercially valuable frontier, because it answers 'what should we do' rather than 'what will happen'.",
+                "Double machine learning, causal forests, heterogeneous treatment effects. A review of 133 applied causal-forest papers found most follow the software package's defaults, and a method comparison finds inference for individual-level effects unreliable across methods.",
             },
             {
               name: "Uncertainty quantification & conformal prediction",
               detail:
-                "Distribution-free prediction intervals with finite-sample guarantees — a fast-moving area precisely because deployed models need calibrated confidence, not just point predictions.",
+                "Distribution-free prediction intervals with finite-sample coverage guarantees under exchangeability. A 2024 review lists open problems for large-scale data, time series and shifting data, graphs, images, and LLM text outputs.",
             },
             {
-              name: "Differential privacy & federated learning",
+              name: "Differential privacy",
               detail:
-                "Formal privacy guarantees for released statistics and training on data that never leaves the device. Now operational at the US Census Bureau and across mobile platforms.",
+                "Formal privacy guarantees for released statistics. The Census Bureau's 2020 disclosure avoidance system is based on differential privacy and protects all data products except the apportionment totals.",
             },
             {
               name: "Algorithmic fairness & auditing",
               detail:
-                "Defining, measuring, and contesting disparate impact in deployed systems, plus the emerging methodology of auditing models you can't see inside.",
+                "Defining, measuring, and testing for disparate impact in deployed systems. Survey literature such as the paper titled 'Fairness Testing: A Comprehensive Survey and Analysis of Trends' maps the area.",
             },
             {
-              name: "High-dimensional & post-selection inference",
+              name: "Post-selection inference",
               detail:
-                "Valid p-values after you've used the data to choose the model. A deep statistics problem that most applied practice quietly ignores.",
+                "Valid inference after you've used the data to choose the model. An integrated review of post-model-selection inference in linear regression appeared in Statistics Surveys (2022), and the line of work continues.",
             },
             {
               name: "ML for science",
               detail:
-                "Protein structure, climate emulation, materials discovery, single-cell genomics. The fastest route from a data science PhD into work with obvious external stakes.",
+                "Google DeepMind's science page lists AlphaFold (protein structures, over 200 million predicted), WeatherNext (weather prediction), and GNoME (materials discovery). A 2026 arXiv paper examines machine learning emulators for climate science.",
             },
           ],
         },
@@ -485,24 +485,24 @@ const data = {
           icon: "◇",
           items: [
             {
-              name: "Industry research labs dominate",
+              name: "Industry research is a common destination",
               detail:
-                "Roughly 60% of data science doctorates go to industry research — Google, Meta, Microsoft, Amazon, and the frontier labs — rather than academia. This is the expected outcome, not a consolation prize.",
+                "One low-confidence guide says about 60% of data science PhD graduates enter industry research, naming Google, Meta, and Microsoft. Treat the figure as indicative: no source reviewed gives a verified placement rate.",
             },
             {
               name: "The academic market is small",
               detail:
-                "Tenure-track statistics and data science positions exist and are less brutal than the humanities market, but the ratio of PhDs to openings still runs heavily against you. Plan for industry and treat faculty as the upside case.",
+                "No source reviewed quantifies tenure-track openings in statistics or data science. These doctorates are designed to prepare future professors and researchers, but plan for industry as well and ask any program for its placement record.",
             },
             {
               name: "The PhD premium is real but bounded",
               detail:
-                "A doctorate carries roughly a $20–50K entry-level premium in research-focused roles. In engineering-focused roles it carries almost none — five years of experience would have paid better.",
+                "One guide reports a $20K to $50K entry-level premium in research-focused roles, and says many ML scientist roles at big tech require or strongly prefer a doctorate.",
             },
             {
-              name: "National labs and government science",
+              name: "Government statistical agencies",
               detail:
-                "Los Alamos, Sandia, NIST, NIH. Lower ceilings than industry, but genuine research autonomy, publication freedom, and stability that industry labs conspicuously lack.",
+                "The Census Bureau and BLS post statistician roles on the federal GS scale, and the Census Bureau's disclosure avoidance work is itself differential privacy practice. Pay follows the published GS table rather than industry scales.",
             },
           ],
         },
@@ -513,22 +513,22 @@ const data = {
             {
               name: "Agentic research assistants",
               detail:
-                "Multi-agent pipelines that decompose a project into cleaning, EDA, and modeling subtasks now handle a real share of the mechanical work. The reviewing, framing, and deciding stay with you.",
+                "Practitioner writing describes multi-agent pipelines that split a project into cleaning, EDA, and modeling subtasks, and AgentDS summarizes the best collaboration pattern as AI for acceleration and humans for direction.",
             },
             {
-              name: "Empirical work is commoditizing",
+              name: "Baselines are getting cheap",
               detail:
-                "When a competent baseline takes an afternoon, running the experiment stops being the contribution. Theory, evaluation design, and hard-won domain grounding are what still differentiate a paper.",
+                "One practitioner reports prototyping an analysis pipeline in 30 minutes that took six hours in 2020. In AgentDS, domain-driven feature engineering consistently beat blind automation.",
             },
             {
-              name: "The reproducibility problem got worse",
+              name: "Peer review is straining",
               detail:
-                "More output, faster, with less verification. Reviewer load at major ML conferences has become a live crisis, and the field's response to it is itself now an active research area.",
+                "NeurIPS 2025 received 21,575 valid submissions, up from 9,467 in 2020. Its program chairs recruited many first-time area chairs, cited 11 grossly negligent reviewers, and reduced reliance on bidding because of collusion concerns.",
             },
             {
               name: "Human–AI collaboration as a subject",
               detail:
-                "Benchmarks like AgentDS explicitly compare AI-only pipelines against human-AI teams on domain-specific problems across healthcare, banking, and manufacturing — the collaboration itself is now measurable.",
+                "AgentDS compares AI-only pipelines against human-AI teams on domain-specific problems across six industries (commerce, food production, healthcare, insurance, manufacturing, retail banking), so the collaboration itself is measurable.",
             },
           ],
         },
@@ -540,13 +540,13 @@ const data = {
       path: "Product & Decision Science",
       icon: "🧪",
       color: C.blue,
-      anchor: 130,
+      anchor: 176,
       roles: ["Data Analyst", "Data Scientist", "Product DS", "Sr Data Scientist", "Staff DS"],
       reality:
-        "The archetypal tech data science role, and it is much less about modeling than the title suggests: experiment design, metric definition, causal inference, and persuading a product team. Entry is the crowded end — thousands of similar résumés per junior opening — while mid-level and senior roles routinely sit unfilled for four to six months. Most hires land at mid-level with two to six years of experience, which means the realistic route in is often analyst first, scientist second.",
+        "The archetypal tech data science role, and it is much less about modeling than the title suggests: experiment design, metric definition, causal inference, and persuading a product team. Entry is the crowded end, while senior and specialist roles can take four to six months to fill. Most hires land at mid-level with two to six years of experience, which means the realistic route in is often analyst first, scientist second.",
       ai: "Moderate. LLMs cover the SQL and exploratory plotting layer; experiment design, metric judgment, and defending a causal claim to a skeptical VP do not automate.",
       salary:
-        "BLS median $112,590 (May 2024 OEWS) · Levels.fyi median total comp ~$176K · entry ~$95K → principal ~$260K base · $330K+ total comp at top tech",
+        "BLS median $120,230 (May 2025; P10 $67,240 to P90 $199,130) · Levels.fyi median total comp ~$176K · recruiter offer range ~$95K entry to ~$260K principal · $330K+ at top tech employers",
     },
     {
       path: "Machine Learning & AI Engineering",
@@ -555,7 +555,7 @@ const data = {
       anchor: 212,
       roles: ["ML Engineer", "AI Engineer", "MLOps Engineer", "Sr MLE", "Principal MLE"],
       reality:
-        "The highest-paying mainstream destination and the one with the steepest software engineering bar — you own the full production lifecycle, from training through deployment, monitoring, and the 3am page. Pay bifurcates sharply: enterprise MLEs cluster around $170–245K total, while a small frontier-lab cohort with the same title clears $600K–$1M. Notably, most people in these roles arrived from backend or infrastructure engineering rather than from data science.",
+        "The highest-paying mainstream destination and the one with the steepest software engineering bar: you own the full production lifecycle, from training through deployment, monitoring, and the 3am page. Pay bifurcates sharply: enterprise MLEs cluster around $170–245K total, while a small frontier-lab cohort with the same title clears $600K–$1M. One recruiting platform's survey reports most AI/ML roles are filled by engineers currently titled backend or infrastructure (a low-confidence source).",
       ai: "Low displacement, high leverage. The work is building the AI systems. LLM fine-tuning and RAG architecture specifically add $20–50K over a generalist.",
       salary:
         "Base $128K–$186K · avg total comp ~$212K (Built In 2026) · Levels.fyi median ~$260K · Meta median ~$430K · frontier labs $600K–$795K+",
@@ -567,70 +567,70 @@ const data = {
       anchor: 130,
       roles: ["Analytics Engineer", "Data Engineer", "Platform Engineer", "Sr Data Engineer"],
       reality:
-        "The least glamorous and most consistently hireable path in this whole set. Data engineers out-earn data scientists on base pay at most employers, and the specialized expertise — dbt, Airflow, streaming, warehouse architecture — keeps the role scarce even as analyst pools flood. The World Economic Forum listed big-data specialists as the fastest-growing technology job through 2030. If your priority is a job offer rather than a job title, start here.",
+        "The least glamorous path in this set. One recruiter reports data engineer base medians of $125K to $135K, above the older BLS data scientist median that recruiter compared against, and entry-level data engineering roles reportedly draw fewer applicants than data science roles. The World Economic Forum lists big data specialists as the fastest-growing technology job through 2030.",
       ai: "Low to moderate. Code generation speeds up pipeline writing; data modeling, governance, and diagnosing why the nightly job silently produced wrong numbers remain human work.",
       salary:
-        "Median base $125K–$135K across sources · SF median total ~$180K · Houston surprisingly strong at ~$173K · senior $160K–$210K base",
+        "Median base $125K to $135K across most sources · SF median total ~$180K (75th percentile ~$232K) · Houston ~$173K",
     },
     {
       path: "Research Scientist",
       icon: "🔬",
       color: C.purple,
-      anchor: 300,
+      anchor: 257,
       roles: ["Research Scientist", "Applied Scientist", "Research Engineer", "Sr Staff Scientist"],
       reality:
-        "PhD-gated in practice, and the compensation numbers at the top are genuinely distorting: Meta research scientists run $280–550K, and OpenAI's posted band is $771K to $1.28M with a median near $1M. Treat those as the extreme tail of a lottery with very few tickets, not a plan. Note also that 'applied scientist' hides two different jobs — a product-science flavor built on experimentation and causal inference, and a research-lab flavor in biostatistics and pharma that is more common than candidates expect.",
+        "Many ML scientist roles at big tech require or strongly prefer a doctorate, and the compensation numbers at the top are genuinely distorting: Meta research scientists run $280–550K, and OpenAI's posted band is $771K to $1.28M with a median near $1M. Treat those as the extreme tail of a lottery with very few tickets, not a plan. Note also that 'applied scientist' hides two different jobs: a product-science flavor built on experimentation and causal inference, and a research-lab flavor in biostatistics and pharma that is more common than candidates expect.",
       ai: "Low displacement, but the frontier moves fast enough that specific expertise depreciates. The scarce skill is judgment about what's worth studying.",
       salary:
-        "Industry research $250K–$563K total comp · Meta RS $280K–$550K+ · OpenAI RS $771K–$1.28M (median ~$1M) · academic postdoc $60K–$80K",
+        "Senior (8+ yrs) ML scientist $250K to $563K total comp · Levels.fyi median $244K to $270K · Meta RS $280K to $550K+ · OpenAI RS $771K (L4) to $1.28M (L6), median ~$1M (July 2026)",
     },
     {
       path: "Quantitative Research (Finance)",
       icon: "📈",
       color: C.slate,
-      anchor: 400,
+      anchor: 215,
       roles: ["Quant Researcher", "Quant Analyst", "Strategist", "Portfolio Manager"],
       reality:
-        "The highest-paying destination per unit of headcount and the narrowest door: systematic hedge funds and prop trading firms recruit from a tiny pool of elite mathematics, physics, and statistics backgrounds, often PhD-level. Buy-side researchers generate alpha directly and are paid accordingly; bank-side quant roles support trading desks and pay perhaps a third as much for comparable experience. Firm type matters as much as seniority. Geographically concentrated in New York, Chicago, and London.",
-      ai: "Low. Signal research is adversarial — any edge a widely available model can find has already been arbitraged away. But the tooling floor keeps rising.",
+        "The highest-paying destination per unit of headcount and the narrowest door: systematic hedge funds and prop trading firms recruit from a tiny pool of elite mathematics, physics, and statistics backgrounds, often PhD-level. Buy-side researchers generate alpha directly and are paid accordingly; bank-side quant roles support trading desks and pay roughly a third to a half as much for comparable experience. Firm type matters as much as seniority. New York and London appear throughout the sources.",
+      ai: "Low. Signal research is adversarial: any edge a widely available model can find has already been arbitraged away. But the tooling floor keeps rising.",
       salary:
-        "Mid-level (3–6 yrs) $150K–$280K total at top firms · senior with a track record $500K–$1M+ · bank-side quant materially lower · PhD interns ~$11K/week at Optiver",
+        "Mid-level (3–6 yrs) $150K–$280K total at top firms · senior with a track record $500K–$1M+ · bank-side quant materially lower · Optiver PhD interns ~$11K/week · ranges described by their source as illustrative",
     },
     {
       path: "Biostatistics & Health Data",
       icon: "🧬",
       color: C.green,
-      anchor: 114,
+      anchor: 106,
       roles: ["Biostatistician", "Clinical Data Scientist", "RWE Scientist", "Principal Biostatistician"],
       reality:
-        "A quieter, more stable, and much less crowded corridor than tech data science. An MS in biostatistics is the standard entry credential, and the work — clinical trial design, regulatory submissions, real-world evidence — sits behind FDA process requirements that function as a genuine automation moat. Pharma and CROs pay meaningfully more than academic medical centers. R rather than Python is often the house language.",
-      ai: "Low. Regulatory statistical analysis plans require traceable, pre-specified, human-accountable methodology. Speed is not the constraint here; defensibility is.",
+        "A smaller corridor than tech data science: BLS counts 31,300 statisticians against 275,600 data scientists and lists a master's as the typical entry credential. The work includes clinical trial design, regulatory submissions, and real-world evidence. Glassdoor reports pharma and private-sector biostatisticians generally earn more than those at universities. SAS has long dominated clinical-trial programming, with R and Python increasingly used alongside it.",
+      ai: "Not measured in the sources reviewed.",
       salary:
-        "Average ~$109K–$114K · typical band $95K–$122K · pharma and CRO roles reach $130K–$175K · academic medical centers lower",
+        "BLS statisticians median $105,650 (May 2025; P10 $64,000 to P90 $174,050) · Salary.com ~$109K (band $96K to $122K) · Indeed ~$114K · Glassdoor 8+ yrs $92K to $176K · Payscale ~$88K",
     },
     {
       path: "Public Sector & Policy",
       icon: "🏛",
       color: C.orange,
-      anchor: 100,
-      roles: ["Statistician (Federal)", "Policy Analyst", "Civic Data Scientist", "Chief Data Officer"],
+      anchor: 122,
+      roles: ["Statistician (Federal)", "Economist/Statistician", "Survey Statistician", "Policy Analyst", "Civic Data Scientist"],
       reality:
-        "Census, BLS, CBO, state health departments, city analytics offices, think tanks, and civic tech nonprofits. Pay ceilings are visibly lower — federal GS scales cap well below industry — and the trade is stability, mission, and problems nobody else is allowed to work on: differential privacy for census releases, benefits fraud detection, epidemiological surveillance. Hiring is slower and more credential-driven; a master's is close to expected.",
-      ai: "Low displacement, high procedural friction. Public-sector adoption lags, and transparency and auditability requirements limit what black-box tooling can be used at all.",
+        "Federal statistical agencies such as the Census Bureau and BLS post statistician roles on the GS scale, and the Census Bureau's 2020 disclosure avoidance system is based on differential privacy. Federal pay follows the published GS table, which sits well below the big-tech figures on the other cards. The BLS Economist/Statistician postings reviewed spanned GS-7 to GS-13.",
+      ai: "Not measured in the sources reviewed.",
       salary:
-        "$80K–$130K typical · federal statistician GS-12/13 roughly $90K–$140K depending on locality · senior policy and CDO roles $140K–$180K",
+        "BLS statisticians median $105,650 · 2026 GS base pay: GS-7 step 1 $43,106; GS-12 $76,463 to $99,404; GS-13 $90,925 to $118,204 (before locality) · a BLS GS-13 posting listed $106,437 to $138,370",
     },
     {
       path: "Analytics Leadership & Consulting",
       icon: "📊",
       color: C.sky,
-      anchor: 150,
+      anchor: 131,
       roles: ["Analytics Manager", "Head of Data", "Director of Analytics", "Fractional Data Lead"],
       reality:
-        "Where a decade of individual-contributor work usually goes, and increasingly a destination in itself: a visible market shift is that companies want someone to build a data system and hand it over rather than staff a permanent team. That favors experienced independents and consultants over junior hires. The skills that get you here are the ones least covered in any curriculum — stakeholder management, prioritization, and knowing which questions are worth answering.",
-      ai: "Low. AI increases the number of analyses produced and therefore the value of someone who can tell which ones are trustworthy and which matter.",
+        "Where individual-contributor work often leads. One practitioner essay argues companies increasingly want someone to build a data system and hand it over rather than staff a permanent team, which would favor experienced independents; treat that as one author's observation. The skills that get you here are the ones least covered in any curriculum: stakeholder management, prioritization, and knowing which questions are worth answering.",
+      ai: "Low to moderate. One vendor commentary says AI automates SQL, cleaning, and reporting but not strategic judgment, so the shift is from execution skills to judgment skills.",
       salary:
-        "Analytics manager ~$131K average · director of analytics ~$185K · VP and CDO $200K–$300K+ · independent consulting highly variable, $150–$400/hr",
+        "Analytics manager ~$131K average · director of analytics ~$185K (Glassdoor figures cited by Coursera, 2026)",
     },
   ],
 };
@@ -692,7 +692,7 @@ export default function DataScienceRoadmap() {
           marginBottom: 14,
         }}
       >
-        FIG. 1 — TYPICAL TOTAL COMPENSATION BY DESTINATION · LOG SCALE · USD THOUSANDS
+        FIG. 1 · ONE REPRESENTATIVE FIGURE PER DESTINATION · LOG SCALE · USD THOUSANDS
       </div>
 
       <div style={{ position: "relative", height: 58 }}>
@@ -765,8 +765,8 @@ export default function DataScienceRoadmap() {
         }}
       >
         Each dot is one of the eight destinations below. The axis is logarithmic because the
-        spread demands it — quantitative research and frontier-lab research sit an order of
-        magnitude above public-sector work doing recognizably similar analysis.
+        spread demands it. Each dot uses one representative figure from its card (a BLS median,
+        a total-compensation figure, or a posting midpoint), so compare positions loosely.
       </p>
     </div>
   );
@@ -799,7 +799,7 @@ export default function DataScienceRoadmap() {
             marginBottom: 14,
           }}
         >
-          FIELD ROADMAP · DATA SCIENCE · COMPILED JUL 2026
+          FIELD ROADMAP · DATA SCIENCE · COMPILED NOV 2026
         </div>
         <h1
           style={{
@@ -823,8 +823,8 @@ export default function DataScienceRoadmap() {
             lineHeight: 1.55,
           }}
         >
-          The fastest-growing major with the most crowded front door. Four years, three
-          degrees, eight destinations — with the entry-level squeeze and the AI exposure
+          A rapidly growing field with a crowded front door. Four years, three
+          degrees, eight destinations, with the entry-level squeeze and the AI exposure
           marked honestly on every one.
         </p>
 
@@ -1036,7 +1036,7 @@ export default function DataScienceRoadmap() {
                 Base wages anchor to BLS OEWS; total-compensation figures come from Levels.fyi,
                 Built In, and recruiter placement data, which sample equity-heavy tech employers
                 and therefore read higher. Both are accurate for the market they measure. Every
-                card carries an honest read on AI exposure.
+                card carries a read on AI exposure, and says so where no source measured it.
               </p>
             </div>
 
@@ -1155,10 +1155,10 @@ export default function DataScienceRoadmap() {
             lineHeight: 1.7,
           }}
         >
-          TAP ANY ROW OR CARD TO EXPAND · SOURCES: BLS OEWS MAY 2024 &amp; OOH PROJECTIONS,
-          LEVELS.FYI 2026, BUILT IN 2026, ROBERT HALF 2026 SALARY GUIDE, GLASSDOOR, INDEED,
-          KORE1 PLACEMENT DATA, MOTION RECRUITMENT, NSF SURVEY OF EARNED DOCTORATES, ASA
-          DATAFEST, PROGRAM CATALOGS (STANFORD, NORTHWESTERN, RUTGERS, GEORGIA TECH, DUKE)
+          TAP ANY ROW OR CARD TO EXPAND · COMPILED NOV 2026 · FULL SOURCES IN
+          DATA-SCIENCE-RESEARCH.MD. PRIMARY: BLS OOH &amp; OEWS MAY 2025, OPM 2026 GS TABLE,
+          CENSUS BUREAU, GEORGIA TECH, NEURIPS. SALARY DATA: LEVELS.FYI VIA KORE1, GLASSDOOR,
+          INDEED, SALARY.COM, PAYSCALE. PROGRAM CATALOGS: STANFORD, NORTHWESTERN, RUTGERS, GVSU, UMD, DUKE.
         </footer>
       </main>
     </div>

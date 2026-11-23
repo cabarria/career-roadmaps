@@ -239,7 +239,7 @@ const data = {
       years: "Years 6–11",
       color: T.phaseColors.phd,
       intro:
-        "The civil engineering PhD is typically funded (research and teaching assistantships cover tuition and a stipend) and runs ~4–5 years past the bachelor's. It's a smaller path than in many engineering fields, because civil careers are defined by licensure and practice rather than research credentials. Pursue it for a specific reason: a faculty position, a national-lab or agency research role, or frontier R&D in resilient infrastructure, advanced materials, or smart-city systems. For most design and consulting careers, the PE plus experience outpaces the PhD — but for advancing the science of infrastructure, it's the entry ticket.",
+        "The civil engineering PhD is typically funded (research and teaching assistantships cover tuition and a stipend) and runs ~4–6 years past the bachelor's. It's a smaller path than in many engineering fields, because civil careers are defined by licensure and practice rather than research credentials. Pursue it for a specific reason: a faculty position, a national-lab or agency research role, or frontier R&D in resilient infrastructure, advanced materials, or smart-city systems. For most design and consulting careers, the PE plus experience outpaces the PhD — but for advancing the science of infrastructure, it's the entry ticket.",
       sections: [
         {
           title: "How It Works",
@@ -257,7 +257,7 @@ const data = {
           icon: "✳",
           items: [
             { name: "Resilient & Climate-Adaptive Infrastructure", detail: "Designing structures and systems to withstand floods, wildfire, heat, and sea-level rise. A defining frontier as climate change reshapes what infrastructure must endure — and a major public-funding priority." },
-            { name: "Smart Infrastructure & Digital Twins", detail: "Instrumented bridges, buildings, and networks paired with real-time computational models for monitoring, prediction, and maintenance. The construction digital-twin market is projected to grow into the tens of billions by 2030." },
+            { name: "Smart Infrastructure & Digital Twins", detail: "Instrumented bridges, buildings, and networks paired with real-time computational models for monitoring, prediction, and maintenance. One market forecast puts the construction digital-twin market near $155B by 2030 (a vendor projection, so treat it as indicative)." },
             { name: "Sustainable & Low-Carbon Materials", detail: "Low-carbon concrete, engineered timber (mass timber), recycled and self-healing materials. Reducing the enormous carbon footprint of construction is a central research thrust." },
             { name: "Structural Health Monitoring & Sensing", detail: "Sensor networks and computer vision that detect damage and fatigue in aging structures. Directly responsive to the infrastructure-condition crisis." },
             { name: "Seismic & Extreme-Event Engineering", detail: "Performance-based earthquake, wind, and blast design; large-scale shake-table and hazard research. High-consequence work protecting life safety in disasters." },
@@ -281,7 +281,7 @@ const data = {
           title: "After the PhD",
           icon: "▦",
           items: [
-            { name: "Academic Faculty", detail: "Tenure-track positions teaching and running research labs, competitive but less saturated than some fields. Many civil faculty hold the PE and blend research with practice-informed teaching. Starting ~$90K–$115K (9-month), rising with rank and grants." },
+            { name: "Academic Faculty", detail: "Tenure-track positions teaching and running research labs, competitive but less saturated than some fields. Many civil faculty hold the PE and blend research with practice-informed teaching. BLS puts median pay for postsecondary engineering faculty near $107K (all ranks and fields, May 2023), with the top decile above $200K." },
             { name: "National Labs & Federal Agencies", detail: "Research and technical roles at national labs, the Army Corps of Engineers, DOTs, FHWA, and NIST — shaping infrastructure standards, hazard research, and public works at scale. Stable, mission-driven, often clearance-adjacent." },
             { name: "Industry R&D & Specialized Consulting", detail: "Advanced-analysis and forensic roles at major firms, materials companies, and specialty consultancies. A PhD opens high-end seismic, forensic, and computational-design work — and forensic engineering (failure investigation) pays a premium." },
             { name: "Leadership & Technical Fellow Tracks", detail: "Principal engineer, technical fellow, and firm-leadership roles where deep expertise plus the PE positions you to own the most complex, high-stakes projects and set technical direction." },
@@ -361,8 +361,8 @@ const data = {
       color: "#3f7a52",
       roles: ["PhD Researcher", "Postdoc", "Research Engineer", "Assistant → Full Professor", "National Lab Scientist"],
       reality:
-        "The PhD-gated path — running a lab and advancing the science of resilient infrastructure, materials, or smart systems at universities, national labs, or federal agencies (NIST, Army Corps, DOTs). Less saturated than some engineering fields, and many faculty also hold the PE to teach design and consult. Faculty start ~$90K–$115K (9-month), rising with rank and grants; forensic and specialized-consulting offshoots pay premiums. The reward is shaping how the built world is designed and kept safe.",
-      salary: "$60K postdoc → $150K+ tenured",
+        "The PhD-gated path — running a lab and advancing the science of resilient infrastructure, materials, or smart systems at universities, national labs, or federal agencies (NIST, Army Corps, DOTs). Less saturated than some engineering fields, and many faculty also hold the PE to teach design and consult. BLS puts median pay for postsecondary engineering faculty near $107K (all ranks and fields, May 2023), rising with rank and grants; forensic and specialized-consulting offshoots pay premiums. The reward is shaping how the built world is designed and kept safe.",
+      salary: "$63K postdoc → ~$107K median faculty",
     },
   ],
 };

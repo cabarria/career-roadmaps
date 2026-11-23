@@ -605,7 +605,7 @@ export default function MechanicalEngineeringRoadmap() {
               { label: "BLS Median", value: "$104,110", color: T.orange },
               { label: "Big Tech Hardware TC", value: "$130K–$300K+", color: T.steel },
               { label: "PhD Duration", value: "~5–7 yrs", color: T.teal },
-              { label: "Job Growth ’24–’34", value: "11%", color: T.brass },
+              { label: "Job Growth ’24–’34", value: "9%", color: T.brass },
             ].map((s, i) => (
               <div key={s.label} style={{
                 padding: "11px 14px",
