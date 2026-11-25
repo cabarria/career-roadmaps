@@ -35,7 +35,7 @@ export default function Directory() {
     <div className="directory container">
       <section className="hero" aria-labelledby="site-title">
         <div className="hero-content">
-          <h1 id="site-title">Find your<br />next <em>direction.</em></h1>
+          <h1 id="site-title">Turn curiosity<br />into a <em>career.</em></h1>
           <p>Explore what to study, what each path takes, and where it can lead.</p>
           <div className="hero-actions">
             <a className="button primary" href="#roadmaps">Browse roadmaps</a>
