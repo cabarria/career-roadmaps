@@ -21,7 +21,7 @@ const C = {
 
 const ticker = [
   { s: "IB YR1 ALL-IN", v: "$170–195K", up: true },
-  { s: "FIN ANALYST MEDIAN (BLS)", v: "$101,350", up: true },
+  { s: "FIN ANALYST MEDIAN (BLS)", v: "$101,350", up: true, inSummary: true },
   { s: "CFA L1 PASS RATE", v: "39%", up: false },
   { s: "ADVISOR JOBS 2024–34", v: "+10%", up: true },
   { s: "FIN EXAMINER JOBS", v: "+19%", up: true },
@@ -476,7 +476,7 @@ const font = {
   mono: "'IBM Plex Mono', monospace",
 };
 
-export default function FinanceRoadmap() {
+export default function FinanceRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -485,6 +485,7 @@ export default function FinanceRoadmap() {
 
   const phase = data.phases.find((p) => p.id === activePhase);
   const accent = showCareers ? C.amber : phase.color;
+  const visibleTicker = ticker.filter(stat => !summary || !stat.inSummary);
 
   const selectPhase = (id) => {
     setShowCareers(false);
@@ -544,6 +545,8 @@ export default function FinanceRoadmap() {
         </p>
       </header>
 
+      {summary}
+
       {/* signature ticker */}
       <div
         style={{
@@ -557,7 +560,7 @@ export default function FinanceRoadmap() {
         aria-hidden="true"
       >
         <div className="tickerTrack">
-          {[...ticker, ...ticker].map((t, i) => (
+          {[...visibleTicker, ...visibleTicker].map((t, i) => (
             <span key={i} style={{ fontFamily: font.mono, fontSize: 12, margin: "0 22px", color: C.dim }}>
               {t.s}{" "}
               <span style={{ color: t.up ? C.green : C.red, fontWeight: 600 }}>

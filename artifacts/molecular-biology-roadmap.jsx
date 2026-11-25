@@ -385,7 +385,7 @@ const data = {
 /* ---------------------------------------------------------------
    COMPONENT
 --------------------------------------------------------------- */
-export default function MolecularBiologyRoadmap() {
+export default function MolecularBiologyRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -430,6 +430,8 @@ export default function MolecularBiologyRoadmap() {
           </p>
         </div>
       </header>
+
+      {summary}
 
       {/* GEL LANE NAVIGATION */}
       <nav style={styles.laneNav} aria-label="Career phase navigation">

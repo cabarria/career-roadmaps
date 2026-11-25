@@ -635,7 +635,7 @@ const data = {
   ],
 };
 
-export default function DataScienceRoadmap() {
+export default function DataScienceRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -830,6 +830,8 @@ export default function DataScienceRoadmap() {
 
         <StripPlot />
       </header>
+
+      {summary}
 
       <main style={{ maxWidth: 1080, margin: "0 auto", padding: "24px 20px 60px" }}>
         {/* phase tabs */}

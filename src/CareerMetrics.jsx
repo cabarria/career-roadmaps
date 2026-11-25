@@ -1,12 +1,16 @@
 import data from './career-data.json';
 import { roadmaps } from './catalog.js';
-import { metrics, rankCareers } from './metrics.js';
+import { metrics, metricScale, rankEntries } from './metrics.js';
 import { useQueryParams } from './use-query-params.js';
 
 const titles = new Map(roadmaps.map(roadmap => [roadmap.slug, roadmap.title]));
 
 function Rankings({ dataset, metric }) {
-  const careers = rankCareers(data.careers, dataset);
+  const byMajor = metric.id === 'degree-regret';
+  const subject = byMajor ? 'Major field' : 'Occupation';
+  const entries = rankEntries(byMajor ? data.degreeFields : data.careers, dataset);
+  const { unit, format } = metricScale(metric, dataset);
+  const showUncertainty = entries.every(entry => entry.sampleSize && entry.confidenceInterval);
 
   return (
     <>
@@ -18,20 +22,34 @@ function Rankings({ dataset, metric }) {
       <p className="methodology">{dataset.methodology}</p>
       <div className="table-wrap">
         <table>
-          <caption className="sr-only">{metric.label} by occupation, highest first</caption>
+          <caption className="sr-only">{metric.label} by {subject.toLowerCase()}, highest first</caption>
           <thead>
-            <tr><th scope="col">Occupation</th><th scope="col">Related roadmaps</th><th scope="col">{metric.unit}</th></tr>
+            <tr>
+              <th scope="col">{subject}</th>
+              <th scope="col">Related roadmaps</th>
+              <th scope="col">{unit}</th>
+              {showUncertainty && <>
+                <th scope="col">95% confidence interval</th>
+                <th scope="col">Respondents</th>
+              </>}
+            </tr>
           </thead>
           <tbody>
-            {careers.map(career => (
-              <tr key={career.id}>
-                <th scope="row">{career.title}</th>
+            {entries.map(({ id, title, sourceTitle, sourceUrl, roadmapSlugs, value, confidenceInterval, sampleSize }) => (
+              <tr key={id}>
+                <th scope="row">
+                  {sourceUrl ? <a href={sourceUrl}>{sourceTitle ?? title}</a> : sourceTitle ?? title}
+                </th>
                 <td>
-                  <ul>{career.roadmapSlugs.map(slug => (
+                  <ul>{roadmapSlugs.map(slug => (
                     <li key={slug}><a href={`/roadmaps/${slug}`}>{titles.get(slug)}</a></li>
                   ))}</ul>
                 </td>
-                <td>{metric.format(career.value)}</td>
+                <td>{format(value)}</td>
+                {showUncertainty && <>
+                  <td>{confidenceInterval.map(format).join('–')}</td>
+                  <td>{sampleSize.toLocaleString('en-US')}</td>
+                </>}
               </tr>
             ))}
           </tbody>
@@ -51,7 +69,7 @@ export default function CareerMetrics() {
     <div className="metrics container">
       <div className="page-intro">
         <h1>Compare <em>careers.</em></h1>
-        <p>Explore how occupations compare on earnings, job satisfaction, and resilience to AI disruption.</p>
+        <p>Compare earnings, job satisfaction, degree regret, and AI resilience.</p>
       </div>
 
       <div className="metric-options" role="group" aria-label="Choose a career metric">

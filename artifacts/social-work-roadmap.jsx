@@ -481,7 +481,7 @@ const FONT_CSS = `
 }
 `;
 
-export default function SocialWorkRoadmap() {
+export default function SocialWorkRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -567,6 +567,8 @@ export default function SocialWorkRoadmap() {
           profession where the master's degree, not the doctorate, is the center of gravity.
         </p>
       </header>
+
+      {summary}
 
       {/* Phase tabs */}
       <nav

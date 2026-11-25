@@ -511,7 +511,7 @@ function CareerCard({ career, expanded, onToggle }) {
 }
 
 // ── Main ──────────────────────────────────────────────────────────────────────
-export default function MechanicalEngineeringRoadmap() {
+export default function MechanicalEngineeringRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -602,11 +602,11 @@ export default function MechanicalEngineeringRoadmap() {
             background: T.paper,
           }}>
             {[
-              { label: "BLS Median", value: "$104,110", color: T.orange },
+              { label: "BLS Median", value: "$104,110", color: T.orange, inSummary: true },
               { label: "Big Tech Hardware TC", value: "$130K–$300K+", color: T.steel },
               { label: "PhD Duration", value: "~5–7 yrs", color: T.teal },
-              { label: "Job Growth ’24–’34", value: "9%", color: T.brass },
-            ].map((s, i) => (
+              { label: "Job Growth ’24–’34", value: "9%", color: T.brass, inSummary: true },
+            ].filter(stat => !summary || !stat.inSummary).map((s, i) => (
               <div key={s.label} style={{
                 padding: "11px 14px",
                 borderRight: i < 3 ? `1px solid ${T.line}` : "none",
@@ -622,6 +622,8 @@ export default function MechanicalEngineeringRoadmap() {
             ))}
           </div>
         </header>
+
+        {summary}
 
         {/* ── Phase nav ── */}
         <nav style={{

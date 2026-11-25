@@ -696,7 +696,7 @@ function SalaryCurve() {
   );
 }
 
-export default function LawRoadmap() {
+export default function LawRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -789,6 +789,8 @@ export default function LawRoadmap() {
             <SalaryCurve />
           </div>
         </header>
+
+        {summary}
 
         <main style={{ maxWidth: 1080, margin: "0 auto", padding: "22px 16px 56px" }}>
           <nav className="law-scroll" aria-label="Stages" style={{ borderBottom: `1.5px solid ${C.line}` }}>

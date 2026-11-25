@@ -1,4 +1,1182 @@
 {
-  "careers": [],
-  "datasets": []
+  "careers": [
+    {
+      "id": "architects",
+      "title": "Architects, except landscape and naval",
+      "occupationCode": "17-1011",
+      "roadmapSlugs": [
+        "architecture"
+      ]
+    },
+    {
+      "id": "graphic-designers",
+      "title": "Graphic designers",
+      "occupationCode": "27-1024",
+      "roadmapSlugs": [
+        "art-and-design"
+      ]
+    },
+    {
+      "id": "astronomers",
+      "title": "Astronomers",
+      "occupationCode": "19-2011",
+      "roadmapSlugs": [
+        "astronomy-astrophysics"
+      ]
+    },
+    {
+      "id": "biomedical-engineers",
+      "title": "Bioengineers and biomedical engineers",
+      "occupationCode": "17-2031",
+      "roadmapSlugs": [
+        "biomedical-engineering"
+      ]
+    },
+    {
+      "id": "management-analysts",
+      "title": "Management analysts",
+      "occupationCode": "13-1111",
+      "roadmapSlugs": [
+        "business-administration"
+      ]
+    },
+    {
+      "id": "civil-engineers",
+      "title": "Civil engineers",
+      "occupationCode": "17-2051",
+      "roadmapSlugs": [
+        "civil-engineering"
+      ]
+    },
+    {
+      "id": "software-developers",
+      "title": "Software developers",
+      "occupationCode": "15-1252",
+      "roadmapSlugs": [
+        "computer-science"
+      ]
+    },
+    {
+      "id": "data-scientists",
+      "title": "Data scientists",
+      "occupationCode": "15-2051",
+      "roadmapSlugs": [
+        "data-science"
+      ]
+    },
+    {
+      "id": "economists",
+      "title": "Economists",
+      "occupationCode": "19-3011",
+      "roadmapSlugs": [
+        "economics"
+      ]
+    },
+    {
+      "id": "high-school-teachers",
+      "title": "High school teachers",
+      "occupationCode": "25-2031",
+      "roadmapSlugs": [
+        "education"
+      ]
+    },
+    {
+      "id": "electrical-engineers",
+      "title": "Electrical engineers",
+      "occupationCode": "17-2071",
+      "roadmapSlugs": [
+        "electrical-engineering"
+      ]
+    },
+    {
+      "id": "writers-and-authors",
+      "title": "Writers and authors",
+      "occupationCode": "27-3043",
+      "roadmapSlugs": [
+        "english"
+      ]
+    },
+    {
+      "id": "environmental-engineers",
+      "title": "Environmental engineers",
+      "occupationCode": "17-2081",
+      "roadmapSlugs": [
+        "environmental-engineering"
+      ]
+    },
+    {
+      "id": "financial-and-investment-analysts",
+      "title": "Financial and investment analysts",
+      "occupationCode": "13-2051",
+      "roadmapSlugs": [
+        "finance"
+      ]
+    },
+    {
+      "id": "special-effects-artists-and-animators",
+      "title": "Special effects artists and animators",
+      "occupationCode": "27-1014",
+      "roadmapSlugs": [
+        "game-development"
+      ]
+    },
+    {
+      "id": "lawyers",
+      "title": "Lawyers",
+      "occupationCode": "23-1011",
+      "roadmapSlugs": [
+        "law"
+      ]
+    },
+    {
+      "id": "mathematicians",
+      "title": "Mathematicians",
+      "occupationCode": "15-2021",
+      "roadmapSlugs": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "mechanical-engineers",
+      "title": "Mechanical engineers",
+      "occupationCode": "17-2141",
+      "roadmapSlugs": [
+        "mechanical-engineering"
+      ]
+    },
+    {
+      "id": "family-medicine-physicians",
+      "title": "Family medicine physicians",
+      "occupationCode": "29-1215",
+      "roadmapSlugs": [
+        "medicine-premed"
+      ]
+    },
+    {
+      "id": "biochemists-and-biophysicists",
+      "title": "Biochemists and biophysicists",
+      "occupationCode": "19-1021",
+      "roadmapSlugs": [
+        "molecular-biology"
+      ]
+    },
+    {
+      "id": "medical-scientists",
+      "title": "Medical scientists, except epidemiologists",
+      "occupationCode": "19-1042",
+      "roadmapSlugs": [
+        "neuroscience"
+      ]
+    },
+    {
+      "id": "registered-nurses",
+      "title": "Registered nurses",
+      "occupationCode": "29-1141",
+      "roadmapSlugs": [
+        "nursing"
+      ]
+    },
+    {
+      "id": "pharmacists",
+      "title": "Pharmacists",
+      "occupationCode": "29-1051",
+      "roadmapSlugs": [
+        "pharmacy"
+      ]
+    },
+    {
+      "id": "postsecondary-philosophy-and-religion-teachers",
+      "title": "Postsecondary philosophy and religion teachers",
+      "occupationCode": "25-1126",
+      "roadmapSlugs": [
+        "philosophy"
+      ]
+    },
+    {
+      "id": "physicists",
+      "title": "Physicists",
+      "occupationCode": "19-2012",
+      "roadmapSlugs": [
+        "physics"
+      ]
+    },
+    {
+      "id": "political-scientists",
+      "title": "Political scientists",
+      "occupationCode": "19-3094",
+      "roadmapSlugs": [
+        "political-science"
+      ]
+    },
+    {
+      "id": "psychologists",
+      "title": "Psychologists",
+      "occupationCode": "19-3030",
+      "roadmapSlugs": [
+        "psychology"
+      ]
+    },
+    {
+      "id": "social-workers",
+      "title": "Social workers",
+      "occupationCode": "21-1020",
+      "roadmapSlugs": [
+        "social-work"
+      ]
+    }
+  ],
+  "degreeFields": [
+    {
+      "id": "political-science-public-policy",
+      "title": "Political science, international relations, or public policy",
+      "roadmapSlugs": [
+        "political-science",
+        "law"
+      ]
+    },
+    {
+      "id": "physical-sciences",
+      "title": "Physical sciences (physics, chemistry, earth sciences)",
+      "roadmapSlugs": [
+        "astronomy-astrophysics",
+        "physics"
+      ]
+    },
+    {
+      "id": "sociology-anthropology-social-work",
+      "title": "Sociology, anthropology, or social work",
+      "roadmapSlugs": [
+        "social-work"
+      ]
+    },
+    {
+      "id": "public-health-health-administration",
+      "title": "Public health or health administration",
+      "roadmapSlugs": [
+        "medicine-premed"
+      ]
+    },
+    {
+      "id": "biological-sciences",
+      "title": "Biological sciences (biology, neuroscience, genetics)",
+      "roadmapSlugs": [
+        "molecular-biology",
+        "neuroscience",
+        "medicine-premed"
+      ]
+    },
+    {
+      "id": "english-literature-journalism",
+      "title": "English, literature, or journalism",
+      "roadmapSlugs": [
+        "english"
+      ]
+    },
+    {
+      "id": "history-philosophy",
+      "title": "History or philosophy",
+      "roadmapSlugs": [
+        "philosophy"
+      ]
+    },
+    {
+      "id": "architecture-urban-planning",
+      "title": "Architecture or urban planning",
+      "roadmapSlugs": [
+        "architecture"
+      ]
+    },
+    {
+      "id": "psychology",
+      "title": "Psychology",
+      "roadmapSlugs": [
+        "psychology"
+      ]
+    },
+    {
+      "id": "business-management-marketing",
+      "title": "Business administration, management, or marketing",
+      "roadmapSlugs": [
+        "business-administration"
+      ]
+    },
+    {
+      "id": "mathematics-statistics",
+      "title": "Mathematics or statistics",
+      "roadmapSlugs": [
+        "mathematics"
+      ]
+    },
+    {
+      "id": "agriculture-environment-natural-resources",
+      "title": "Agriculture, environmental science, or natural resources",
+      "roadmapSlugs": [
+        "environmental-engineering"
+      ]
+    },
+    {
+      "id": "fine-arts-performing-arts-design",
+      "title": "Fine arts, performing arts, or design",
+      "roadmapSlugs": [
+        "art-and-design",
+        "game-development"
+      ]
+    },
+    {
+      "id": "finance-accounting-economics",
+      "title": "Finance, accounting, or economics",
+      "roadmapSlugs": [
+        "finance",
+        "economics"
+      ]
+    },
+    {
+      "id": "computing-data-science",
+      "title": "Computer science, information technology, or data science",
+      "roadmapSlugs": [
+        "computer-science",
+        "data-science",
+        "game-development"
+      ]
+    },
+    {
+      "id": "education-teaching",
+      "title": "Education or teaching",
+      "roadmapSlugs": [
+        "education"
+      ]
+    },
+    {
+      "id": "engineering",
+      "title": "Engineering (mechanical, electrical, civil, etc.)",
+      "roadmapSlugs": [
+        "biomedical-engineering",
+        "civil-engineering",
+        "electrical-engineering",
+        "environmental-engineering",
+        "mechanical-engineering"
+      ]
+    },
+    {
+      "id": "nursing-allied-health",
+      "title": "Nursing or allied health professions",
+      "roadmapSlugs": [
+        "nursing"
+      ]
+    },
+    {
+      "id": "medicine-pharmacy-dentistry",
+      "title": "Medicine, pharmacy, or dentistry",
+      "roadmapSlugs": [
+        "medicine-premed",
+        "pharmacy"
+      ]
+    }
+  ],
+  "roadmapSummaries": {
+    "architecture": {
+      "careerId": "architects"
+    },
+    "art-and-design": {
+      "careerId": "graphic-designers",
+      "note": "One of several design paths covered in this roadmap."
+    },
+    "astronomy-astrophysics": {
+      "careerId": "astronomers"
+    },
+    "biomedical-engineering": {
+      "careerId": "biomedical-engineers"
+    },
+    "business-administration": {
+      "careerId": "management-analysts",
+      "note": "A broad occupation that includes management consulting."
+    },
+    "civil-engineering": {
+      "careerId": "civil-engineers"
+    },
+    "computer-science": {
+      "careerId": "software-developers"
+    },
+    "data-science": {
+      "careerId": "data-scientists"
+    },
+    "economics": {
+      "careerId": "economists",
+      "note": "This occupation covers economists by job title. Economics graduates also work in other roles."
+    },
+    "education": {
+      "careerId": "high-school-teachers",
+      "note": "Covers secondary teachers across subjects, excluding special education and career/technical education."
+    },
+    "electrical-engineering": {
+      "careerId": "electrical-engineers"
+    },
+    "english": {
+      "careerId": "writers-and-authors",
+      "note": "One path for English graduates, alongside editing, teaching, and other roles."
+    },
+    "environmental-engineering": {
+      "careerId": "environmental-engineers"
+    },
+    "finance": {
+      "careerId": "financial-and-investment-analysts"
+    },
+    "game-development": {
+      "careerId": "special-effects-artists-and-animators",
+      "note": "A proxy for game art and animation that includes work outside games."
+    },
+    "law": {
+      "careerId": "lawyers"
+    },
+    "mathematics": {
+      "careerId": "mathematicians",
+      "note": "Covers the mathematician occupation. Many mathematics graduates work in other quantitative roles."
+    },
+    "mechanical-engineering": {
+      "careerId": "mechanical-engineers"
+    },
+    "medicine-premed": {
+      "careerId": "family-medicine-physicians",
+      "note": "Family medicine is one specialty covered by this roadmap."
+    },
+    "molecular-biology": {
+      "careerId": "biochemists-and-biophysicists",
+      "note": "A related occupation that covers some molecular biology research roles."
+    },
+    "neuroscience": {
+      "careerId": "medical-scientists",
+      "note": "A broader research occupation that includes some neuroscience roles."
+    },
+    "nursing": {
+      "careerId": "registered-nurses"
+    },
+    "pharmacy": {
+      "careerId": "pharmacists"
+    },
+    "philosophy": {
+      "careerId": "postsecondary-philosophy-and-religion-teachers",
+      "note": "Covers higher education teaching in philosophy and religion."
+    },
+    "physics": {
+      "careerId": "physicists"
+    },
+    "political-science": {
+      "careerId": "political-scientists",
+      "note": "This occupation covers political scientists by job title. The roadmap explores other paths in policy, law, and government."
+    },
+    "psychology": {
+      "careerId": "psychologists"
+    },
+    "social-work": {
+      "careerId": "social-workers"
+    }
+  },
+  "datasets": [
+    {
+      "id": "bls-may-2025-median-wages",
+      "label": "BLS national occupational wages",
+      "metric": "earnings",
+      "source": {
+        "name": "BLS Employment Projections Table 1.2",
+        "url": "https://www.bls.gov/emp/tables/occupational-projections-and-characteristics.htm"
+      },
+      "geography": "United States",
+      "period": "May 2025",
+      "methodology": "National median annual wages from BLS Occupational Employment and Wage Statistics, as reported in Employment Projections Table 1.2. Each row represents an occupation covered by a roadmap.",
+      "scores": [
+        {
+          "careerId": "architects",
+          "value": 99280
+        },
+        {
+          "careerId": "graphic-designers",
+          "value": 62960
+        },
+        {
+          "careerId": "astronomers",
+          "value": 128820
+        },
+        {
+          "careerId": "biomedical-engineers",
+          "value": 109370
+        },
+        {
+          "careerId": "management-analysts",
+          "value": 101860
+        },
+        {
+          "careerId": "civil-engineers",
+          "value": 100840
+        },
+        {
+          "careerId": "software-developers",
+          "value": 135980
+        },
+        {
+          "careerId": "data-scientists",
+          "value": 120230
+        },
+        {
+          "careerId": "economists",
+          "value": 124720
+        },
+        {
+          "careerId": "high-school-teachers",
+          "value": 72040
+        },
+        {
+          "careerId": "electrical-engineers",
+          "value": 120630
+        },
+        {
+          "careerId": "writers-and-authors",
+          "value": 76910
+        },
+        {
+          "careerId": "environmental-engineers",
+          "value": 107110
+        },
+        {
+          "careerId": "financial-and-investment-analysts",
+          "value": 102740
+        },
+        {
+          "careerId": "special-effects-artists-and-animators",
+          "value": 102030
+        },
+        {
+          "careerId": "lawyers",
+          "value": 159670
+        },
+        {
+          "careerId": "mathematicians",
+          "value": 126710
+        },
+        {
+          "careerId": "mechanical-engineers",
+          "value": 104110
+        },
+        {
+          "careerId": "family-medicine-physicians",
+          "value": 244180
+        },
+        {
+          "careerId": "biochemists-and-biophysicists",
+          "value": 127410
+        },
+        {
+          "careerId": "medical-scientists",
+          "value": 103410
+        },
+        {
+          "careerId": "registered-nurses",
+          "value": 97550
+        },
+        {
+          "careerId": "pharmacists",
+          "value": 140910
+        },
+        {
+          "careerId": "postsecondary-philosophy-and-religion-teachers",
+          "value": 80260
+        },
+        {
+          "careerId": "physicists",
+          "value": 172250
+        },
+        {
+          "careerId": "political-scientists",
+          "value": 142080
+        },
+        {
+          "careerId": "psychologists",
+          "value": 99110
+        },
+        {
+          "careerId": "social-workers",
+          "value": 61780
+        }
+      ]
+    },
+    {
+      "id": "gss-job-satisfaction-2004-2024",
+      "label": "General Social Survey",
+      "metric": "satisfaction",
+      "source": {
+        "name": "NORC General Social Survey, release 3a",
+        "url": "https://gss.norc.org/get-the-data/stata.html"
+      },
+      "geography": "United States",
+      "period": "2004–2024 (11 survey waves)",
+      "methodology": "Weighted share of employed respondents who reported being very or moderately satisfied with their work. The table includes occupations with a matching survey category and enough responses for a sufficiently precise estimate. The order reflects the estimates and is subject to sampling uncertainty.",
+      "scores": [
+        {
+          "careerId": "management-analysts",
+          "value": 95.9,
+          "sampleSize": 117,
+          "confidenceInterval": [
+            91.3,
+            98.1
+          ]
+        },
+        {
+          "careerId": "civil-engineers",
+          "value": 96.5,
+          "sampleSize": 56,
+          "confidenceInterval": [
+            90.2,
+            98.8
+          ]
+        },
+        {
+          "careerId": "mechanical-engineers",
+          "value": 94.2,
+          "sampleSize": 41,
+          "confidenceInterval": [
+            80.4,
+            98.5
+          ]
+        },
+        {
+          "careerId": "social-workers",
+          "value": 89,
+          "sampleSize": 127,
+          "confidenceInterval": [
+            82,
+            93.4
+          ]
+        },
+        {
+          "careerId": "lawyers",
+          "value": 81.7,
+          "sampleSize": 118,
+          "confidenceInterval": [
+            70.5,
+            89.2
+          ]
+        },
+        {
+          "careerId": "registered-nurses",
+          "value": 91.5,
+          "sampleSize": 324,
+          "confidenceInterval": [
+            87,
+            94.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "careerexplorer-career-happiness",
+      "label": "CareerExplorer · Career happiness",
+      "metric": "satisfaction",
+      "scale": "stars",
+      "source": {
+        "name": "CareerExplorer",
+        "url": "https://www.careerexplorer.com/careers/"
+      },
+      "geography": "Unspecified",
+      "period": "Ongoing survey, checked November 24, 2026",
+      "methodology": "Average career happiness rating from CareerExplorer survey participants, on a 1–5 scale. Each row links to the survey category that was measured. Categories can be broader or narrower than the occupation featured in a related roadmap.",
+      "scores": [
+        {
+          "careerId": "architects",
+          "value": 3.1,
+          "sourceUrl": "https://www.careerexplorer.com/careers/architect/satisfaction/"
+        },
+        {
+          "careerId": "astronomers",
+          "value": 4,
+          "sourceUrl": "https://www.careerexplorer.com/careers/astronomer/satisfaction/"
+        },
+        {
+          "careerId": "biochemists-and-biophysicists",
+          "value": 3.3,
+          "sourceTitle": "Biochemists",
+          "sourceUrl": "https://www.careerexplorer.com/careers/biochemist/satisfaction/"
+        },
+        {
+          "careerId": "biomedical-engineers",
+          "value": 3.4,
+          "sourceUrl": "https://www.careerexplorer.com/careers/biomedical-engineer/satisfaction/"
+        },
+        {
+          "careerId": "civil-engineers",
+          "value": 2.8,
+          "sourceUrl": "https://www.careerexplorer.com/careers/civil-engineer/satisfaction/"
+        },
+        {
+          "careerId": "data-scientists",
+          "value": 3.3,
+          "sourceUrl": "https://www.careerexplorer.com/careers/data-scientist/satisfaction/"
+        },
+        {
+          "careerId": "economists",
+          "value": 3.1,
+          "sourceUrl": "https://www.careerexplorer.com/careers/economist/satisfaction/"
+        },
+        {
+          "careerId": "electrical-engineers",
+          "value": 3.1,
+          "sourceUrl": "https://www.careerexplorer.com/careers/electrical-engineer/satisfaction/"
+        },
+        {
+          "careerId": "environmental-engineers",
+          "value": 2.9,
+          "sourceUrl": "https://www.careerexplorer.com/careers/environmental-engineer/satisfaction/"
+        },
+        {
+          "careerId": "family-medicine-physicians",
+          "value": 3.1,
+          "sourceUrl": "https://www.careerexplorer.com/careers/family-practitioner/satisfaction/"
+        },
+        {
+          "careerId": "financial-and-investment-analysts",
+          "value": 2.7,
+          "sourceTitle": "Financial analysts",
+          "sourceUrl": "https://www.careerexplorer.com/careers/financial-analyst/satisfaction/"
+        },
+        {
+          "careerId": "graphic-designers",
+          "value": 3.4,
+          "sourceUrl": "https://www.careerexplorer.com/careers/graphic-designer/satisfaction/"
+        },
+        {
+          "careerId": "high-school-teachers",
+          "value": 3,
+          "sourceUrl": "https://www.careerexplorer.com/careers/high-school-teacher/satisfaction/"
+        },
+        {
+          "careerId": "lawyers",
+          "value": 2.6,
+          "sourceUrl": "https://www.careerexplorer.com/careers/lawyer/satisfaction/"
+        },
+        {
+          "careerId": "management-analysts",
+          "value": 3.2,
+          "sourceTitle": "Management consultants",
+          "sourceUrl": "https://www.careerexplorer.com/careers/management-consultant/satisfaction/"
+        },
+        {
+          "careerId": "mathematicians",
+          "value": 3.6,
+          "sourceUrl": "https://www.careerexplorer.com/careers/mathematician/satisfaction/"
+        },
+        {
+          "careerId": "mechanical-engineers",
+          "value": 3,
+          "sourceUrl": "https://www.careerexplorer.com/careers/mechanical-engineer/satisfaction/"
+        },
+        {
+          "careerId": "medical-scientists",
+          "value": 3.3,
+          "sourceTitle": "Scientists",
+          "sourceUrl": "https://www.careerexplorer.com/careers/scientist/satisfaction/"
+        },
+        {
+          "careerId": "pharmacists",
+          "value": 2.7,
+          "sourceUrl": "https://www.careerexplorer.com/careers/pharmacist/satisfaction/"
+        },
+        {
+          "careerId": "physicists",
+          "value": 3.5,
+          "sourceUrl": "https://www.careerexplorer.com/careers/physicist/satisfaction/"
+        },
+        {
+          "careerId": "political-scientists",
+          "value": 3.4,
+          "sourceUrl": "https://www.careerexplorer.com/careers/political-scientist/satisfaction/"
+        },
+        {
+          "careerId": "postsecondary-philosophy-and-religion-teachers",
+          "value": 3.6,
+          "sourceTitle": "Professors",
+          "sourceUrl": "https://www.careerexplorer.com/careers/professor/satisfaction/"
+        },
+        {
+          "careerId": "psychologists",
+          "value": 3.5,
+          "sourceUrl": "https://www.careerexplorer.com/careers/psychologist/satisfaction/"
+        },
+        {
+          "careerId": "registered-nurses",
+          "value": 2.7,
+          "sourceUrl": "https://www.careerexplorer.com/careers/registered-nurse/satisfaction/"
+        },
+        {
+          "careerId": "social-workers",
+          "value": 2.9,
+          "sourceUrl": "https://www.careerexplorer.com/careers/social-worker/satisfaction/"
+        },
+        {
+          "careerId": "software-developers",
+          "value": 3.2,
+          "sourceTitle": "Software engineers",
+          "sourceUrl": "https://www.careerexplorer.com/careers/software-engineer/satisfaction/"
+        },
+        {
+          "careerId": "special-effects-artists-and-animators",
+          "value": 3.5,
+          "sourceTitle": "Multimedia animators",
+          "sourceUrl": "https://www.careerexplorer.com/careers/multimedia-animator/satisfaction/"
+        },
+        {
+          "careerId": "writers-and-authors",
+          "value": 4.1,
+          "sourceUrl": "https://www.careerexplorer.com/careers/writer/satisfaction/"
+        }
+      ]
+    },
+    {
+      "id": "payscale-high-satisfaction-2013-2015",
+      "label": "PayScale · High job satisfaction",
+      "metric": "satisfaction",
+      "source": {
+        "name": "PayScale Meaningful Jobs survey",
+        "url": "https://www.payscale.com/data-packages/most-and-least-meaningful-jobs/full-list"
+      },
+      "geography": "United States",
+      "period": "June 2013–June 2015",
+      "methodology": "Share of PayScale survey respondents who were extremely or fairly satisfied with their job. The survey used the occupation categories available in 2013–15. Where a related roadmap uses a different occupation label, the table displays the survey category measured.",
+      "scores": [
+        {
+          "careerId": "architects",
+          "value": 70
+        },
+        {
+          "careerId": "biochemists-and-biophysicists",
+          "value": 70
+        },
+        {
+          "careerId": "biomedical-engineers",
+          "value": 69
+        },
+        {
+          "careerId": "civil-engineers",
+          "value": 71
+        },
+        {
+          "careerId": "economists",
+          "value": 76
+        },
+        {
+          "careerId": "electrical-engineers",
+          "value": 72
+        },
+        {
+          "careerId": "environmental-engineers",
+          "value": 72
+        },
+        {
+          "careerId": "family-medicine-physicians",
+          "value": 78,
+          "sourceTitle": "Family and general practitioners"
+        },
+        {
+          "careerId": "financial-and-investment-analysts",
+          "value": 68,
+          "sourceTitle": "Financial analysts"
+        },
+        {
+          "careerId": "graphic-designers",
+          "value": 64
+        },
+        {
+          "careerId": "high-school-teachers",
+          "value": 76,
+          "sourceTitle": "Secondary school teachers, except special and vocational education"
+        },
+        {
+          "careerId": "lawyers",
+          "value": 68
+        },
+        {
+          "careerId": "management-analysts",
+          "value": 70
+        },
+        {
+          "careerId": "mechanical-engineers",
+          "value": 69
+        },
+        {
+          "careerId": "medical-scientists",
+          "value": 73
+        },
+        {
+          "careerId": "pharmacists",
+          "value": 77
+        },
+        {
+          "careerId": "physicists",
+          "value": 77
+        },
+        {
+          "careerId": "psychologists",
+          "value": 78,
+          "sourceTitle": "Clinical, counseling, and school psychologists"
+        },
+        {
+          "careerId": "registered-nurses",
+          "value": 71
+        },
+        {
+          "careerId": "software-developers",
+          "value": 57,
+          "sourceTitle": "Application software engineers"
+        },
+        {
+          "careerId": "special-effects-artists-and-animators",
+          "value": 65,
+          "sourceTitle": "Multimedia artists and animators"
+        },
+        {
+          "careerId": "writers-and-authors",
+          "value": 67
+        }
+      ]
+    },
+    {
+      "id": "ziprecruiter-degree-regret-2026",
+      "label": "ZipRecruiter · Recent graduates",
+      "metric": "degree-regret",
+      "source": {
+        "name": "ZipRecruiter Graduate Survey 2026",
+        "url": "https://www.ziprecruiter-research.org/economic-insights-research/grad-survey-2026"
+      },
+      "geography": "United States",
+      "period": "January 30–March 16, 2026",
+      "methodology": "Share of surveyed recent graduates who regretted their college major. The 2026 survey included 1,500 recent graduates from the class of 2025. The major fields here have related roadmaps, which link to possible study and career paths.",
+      "scores": [
+        {
+          "degreeFieldId": "political-science-public-policy",
+          "value": 46.3
+        },
+        {
+          "degreeFieldId": "physical-sciences",
+          "value": 34.1
+        },
+        {
+          "degreeFieldId": "sociology-anthropology-social-work",
+          "value": 30.2
+        },
+        {
+          "degreeFieldId": "public-health-health-administration",
+          "value": 29.8
+        },
+        {
+          "degreeFieldId": "biological-sciences",
+          "value": 28.4
+        },
+        {
+          "degreeFieldId": "english-literature-journalism",
+          "value": 28.3
+        },
+        {
+          "degreeFieldId": "history-philosophy",
+          "value": 27.3
+        },
+        {
+          "degreeFieldId": "architecture-urban-planning",
+          "value": 26.7
+        },
+        {
+          "degreeFieldId": "psychology",
+          "value": 22.2
+        },
+        {
+          "degreeFieldId": "business-management-marketing",
+          "value": 21.7
+        },
+        {
+          "degreeFieldId": "mathematics-statistics",
+          "value": 21.2
+        },
+        {
+          "degreeFieldId": "agriculture-environment-natural-resources",
+          "value": 21.2
+        },
+        {
+          "degreeFieldId": "fine-arts-performing-arts-design",
+          "value": 20.7
+        },
+        {
+          "degreeFieldId": "finance-accounting-economics",
+          "value": 19.8
+        },
+        {
+          "degreeFieldId": "computing-data-science",
+          "value": 19.8
+        },
+        {
+          "degreeFieldId": "education-teaching",
+          "value": 16.4
+        },
+        {
+          "degreeFieldId": "engineering",
+          "value": 15.9
+        },
+        {
+          "degreeFieldId": "nursing-allied-health",
+          "value": 14.6
+        },
+        {
+          "degreeFieldId": "medicine-pharmacy-dentistry",
+          "value": 11.8
+        }
+      ]
+    }
+  ],
+  "employmentOutlook": {
+    "earningsDatasetId": "bls-may-2025-median-wages",
+    "source": {
+      "name": "BLS Employment Projections Table 1.2",
+      "url": "https://www.bls.gov/emp/tables/occupational-projections-and-characteristics.htm"
+    },
+    "geography": "United States",
+    "baseYear": 2025,
+    "projectionYear": 2035,
+    "values": {
+      "architects": {
+        "jobs": 124600,
+        "growthPercent": 4.3,
+        "annualOpenings": 6900
+      },
+      "graphic-designers": {
+        "jobs": 253100,
+        "growthPercent": -1.7,
+        "annualOpenings": 16000
+      },
+      "astronomers": {
+        "jobs": 2400,
+        "growthPercent": 7.8,
+        "annualOpenings": 100
+      },
+      "biomedical-engineers": {
+        "jobs": 23800,
+        "growthPercent": 7.6,
+        "annualOpenings": 1200
+      },
+      "management-analysts": {
+        "jobs": 1077100,
+        "growthPercent": 10.1,
+        "annualOpenings": 94100
+      },
+      "civil-engineers": {
+        "jobs": 380600,
+        "growthPercent": 6.4,
+        "annualOpenings": 22700
+      },
+      "software-developers": {
+        "jobs": 1717800,
+        "growthPercent": 10.2,
+        "annualOpenings": 95300
+      },
+      "data-scientists": {
+        "jobs": 275600,
+        "growthPercent": 34.6,
+        "annualOpenings": 24800
+      },
+      "economists": {
+        "jobs": 18600,
+        "growthPercent": 4.7,
+        "annualOpenings": 1100
+      },
+      "high-school-teachers": {
+        "jobs": 1087500,
+        "growthPercent": -0.2,
+        "annualOpenings": 63500
+      },
+      "electrical-engineers": {
+        "jobs": 199700,
+        "growthPercent": 9.9,
+        "annualOpenings": 11400
+      },
+      "writers-and-authors": {
+        "jobs": 140300,
+        "growthPercent": -0.3,
+        "annualOpenings": 11900
+      },
+      "environmental-engineers": {
+        "jobs": 39100,
+        "growthPercent": 6.3,
+        "annualOpenings": 2300
+      },
+      "financial-and-investment-analysts": {
+        "jobs": 377200,
+        "growthPercent": 7.2,
+        "annualOpenings": 24700
+      },
+      "special-effects-artists-and-animators": {
+        "jobs": 51900,
+        "growthPercent": -0.3,
+        "annualOpenings": 4200
+      },
+      "lawyers": {
+        "jobs": 863700,
+        "growthPercent": 4.7,
+        "annualOpenings": 28700
+      },
+      "mathematicians": {
+        "jobs": 2200,
+        "growthPercent": 0.6,
+        "annualOpenings": 100
+      },
+      "mechanical-engineers": {
+        "jobs": 298500,
+        "growthPercent": 11.2,
+        "annualOpenings": 17800
+      },
+      "family-medicine-physicians": {
+        "jobs": 114300,
+        "growthPercent": 3.3,
+        "annualOpenings": 2900
+      },
+      "biochemists-and-biophysicists": {
+        "jobs": 35200,
+        "growthPercent": 12.3,
+        "annualOpenings": 2900
+      },
+      "medical-scientists": {
+        "jobs": 181000,
+        "growthPercent": 12.6,
+        "annualOpenings": 10500
+      },
+      "registered-nurses": {
+        "jobs": 3465400,
+        "growthPercent": 5.6,
+        "annualOpenings": 180800
+      },
+      "pharmacists": {
+        "jobs": 325200,
+        "growthPercent": 5.2,
+        "annualOpenings": 12500
+      },
+      "postsecondary-philosophy-and-religion-teachers": {
+        "jobs": 26800,
+        "growthPercent": 2,
+        "annualOpenings": 1800
+      },
+      "physicists": {
+        "jobs": 23200,
+        "growthPercent": 7.2,
+        "annualOpenings": 1300
+      },
+      "political-scientists": {
+        "jobs": 6100,
+        "growthPercent": -2,
+        "annualOpenings": 400
+      },
+      "psychologists": {
+        "jobs": 209400,
+        "growthPercent": 5.6,
+        "annualOpenings": 11300
+      },
+      "social-workers": {
+        "jobs": 816100,
+        "growthPercent": 6.2,
+        "annualOpenings": 69100
+      }
+    }
+  }
 }

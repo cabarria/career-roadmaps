@@ -256,7 +256,7 @@ const CAREERS = [
   },
 ];
 
-export default function EnglishRoadmap() {
+export default function EnglishRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -328,6 +328,8 @@ export default function EnglishRoadmap() {
           </div>
         </div>
       </header>
+
+      {summary}
 
       {/* ===================== NAV ===================== */}
       <nav style={S.nav} aria-label="Roadmap phases">

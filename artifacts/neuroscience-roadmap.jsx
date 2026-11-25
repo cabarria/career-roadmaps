@@ -450,7 +450,7 @@ function ScopeTrace({ color, height = 68, glow = true }) {
   );
 }
 
-export default function NeuroscienceRoadmap() {
+export default function NeuroscienceRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -547,6 +547,8 @@ export default function NeuroscienceRoadmap() {
             <ScopeTrace color={C.signal} />
           </div>
         </header>
+
+        {summary}
 
         {/* nav */}
         <nav className="hscroll" style={{ marginBottom: 24 }}>

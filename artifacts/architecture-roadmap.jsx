@@ -37,13 +37,13 @@ const font = {
 
 /* the DRAWING SCHEDULE — workforce data set like notes in a title block */
 const schedule = [
-  { k: "ARCHITECT MEDIAN", v: "$99,280", tone: "up" },
-  { k: "JOB GROWTH ’25–35", v: "+4%", tone: "up" },
-  { k: "OPENINGS / YR", v: "~6,900", tone: "up" },
+  { k: "ARCHITECT MEDIAN", v: "$99,280", tone: "up", inSummary: true },
+  { k: "JOB GROWTH ’25–35", v: "+4%", tone: "up", inSummary: true },
+  { k: "OPENINGS / YR", v: "~6,900", tone: "up", inSummary: true },
   { k: "AVG TIME TO LICENSE", v: "12.9 YRS", tone: "warn" },
   { k: "LICENSED IN U.S.", v: "~116,000", tone: "up" },
   { k: "ARE DIVISIONS", v: "6", tone: "up" },
-  { k: "ARCHITECT JOBS", v: "124,600", tone: "up" },
+  { k: "ARCHITECT JOBS", v: "124,600", tone: "up", inSummary: true },
   { k: "10-YR ATTRITION", v: "36–38%", tone: "warn" },
   { k: "BILLINGS INDEX OCT ’26", v: "44.9", tone: "warn" },
   { k: "FIRMS USING AI IN 2025", v: "74%", tone: "up" },
@@ -577,7 +577,7 @@ const tabBase = {
   transition: "all .15s",
 };
 
-export default function ArchitectureRoadmap() {
+export default function ArchitectureRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -646,6 +646,8 @@ export default function ArchitectureRoadmap() {
         </p>
       </header>
 
+      {summary}
+
       {/* signature — blueprint title-block band: scrolling elevation + drawing schedule */}
       <div
         style={{
@@ -682,7 +684,7 @@ export default function ArchitectureRoadmap() {
           </div>
           {/* drawing schedule */}
           <div className="hscroll" style={{ gap: 0, marginTop: 12 }}>
-            {schedule.map((s, i) => (
+            {schedule.filter(stat => !summary || !stat.inSummary).map((s, i) => (
               <div
                 key={s.k}
                 style={{

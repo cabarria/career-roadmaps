@@ -287,7 +287,7 @@ const AI_RISK_COLORS = {
   High: { bg: "#FBE9E7", text: "#BF360C", label: "High AI Risk" },
 };
 
-export default function PsychologyRoadmap() {
+export default function PsychologyRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -376,6 +376,8 @@ export default function PsychologyRoadmap() {
           </h1>
           <div className="header-sub">From undergraduate foundations to doctoral practice — with an honest look at AI's impact</div>
         </div>
+
+        {summary}
 
         <nav className="nav">
           {data.phases.map((p) => (

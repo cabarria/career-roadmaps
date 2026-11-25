@@ -27,7 +27,7 @@ const C = {
 
 const swatches = [
   { c: C.ultramarine, stat: "$159K", label: "PRODUCT DESIGNER · 8+ YRS AVG" },
-  { c: C.vermilion, stat: "−2%", label: "GRAPHIC DESIGNERS · PROJECTED 2025–35" },
+  { c: C.vermilion, stat: "−2%", label: "GRAPHIC DESIGNERS · PROJECTED 2025–35", inSummary: true },
   { c: C.crimson, stat: "$114,850", label: "ART DIRECTOR · MEDIAN" },
   { c: C.aubergine, stat: "$102,030", label: "SFX ARTIST / ANIMATOR · MEDIAN" },
   { c: C.viridian, stat: "58%", label: "FINE ARTISTS SELF-EMPLOYED" },
@@ -496,7 +496,7 @@ const font = {
   mono: "'Space Mono', monospace",
 };
 
-export default function ArtDesignRoadmap() {
+export default function ArtDesignRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -505,6 +505,7 @@ export default function ArtDesignRoadmap() {
 
   const phase = data.phases.find((p) => p.id === activePhase);
   const accent = showCareers ? C.aubergine : phase.color;
+  const visibleSwatches = swatches.filter(stat => !summary || !stat.inSummary);
 
   const selectPhase = (id) => {
     setShowCareers(false);
@@ -582,6 +583,8 @@ export default function ArtDesignRoadmap() {
         </p>
       </header>
 
+      {summary}
+
       {/* signature: paint-chip swatch marquee */}
       <div
         style={{
@@ -595,7 +598,7 @@ export default function ArtDesignRoadmap() {
         aria-hidden="true"
       >
         <div className="chipTrack">
-          {[...swatches, ...swatches].map((s, i) => (
+          {[...visibleSwatches, ...visibleSwatches].map((s, i) => (
             <div
               key={i}
               style={{

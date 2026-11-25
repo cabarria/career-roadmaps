@@ -484,7 +484,7 @@ function Sparkline({ color }) {
   );
 }
 
-export default function EconomicsRoadmap() {
+export default function EconomicsRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -556,6 +556,8 @@ export default function EconomicsRoadmap() {
           </div>
         </div>
       </header>
+
+      {summary}
 
       {/* ————— phase tabs ————— */}
       <nav

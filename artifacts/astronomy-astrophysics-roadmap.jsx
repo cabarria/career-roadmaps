@@ -516,7 +516,7 @@ const CSS = `
 `;
 
 // ─── COMPONENT ────────────────────────────────────────────────────────────────
-export default function AstronomyRoadmap() {
+export default function AstronomyRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -552,6 +552,8 @@ export default function AstronomyRoadmap() {
           </div>
           <div className="ar-spectrum" />
         </header>
+
+        {summary}
 
         <nav className="ar-nav" aria-label="Life stages">
           {data.phases.map((p) => (

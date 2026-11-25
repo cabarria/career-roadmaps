@@ -35,9 +35,9 @@ const font = {
 
 /* the SIG readout — workforce stats set like directions on a Rx label */
 const sig = [
-  { k: "PHARMACIST MEDIAN", v: "$140,910", tone: "up" },
-  { k: "JOB GROWTH ’25–35", v: "+5%", tone: "up" },
-  { k: "OPENINGS / YR", v: "~12,500", tone: "up" },
+  { k: "PHARMACIST MEDIAN", v: "$140,910", tone: "up", inSummary: true },
+  { k: "JOB GROWTH ’25–35", v: "+5%", tone: "up", inSummary: true },
+  { k: "OPENINGS / YR", v: "~12,500", tone: "up", inSummary: true },
   { k: "NAPLEX PASS ’25", v: "86.8%", tone: "up" },
   { k: "MSL PAY (GLASSDOOR)", v: "~$181K", tone: "up" },
   { k: "HOSPITAL JOBS ’25", v: "+3.0%", tone: "up" },
@@ -410,7 +410,7 @@ const data = {
   ],
 };
 
-export default function PharmacyRoadmap() {
+export default function PharmacyRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("pharmd");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -539,6 +539,8 @@ export default function PharmacyRoadmap() {
         </p>
       </header>
 
+      {summary}
+
       {/* signature — amber-glass Rx label band: dispensing line + SIG readout */}
       <div
         style={{
@@ -564,7 +566,7 @@ export default function PharmacyRoadmap() {
           </div>
           {/* SIG readout */}
           <div className="hscroll" style={{ gap: 0, marginTop: 10 }}>
-            {sig.map((s, i) => (
+            {sig.filter(stat => !summary || !stat.inSummary).map((s, i) => (
               <div
                 key={s.k}
                 style={{

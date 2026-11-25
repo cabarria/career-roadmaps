@@ -502,7 +502,7 @@ function CareerCard({ career, expanded, onToggle }) {
 }
 
 // ── Main ──────────────────────────────────────────────────────────────────────
-export default function CivilEngineeringRoadmap() {
+export default function CivilEngineeringRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -600,11 +600,11 @@ export default function CivilEngineeringRoadmap() {
           background: T.surface,
         }}>
           {[
-            { label: "BLS Median", value: "$99,590", color: T.steel },
+            { label: "BLS Median", value: "$99,590", color: T.steel, inSummary: true },
             { label: "PE License Premium", value: "+$15K–40K", color: T.amber },
-            { label: "Openings / Year", value: "~23,600", color: T.slateBlue },
-            { label: "Job Growth ’24–’34", value: "5%", color: T.green },
-          ].map((s, i) => (
+            { label: "Openings / Year", value: "~23,600", color: T.slateBlue, inSummary: true },
+            { label: "Job Growth ’24–’34", value: "5%", color: T.green, inSummary: true },
+          ].filter(stat => !summary || !stat.inSummary).map((s, i) => (
             <div key={s.label} style={{
               padding: "12px 15px",
               borderRight: i < 3 ? `1px solid ${T.line}` : "none",
@@ -620,6 +620,8 @@ export default function CivilEngineeringRoadmap() {
           ))}
         </div>
       </header>
+
+      {summary}
 
       {/* ── Nav ── */}
       <nav style={{

@@ -370,7 +370,7 @@ const CSS = `
 @media (max-width: 520px) { .ba-matrix { aspect-ratio: 1.35 / 1; } }
 `;
 
-export default function BusinessAdministrationRoadmap() {
+export default function BusinessAdministrationRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -428,6 +428,8 @@ export default function BusinessAdministrationRoadmap() {
             </div>
           </div>
         </header>
+
+        {summary}
 
         {/* Phase + Careers nav */}
         <nav className="ba-nav">
