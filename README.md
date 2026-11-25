@@ -63,7 +63,7 @@ Fields covered: architecture, art and design, astronomy and astrophysics, biomed
 3. Save the results as `research/<field>-research.md` and `artifacts/<field>-roadmap.jsx`.
 4. Add the field to its subject group in `src/catalog.js` and assign it a distinct icon.
 5. Accept an optional `summary` prop and render it after the roadmap header, before the phase navigation. Add its featured occupation and four snapshot figures to `src/career-data.json`. See the [metrics inventory](docs/roadmap-metrics.md) for definitions and sources.
-6. Assess the new field using [research-ai-resilience](.ai/skills/research-ai-resilience/SKILL.md). Update its profile, evidence and coverage ledgers, and regenerate the comparison data using the [update-career-comparisons skill](.ai/skills/update-career-comparisons/SKILL.md) and [comparison indicators](docs/ai-resilience/comparison-indicators.md). Document unsupported occupation matches instead of inventing scores, and update the test coverage expectations to match the verified inventory.
+6. Assess the new field against **every existing comparison dataset** using the [update-career-comparisons skill](.ai/skills/update-career-comparisons/SKILL.md) and [original source register](docs/roadmap-metrics.md#comparison-source-register). Record which datasets have verified new values, existing values to link, or cannot support the new occupation or major, with reasons. Use [research-ai-resilience](.ai/skills/research-ai-resilience/SKILL.md) to update the profile and evidence and coverage ledgers; regenerate the affected comparison data and update test expectations to match the verified inventory. Never invent missing scores.
 7. Run `npm run check` and `npm run build`.
 
 ## Using a roadmap

@@ -27,7 +27,7 @@ On Windows, `scripts\start-local.cmd` is an alternative launcher. No hosting acc
 - Keep source research in `research/`, roadmap components in `artifacts/`, and contributor-facing instructions and methods in `docs/`. The files under `research/ai-resilience/` are application inputs, including Markdown profiles and downloadable reports.
 - Cite primary sources where possible, include observation and access dates, describe geography and scope, and clearly distinguish measured values from estimates or qualitative judgments. Never invent missing data or silently change a metric's definition.
 - For AI resilience inputs, follow the [comparison methodology](docs/ai-resilience/comparison-indicators.md), update the underlying evidence and coverage, and regenerate the affected data.
-- For other metrics, follow [update-career-comparisons](.ai/skills/update-career-comparisons/SKILL.md). Use [research-ai-resilience](.ai/skills/research-ai-resilience/SKILL.md) for changes to AI-related research.
+- For new roadmaps, evaluate every current comparison dataset using the [original source register](docs/roadmap-metrics.md#comparison-source-register) and [update-career-comparisons](.ai/skills/update-career-comparisons/SKILL.md). Document coverage and reasons for unavailable values. Use [research-ai-resilience](.ai/skills/research-ai-resilience/SKILL.md) for changes to AI-related research.
 
 ## Validate your change
 

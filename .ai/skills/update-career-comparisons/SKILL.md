@@ -7,6 +7,17 @@ description: Research, add, verify or refresh comparable metrics on Career Roadm
 
 Work from the repository root. Determine the requested metric and scope before changing data. Read `src/career-data.json`, `src/metrics.js`, `src/CareerMetrics.jsx`, `src/catalog.js` and the relevant section of `test/site.test.js`. Use the current catalog rather than hard-coding its size.
 
+## New-roadmap coverage
+
+When integrating a new roadmap, inventory every existing dataset in `src/career-data.json` (including the employment outlook associated with earnings) and read the original source URLs in `docs/roadmap-metrics.md#comparison-source-register`. For each dataset:
+
+- Retrieve the applicable original release or row and assess the occupation or surveyed degree-field match, coverage, period and statistics. Reuse a supported existing `careerId` or `degreeFieldId` and its value when appropriate; add the new roadmap link without duplicating a score.
+- Add verified new values within the existing dataset's method and vintage. If only a newer release is available, do not silently mix releases; document the gap or propose a consistent refresh.
+- Record the dataset, source URL and release, matched category/code, and outcome (added, existing value linked, or unavailable with reason) in the new roadmap's research notes. Include the access date and row source URL where available. Do not invent or coerce a value to satisfy a coverage assertion.
+- For GSS, extend the estimator's occupation mapping only after verifying its census-code equivalence and apply the published precision criteria. For AI indicators, verify grouped or missing SOC components against original data and employment counts before extending the generator mappings.
+
+The new roadmap is not comparison-complete until each current dataset has an explicit outcome, even when no comparable value can be published.
+
 ## Select the applicable methodology
 
 - **Earnings and employment:** `docs/roadmap-metrics.md` documents the shared BLS snapshot and JSON contract. Keep occupation code, source release, baseline year, wage statistic, geography, projection years, job counts, growth and openings aligned. Explain representative occupation scope for broad fields.
