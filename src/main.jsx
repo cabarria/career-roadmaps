@@ -3,8 +3,10 @@ import { createRoot } from 'react-dom/client';
 import Directory from './Directory.jsx';
 import RoadmapSummary from './RoadmapSummary.jsx';
 import { roadmaps } from './catalog.js';
+import licenseText from '../LICENSE?raw';
 import './site.css';
 
+const licenseUrl = `data:text/plain;charset=utf-8,${encodeURIComponent(licenseText)}`;
 const artifacts = import.meta.glob('../artifacts/*-roadmap.jsx');
 const CareerMetrics = lazy(() => import('./CareerMetrics.jsx'));
 const research = import.meta.glob('../research/*-research.md', {
@@ -76,11 +78,10 @@ function App() {
       <a className="skip-link" href="#main-content">Skip to content</a>
       <Header />
       <Content id="main-content" tabIndex={-1}>{page}</Content>
-      {!roadmap && (
-        <footer className="site-footer container">
-          <a href="https://github.com/cabarria/career-roadmaps">View the project on GitHub</a>
-        </footer>
-      )}
+      <footer className="site-footer container">
+        <span>© 2026 Cesar Barria. Project licensed under the <a href={licenseUrl} download="LICENSE.txt">MIT License</a>.</span>
+        <a href="https://github.com/cabarria/career-roadmaps">View the project on GitHub</a>
+      </footer>
     </>
   );
 }
