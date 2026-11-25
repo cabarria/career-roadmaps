@@ -63,6 +63,16 @@ Each file in `artifacts/` is a standalone component that needs only React. Drop 
 
 Use Node.js 24. The exact version used for the Pages build is in `.node-version`.
 
+On Windows, start the local development server from the repository root:
+
+```powershell
+.\scripts\start-local.cmd
+```
+
+The launcher uses the installed project Node version when available, installs dependencies if needed, and serves the site at `http://127.0.0.1:5173/`. Use `--open` to open it in your browser or `--port 5174` to choose a different port. Press Ctrl+C to stop it.
+
+On other platforms, or when Node and npm are configured normally:
+
 ```sh
 npm ci
 npm run dev
