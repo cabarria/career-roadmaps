@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
 import CareerMetrics from './CareerMetrics.jsx';
 import Directory from './Directory.jsx';
+import RoadmapSummary from './RoadmapSummary.jsx';
 import { roadmaps } from './catalog.js';
 import './site.css';
 
@@ -44,7 +45,7 @@ function RoadmapPage() {
         </div>
       </div>
       <Suspense fallback={<p className="container loading" role="status">Loading {roadmap.title}…</p>}>
-        <Roadmap />
+        <Roadmap summary={<RoadmapSummary slug={roadmap.slug} accent={roadmap.accent} />} />
       </Suspense>
     </>
   );

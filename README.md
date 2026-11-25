@@ -24,7 +24,7 @@ career-roadmaps/
 ### artifacts/
 
 - 28 single-file React components, one per field, named `<field>-roadmap.jsx`.
-- Each has a default export and takes no props, and holds state in React only (no browser storage).
+- Each has a default export, runs on its own, and holds state in React only (no browser storage). The website passes a `summary` element to display the shared career snapshot.
 - Four tabs: Undergraduate, Master's, PhD or research, and Career Paths.
 - Each phase has sub-section tabs with expandable items. Career Paths is a card grid with role titles, a realistic picture of the path, and a salary range.
 - Every field gets its own visual style, so the roadmaps do not look alike.
@@ -49,6 +49,7 @@ Fields covered: architecture, art and design, astronomy and astrophysics, biomed
 2. Replace `{{FIELD_OF_STUDY}}` with the field.
 3. Save the results as `research/<field>-research.md` and `artifacts/<field>-roadmap.jsx`.
 4. Add the field to its subject group in `src/catalog.js` and assign it a distinct icon.
+5. Accept an optional `summary` prop and render it after the roadmap header, before the phase navigation. Add its featured occupation and four snapshot figures to `src/career-data.json`. See the [metrics inventory](docs/roadmap-metrics.md) for definitions and sources.
 
 ## Using a roadmap
 
@@ -84,17 +85,20 @@ Pages serves `index.html` for direct visits to routes such as `/careers` or `/ro
 
 ### Adding career metric datasets
 
-The `/careers` view reads `src/career-data.json`. The data file starts empty and the view displays rankings as sourced datasets are added.
+The roadmap snapshots and `/careers` view read `src/career-data.json`. The snapshots use the May 2025 earnings dataset and the 2025–35 employment outlook for a featured occupation. The earnings ranking uses the same wages. The [metrics inventory](docs/roadmap-metrics.md) documents the original roadmap summaries, available research figures, and JSON structure.
 
-Add each occupation once to `careers` with an `id`, a `title`, and its related `roadmapSlugs`. Add each set of comparable values to `datasets` with an `id`, `label`, `metric`, `source` (`name` and `url`), `geography`, `period`, `methodology`, and `scores` (entries with `careerId` and `value`). Use lowercase hyphenated IDs.
+Add each occupation once to `careers` and each surveyed major category once to `degreeFields`, with an `id`, a `title`, and its related `roadmapSlugs`. Add each set of comparable values to `datasets` with an `id`, `label`, `metric`, `source` (`name` and `url`), `geography`, `period`, `methodology`, and `scores`. Each score has a numeric `value` and either a `careerId` or a `degreeFieldId` for degree regret. Use lowercase hyphenated IDs. Occupation scores can specify `sourceTitle` when the survey category differs from the roadmap occupation and `sourceUrl` for individual survey pages.
 
 | Metric ID | Value |
 | --- | --- |
 | `earnings` | Median annual earnings in USD |
-| `satisfaction` | Job satisfaction on a documented 0–100 scale |
+| `satisfaction` | Percentage reporting job satisfaction, or an original 1–5 rating for datasets with `scale` set to `stars` |
+| `degree-regret` | Percentage of graduates regretting their choice of academic major, by survey major field |
 | `ai-resilience` | Estimated AI resilience on a documented 0–100 scale, with higher values indicating greater resilience |
 
 Keep each comparison within one geography, period, and method. Leave occupations with missing values out of the dataset so that a displayed zero always represents a measured value. The explorer displays the source and methodology and ranks occupations within the selected dataset.
+
+The [survey comparison notes](docs/satisfaction-and-degree-regret.md) document CareerExplorer, PayScale, and ZipRecruiter. The [GSS research](docs/job-satisfaction.md) explains how to reproduce the GSS estimates.
 
 ## Notes on the data
 

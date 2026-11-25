@@ -505,7 +505,7 @@ function CareerCard({ career, expanded, onToggle }) {
 }
 
 // ── Main Component ────────────────────────────────────────────────────────────
-export default function EERoadmap() {
+export default function EERoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -596,11 +596,11 @@ export default function EERoadmap() {
             flexWrap: "wrap",
           }}>
             {[
-              { label: "BLS Median Salary", value: "$111,910", color: T.amber },
+              { label: "BLS Median Salary", value: "$111,910", color: T.amber, inSummary: true },
               { label: "Top IC Design TC", value: "$286K – $590K+", color: T.cyan },
               { label: "PhD Duration", value: "~6–7 years", color: T.violet },
-              { label: "Job Growth (2024–34)", value: "7%", color: T.lime },
-            ].map((s) => (
+              { label: "Job Growth (2024–34)", value: "7%", color: T.lime, inSummary: true },
+            ].filter(stat => !summary || !stat.inSummary).map((s) => (
               <div key={s.label}>
                 <div style={{ fontFamily: T.fontMono, fontSize: 15, fontWeight: 500, color: s.color }}>
                   {s.value}
@@ -612,6 +612,8 @@ export default function EERoadmap() {
             ))}
           </div>
         </header>
+
+        {summary}
 
         {/* ── Phase nav ── */}
         <nav style={{

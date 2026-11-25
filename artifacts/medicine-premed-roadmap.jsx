@@ -768,7 +768,7 @@ function Seam({ color, style }) {
   );
 }
 
-export default function MedicineRoadmap() {
+export default function MedicineRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("premed");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -852,6 +852,8 @@ export default function MedicineRoadmap() {
             <Badge color={accent} title={badgeTitle} years={badgeYears} code={badgeCode} />
           </div>
         </header>
+
+        {summary}
 
         {/* nav */}
         <nav className="hscroll" style={{ marginBottom: 22 }}>

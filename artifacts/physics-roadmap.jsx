@@ -251,7 +251,7 @@ const data = {
 };
 
 // ─── COMPONENT ────────────────────────────────────────────────────────────────
-export default function PhysicsRoadmap() {
+export default function PhysicsRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -666,6 +666,8 @@ export default function PhysicsRoadmap() {
             From classical mechanics to quantum frontiers — a practitioner's guide to the degrees, tools, and careers of a physics education in the United States.
           </p>
         </header>
+
+        {summary}
 
         {/* Nav */}
         <nav className="pr-nav">

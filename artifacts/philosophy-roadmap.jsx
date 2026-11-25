@@ -272,7 +272,7 @@ const globalCSS = `
 }
 `;
 
-export default function PhilosophyRoadmap() {
+export default function PhilosophyRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -390,6 +390,8 @@ export default function PhilosophyRoadmap() {
           </div>
         </div>
       </header>
+
+      {summary}
 
       <main style={{ maxWidth: 1080, margin: "0 auto", padding: "24px 20px 72px" }}>
         {/* ---------------- PHASE TABS ---------------- */}

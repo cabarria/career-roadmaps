@@ -452,7 +452,7 @@ const data = {
 const px = (c) =>
   `0 -3px 0 0 ${c}, 0 3px 0 0 ${c}, -3px 0 0 0 ${c}, 3px 0 0 0 ${c}`;
 
-export default function GameDevRoadmap() {
+export default function GameDevRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -704,6 +704,8 @@ export default function GameDevRoadmap() {
           the craft, and eight careers in an industry that is equal parts dream
           job and hard mode.
         </p>
+
+        {summary}
 
         {/* PHASE TABS */}
         <div style={styles.tabBar}>

@@ -510,7 +510,7 @@ const data = {
   ],
 };
 
-export default function NursingRoadmap() {
+export default function NursingRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("prelicensure");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -591,6 +591,8 @@ export default function NursingRoadmap() {
           Licensed on day one, then a fork that runs all the way to anesthesia and the C-suite: degrees, the licensure gates, and eight destinations, priced from BLS and named sources, with an AI note where the evidence exists.
         </p>
       </header>
+
+      {summary}
 
       {/* signature: patient-monitor band with live ECG + vitals readout */}
       <div

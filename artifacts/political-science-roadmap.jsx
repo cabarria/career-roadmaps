@@ -31,9 +31,9 @@ const font = {
 /* signature: the roll-call board — the field's realities, on the record */
 const rollcall = [
   { label: "Law-school applicants, rank by major", value: "#1 MAJOR", vote: "aye", note: "LSAC 2015–16" },
-  { label: "Poli-sci jobs, 2025–35 (BLS)", value: "−2%", vote: "nay" },
+  { label: "Poli-sci jobs, 2025–35 (BLS)", value: "−2%", vote: "nay", inSummary: true },
   { label: "PhD job-seekers landing tenure-track", value: "~1 in 3", vote: "nay", note: "APSA 2024–25" },
-  { label: "Political-scientist median (BLS)", value: "$142,080", vote: "aye", note: "6,100 jobs" },
+  { label: "Political-scientist median (BLS)", value: "$142,080", vote: "aye", note: "6,100 jobs", inSummary: true },
   { label: "Faculty from top-5 programs", value: "~34%", vote: "nay", note: "2004 data" },
   { label: "Law grads employed <10 mo.", value: "93.4%", vote: "aye", note: "class of 2024" },
 ];
@@ -456,7 +456,7 @@ const data = {
   ],
 };
 
-export default function PoliticalScienceRoadmap() {
+export default function PoliticalScienceRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -530,6 +530,8 @@ export default function PoliticalScienceRoadmap() {
         </p>
       </header>
 
+      {summary}
+
       {/* signature: roll-call board */}
       <div style={{ maxWidth: 1080, margin: "0 auto", padding: "8px 20px 4px" }}>
         <div
@@ -567,7 +569,7 @@ export default function PoliticalScienceRoadmap() {
             </span>
           </div>
           <div>
-            {rollcall.map((r) => {
+            {rollcall.filter(stat => !summary || !stat.inSummary).map((r) => {
               const good = r.vote === "aye";
               return (
                 <div

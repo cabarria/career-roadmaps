@@ -4,6 +4,12 @@ const dollars = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 0,
 });
 const score = new Intl.NumberFormat('en-US', { maximumFractionDigits: 1 });
+const stars = {
+  unit: 'Out of 5',
+  min: 1,
+  max: 5,
+  format: value => `${value.toFixed(1)} / 5`,
+};
 
 export const metrics = [
   {
@@ -21,9 +27,19 @@ export const metrics = [
     icon: '◡',
     accent: '#efbb99',
     description: 'Compare how workers rate their satisfaction with their jobs.',
-    unit: 'Out of 100',
+    unit: 'Percent satisfied',
     max: 100,
-    format: value => `${score.format(value)} / 100`,
+    format: value => `${score.format(value)}%`,
+  },
+  {
+    id: 'degree-regret',
+    label: 'Degree regret',
+    icon: '↶',
+    accent: '#9ac5ed',
+    description: 'Compare how often recent graduates regret their choice of major.',
+    unit: 'Percent who regret their major',
+    max: 100,
+    format: value => `${score.format(value)}%`,
   },
   {
     id: 'ai-resilience',
@@ -37,10 +53,14 @@ export const metrics = [
   },
 ];
 
-export function rankCareers(careers, dataset) {
-  const byId = new Map(careers.map(career => [career.id, career]));
+export function metricScale(metric, dataset) {
+  return dataset.scale === 'stars' ? stars : metric;
+}
+
+export function rankEntries(entries, dataset) {
+  const byId = new Map(entries.map(entry => [entry.id, entry]));
 
   return dataset.scores
-    .map(({ careerId, value }) => ({ ...byId.get(careerId), value }))
-    .sort((left, right) => right.value - left.value || left.title.localeCompare(right.title));
+    .map(({ careerId, degreeFieldId, ...score }) => ({ ...score, ...byId.get(careerId ?? degreeFieldId) }))
+    .sort((left, right) => right.value - left.value || (left.sourceTitle ?? left.title).localeCompare(right.sourceTitle ?? right.title));
 }

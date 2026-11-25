@@ -478,7 +478,7 @@ function CareerCard({ career, expanded, onToggle }) {
 }
 
 // ── Main ──────────────────────────────────────────────────────────────────────
-export default function EnvironmentalEngineeringRoadmap() {
+export default function EnvironmentalEngineeringRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -544,7 +544,7 @@ export default function EnvironmentalEngineeringRoadmap() {
         </div>
 
         {/* Stat strip */}
-        <div style={{
+        {!summary && <div style={{
           display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(128px, 1fr))",
           gap: 0, border: `1px solid ${T.line}`, borderRadius: 6,
           overflow: "hidden", background: T.surface,
@@ -571,8 +571,10 @@ export default function EnvironmentalEngineeringRoadmap() {
               </div>
             </div>
           ))}
-        </div>
+        </div>}
       </header>
+
+      {summary}
 
       {/* ── Nav ── */}
       <nav style={{

@@ -289,7 +289,7 @@ const data = {
 };
 
 // ─── Component ────────────────────────────────────────────────────────────────
-export default function MathRoadmap() {
+export default function MathRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -406,6 +406,8 @@ export default function MathRoadmap() {
           ))}
         </div>
       </header>
+
+      {summary}
 
       {/* ── Phase Navigation ── */}
       <nav style={{

@@ -503,7 +503,7 @@ const CSS = `
 `;
 
 // ─── COMPONENT ────────────────────────────────────────────────────────────────
-export default function EducationRoadmap() {
+export default function EducationRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -540,6 +540,8 @@ export default function EducationRoadmap() {
           </div>
           <div className="cb-chalkline" />
         </header>
+
+        {summary}
 
         <nav className="cb-nav" aria-label="Life stages">
           {data.phases.map((p) => (

@@ -31,8 +31,8 @@ const font = {
 
 const statusBar = [
   { k: "⎇", v: "CS · 2026", tone: C.dim },
-  { k: "◆", v: "BLS median $134K", tone: C.green },
-  { k: "▲", v: "+10% jobs 2025–35", tone: C.green },
+  { k: "◆", v: "BLS median $134K", tone: C.green, inSummary: true },
+  { k: "▲", v: "+10% jobs 2025–35", tone: C.green, inSummary: true },
   { k: "▼", v: "entry-level 4.5% of postings", tone: C.red },
   { k: "⚠", v: "recent-grad unemp 5.2% (all majors)", tone: C.orange },
   { k: "⌁", v: "84% of devs use AI (SO 2025)", tone: C.cyan },
@@ -447,7 +447,7 @@ const data = {
   ],
 };
 
-export default function ComputerScienceRoadmap() {
+export default function ComputerScienceRoadmap({ summary } = {}) {
   const [activePhase, setActivePhase] = useState("undergrad");
   const [activeSection, setActiveSection] = useState(0);
   const [expandedItem, setExpandedItem] = useState(null);
@@ -534,6 +534,8 @@ export default function ComputerScienceRoadmap() {
         </p>
       </header>
 
+      {summary}
+
       {/* signature: editor status bar */}
       <div
         className="hscroll"
@@ -545,7 +547,7 @@ export default function ComputerScienceRoadmap() {
           maxWidth: "100%",
         }}
       >
-        {statusBar.map((s, i) => (
+        {statusBar.filter(stat => !summary || !stat.inSummary).map((s, i) => (
           <span
             key={i}
             style={{
