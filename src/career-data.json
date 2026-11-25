@@ -599,74 +599,6 @@
       ]
     },
     {
-      "id": "gss-job-satisfaction-2004-2024",
-      "label": "General Social Survey",
-      "metric": "satisfaction",
-      "source": {
-        "name": "NORC General Social Survey, release 3a",
-        "url": "https://gss.norc.org/get-the-data/stata.html"
-      },
-      "geography": "United States",
-      "period": "2004–2024 (11 survey waves)",
-      "methodology": "Weighted share of employed respondents who reported being very or moderately satisfied with their work. The table includes occupations with a matching survey category and enough responses for a sufficiently precise estimate. The order reflects the estimates and is subject to sampling uncertainty.",
-      "scores": [
-        {
-          "careerId": "management-analysts",
-          "value": 95.9,
-          "sampleSize": 117,
-          "confidenceInterval": [
-            91.3,
-            98.1
-          ]
-        },
-        {
-          "careerId": "civil-engineers",
-          "value": 96.5,
-          "sampleSize": 56,
-          "confidenceInterval": [
-            90.2,
-            98.8
-          ]
-        },
-        {
-          "careerId": "mechanical-engineers",
-          "value": 94.2,
-          "sampleSize": 41,
-          "confidenceInterval": [
-            80.4,
-            98.5
-          ]
-        },
-        {
-          "careerId": "social-workers",
-          "value": 89,
-          "sampleSize": 127,
-          "confidenceInterval": [
-            82,
-            93.4
-          ]
-        },
-        {
-          "careerId": "lawyers",
-          "value": 81.7,
-          "sampleSize": 118,
-          "confidenceInterval": [
-            70.5,
-            89.2
-          ]
-        },
-        {
-          "careerId": "registered-nurses",
-          "value": 91.5,
-          "sampleSize": 324,
-          "confidenceInterval": [
-            87,
-            94.6
-          ]
-        }
-      ]
-    },
-    {
       "id": "careerexplorer-career-happiness",
       "label": "CareerExplorer · Career happiness",
       "metric": "satisfaction",
@@ -825,6 +757,74 @@
           "careerId": "writers-and-authors",
           "value": 4.1,
           "sourceUrl": "https://www.careerexplorer.com/careers/writer/satisfaction/"
+        }
+      ]
+    },
+    {
+      "id": "gss-job-satisfaction-2004-2024",
+      "label": "General Social Survey",
+      "metric": "satisfaction",
+      "source": {
+        "name": "NORC General Social Survey, release 3a",
+        "url": "https://gss.norc.org/get-the-data/stata.html"
+      },
+      "geography": "United States",
+      "period": "2004–2024 (11 survey waves)",
+      "methodology": "Weighted share of employed respondents who reported being very or moderately satisfied with their work. The table includes occupations with a matching survey category and enough responses for a sufficiently precise estimate. The order reflects the estimates and is subject to sampling uncertainty.",
+      "scores": [
+        {
+          "careerId": "management-analysts",
+          "value": 95.9,
+          "sampleSize": 117,
+          "confidenceInterval": [
+            91.3,
+            98.1
+          ]
+        },
+        {
+          "careerId": "civil-engineers",
+          "value": 96.5,
+          "sampleSize": 56,
+          "confidenceInterval": [
+            90.2,
+            98.8
+          ]
+        },
+        {
+          "careerId": "mechanical-engineers",
+          "value": 94.2,
+          "sampleSize": 41,
+          "confidenceInterval": [
+            80.4,
+            98.5
+          ]
+        },
+        {
+          "careerId": "social-workers",
+          "value": 89,
+          "sampleSize": 127,
+          "confidenceInterval": [
+            82,
+            93.4
+          ]
+        },
+        {
+          "careerId": "lawyers",
+          "value": 81.7,
+          "sampleSize": 118,
+          "confidenceInterval": [
+            70.5,
+            89.2
+          ]
+        },
+        {
+          "careerId": "registered-nurses",
+          "value": 91.5,
+          "sampleSize": 324,
+          "confidenceInterval": [
+            87,
+            94.6
+          ]
         }
       ]
     },
