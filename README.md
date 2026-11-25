@@ -2,7 +2,9 @@
 
 Interactive, research-backed career roadmaps for students choosing a field of study. Each roadmap follows one field from undergraduate study through the master's stage and into PhD or advanced research, then maps the career paths a graduate can actually reach, with salary ranges and honest notes on how competitive each one is.
 
-The site groups all 28 roadmaps into six subject areas. Search by field or topic, use the subject filters, and open a roadmap to explore its stages and download the research notes. Each roadmap card has its own [Lucide icon](https://lucide.dev/icons/) and accent color.
+The [live site](https://careers.alianor.com/) groups 28 roadmaps into six subject areas and sorts both the groups and the roadmaps within them alphabetically. Search by field or topic, use the subject filters, and open a roadmap to explore its stages and download the research notes. Each roadmap card has its own [Lucide icon](https://lucide.dev/icons/) and accent color.
+
+[Career Metrics](https://careers.alianor.com/careers) compares earnings by occupation, job satisfaction across three surveys, and degree regret by surveyed major field. Job satisfaction opens with CareerExplorer, followed by the General Social Survey and PayScale in the dataset picker. The AI resilience tab is available and is awaiting an occupation-level dataset.
 
 ## Layout
 
@@ -12,6 +14,8 @@ career-roadmaps/
 │   └── <field>-roadmap.jsx
 ├── research/                   Source research each roadmap is built from
 │   └── <field>-research.md
+├── docs/                       Metrics documentation and AI resilience research prompt
+├── scripts/                    Tools for reproducing career metric estimates
 ├── src/                        Site, roadmap catalog, and career metric data
 ├── test/                       Catalog and career metric checks
 ├── field-roadmap-builder.md    The two-stage instructions used to build a roadmap
@@ -72,10 +76,11 @@ If NVM for Windows reports `NVM4306` and the project already has its dependencie
 
 ### Cloudflare Pages
 
-When ready to publish, connect this repository to a Cloudflare Pages project and use these settings. [Cloudflare Pages React guide](https://developers.cloudflare.com/pages/framework-guides/deploy-a-react-site/)
+The `career-roadmaps` Cloudflare Pages project deploys automatically when `main` changes on GitHub. The production site uses a Cloudflare-managed TLS certificate, and HTTP requests to its custom hostname redirect to HTTPS.
 
 | Setting | Value |
 | --- | --- |
+| Production domain | [careers.alianor.com](https://careers.alianor.com/) |
 | Production branch | `main` |
 | Root directory | Repository root |
 | Build command | `npm run build` |
@@ -98,7 +103,7 @@ Add each occupation once to `careers` and each surveyed major category once to `
 
 Keep each comparison within one geography, period, and method. Leave occupations with missing values out of the dataset so that a displayed zero always represents a measured value. The explorer displays the source and methodology and ranks occupations within the selected dataset.
 
-The [survey comparison notes](docs/satisfaction-and-degree-regret.md) document CareerExplorer, PayScale, and ZipRecruiter. The [GSS research](docs/job-satisfaction.md) explains how to reproduce the GSS estimates.
+The [survey comparison notes](docs/satisfaction-and-degree-regret.md) document CareerExplorer, PayScale, and ZipRecruiter. The [GSS research](docs/job-satisfaction.md) explains how to reproduce the GSS estimates. Use the [AI resilience research prompt](docs/ai-resilience-research-prompt.md) to commission a source-backed study across all 28 roadmaps and prepare a candidate dataset for review.
 
 ## Notes on the data
 

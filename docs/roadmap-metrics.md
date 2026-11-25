@@ -43,8 +43,8 @@ This inventory records the area from each roadmap’s title through its phase na
 | Occupational outlook | Baseline employment, projected employment change, annual openings, and some sector employment, growth, and self-employment shares. | Match occupation and projection release. Annual openings include replacements and career exits as well as growth. Record estimates as published. |
 | Education and funding | Degree lengths, credits, tuition, total attendance costs, stipends, debt and borrowing. | Retain program, cohort, and units. Track the start and end points of durations and the time basis of money figures. |
 | Admissions, credentials and placement | Admissions or match rates, exam counts and passage, experience hours, attrition, licensure time, job placement and faculty outcomes. | Keep denominator, cohort, time window and jurisdiction. First-time pass rates and repeat-test rates answer different questions. |
-| AI use and labor effects | Use and sentiment surveys, task-exposure estimates, occupational rankings, and reported workforce changes. | Keep the population and method with each number. The research provides no common occupation-level AI resilience scale. |
-| Job satisfaction | The Philosophy notes discuss relative satisfaction by employment setting among surveyed PhDs. | The notes provide no consistent set of occupation scores on a shared numerical scale. |
+| AI use and labor effects | Use and sentiment surveys, task-exposure estimates, occupational rankings, and reported workforce changes. | Keep the population and method with each number. A comparable AI resilience score needs a documented occupation match, common scale, and consistent methodology. |
+| Job satisfaction | CareerExplorer career happiness ratings, GSS satisfaction estimates, and PayScale satisfaction percentages. | Compare values within each survey. Each survey measures a different population or question. [Survey comparison notes](satisfaction-and-degree-regret.md) |
 
 ## Shared summary and JSON
 
@@ -60,4 +60,4 @@ The shared numbers use [BLS Employment Projections Table 1.2](https://www.bls.go
 - `datasets` contains earnings and the [job satisfaction and degree regret surveys](satisfaction-and-degree-regret.md) used by `/careers`. Each `scores[].value` is a JSON number in the dataset’s unit.
 - `employmentOutlook` records the shared source, geography, projection years, linked earnings dataset ID, and values keyed by occupation ID. `jobs` and `annualOpenings` are counts. `growthPercent` is signed and uses percent units (`4.3` means 4.3%).
 
-The comparison page displays earnings, survey-based job satisfaction, and degree regret by academic major. Outlook values are available for future comparisons. AI resilience still needs an occupation-level dataset with a documented scale and coverage.
+The comparison page displays earnings, survey-based job satisfaction, and degree regret by academic major. Outlook values appear on the individual roadmap snapshots. The AI resilience tab has no dataset yet. The [AI resilience research prompt](ai-resilience-research-prompt.md) defines the occupation coverage, evidence, and validation needed for a candidate 0–100 dataset.
