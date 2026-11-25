@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-RESEARCH = ROOT / "docs/ai-resilience"
+RESEARCH = ROOT / "research/ai-resilience"
 OUTPUT = ROOT / "src/ai-resilience-research.json"
 
 

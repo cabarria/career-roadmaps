@@ -1,0 +1,51 @@
+name: AI instructions sync
+on:
+  pull_request:
+    paths:
+      - '.ai/**'
+      - 'AGENTS.md'
+      - 'CLAUDE.md'
+      - '.agents/skills/**'
+      - '.claude/**'
+      - '.codex/**'
+      - '.github/copilot-instructions.md'
+      - '.github/instructions/**'
+      - '.github/skills/**'
+      - '.github/agents/**'
+      - '**/AGENTS.md'
+      - 'scripts/sync_ai_instructions.py'
+      - 'scripts/sync-ai-instructions.sh'
+      - '.githooks/pre-commit'
+      - '.github/workflows/ai-instructions-sync.yml'
+      - '.gitattributes'
+  push:
+    branches: [main]
+    paths:
+      - '.ai/**'
+      - 'AGENTS.md'
+      - 'CLAUDE.md'
+      - '.agents/skills/**'
+      - '.claude/**'
+      - '.codex/**'
+      - '.github/copilot-instructions.md'
+      - '.github/instructions/**'
+      - '.github/skills/**'
+      - '.github/agents/**'
+      - '**/AGENTS.md'
+      - 'scripts/sync_ai_instructions.py'
+      - 'scripts/sync-ai-instructions.sh'
+      - '.githooks/pre-commit'
+      - '.github/workflows/ai-instructions-sync.yml'
+      - '.gitattributes'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  ai-instructions-sync:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python scripts/sync_ai_instructions.py --check

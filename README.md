@@ -6,19 +6,23 @@ The [live site](https://careers.alianor.com/) groups 28 roadmaps into six subjec
 
 [Career Metrics](https://careers.alianor.com/careers) compares earnings by occupation, job satisfaction across three surveys, and degree regret by surveyed major field. Job satisfaction opens with CareerExplorer, followed by the General Social Survey and PayScale in the dataset picker. The AI resilience tab combines Anthropic observed exposure, Microsoft AI applicability, BLS projected job growth and our own qualitative task and career-path assessments, with no composite job-resilience score.
 
+Contributions are welcome. See the [contribution guide](CONTRIBUTING.md) for how to report issues or submit a pull request.
+
 ## Layout
 
 ```
 career-roadmaps/
 ├── artifacts/                  Interactive roadmaps (one React file per field)
 │   └── <field>-roadmap.jsx
-├── research/                   Source research each roadmap is built from
-│   └── <field>-research.md
-├── docs/                       Metrics documentation and AI resilience research prompt
+├── research/                   Source research and application data inputs
+│   ├── <field>-research.md
+│   └── ai-resilience/          Research report, profiles and CSV ledgers
+├── docs/                       Human-facing metrics and research methodology
+├── .ai/                        Canonical AI instructions and reusable skills
 ├── scripts/                    Tools for reproducing career metric estimates
 ├── src/                        Site, roadmap catalog, and career metric data
 ├── test/                       Catalog and career metric checks
-├── field-roadmap-builder.md    The two-stage instructions used to build a roadmap
+├── CONTRIBUTING.md             Contribution guide
 ├── LICENSE                     MIT
 └── README.md
 ```
@@ -41,19 +45,26 @@ Fields covered: architecture, art and design, astronomy and astrophysics, biomed
 - Sections: TL;DR, Key Findings, Undergraduate, Master's, PhD or research, Tools and AI, Career Paths, Uncertainties and Regional Variation, Sources.
 - Every figure carries a source URL and the date it was accessed.
 - Every roadmap has a matching research file.
+- `research/ai-resilience/` contains the report, individual profiles, evidence and coverage ledgers, and comparison inputs consumed by the application and its data tools.
 
-### field-roadmap-builder.md
+### docs/
 
-- The reusable instruction set that produces a roadmap from a single input, a field of study.
-- Stage 1 is research, saved as a markdown file. Stage 2 builds the React artifact, populated only from that research file.
+- Human-readable documentation of the metrics, their sources, and how to reproduce them.
+
+### .ai/
+
+- Three portable skills are available: [build-roadmap](.ai/skills/build-roadmap/SKILL.md), [research-ai-resilience](.ai/skills/research-ai-resilience/SKILL.md), and [update-career-comparisons](.ai/skills/update-career-comparisons/SKILL.md).
+- The [AI instruction guide](.ai/README.md) explains discovery, native generated files, and how to maintain the skills. Open the repository root in your agent and ask it to use the appropriate skill.
 
 ## Building a new roadmap
 
-1. Open `field-roadmap-builder.md` and paste its contents into a new conversation.
-2. Replace `{{FIELD_OF_STUDY}}` with the field.
+1. Use the [build-roadmap skill](.ai/skills/build-roadmap/SKILL.md) and provide the field of study.
+2. Research the field before building the interactive roadmap; populate the artifact from the written research, not unsupported assumptions.
 3. Save the results as `research/<field>-research.md` and `artifacts/<field>-roadmap.jsx`.
 4. Add the field to its subject group in `src/catalog.js` and assign it a distinct icon.
 5. Accept an optional `summary` prop and render it after the roadmap header, before the phase navigation. Add its featured occupation and four snapshot figures to `src/career-data.json`. See the [metrics inventory](docs/roadmap-metrics.md) for definitions and sources.
+6. Assess the new field against **every existing comparison dataset** using the [update-career-comparisons skill](.ai/skills/update-career-comparisons/SKILL.md) and [original source register](docs/roadmap-metrics.md#comparison-source-register). Record which datasets have verified new values, existing values to link, or cannot support the new occupation or major, with reasons. Use [research-ai-resilience](.ai/skills/research-ai-resilience/SKILL.md) to update the profile and evidence and coverage ledgers; regenerate the affected comparison data and update test expectations to match the verified inventory. Never invent missing scores.
+7. Run `npm run check` and `npm run build`.
 
 ## Using a roadmap
 
@@ -61,7 +72,7 @@ Each file in `artifacts/` is a standalone component that needs only React. Drop 
 
 ## Running the site
 
-Use Node.js 24. The exact version used for the Pages build is in `.node-version`.
+Use Node.js 24. The project's pinned Node version is in `.node-version`.
 
 On Windows, start the local development server from the repository root:
 
@@ -84,19 +95,11 @@ Open the local URL printed by Vite. Individual roadmaps have shareable `/roadmap
 
 If NVM for Windows reports `NVM4306` and the project already has its dependencies installed, `node node_modules/vite/bin/vite.js` starts the dev server directly. See the [NVM error reference](https://docs.nvm-windows.com/troubleshooting/error-codes/) for npm trust repair.
 
-### Cloudflare Pages
+### Deployment
 
-The `career-roadmaps` Cloudflare Pages project deploys automatically when `main` changes on GitHub. The production site uses a Cloudflare-managed TLS certificate, and HTTP requests to its custom hostname redirect to HTTPS.
+Build the static site from the repository root with `npm ci` followed by `npm run build`, then publish `dist/` with a static hosting provider.
 
-| Setting | Value |
-| --- | --- |
-| Production domain | [careers.alianor.com](https://careers.alianor.com/) |
-| Production branch | `main` |
-| Root directory | Repository root |
-| Build command | `npm run build` |
-| Build output directory | `dist` |
-
-Pages serves `index.html` for direct visits to routes such as `/careers` or `/roadmaps/architecture` through its default single-page app fallback. [Cloudflare Pages routing](https://developers.cloudflare.com/pages/configuration/serving-pages/#single-page-application-spa-rendering)
+For repository-connected hosting, configure the deployment branch, hosting project name, account, and optional custom domain in your hosting provider, not in this repository. Configure single-page app fallback to `index.html` so direct visits to routes such as `/careers` and `/roadmaps/architecture` work. No hosting credentials are needed to build or run the app locally.
 
 ### Adding career metric datasets
 
@@ -113,7 +116,7 @@ Add each occupation once to `careers` and each surveyed major category once to `
 
 Keep each comparison within one geography, period, and method. Leave occupations with missing values out of the dataset so that a displayed zero always represents a measured value. The explorer displays the source and methodology and ranks occupations within the selected dataset.
 
-The [survey comparison notes](docs/satisfaction-and-degree-regret.md) document CareerExplorer, PayScale, and ZipRecruiter. The [GSS research](docs/job-satisfaction.md) explains how to reproduce the GSS estimates. See the [AI resilience research report](docs/ai-resilience/report.md) and [comparison-indicator methodology](docs/ai-resilience/comparison-indicators.md) for the exposure metrics, source data and reproduction instructions. After editing the AI resilience profiles or ledgers, run `python scripts/build-ai-research.py` to refresh the comparison-page research data.
+The [survey comparison notes](docs/satisfaction-and-degree-regret.md) document CareerExplorer, PayScale, and ZipRecruiter. The [GSS research](docs/job-satisfaction.md) explains how to reproduce the GSS estimates. See the [AI resilience research report](research/ai-resilience/report.md) and [comparison-indicator methodology](docs/ai-resilience/comparison-indicators.md) for the exposure metrics, source data and reproduction instructions. After editing the AI resilience profiles or ledgers, run `python scripts/build-ai-research.py` to refresh the comparison-page research data.
 
 ## Notes on the data
 

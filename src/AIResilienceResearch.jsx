@@ -1,9 +1,9 @@
 import research from './ai-resilience-research.json';
-import reportUrl from '../docs/ai-resilience/report.md?url&no-inline';
-import evidenceUrl from '../docs/ai-resilience/evidence.csv?url&no-inline';
-import coverageUrl from '../docs/ai-resilience/coverage.csv?url&no-inline';
+import reportUrl from '../research/ai-resilience/report.md?url&no-inline';
+import evidenceUrl from '../research/ai-resilience/evidence.csv?url&no-inline';
+import coverageUrl from '../research/ai-resilience/coverage.csv?url&no-inline';
 
-const profileUrls = import.meta.glob('../docs/ai-resilience/roadmaps/*.md', {
+const profileUrls = import.meta.glob('../research/ai-resilience/roadmaps/*.md', {
   eager: true,
   import: 'default',
   query: '?url&no-inline',
@@ -109,7 +109,7 @@ export function ResearchProfile({ careerId, title }) {
         </ul>
       </details>
 
-      <a className="research-profile-download" href={profileUrls[`../docs/ai-resilience/roadmaps/${profile.slug}.md`]} download={`${profile.slug}-ai-resilience.md`}>
+      <a className="research-profile-download" href={profileUrls[`../research/ai-resilience/roadmaps/${profile.slug}.md`]} download={`${profile.slug}-ai-resilience.md`}>
         Download full research profile
       </a>
     </section>

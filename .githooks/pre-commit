@@ -1,0 +1,3 @@
+#!/bin/sh
+# Verify staged AI instruction sources and generated files without changing them.
+exec sh scripts/sync-ai-instructions.sh --check --staged
