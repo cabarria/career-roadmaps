@@ -95,12 +95,14 @@ const sections = [
   },
 ];
 
-export const roadmapGroups = sections.map(({ fields, ...group }) => ({
-  ...group,
-  roadmaps: fields.map(([slug, title, description, accent, Icon]) => ({
-    slug, title, description, accent, Icon,
-  })),
-}));
+export const roadmapGroups = sections
+  .map(({ fields, ...group }) => ({
+    ...group,
+    roadmaps: fields
+      .map(([slug, title, description, accent, Icon]) => ({ slug, title, description, accent, Icon }))
+      .sort((left, right) => left.title.localeCompare(right.title)),
+  }))
+  .sort((left, right) => left.label.localeCompare(right.label));
 
 export const roadmaps = roadmapGroups.flatMap(group => group.roadmaps);
 
