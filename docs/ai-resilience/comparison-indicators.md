@@ -29,3 +29,11 @@ Example: Anthropic financial and investment analysts (13-2051) = 0.5716 × 100 =
 3. The script writes the selected source fractions and weights to [comparison-inputs.csv](comparison-inputs.csv) and the derived rows to `src/career-data.json`; `npm run check` verifies coverage, score bounds, ordering and agreement with the recorded inputs. The full-source Git revisions above make the input data reproducible.
 
 The report's decision to withhold a composite resilience ranking stands. A correctly scoped exposure indicator can be published independently; it is not used to infer a total resilience score.
+
+## Research-based task and career context
+
+The comparison page also displays the number of selected occupation tasks labeled human-led, AI-assisted, and delegated with review, in that order. These reproduce the classifications in [evidence.csv](evidence.csv), not a share of all tasks, work hours, or measured automation. Counts depend on the tasks selected for the featured occupation, including available component examples for broad occupations; they are not used for sorting or as an input to the published exposure measures.
+
+Each occupation has expandable current findings, a conditional 2029–31 scenario, student preparation, limitations, task statements, career-path assessments from [coverage.csv](coverage.csv), and independent sources. The page also provides downloadable copies of the report, evidence ledger, coverage ledger and individual profiles.
+
+The generated `src/ai-resilience-research.json` combines the original profiles, evidence and coverage without introducing new scores. From the repository root, run `python scripts/build-ai-research.py` after updating those sources; `python scripts/build-ai-research.py --check` verifies the generated file is current. The regular site tests check coverage, task roles, source links and known task counts.

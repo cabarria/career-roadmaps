@@ -58,7 +58,7 @@ export const metrics = [
     label: 'AI resilience',
     icon: '✦',
     accent: '#c0aaff',
-    description: 'Compare published AI exposure indicators alongside projected job growth. Lower exposure does not guarantee job security.',
+    description: 'Compare AI exposure, projected job growth and researched human responsibilities. Lower exposure does not guarantee job security.',
     unit: 'Out of 100',
     max: 100,
     format: value => `${score.format(value)} / 100`,

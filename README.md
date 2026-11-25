@@ -4,7 +4,7 @@ Interactive, research-backed career roadmaps for students choosing a field of st
 
 The [live site](https://careers.alianor.com/) groups 28 roadmaps into six subject areas and sorts both the groups and the roadmaps within them alphabetically. Search by field or topic, use the subject filters, and open a roadmap to explore its stages and download the research notes. Each roadmap card has its own [Lucide icon](https://lucide.dev/icons/) and accent color.
 
-[Career Metrics](https://careers.alianor.com/careers) compares earnings by occupation, job satisfaction across three surveys, and degree regret by surveyed major field. Job satisfaction opens with CareerExplorer, followed by the General Social Survey and PayScale in the dataset picker. The AI resilience tab compares Anthropic observed exposure and Microsoft AI applicability alongside BLS projected job growth, with no composite job-resilience score.
+[Career Metrics](https://careers.alianor.com/careers) compares earnings by occupation, job satisfaction across three surveys, and degree regret by surveyed major field. Job satisfaction opens with CareerExplorer, followed by the General Social Survey and PayScale in the dataset picker. The AI resilience tab combines Anthropic observed exposure, Microsoft AI applicability, BLS projected job growth and our own qualitative task and career-path assessments, with no composite job-resilience score.
 
 ## Layout
 
@@ -103,7 +103,7 @@ Add each occupation once to `careers` and each surveyed major category once to `
 
 Keep each comparison within one geography, period, and method. Leave occupations with missing values out of the dataset so that a displayed zero always represents a measured value. The explorer displays the source and methodology and ranks occupations within the selected dataset.
 
-The [survey comparison notes](docs/satisfaction-and-degree-regret.md) document CareerExplorer, PayScale, and ZipRecruiter. The [GSS research](docs/job-satisfaction.md) explains how to reproduce the GSS estimates. See the [AI resilience research report](docs/ai-resilience/report.md) and [comparison-indicator methodology](docs/ai-resilience/comparison-indicators.md) for the exposure metrics, source data and reproduction instructions.
+The [survey comparison notes](docs/satisfaction-and-degree-regret.md) document CareerExplorer, PayScale, and ZipRecruiter. The [GSS research](docs/job-satisfaction.md) explains how to reproduce the GSS estimates. See the [AI resilience research report](docs/ai-resilience/report.md) and [comparison-indicator methodology](docs/ai-resilience/comparison-indicators.md) for the exposure metrics, source data and reproduction instructions. After editing the AI resilience profiles or ledgers, run `python scripts/build-ai-research.py` to refresh the comparison-page research data.
 
 ## Notes on the data
 

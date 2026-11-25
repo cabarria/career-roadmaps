@@ -1,7 +1,9 @@
+import { Fragment, useState } from 'react';
 import data from './career-data.json';
 import { roadmaps } from './catalog.js';
 import { metrics, metricScale, rankEntries } from './metrics.js';
 import { useQueryParams } from './use-query-params.js';
+import { profiles, ResearchDownloads, ResearchProfile, TaskCounts } from './AIResilienceResearch.jsx';
 
 const titles = new Map(roadmaps.map(roadmap => [roadmap.slug, roadmap.title]));
 const growthFormat = new Intl.NumberFormat('en-US', {
@@ -9,11 +11,12 @@ const growthFormat = new Intl.NumberFormat('en-US', {
 });
 
 function Rankings({ dataset, metric }) {
+  const [expandedCareer, setExpandedCareer] = useState(null);
   const byMajor = metric.id === 'degree-regret';
   const subject = byMajor ? 'Major field' : 'Occupation';
   const entries = rankEntries(byMajor ? data.degreeFields : data.careers, dataset);
   const { unit, format } = metricScale(metric, dataset);
-  const showOutlook = metric.id === 'ai-resilience';
+  const showResearch = metric.id === 'ai-resilience';
   const order = dataset.sortOrder === 'ascending' ? 'lowest' : 'highest';
   const outlook = data.employmentOutlook;
   const showUncertainty = entries.every(entry => entry.sampleSize && entry.confidenceInterval);
@@ -26,11 +29,15 @@ function Rankings({ dataset, metric }) {
         <div><dt>Period</dt><dd>{dataset.period}</dd></div>
       </dl>
       <p className="methodology">{dataset.methodology}</p>
-      {showOutlook && (
-        <p className="methodology">
-          Lower values first. The <a href={outlook.source.url}>BLS job growth projection</a> covers the full occupation
-          and all labor-market factors, not AI alone. Zero exposure does not mean immunity.
-        </p>
+      {showResearch && (
+        <>
+          <p className="methodology">
+            Lower values first. The <a href={outlook.source.url}>BLS job growth projection</a> covers the full occupation
+            and all labor-market factors, not AI alone. Zero exposure does not mean immunity.
+            Assessed task counts reflect selected researcher judgments, not work time or replacement risk.
+          </p>
+          <ResearchDownloads />
+        </>
       )}
       <div className="table-wrap">
         <table>
@@ -40,7 +47,10 @@ function Rankings({ dataset, metric }) {
               <th scope="col">{subject}</th>
               <th scope="col">Related roadmaps</th>
               <th scope="col">{unit}</th>
-              {showOutlook && <th scope="col">Projected job growth ({outlook.baseYear}–{outlook.projectionYear})</th>}
+              {showResearch && <>
+                <th scope="col">Projected job growth ({outlook.baseYear}–{outlook.projectionYear})</th>
+                <th scope="col">Assessed tasks <small className="task-count-legend">Human-led / assisted / delegated</small></th>
+              </>}
               {showUncertainty && <>
                 <th scope="col">95% confidence interval</th>
                 <th scope="col">Respondents</th>
@@ -49,9 +59,17 @@ function Rankings({ dataset, metric }) {
           </thead>
           <tbody>
             {entries.map(({ id, title, sourceTitle, sourceUrl, roadmapSlugs, value, confidenceInterval, sampleSize }) => (
-              <tr key={id}>
+              <Fragment key={id}>
+              <tr>
                 <th scope="row">
                   {sourceUrl ? <a href={sourceUrl}>{sourceTitle ?? title}</a> : sourceTitle ?? title}
+                  {showResearch && (
+                    <button type="button" className="research-toggle" aria-expanded={expandedCareer === id}
+                      aria-controls={expandedCareer === id ? `research-${id}` : undefined} aria-label={`Research details for ${title}`}
+                      onClick={() => setExpandedCareer(expandedCareer === id ? null : id)}>
+                      {expandedCareer === id ? 'Hide research' : 'Research details'}
+                    </button>
+                  )}
                 </th>
                 <td>
                   <ul>{roadmapSlugs.map(slug => (
@@ -59,12 +77,23 @@ function Rankings({ dataset, metric }) {
                   ))}</ul>
                 </td>
                 <td>{format(value)}</td>
-                {showOutlook && <td>{growthFormat.format(outlook.values[id].growthPercent / 100)}</td>}
+                {showResearch && <>
+                  <td>{growthFormat.format(outlook.values[id].growthPercent / 100)}</td>
+                  <td><TaskCounts tasks={profiles[id].tasks} /></td>
+                </>}
                 {showUncertainty && <>
                   <td>{confidenceInterval.map(format).join('–')}</td>
                   <td>{sampleSize.toLocaleString('en-US')}</td>
                 </>}
               </tr>
+              {showResearch && expandedCareer === id && (
+                <tr className="research-detail-row">
+                  <td colSpan={showUncertainty ? 7 : 5}>
+                    <ResearchProfile careerId={id} title={title} />
+                  </td>
+                </tr>
+              )}
+              </Fragment>
             ))}
           </tbody>
         </table>
@@ -113,7 +142,7 @@ export default function CareerMetrics() {
             </label>
           )}
         </div>
-        {dataset ? <Rankings dataset={dataset} metric={metric} /> : (
+        {dataset ? <Rankings key={metric.id} dataset={dataset} metric={metric} /> : (
           <div className="empty-state">
             <h3>No comparison data yet</h3>
             <p>Rankings will appear when a dataset covers multiple occupations using the same measure.</p>

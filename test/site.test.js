@@ -6,6 +6,7 @@ import { metrics, metricScale, rankEntries } from '../src/metrics.js';
 
 const catalogSlugs = roadmaps.map(roadmap => roadmap.slug);
 const data = JSON.parse(readFileSync(new URL('../src/career-data.json', import.meta.url), 'utf8'));
+const aiResearch = JSON.parse(readFileSync(new URL('../src/ai-resilience-research.json', import.meta.url), 'utf8'));
 const isText = value => typeof value === 'string' && value.trim().length > 0;
 const isSlug = value => isText(value) && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value);
 
@@ -152,6 +153,47 @@ test('AI resilience indicators cover every roadmap, reconstruct source values, a
   assert.equal(metricScale(metric, indicators[0]).format(57.16), '57.2%');
   assert.equal(metricScale(metric, indicators[1]).format(27.84), '27.8 / 100');
   assert.equal(indicators[0].scores.find(row => row.careerId === 'family-medicine-physicians').value, 0);
+});
+
+test('AI resilience research preserves every occupation, selected task, career path, and cited source', () => {
+  const { profiles, evidenceCutoff } = aiResearch;
+  assert.match(evidenceCutoff, /^\d{4}-\d{2}-\d{2}$/);
+  assert.deepEqual(Object.keys(profiles).sort(), data.careers.map(career => career.id).sort());
+  const pathIds = new Set();
+  let taskCount = 0;
+  for (const [careerId, profile] of Object.entries(profiles)) {
+    assert.equal(data.roadmapSummaries[profile.slug].careerId, careerId);
+    assert.ok([profile.scope, profile.current, profile.scenario, profile.limitations].every(isText));
+    assert.ok(profile.preparation.length >= 2 && profile.preparation.every(isText));
+    assert.ok(profile.tasks.length >= 4 && profile.tasks.length <= 8);
+    const taskIds = new Set();
+    for (const task of profile.tasks) {
+      const key = `${task.code}/${task.id}`;
+      assert.ok(!taskIds.has(key), `Duplicate task ${key}`);
+      taskIds.add(key);
+      assert.match(task.code, /^\d{2}-\d{4}\.\d{2}$/);
+      assert.ok(isText(task.task) && isText(task.interpretation));
+      assert.ok(['human-led', 'AI-assisted', 'delegated with review'].includes(task.role));
+      assert.ok(task.importance === null || (task.importance >= 1 && task.importance <= 5));
+    }
+    taskCount += taskIds.size;
+    for (const path of profile.paths) {
+      assert.ok(!pathIds.has(path.id) && path.id.startsWith(profile.slug + '-path-'));
+      pathIds.add(path.id);
+      assert.ok([path.title, path.setting, path.assessment, path.matchQuality].every(isText));
+    }
+    assert.ok(profile.sources.length);
+    for (const source of profile.sources) {
+      assert.equal(new URL(source.url).protocol, 'https:');
+      assert.ok([source.name, source.type, source.locator, source.caveats].every(isText));
+    }
+  }
+  assert.equal(taskCount, 170);
+  assert.equal(pathIds.size, 220);
+  const roles = ['human-led', 'AI-assisted', 'delegated with review'];
+  const counts = careerId => roles.map(role => profiles[careerId].tasks.filter(task => task.role === role).length);
+  assert.deepEqual(counts('registered-nurses'), [4, 0, 2]);
+  assert.deepEqual(counts('software-developers'), [1, 3, 2]);
 });
 
 test('GSS satisfaction rankings retain respondent counts and confidence intervals', () => {
