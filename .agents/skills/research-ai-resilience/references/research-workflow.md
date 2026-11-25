@@ -1,10 +1,10 @@
-# AI resilience research prompt
+# AI resilience research workflow
 
-Give this prompt to a research agent with access to the Career Roadmaps repository and the web.
+All project paths in this reference are relative to the repository root.
 
 ## Assignment
 
-Research how AI could change the work, hiring pathways, and career preparation described across all 28 Career Roadmaps. Produce a cited assessment for every roadmap and a reproducible candidate occupation-level dataset for the **AI resilience** tab on `/careers` if the evidence supports one. Write for students choosing a field and for maintainers who need to reproduce the research.
+Research how AI could change the work, hiring pathways, and career preparation described across the requested Career Roadmaps. For a full refresh, cover every current catalog entry. Produce a cited assessment for every in-scope roadmap and a reproducible candidate occupation-level dataset for the **AI resilience** tab on `/careers` if the evidence supports one. Write for students choosing a field and for maintainers who need to reproduce the research.
 
 Use the United States as the comparison geography, since the site's featured occupations use U.S. labor data. State the evidence cutoff and distinguish current evidence from a three- to five-year scenario. Focus on generative AI, including tools that can carry out multistep workflows. Identify robotics, traditional automation, and other AI systems separately where they matter. Label evidence from other countries and explain how much it can tell us about U.S. work.
 
@@ -12,14 +12,14 @@ Define **AI resilience** as an occupation's capacity to retain demand for meanin
 
 ## Repository starting points
 
-- [Roadmap catalog](../src/catalog.js) lists the current slugs, display names, and groups. Reconcile the inventory below against that catalog before starting.
+- `src/catalog.js` lists the current slugs, display names, and groups. Reconcile the historical inventory below against that catalog before starting.
 - For every slug, open both `research/<slug>-research.md` and `artifacts/<slug>-roadmap.jsx`. Read the existing Tools and AI discussion, Career Paths, and any claims about exposure or safety. Use their sources as leads and verify the original evidence. Capture every career path shown in the artifact even when a research note groups paths differently.
-- [Career data](../src/career-data.json) maps each slug in `roadmapSummaries` to a `careerId` in `careers`. Use that stable ID for a candidate comparison row. The existing `occupationCode` is a BLS National Employment Matrix code. Check its scope before matching it to O*NET-SOC, ISCO, or another taxonomy.
-- [Metrics inventory](roadmap-metrics.md) documents what the site currently measures. [Metric definitions](../src/metrics.js) and [Career Metrics](../src/CareerMetrics.jsx) show what the AI resilience tab can display. The tab currently has no dataset.
+- `src/career-data.json` maps each slug in `roadmapSummaries` to a `careerId` in `careers`. Use that stable ID for a candidate comparison row. The existing `occupationCode` is a BLS National Employment Matrix code. Check its scope before matching it to O*NET-SOC, ISCO, or another taxonomy.
+- `docs/roadmap-metrics.md` documents what the site measures. `src/metrics.js`, `src/CareerMetrics.jsx`, and `docs/ai-resilience/comparison-indicators.md` describe the current comparison, including independent exposure indicators, BLS growth and qualitative profiles.
 
 ## Roadmaps and research leads
 
-The featured occupation is the snapshot anchor on the website. The leads are questions to investigate alongside the full Career Paths inventory. Some anchors cover only a slice of the field, while others include workers outside it.
+The following baseline inventory is research context, not a fixed list or authority over the current catalog. The featured occupation is the snapshot anchor on the website. The leads are questions to investigate alongside the full Career Paths inventory. Some anchors cover only a slice of the field, while others include workers outside it.
 
 | Roadmap slug | Featured occupation and matrix code | Investigate within the roadmap |
 | --- | --- | --- |
@@ -64,14 +64,14 @@ The featured occupation is the snapshot anchor on the website. The leads are que
 
 - Use U.S. occupational task statements and work context to establish job duties. Confirm the data release and occupational taxonomy. [O*NET database](https://www.onetcenter.org/database.html) · [BLS classification and crosswalks](https://www.bls.gov/soc/2018/crosswalks.htm)
 - Use U.S. employment, requirements, and projections for labor context. Projections alone do not identify the effect of AI. [BLS Occupational Outlook Handbook](https://www.bls.gov/ooh/) · [BLS Employment Projections Table 1.2](https://www.bls.gov/emp/tables/occupational-projections-and-characteristics.htm) · [BLS Occupational Requirements Survey](https://www.bls.gov/ors/)
-- Compare published approaches to technical exposure and occupational transition. Check their data vintage, taxonomy, evidence for U.S. applicability, and whether ranking inputs can be reproduced. [ILO occupational exposure study](https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure) · [OpenAI AI Jobs Transition Framework](https://cdn.openai.com/pdf/the-ai-jobs-transition-framework_report.pdf)
-- Use real-world usage and task-success studies as evidence about the studied tools and populations. Compare their findings with independent studies and original evidence from affected sectors. [Anthropic Economic Index methods and evidence](https://www.anthropic.com/research/anthropic-economic-index-january-2026-report)
+- Compare published approaches to technical exposure and occupational transition. Check their data vintage, taxonomy, evidence for U.S. applicability, and whether ranking inputs can be reproduced. [ILO occupational exposure study](https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure). Additional research publications are linked from `docs/ai-resilience/comparison-indicators.md`.
+- Use real-world usage and task-success studies as evidence about the studied tools and populations. Compare their findings with independent studies and original evidence from affected sectors.
 
 ## Deliverables and checks
 
 Save the research in `research/ai-resilience/` as you work. Start with a coverage ledger so another researcher can resume from the last completed group.
 
-- `report.md` explains the definitions, methods, findings across groups, limitations, and what students can do. Link a profile under `roadmaps/<slug>.md` for each of the 28 roadmaps. Each profile lists every career path, its occupation match, core task evidence, current and scenario findings, uncertainty, and preparation recommendations.
+- `report.md` explains the definitions, methods, findings across groups, limitations, and what students can do. Link a profile under `roadmaps/<slug>.md` for each in-scope roadmap. Each profile lists every career path, its occupation match, core task evidence, current and scenario findings, uncertainty, and preparation recommendations.
 - `evidence.csv` records the occupation or path ID, roadmap slug, task or claim, evidence type, classification and code, source URL, publication and access dates, observation period, geography, locator, and caveats. `coverage.csv` records each roadmap and career path, match quality, assessment status, and reason for scores withheld. Include score inputs and calculation steps if you estimate scores. A reviewer should be able to trace a score back to the source observations.
 - When justified, include a separate `candidate-dataset.json` containing one dataset object with `id`, `label`, `metric` set to `ai-resilience`, `source` with `name` and `url`, `geography`, `period`, `methodology`, and `scores`. Each score uses an existing `careerId` and a finite numeric `value` from 0 to 100. Use `sourceTitle` and `sourceUrl` where they clarify the original occupation label and evidence. Keep the comparison on one common method and period. Omit unsupported scores and explain omissions in the coverage ledger. Keep the candidate separate from the site's production data for review.
 

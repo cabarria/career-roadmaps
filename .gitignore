@@ -8,3 +8,5 @@ dist/
 .dev.vars.*
 .wrangler/
 .npmrc
+.claude/settings.local.json
+.vscode/settings.json
