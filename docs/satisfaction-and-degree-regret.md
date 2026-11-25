@@ -1,6 +1,6 @@
 # Career happiness, job satisfaction, and degree regret
 
-The Career Metrics page (`/careers?metric=satisfaction`) opens Job satisfaction with CareerExplorer selected. The dataset picker lists CareerExplorer, NORC’s General Social Survey, and PayScale in that order. Degree regret is a separate comparison by surveyed major field. Each survey keeps its original scale and category labels where they differ from the roadmap occupations.
+The [Career Metrics page](https://careers.alianor.com/careers?metric=satisfaction) opens Job satisfaction with CareerExplorer selected. The dataset picker lists CareerExplorer, NORC’s General Social Survey, and PayScale in that order. Degree regret is a separate comparison by surveyed major field. Each survey keeps its original scale and category labels where they differ from the roadmap occupations.
 
 | Dataset | Coverage in the comparison | Measure |
 | --- | --- | --- |
