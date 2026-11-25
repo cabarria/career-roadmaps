@@ -6,19 +6,23 @@ The [live site](https://careers.alianor.com/) groups 28 roadmaps into six subjec
 
 [Career Metrics](https://careers.alianor.com/careers) compares earnings by occupation, job satisfaction across three surveys, and degree regret by surveyed major field. Job satisfaction opens with CareerExplorer, followed by the General Social Survey and PayScale in the dataset picker. The AI resilience tab combines Anthropic observed exposure, Microsoft AI applicability, BLS projected job growth and our own qualitative task and career-path assessments, with no composite job-resilience score.
 
+Contributions are welcome. See the [contribution guide](CONTRIBUTING.md) for how to report issues or submit a pull request.
+
 ## Layout
 
 ```
 career-roadmaps/
 ├── artifacts/                  Interactive roadmaps (one React file per field)
 │   └── <field>-roadmap.jsx
-├── research/                   Source research each roadmap is built from
-│   └── <field>-research.md
+├── research/                   Source research and application data inputs
+│   ├── <field>-research.md
+│   └── ai-resilience/          Research report, profiles and CSV ledgers
 ├── docs/                       Roadmap builder, metrics documentation and research prompts
 │   └── field-roadmap-builder.md
 ├── scripts/                    Tools for reproducing career metric estimates
 ├── src/                        Site, roadmap catalog, and career metric data
 ├── test/                       Catalog and career metric checks
+├── CONTRIBUTING.md             Contribution guide
 ├── LICENSE                     MIT
 └── README.md
 ```
@@ -41,6 +45,7 @@ Fields covered: architecture, art and design, astronomy and astrophysics, biomed
 - Sections: TL;DR, Key Findings, Undergraduate, Master's, PhD or research, Tools and AI, Career Paths, Uncertainties and Regional Variation, Sources.
 - Every figure carries a source URL and the date it was accessed.
 - Every roadmap has a matching research file.
+- `research/ai-resilience/` contains the report, individual profiles, evidence and coverage ledgers, and comparison inputs consumed by the application and its data tools.
 
 ### docs/
 
@@ -107,7 +112,7 @@ Add each occupation once to `careers` and each surveyed major category once to `
 
 Keep each comparison within one geography, period, and method. Leave occupations with missing values out of the dataset so that a displayed zero always represents a measured value. The explorer displays the source and methodology and ranks occupations within the selected dataset.
 
-The [survey comparison notes](docs/satisfaction-and-degree-regret.md) document CareerExplorer, PayScale, and ZipRecruiter. The [GSS research](docs/job-satisfaction.md) explains how to reproduce the GSS estimates. See the [AI resilience research report](docs/ai-resilience/report.md) and [comparison-indicator methodology](docs/ai-resilience/comparison-indicators.md) for the exposure metrics, source data and reproduction instructions. After editing the AI resilience profiles or ledgers, run `python scripts/build-ai-research.py` to refresh the comparison-page research data.
+The [survey comparison notes](docs/satisfaction-and-degree-regret.md) document CareerExplorer, PayScale, and ZipRecruiter. The [GSS research](docs/job-satisfaction.md) explains how to reproduce the GSS estimates. See the [AI resilience research report](research/ai-resilience/report.md) and [comparison-indicator methodology](docs/ai-resilience/comparison-indicators.md) for the exposure metrics, source data and reproduction instructions. After editing the AI resilience profiles or ledgers, run `python scripts/build-ai-research.py` to refresh the comparison-page research data.
 
 ## Notes on the data
 

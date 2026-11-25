@@ -69,7 +69,7 @@ The featured occupation is the snapshot anchor on the website. The leads are que
 
 ## Deliverables and checks
 
-Save the research in `docs/ai-resilience/` as you work. Start with a coverage ledger so another researcher can resume from the last completed group.
+Save the research in `research/ai-resilience/` as you work. Start with a coverage ledger so another researcher can resume from the last completed group.
 
 - `report.md` explains the definitions, methods, findings across groups, limitations, and what students can do. Link a profile under `roadmaps/<slug>.md` for each of the 28 roadmaps. Each profile lists every career path, its occupation match, core task evidence, current and scenario findings, uncertainty, and preparation recommendations.
 - `evidence.csv` records the occupation or path ID, roadmap slug, task or claim, evidence type, classification and code, source URL, publication and access dates, observation period, geography, locator, and caveats. `coverage.csv` records each roadmap and career path, match quality, assessment status, and reason for scores withheld. Include score inputs and calculation steps if you estimate scores. A reviewer should be able to trace a score back to the source observations.

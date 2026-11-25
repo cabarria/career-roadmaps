@@ -1,6 +1,6 @@
 # AI resilience comparison indicators
 
-The [AI resilience review](report.md) did not establish a validated composite job-resilience score. The site's comparison tab instead presents two separate published indicators of AI exposure, plus BLS projected job growth as demand context. Neither indicator estimates the probability of losing a job, and low exposure does not guarantee employment resilience.
+The [AI resilience review](../../research/ai-resilience/report.md) did not establish a validated composite job-resilience score. The site's comparison tab instead presents two separate published indicators of AI exposure, plus BLS projected job growth as demand context. Neither indicator estimates the probability of losing a job, and low exposure does not guarantee employment resilience.
 
 ## Sources and display
 
@@ -26,14 +26,14 @@ Example: Anthropic financial and investment analysts (13-2051) = 0.5716 × 100 =
 
 1. Download the original [Anthropic job_exposure.csv](https://huggingface.co/datasets/Anthropic/EconomicIndex/resolve/01eb1d0ba708f2c26d78c3b42c57776ef1383ab7/labor_market_impacts/job_exposure.csv) (revision `01eb1d0ba708f2c26d78c3b42c57776ef1383ab7`) and [Microsoft ai_applicability_scores.csv](https://raw.githubusercontent.com/microsoft/working-with-ai/550c00c9d1b054ac78b87da3a26165bace334779/ai_applicability_scores.csv) (revision `550c00c9d1b054ac78b87da3a26165bace334779`). Accessed November 25, 2026.
 2. From the repository root run `python scripts/update-ai-indicators.py /path/to/job_exposure.csv /path/to/ai_applicability_scores.csv`.
-3. The script writes the selected source fractions and weights to [comparison-inputs.csv](comparison-inputs.csv) and the derived rows to `src/career-data.json`; `npm run check` verifies coverage, score bounds, ordering and agreement with the recorded inputs. The full-source Git revisions above make the input data reproducible.
+3. The script writes the selected source fractions and weights to [comparison-inputs.csv](../../research/ai-resilience/comparison-inputs.csv) and the derived rows to `src/career-data.json`; `npm run check` verifies coverage, score bounds, ordering and agreement with the recorded inputs. The full-source Git revisions above make the input data reproducible.
 
 The report's decision to withhold a composite resilience ranking stands. A correctly scoped exposure indicator can be published independently; it is not used to infer a total resilience score.
 
 ## Research-based task and career context
 
-The comparison page also displays the number of selected occupation tasks labeled human-led, AI-assisted, and delegated with review, in that order. These reproduce the classifications in [evidence.csv](evidence.csv), not a share of all tasks, work hours, or measured automation. Counts depend on the tasks selected for the featured occupation, including available component examples for broad occupations; they are not used for sorting or as an input to the published exposure measures.
+The comparison page also displays the number of selected occupation tasks labeled human-led, AI-assisted, and delegated with review, in that order. These reproduce the classifications in [evidence.csv](../../research/ai-resilience/evidence.csv), not a share of all tasks, work hours, or measured automation. Counts depend on the tasks selected for the featured occupation, including available component examples for broad occupations; they are not used for sorting or as an input to the published exposure measures.
 
-Each occupation has expandable current findings, a conditional 2029–31 scenario, student preparation, limitations, task statements, career-path assessments from [coverage.csv](coverage.csv), and independent sources. The page also provides downloadable copies of the report, evidence ledger, coverage ledger and individual profiles.
+Each occupation has expandable current findings, a conditional 2029–31 scenario, student preparation, limitations, task statements, career-path assessments from [coverage.csv](../../research/ai-resilience/coverage.csv), and independent sources. The page also provides downloadable copies of the report, evidence ledger, coverage ledger and individual profiles.
 
 The generated `src/ai-resilience-research.json` combines the original profiles, evidence and coverage without introducing new scores. From the repository root, run `python scripts/build-ai-research.py` after updating those sources; `python scripts/build-ai-research.py --check` verifies the generated file is current. The regular site tests check coverage, task roles, source links and known task counts.

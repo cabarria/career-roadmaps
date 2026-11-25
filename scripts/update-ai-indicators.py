@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "src/career-data.json"
-INPUTS = ROOT / "docs/ai-resilience/comparison-inputs.csv"
+INPUTS = ROOT / "research/ai-resilience/comparison-inputs.csv"
 
 # BLS Table 1.2, 2025 employment; rounded published component counts.
 # Normalize across components, rather than using the rounded parent count.

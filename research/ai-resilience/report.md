@@ -2,7 +2,7 @@
 
 **Evidence cutoff:** November 25, 2026. **Geography:** United States unless stated otherwise. The scenario horizon is 2029–31, not an employment forecast. This is a research review for students and site maintainers; it does not change the production site.
 
-**Comparison-page follow-up:** the site displays two published exposure indicators and BLS projected job growth independently, alongside qualitative task counts and expandable research profiles derived from the evidence and coverage ledgers. See [comparison-indicators.md](comparison-indicators.md). The decision below to withhold a composite resilience score is unchanged.
+**Comparison-page follow-up:** the site displays two published exposure indicators and BLS projected job growth independently, alongside qualitative task counts and expandable research profiles derived from the evidence and coverage ledgers. See [comparison-indicators.md](../../docs/ai-resilience/comparison-indicators.md). The decision below to withhold a composite resilience score is unchanged.
 
 ## Findings in brief
 

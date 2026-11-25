@@ -121,7 +121,7 @@ test('metric rankings sort comparable careers and keep zero scores', () => {
 test('AI resilience indicators cover every roadmap, reconstruct source values, and rank lower exposure first', () => {
   const indicators = data.datasets.filter(dataset => dataset.metric === 'ai-resilience');
   assert.deepEqual(indicators.map(dataset => dataset.id), ['anthropic-observed-exposure-2026', 'microsoft-ai-applicability-2026']);
-  const [header, ...lines] = readFileSync(new URL('../docs/ai-resilience/comparison-inputs.csv', import.meta.url), 'utf8').trim().split(/\r?\n/);
+  const [header, ...lines] = readFileSync(new URL('../research/ai-resilience/comparison-inputs.csv', import.meta.url), 'utf8').trim().split(/\r?\n/);
   assert.equal(header, 'careerId,occupationCode,employment2025,observedExposure,aiApplicability');
   const input = lines.map(line => line.split(','));
   assert.equal(input.length, 34);
