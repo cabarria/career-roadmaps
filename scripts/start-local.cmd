@@ -8,6 +8,7 @@ set "NODE_EXE="
 
 rem Prefer the installed project version even when NVM has no active version.
 if defined NVM_HOME if exist "%NVM_HOME%\installs\v%NODE_VERSION%\node.exe" set "NODE_EXE=%NVM_HOME%\installs\v%NODE_VERSION%\node.exe"
+if defined NVM_HOME if not defined NODE_EXE if exist "%NVM_HOME%\v%NODE_VERSION%\node.exe" set "NODE_EXE=%NVM_HOME%\v%NODE_VERSION%\node.exe"
 if not defined NODE_EXE for /f "delims=" %%N in ('where node.exe 2^>nul') do if not defined NODE_EXE set "NODE_EXE=%%N"
 if not defined NODE_EXE goto missing_node
 

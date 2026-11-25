@@ -2,9 +2,9 @@
 
 Interactive, research-backed career roadmaps for students choosing a field of study. Each roadmap follows one field from undergraduate study through the master's stage and into PhD or advanced research, then maps the career paths a graduate can actually reach, with salary ranges and honest notes on how competitive each one is.
 
-The [live site](https://careers.alianor.com/) groups 28 roadmaps into six subject areas and sorts both the groups and the roadmaps within them alphabetically. Search by field or topic, use the subject filters, and open a roadmap to explore its stages and download the research notes. Each roadmap card has its own [Lucide icon](https://lucide.dev/icons/) and accent color.
+The site groups 28 roadmaps into six subject areas and sorts both the groups and the roadmaps within them alphabetically. Search by field or topic, use the subject filters, and open a roadmap to explore its stages and download the research notes. Each roadmap card has its own [Lucide icon](https://lucide.dev/icons/) and accent color.
 
-[Career Metrics](https://careers.alianor.com/careers) compares earnings by occupation, job satisfaction across three surveys, and degree regret by surveyed major field. Job satisfaction opens with CareerExplorer, followed by the General Social Survey and PayScale in the dataset picker. The AI resilience tab combines Anthropic observed exposure, Microsoft AI applicability, BLS projected job growth and our own qualitative task and career-path assessments, with no composite job-resilience score.
+Career Metrics (`/careers`) compares earnings by occupation, job satisfaction across three surveys, and degree regret by surveyed major field. Job satisfaction opens with CareerExplorer, followed by the General Social Survey and PayScale in the dataset picker. The AI resilience tab combines Anthropic observed exposure, Microsoft AI applicability, BLS projected job growth and our own qualitative task and career-path assessments, with no composite job-resilience score.
 
 ## Layout
 
@@ -14,11 +14,11 @@ career-roadmaps/
 │   └── <field>-roadmap.jsx
 ├── research/                   Source research each roadmap is built from
 │   └── <field>-research.md
-├── docs/                       Metrics documentation and AI resilience research prompt
+├── docs/                       Roadmap builder, metrics documentation and research prompts
+│   └── field-roadmap-builder.md
 ├── scripts/                    Tools for reproducing career metric estimates
 ├── src/                        Site, roadmap catalog, and career metric data
 ├── test/                       Catalog and career metric checks
-├── field-roadmap-builder.md    The two-stage instructions used to build a roadmap
 ├── LICENSE                     MIT
 └── README.md
 ```
@@ -42,18 +42,20 @@ Fields covered: architecture, art and design, astronomy and astrophysics, biomed
 - Every figure carries a source URL and the date it was accessed.
 - Every roadmap has a matching research file.
 
-### field-roadmap-builder.md
+### docs/
 
-- The reusable instruction set that produces a roadmap from a single input, a field of study.
+- The [roadmap builder](docs/field-roadmap-builder.md) is a reusable instruction set that produces a roadmap from a single input, a field of study.
 - Stage 1 is research, saved as a markdown file. Stage 2 builds the React artifact, populated only from that research file.
 
 ## Building a new roadmap
 
-1. Open `field-roadmap-builder.md` and paste its contents into a new conversation.
+1. Open [`docs/field-roadmap-builder.md`](docs/field-roadmap-builder.md) and paste its contents into a new conversation.
 2. Replace `{{FIELD_OF_STUDY}}` with the field.
 3. Save the results as `research/<field>-research.md` and `artifacts/<field>-roadmap.jsx`.
 4. Add the field to its subject group in `src/catalog.js` and assign it a distinct icon.
 5. Accept an optional `summary` prop and render it after the roadmap header, before the phase navigation. Add its featured occupation and four snapshot figures to `src/career-data.json`. See the [metrics inventory](docs/roadmap-metrics.md) for definitions and sources.
+6. Assess the new field using the [AI resilience research prompt](docs/ai-resilience-research-prompt.md). Update its profile, evidence and coverage ledgers, and regenerate the comparison data using the scripts documented in [comparison indicators](docs/ai-resilience/comparison-indicators.md). Document unsupported occupation matches instead of inventing scores, and update the test coverage expectations to match the verified inventory.
+7. Run `npm run check` and `npm run build`.
 
 ## Using a roadmap
 
@@ -61,7 +63,7 @@ Each file in `artifacts/` is a standalone component that needs only React. Drop 
 
 ## Running the site
 
-Use Node.js 24. The exact version used for the Pages build is in `.node-version`.
+Use Node.js 24. The project's pinned Node version is in `.node-version`.
 
 On Windows, start the local development server from the repository root:
 
@@ -84,19 +86,11 @@ Open the local URL printed by Vite. Individual roadmaps have shareable `/roadmap
 
 If NVM for Windows reports `NVM4306` and the project already has its dependencies installed, `node node_modules/vite/bin/vite.js` starts the dev server directly. See the [NVM error reference](https://docs.nvm-windows.com/troubleshooting/error-codes/) for npm trust repair.
 
-### Cloudflare Pages
+### Deployment
 
-The `career-roadmaps` Cloudflare Pages project deploys automatically when `main` changes on GitHub. The production site uses a Cloudflare-managed TLS certificate, and HTTP requests to its custom hostname redirect to HTTPS.
+Build the static site from the repository root with `npm ci` followed by `npm run build`, then publish `dist/` with a static hosting provider.
 
-| Setting | Value |
-| --- | --- |
-| Production domain | [careers.alianor.com](https://careers.alianor.com/) |
-| Production branch | `main` |
-| Root directory | Repository root |
-| Build command | `npm run build` |
-| Build output directory | `dist` |
-
-Pages serves `index.html` for direct visits to routes such as `/careers` or `/roadmaps/architecture` through its default single-page app fallback. [Cloudflare Pages routing](https://developers.cloudflare.com/pages/configuration/serving-pages/#single-page-application-spa-rendering)
+For repository-connected hosting, configure the deployment branch, hosting project name, account, and optional custom domain in your hosting provider, not in this repository. Configure single-page app fallback to `index.html` so direct visits to routes such as `/careers` and `/roadmaps/architecture` work. No hosting credentials are needed to build or run the app locally.
 
 ### Adding career metric datasets
 

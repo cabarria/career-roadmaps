@@ -80,7 +80,6 @@ function App() {
       <Content id="main-content" tabIndex={-1}>{page}</Content>
       <footer className="site-footer container">
         <span>Career Roadmaps is licensed under the <a href={licenseUrl} download="LICENSE.txt">MIT License</a>.</span>
-        <a href="https://github.com/cabarria/career-roadmaps">View the project on GitHub</a>
       </footer>
     </>
   );
