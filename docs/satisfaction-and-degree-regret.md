@@ -1,11 +1,11 @@
 # Career happiness, job satisfaction, and degree regret
 
-The Career Metrics page offers three job satisfaction datasets and a degree regret comparison. The figures below describe different survey populations and questions. Each comparison keeps the original scale and category labels where they differ from the roadmap occupations.
+The [Career Metrics page](https://careers.alianor.com/careers?metric=satisfaction) opens Job satisfaction with CareerExplorer selected. The dataset picker lists CareerExplorer, NORC’s General Social Survey, and PayScale in that order. Degree regret is a separate comparison by surveyed major field. Each survey keeps its original scale and category labels where they differ from the roadmap occupations.
 
 | Dataset | Coverage in the comparison | Measure |
 | --- | --- | --- |
-| NORC General Social Survey, 2004–2024 | 6 featured occupations | Weighted percentage of employed U.S. respondents who were very or moderately satisfied, with 95% confidence intervals and respondent counts. [Coverage and methods](job-satisfaction.md) |
 | CareerExplorer ongoing survey, checked November 24, 2026 | 28 survey categories linked to the 28 roadmaps | Average career happiness on the original 1–5 scale. The survey pages describe an ongoing participant survey, with geography and the overall respondent count for each career unspecified. Each comparison row links to its source page. [CareerExplorer directory](https://www.careerexplorer.com/careers/) |
+| NORC General Social Survey, 2004–2024 | 6 featured occupations | Weighted percentage of employed U.S. respondents who were very or moderately satisfied, with 95% confidence intervals and respondent counts. [Coverage and methods](job-satisfaction.md) |
 | PayScale, June 2013–June 2015 | 22 survey categories linked to the roadmaps | Percentage of respondents who were extremely or fairly satisfied with their jobs. Occupation definitions are from the survey period. [Full table](https://www.payscale.com/data-packages/most-and-least-meaningful-jobs/full-list) · [Methodology](https://www.payscale.com/data-packages/most-and-least-meaningful-jobs/methodology) |
 | ZipRecruiter, January–March 2026 | 19 major fields linked to the roadmaps | Percentage of surveyed recent graduates who regretted their major. The figures refer to the class of 2025 cohort, with 1,500 respondents across all majors. The report also surveyed a separate cohort of rising graduates. [Report](https://www.ziprecruiter-research.org/economic-insights-research/grad-survey-2026) · [Chart data](https://datawrapper.dwcdn.net/2GSs3/1/dataset.csv) |
 
