@@ -14,6 +14,8 @@ The first two use different measures and observation periods; compare occupation
 
 BLS also publishes [four relative AI exposure categories](https://www.bls.gov/emp/publications/ai-exposure-categories.htm) (August 27, 2026), combining theoretical and observed sources; those classifications are not a 0–100 resilience measure. They reinforce the need to distinguish exposure from outcomes.
 
+Additional starting points for research include the [OpenAI AI Jobs Transition Framework](https://cdn.openai.com/pdf/the-ai-jobs-transition-framework_report.pdf) and [Anthropic Economic Index methods and evidence](https://www.anthropic.com/research/anthropic-economic-index-january-2026-report). Review their taxonomies, vintages, populations and methodology before drawing conclusions or proposing comparisons.
+
 ## Occupation match
 
 Each row is joined by the six-digit 2018 SOC code in the site's BLS National Employment Matrix data. Twenty-six detailed occupations have direct source matches. The game-art, family medicine and neuroscience (among others) anchors represent only the specific featured occupation, not an entire field; see the individual research profiles.

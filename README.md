@@ -17,8 +17,8 @@ career-roadmaps/
 ├── research/                   Source research and application data inputs
 │   ├── <field>-research.md
 │   └── ai-resilience/          Research report, profiles and CSV ledgers
-├── docs/                       Roadmap builder, metrics documentation and research prompts
-│   └── field-roadmap-builder.md
+├── docs/                       Human-facing metrics and research methodology
+├── .ai/                        Canonical AI instructions and reusable skills
 ├── scripts/                    Tools for reproducing career metric estimates
 ├── src/                        Site, roadmap catalog, and career metric data
 ├── test/                       Catalog and career metric checks
@@ -49,17 +49,21 @@ Fields covered: architecture, art and design, astronomy and astrophysics, biomed
 
 ### docs/
 
-- The [roadmap builder](docs/field-roadmap-builder.md) is a reusable instruction set that produces a roadmap from a single input, a field of study.
-- Stage 1 is research, saved as a markdown file. Stage 2 builds the React artifact, populated only from that research file.
+- Human-readable documentation of the metrics, their sources, and how to reproduce them.
+
+### .ai/
+
+- Three portable skills are available: [build-roadmap](.ai/skills/build-roadmap/SKILL.md), [research-ai-resilience](.ai/skills/research-ai-resilience/SKILL.md), and [update-career-comparisons](.ai/skills/update-career-comparisons/SKILL.md).
+- The [AI instruction guide](.ai/README.md) explains discovery, native generated files, and how to maintain the skills. Open the repository root in your agent and ask it to use the appropriate skill.
 
 ## Building a new roadmap
 
-1. Open [`docs/field-roadmap-builder.md`](docs/field-roadmap-builder.md) and paste its contents into a new conversation.
-2. Replace `{{FIELD_OF_STUDY}}` with the field.
+1. Use the [build-roadmap skill](.ai/skills/build-roadmap/SKILL.md) and provide the field of study.
+2. Research the field before building the interactive roadmap; populate the artifact from the written research, not unsupported assumptions.
 3. Save the results as `research/<field>-research.md` and `artifacts/<field>-roadmap.jsx`.
 4. Add the field to its subject group in `src/catalog.js` and assign it a distinct icon.
 5. Accept an optional `summary` prop and render it after the roadmap header, before the phase navigation. Add its featured occupation and four snapshot figures to `src/career-data.json`. See the [metrics inventory](docs/roadmap-metrics.md) for definitions and sources.
-6. Assess the new field using the [AI resilience research prompt](docs/ai-resilience-research-prompt.md). Update its profile, evidence and coverage ledgers, and regenerate the comparison data using the scripts documented in [comparison indicators](docs/ai-resilience/comparison-indicators.md). Document unsupported occupation matches instead of inventing scores, and update the test coverage expectations to match the verified inventory.
+6. Assess the new field using [research-ai-resilience](.ai/skills/research-ai-resilience/SKILL.md). Update its profile, evidence and coverage ledgers, and regenerate the comparison data using the [update-career-comparisons skill](.ai/skills/update-career-comparisons/SKILL.md) and [comparison indicators](docs/ai-resilience/comparison-indicators.md). Document unsupported occupation matches instead of inventing scores, and update the test coverage expectations to match the verified inventory.
 7. Run `npm run check` and `npm run build`.
 
 ## Using a roadmap

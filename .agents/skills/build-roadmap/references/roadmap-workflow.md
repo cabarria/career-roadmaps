@@ -1,14 +1,6 @@
 # Field-of-Study Roadmap Builder
 
-A reusable, two-stage instruction set. Give it **one input** — a field of study — and it produces a researched, interactive career-roadmap artifact, the same way the Molecular Biology roadmap was built.
-
-**Usage:** Paste everything below the line into a new conversation, then replace `{{FIELD_OF_STUDY}}` with your field. When working in this repository, use its root directory and the relative paths below. Examples: Psychology, Electrical Engineering, Materials Engineering, Mathematical Physics, Astronomy, Computer Science, Economics, Mechanical Engineering, Neuroscience, Chemistry.
-
----
-
-# ROADMAP BUILDER — INPUT: `{{FIELD_OF_STUDY}}`
-
-You will build an interactive career roadmap for a student about to begin an undergraduate program in **{{FIELD_OF_STUDY}}**. Work in two stages: **(1) Research**, then **(2) Artifact creation**. Do not skip the research stage — the artifact's quality depends on grounding it in current, accurate information.
+Use the requested field of study as the input. Work from the repository root; all project paths in this reference are relative to that root. Build the roadmap for a student about to begin undergraduate study in two stages: **(1) Research**, then **(2) Artifact creation**. Do not skip the research stage — the artifact's quality depends on grounding it in current, accurate information.
 
 ## STAGE 1 — RESEARCH
 
@@ -101,7 +93,7 @@ export default function FieldRoadmap({ summary }) {
 - Every list item and career card must be populated with **real, field-specific content from Stage 1** — no placeholder text, no generic filler.
 - Salary ranges and "reality" paragraphs must reflect what the research actually found, including honest notes on competitiveness (e.g. tenure-track scarcity, licensure requirements, geographic concentration).
 - 6–8 career paths covering genuine breadth.
-- Save both files under the repository's `research/` and `artifacts/` directories and provide links to them. When integrating a new roadmap into the site, update the catalog, featured-occupation data, and AI resilience research as described in the [README](../README.md#building-a-new-roadmap), [metrics inventory](roadmap-metrics.md), and [AI resilience research prompt](ai-resilience-research-prompt.md). Run the site's checks and production build. Then give a short summary that surfaces 3–4 of the most useful or non-obvious insights from the research — not a description of the artifact's features.
+- Save both files under the repository's `research/` and `artifacts/` directories and provide links to them. When integrating a new roadmap into the site, update the catalog, featured-occupation data, and AI resilience research as described in `README.md`, `docs/roadmap-metrics.md`, and the `research-ai-resilience` and `update-career-comparisons` skills. Run the site's checks and production build. Then give a short summary that surfaces 3–4 of the most useful or non-obvious insights from the research — not a description of the artifact's features.
 
 ## NOTES ON ADAPTING PER FIELD
 - **Degree norms vary.** In some fields (much of engineering, CS) a bachelor's is fully employable and a master's is optional; in others (psychology clinical work, academia broadly) advanced degrees are gatekeepers. In some (law-adjacent, medicine) the path is entirely different. Let the research reset your assumptions — don't force every field into the Molecular Biology mold.

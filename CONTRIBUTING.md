@@ -23,10 +23,11 @@ On Windows, `scripts\start-local.cmd` is an alternative launcher. No hosting acc
 
 ## Make research and roadmap changes
 
-- Follow the [roadmap builder](docs/field-roadmap-builder.md) and the [new roadmap checklist](README.md#building-a-new-roadmap).
+- Follow the [build-roadmap skill](.ai/skills/build-roadmap/SKILL.md) and the [new roadmap checklist](README.md#building-a-new-roadmap).
 - Keep source research in `research/`, roadmap components in `artifacts/`, and contributor-facing instructions and methods in `docs/`. The files under `research/ai-resilience/` are application inputs, including Markdown profiles and downloadable reports.
 - Cite primary sources where possible, include observation and access dates, describe geography and scope, and clearly distinguish measured values from estimates or qualitative judgments. Never invent missing data or silently change a metric's definition.
 - For AI resilience inputs, follow the [comparison methodology](docs/ai-resilience/comparison-indicators.md), update the underlying evidence and coverage, and regenerate the affected data.
+- For other metrics, follow [update-career-comparisons](.ai/skills/update-career-comparisons/SKILL.md). Use [research-ai-resilience](.ai/skills/research-ai-resilience/SKILL.md) for changes to AI-related research.
 
 ## Validate your change
 
@@ -37,5 +38,6 @@ On Windows, `scripts\start-local.cmd` is an alternative launcher. No hosting acc
 | AI resilience research profiles or evidence/coverage ledgers | Run `python scripts/build-ai-research.py` to regenerate the data, then `python scripts/build-ai-research.py --check` and `npm run build`. |
 | AI exposure indicator inputs | Follow the [reproduction instructions](docs/ai-resilience/comparison-indicators.md) and run `npm run build`. |
 | Development or data scripts | Exercise the affected script using the inputs documented for it. |
+| AI instructions or skills | Edit canonical sources under `.ai/`, regenerate native files and run `python scripts/sync_ai_instructions.py --check`; see [the AI instruction guide](.ai/README.md). No application tests needed for instruction-only changes. |
 
 Do not commit credentials, machine-specific settings, dependencies, generated build output, or personal data. Contributions should be compatible with the repository's [MIT license](LICENSE); preserve source attributions and respect the licenses of third-party data.
