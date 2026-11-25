@@ -1,12 +1,14 @@
 import { lazy, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
-import CareerMetrics from './CareerMetrics.jsx';
 import Directory from './Directory.jsx';
 import RoadmapSummary from './RoadmapSummary.jsx';
 import { roadmaps } from './catalog.js';
+import licenseText from '../LICENSE?raw';
 import './site.css';
 
+const licenseUrl = `data:text/plain;charset=utf-8,${encodeURIComponent(licenseText)}`;
 const artifacts = import.meta.glob('../artifacts/*-roadmap.jsx');
+const CareerMetrics = lazy(() => import('./CareerMetrics.jsx'));
 const research = import.meta.glob('../research/*-research.md', {
   eager: true,
   import: 'default',
@@ -64,7 +66,11 @@ function App() {
   const Content = roadmap ? 'div' : 'main';
   let page = <NotFound />;
   if (path === '/') page = <Directory />;
-  if (path === '/careers') page = <CareerMetrics />;
+  if (path === '/careers') page = (
+    <Suspense fallback={<p className="container loading" role="status">Loading career metrics…</p>}>
+      <CareerMetrics />
+    </Suspense>
+  );
   if (roadmap) page = <RoadmapPage />;
 
   return (
@@ -72,11 +78,10 @@ function App() {
       <a className="skip-link" href="#main-content">Skip to content</a>
       <Header />
       <Content id="main-content" tabIndex={-1}>{page}</Content>
-      {!roadmap && (
-        <footer className="site-footer container">
-          <a href="https://github.com/cabarria/career-roadmaps">View the project on GitHub</a>
-        </footer>
-      )}
+      <footer className="site-footer container">
+        <span>Career Roadmaps is licensed under the <a href={licenseUrl} download="LICENSE.txt">MIT License</a>.</span>
+        <a href="https://github.com/cabarria/career-roadmaps">View the project on GitHub</a>
+      </footer>
     </>
   );
 }

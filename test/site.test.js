@@ -6,6 +6,7 @@ import { metrics, metricScale, rankEntries } from '../src/metrics.js';
 
 const catalogSlugs = roadmaps.map(roadmap => roadmap.slug);
 const data = JSON.parse(readFileSync(new URL('../src/career-data.json', import.meta.url), 'utf8'));
+const aiResearch = JSON.parse(readFileSync(new URL('../src/ai-resilience-research.json', import.meta.url), 'utf8'));
 const isText = value => typeof value === 'string' && value.trim().length > 0;
 const isSlug = value => isText(value) && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value);
 
@@ -50,7 +51,11 @@ test('each dataset has sourced, comparable values linked to the right kind of en
     const { id, label, metric, source, geography, period, methodology, scores } = dataset;
     const definition = metrics.find(item => item.id === metric);
     assert.ok(isSlug(id) && !datasetIds.has(id) && definition, `Invalid or duplicate dataset ${id}`);
-    assert.ok(dataset.scale === undefined || (metric === 'satisfaction' && dataset.scale === 'stars'), `Invalid scale in ${id}`);
+    const permittedScale = dataset.scale === undefined
+      || (metric === 'satisfaction' && dataset.scale === 'stars')
+      || (metric === 'ai-resilience' && ['exposure-percent', 'applicability-points'].includes(dataset.scale));
+    assert.ok(permittedScale, `Invalid scale in ${id}`);
+    assert.ok(dataset.sortOrder === undefined || (metric === 'ai-resilience' && dataset.sortOrder === 'ascending'), `Invalid sort order in ${id}`);
     assert.ok([label, source?.name, geography, period, methodology].every(isText), `Missing context for ${id}`);
     assert.ok(['https:', 'http:'].includes(new URL(source.url).protocol), `Invalid source link for ${id}`);
     assert.ok(scores.length > 0, `Empty dataset ${id}`);
@@ -111,6 +116,84 @@ test('metric rankings sort comparable careers and keep zero scores', () => {
   ];
 
   assert.deepEqual(rankEntries(careers, { scores }).map(career => [career.id, career.value]), [['a', 82], ['z', 82], ['m', 0]]);
+});
+
+test('AI resilience indicators cover every roadmap, reconstruct source values, and rank lower exposure first', () => {
+  const indicators = data.datasets.filter(dataset => dataset.metric === 'ai-resilience');
+  assert.deepEqual(indicators.map(dataset => dataset.id), ['anthropic-observed-exposure-2026', 'microsoft-ai-applicability-2026']);
+  const [header, ...lines] = readFileSync(new URL('../docs/ai-resilience/comparison-inputs.csv', import.meta.url), 'utf8').trim().split(/\r?\n/);
+  assert.equal(header, 'careerId,occupationCode,employment2025,observedExposure,aiApplicability');
+  const input = lines.map(line => line.split(','));
+  assert.equal(input.length, 34);
+  assert.equal(new Set(input.map(row => row[1])).size, 34);
+  assert.deepEqual(input.filter(row => !row[3] || !row[4]).map(row => row[1]), ['21-1029']);
+  const metric = metrics.find(item => item.id === 'ai-resilience');
+  const columns = { 'anthropic-observed-exposure-2026': 3, 'microsoft-ai-applicability-2026': 4 };
+  const careerIds = data.careers.map(item => item.id).sort();
+  for (const dataset of indicators) {
+    const column = columns[dataset.id];
+    assert.equal(dataset.sortOrder, 'ascending');
+    assert.deepEqual(dataset.scores.map(item => item.careerId).sort(), careerIds);
+    for (const { careerId, value, sourceTitle } of dataset.scores) {
+      const components = input.filter(row => row[0] === careerId);
+      const anchor = data.careers.find(item => item.id === careerId);
+      if (['psychologists', 'social-workers'].includes(careerId)) assert.equal(components.length, 4);
+      else assert.deepEqual(components.map(row => row[1]), [anchor.occupationCode]);
+      const covered = components.filter(row => row[column] !== '');
+      assert.ok(covered.length, `No source rows for ${careerId}`);
+      const jobs = covered.reduce((sum, row) => sum + Number(row[2]), 0);
+      const weighted = covered.reduce((sum, row) => sum + Number(row[2]) * Number(row[column]), 0);
+      assert.ok(Math.abs(value - 100 * weighted / jobs) <= 0.0051, `Wrong source value for ${careerId}`);
+      assert.ok(Number.isFinite(data.employmentOutlook.values[careerId].growthPercent));
+      if (covered.length < components.length) assert.match(sourceTitle, /90\.5%/);
+    }
+    const ranked = rankEntries(data.careers, dataset);
+    assert.ok(ranked.every((row, index) => index === 0 || row.value >= ranked[index - 1].value));
+  }
+  assert.equal(metricScale(metric, indicators[0]).format(57.16), '57.2%');
+  assert.equal(metricScale(metric, indicators[1]).format(27.84), '27.8 / 100');
+  assert.equal(indicators[0].scores.find(row => row.careerId === 'family-medicine-physicians').value, 0);
+});
+
+test('AI resilience research preserves every occupation, selected task, career path, and cited source', () => {
+  const { profiles, evidenceCutoff } = aiResearch;
+  assert.match(evidenceCutoff, /^\d{4}-\d{2}-\d{2}$/);
+  assert.deepEqual(Object.keys(profiles).sort(), data.careers.map(career => career.id).sort());
+  const pathIds = new Set();
+  let taskCount = 0;
+  for (const [careerId, profile] of Object.entries(profiles)) {
+    assert.equal(data.roadmapSummaries[profile.slug].careerId, careerId);
+    assert.ok([profile.scope, profile.current, profile.scenario, profile.limitations].every(isText));
+    assert.ok(profile.preparation.length >= 2 && profile.preparation.every(isText));
+    assert.ok(profile.tasks.length >= 4 && profile.tasks.length <= 8);
+    const taskIds = new Set();
+    for (const task of profile.tasks) {
+      const key = `${task.code}/${task.id}`;
+      assert.ok(!taskIds.has(key), `Duplicate task ${key}`);
+      taskIds.add(key);
+      assert.match(task.code, /^\d{2}-\d{4}\.\d{2}$/);
+      assert.ok(isText(task.task) && isText(task.interpretation));
+      assert.ok(['human-led', 'AI-assisted', 'delegated with review'].includes(task.role));
+      assert.ok(task.importance === null || (task.importance >= 1 && task.importance <= 5));
+    }
+    taskCount += taskIds.size;
+    for (const path of profile.paths) {
+      assert.ok(!pathIds.has(path.id) && path.id.startsWith(profile.slug + '-path-'));
+      pathIds.add(path.id);
+      assert.ok([path.title, path.setting, path.assessment, path.matchQuality].every(isText));
+    }
+    assert.ok(profile.sources.length);
+    for (const source of profile.sources) {
+      assert.equal(new URL(source.url).protocol, 'https:');
+      assert.ok([source.name, source.type, source.locator, source.caveats].every(isText));
+    }
+  }
+  assert.equal(taskCount, 170);
+  assert.equal(pathIds.size, 220);
+  const roles = ['human-led', 'AI-assisted', 'delegated with review'];
+  const counts = careerId => roles.map(role => profiles[careerId].tasks.filter(task => task.role === role).length);
+  assert.deepEqual(counts('registered-nurses'), [4, 0, 2]);
+  assert.deepEqual(counts('software-developers'), [1, 3, 2]);
 });
 
 test('GSS satisfaction rankings retain respondent counts and confidence intervals', () => {

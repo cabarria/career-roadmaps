@@ -4,7 +4,7 @@ Interactive, research-backed career roadmaps for students choosing a field of st
 
 The [live site](https://careers.alianor.com/) groups 28 roadmaps into six subject areas and sorts both the groups and the roadmaps within them alphabetically. Search by field or topic, use the subject filters, and open a roadmap to explore its stages and download the research notes. Each roadmap card has its own [Lucide icon](https://lucide.dev/icons/) and accent color.
 
-[Career Metrics](https://careers.alianor.com/careers) compares earnings by occupation, job satisfaction across three surveys, and degree regret by surveyed major field. Job satisfaction opens with CareerExplorer, followed by the General Social Survey and PayScale in the dataset picker. The AI resilience tab is available and is awaiting an occupation-level dataset.
+[Career Metrics](https://careers.alianor.com/careers) compares earnings by occupation, job satisfaction across three surveys, and degree regret by surveyed major field. Job satisfaction opens with CareerExplorer, followed by the General Social Survey and PayScale in the dataset picker. The AI resilience tab combines Anthropic observed exposure, Microsoft AI applicability, BLS projected job growth and our own qualitative task and career-path assessments, with no composite job-resilience score.
 
 ## Layout
 
@@ -63,6 +63,16 @@ Each file in `artifacts/` is a standalone component that needs only React. Drop 
 
 Use Node.js 24. The exact version used for the Pages build is in `.node-version`.
 
+On Windows, start the local development server from the repository root:
+
+```powershell
+.\scripts\start-local.cmd
+```
+
+The launcher uses the installed project Node version when available, installs dependencies if needed, and serves the site at `http://127.0.0.1:5173/`. Use `--open` to open it in your browser or `--port 5174` to choose a different port. Press Ctrl+C to stop it.
+
+On other platforms, or when Node and npm are configured normally:
+
 ```sh
 npm ci
 npm run dev
@@ -99,11 +109,11 @@ Add each occupation once to `careers` and each surveyed major category once to `
 | `earnings` | Median annual earnings in USD |
 | `satisfaction` | Percentage reporting job satisfaction, or an original 1–5 rating for datasets with `scale` set to `stars` |
 | `degree-regret` | Percentage of graduates regretting their choice of academic major, by survey major field |
-| `ai-resilience` | Estimated AI resilience on a documented 0–100 scale, with higher values indicating greater resilience |
+| `ai-resilience` | Published AI exposure indicators: `scale: exposure-percent` or `applicability-points`, with `sortOrder: ascending`; projected growth is separate |
 
 Keep each comparison within one geography, period, and method. Leave occupations with missing values out of the dataset so that a displayed zero always represents a measured value. The explorer displays the source and methodology and ranks occupations within the selected dataset.
 
-The [survey comparison notes](docs/satisfaction-and-degree-regret.md) document CareerExplorer, PayScale, and ZipRecruiter. The [GSS research](docs/job-satisfaction.md) explains how to reproduce the GSS estimates. Use the [AI resilience research prompt](docs/ai-resilience-research-prompt.md) to commission a source-backed study across all 28 roadmaps and prepare a candidate dataset for review.
+The [survey comparison notes](docs/satisfaction-and-degree-regret.md) document CareerExplorer, PayScale, and ZipRecruiter. The [GSS research](docs/job-satisfaction.md) explains how to reproduce the GSS estimates. See the [AI resilience research report](docs/ai-resilience/report.md) and [comparison-indicator methodology](docs/ai-resilience/comparison-indicators.md) for the exposure metrics, source data and reproduction instructions. After editing the AI resilience profiles or ledgers, run `python scripts/build-ai-research.py` to refresh the comparison-page research data.
 
 ## Notes on the data
 
