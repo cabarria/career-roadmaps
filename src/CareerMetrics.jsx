@@ -4,12 +4,18 @@ import { metrics, metricScale, rankEntries } from './metrics.js';
 import { useQueryParams } from './use-query-params.js';
 
 const titles = new Map(roadmaps.map(roadmap => [roadmap.slug, roadmap.title]));
+const growthFormat = new Intl.NumberFormat('en-US', {
+  style: 'percent', maximumFractionDigits: 1, signDisplay: 'exceptZero',
+});
 
 function Rankings({ dataset, metric }) {
   const byMajor = metric.id === 'degree-regret';
   const subject = byMajor ? 'Major field' : 'Occupation';
   const entries = rankEntries(byMajor ? data.degreeFields : data.careers, dataset);
   const { unit, format } = metricScale(metric, dataset);
+  const showOutlook = metric.id === 'ai-resilience';
+  const order = dataset.sortOrder === 'ascending' ? 'lowest' : 'highest';
+  const outlook = data.employmentOutlook;
   const showUncertainty = entries.every(entry => entry.sampleSize && entry.confidenceInterval);
 
   return (
@@ -20,14 +26,21 @@ function Rankings({ dataset, metric }) {
         <div><dt>Period</dt><dd>{dataset.period}</dd></div>
       </dl>
       <p className="methodology">{dataset.methodology}</p>
+      {showOutlook && (
+        <p className="methodology">
+          Lower values first. The <a href={outlook.source.url}>BLS job growth projection</a> covers the full occupation
+          and all labor-market factors, not AI alone. Zero exposure does not mean immunity.
+        </p>
+      )}
       <div className="table-wrap">
         <table>
-          <caption className="sr-only">{metric.label} by {subject.toLowerCase()}, highest first</caption>
+          <caption className="sr-only">{unit} by {subject.toLowerCase()}, {order} first</caption>
           <thead>
             <tr>
               <th scope="col">{subject}</th>
               <th scope="col">Related roadmaps</th>
               <th scope="col">{unit}</th>
+              {showOutlook && <th scope="col">Projected job growth ({outlook.baseYear}–{outlook.projectionYear})</th>}
               {showUncertainty && <>
                 <th scope="col">95% confidence interval</th>
                 <th scope="col">Respondents</th>
@@ -46,6 +59,7 @@ function Rankings({ dataset, metric }) {
                   ))}</ul>
                 </td>
                 <td>{format(value)}</td>
+                {showOutlook && <td>{growthFormat.format(outlook.values[id].growthPercent / 100)}</td>}
                 {showUncertainty && <>
                   <td>{confidenceInterval.map(format).join('–')}</td>
                   <td>{sampleSize.toLocaleString('en-US')}</td>

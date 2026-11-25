@@ -1025,6 +1025,264 @@
           "value": 11.8
         }
       ]
+    },
+    {
+      "id": "anthropic-observed-exposure-2026",
+      "label": "Anthropic — observed exposure",
+      "metric": "ai-resilience",
+      "scale": "exposure-percent",
+      "sortOrder": "ascending",
+      "source": {
+        "name": "Anthropic, Labor market impacts of AI (March 2026)",
+        "url": "https://www.anthropic.com/research/labor-market-impacts"
+      },
+      "geography": "US occupations; Claude usage data",
+      "period": "August and November 2025 usage; published March 2026",
+      "methodology": "Combines task feasibility, work-related Claude use, automation weighting and estimated task time. This percentage is tool-specific, not a job-loss or adoption probability. Psychologists are employment-weighted across four SOC groups; social workers cover three groups (90.5% of 2025 jobs).",
+      "scores": [
+        {
+          "careerId": "architects",
+          "value": 7.84
+        },
+        {
+          "careerId": "graphic-designers",
+          "value": 36.72
+        },
+        {
+          "careerId": "astronomers",
+          "value": 38.49
+        },
+        {
+          "careerId": "biomedical-engineers",
+          "value": 13.28
+        },
+        {
+          "careerId": "management-analysts",
+          "value": 24.35
+        },
+        {
+          "careerId": "civil-engineers",
+          "value": 0.81
+        },
+        {
+          "careerId": "software-developers",
+          "value": 28.8
+        },
+        {
+          "careerId": "data-scientists",
+          "value": 46.05
+        },
+        {
+          "careerId": "economists",
+          "value": 24.18
+        },
+        {
+          "careerId": "high-school-teachers",
+          "value": 29.01
+        },
+        {
+          "careerId": "electrical-engineers",
+          "value": 5.9
+        },
+        {
+          "careerId": "writers-and-authors",
+          "value": 24.62
+        },
+        {
+          "careerId": "environmental-engineers",
+          "value": 3.58
+        },
+        {
+          "careerId": "financial-and-investment-analysts",
+          "value": 57.16
+        },
+        {
+          "careerId": "special-effects-artists-and-animators",
+          "value": 35.71
+        },
+        {
+          "careerId": "lawyers",
+          "value": 16.73
+        },
+        {
+          "careerId": "mathematicians",
+          "value": 42.41
+        },
+        {
+          "careerId": "mechanical-engineers",
+          "value": 8.13
+        },
+        {
+          "careerId": "family-medicine-physicians",
+          "value": 0.0
+        },
+        {
+          "careerId": "biochemists-and-biophysicists",
+          "value": 7.56
+        },
+        {
+          "careerId": "medical-scientists",
+          "value": 3.81
+        },
+        {
+          "careerId": "registered-nurses",
+          "value": 5.95
+        },
+        {
+          "careerId": "pharmacists",
+          "value": 8.96
+        },
+        {
+          "careerId": "postsecondary-philosophy-and-religion-teachers",
+          "value": 21.97
+        },
+        {
+          "careerId": "physicists",
+          "value": 27.27
+        },
+        {
+          "careerId": "political-scientists",
+          "value": 45.2
+        },
+        {
+          "careerId": "psychologists",
+          "value": 4.03
+        },
+        {
+          "careerId": "social-workers",
+          "value": 2.82,
+          "sourceTitle": "Social workers (covered groups: 90.5% of jobs)"
+        }
+      ]
+    },
+    {
+      "id": "microsoft-ai-applicability-2026",
+      "label": "Microsoft — AI applicability",
+      "metric": "ai-resilience",
+      "scale": "applicability-points",
+      "sortOrder": "ascending",
+      "source": {
+        "name": "Microsoft Research, Working with AI (v1.1, 2026)",
+        "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/"
+      },
+      "geography": "United States",
+      "period": "January–September 2024 Copilot usage; v1.1 (2026)",
+      "methodology": "Combines 200,000 Bing Copilot conversations, O*NET activity weights, estimated success and scope. The source index is multiplied by 100; it is not the percentage of work automated. Psychologists are employment-weighted across four SOC groups; social workers cover three groups (90.5% of 2025 jobs).",
+      "scores": [
+        {
+          "careerId": "architects",
+          "value": 17.49
+        },
+        {
+          "careerId": "graphic-designers",
+          "value": 22.82
+        },
+        {
+          "careerId": "astronomers",
+          "value": 28.1
+        },
+        {
+          "careerId": "biomedical-engineers",
+          "value": 29.82
+        },
+        {
+          "careerId": "management-analysts",
+          "value": 35.29
+        },
+        {
+          "careerId": "civil-engineers",
+          "value": 20.54
+        },
+        {
+          "careerId": "software-developers",
+          "value": 27.82
+        },
+        {
+          "careerId": "data-scientists",
+          "value": 35.72
+        },
+        {
+          "careerId": "economists",
+          "value": 32.77
+        },
+        {
+          "careerId": "high-school-teachers",
+          "value": 17.64
+        },
+        {
+          "careerId": "electrical-engineers",
+          "value": 11.02
+        },
+        {
+          "careerId": "writers-and-authors",
+          "value": 45.43
+        },
+        {
+          "careerId": "environmental-engineers",
+          "value": 20.83
+        },
+        {
+          "careerId": "financial-and-investment-analysts",
+          "value": 27.84
+        },
+        {
+          "careerId": "special-effects-artists-and-animators",
+          "value": 13.14
+        },
+        {
+          "careerId": "lawyers",
+          "value": 18.03
+        },
+        {
+          "careerId": "mathematicians",
+          "value": 38.62
+        },
+        {
+          "careerId": "mechanical-engineers",
+          "value": 25.73
+        },
+        {
+          "careerId": "family-medicine-physicians",
+          "value": 16.54
+        },
+        {
+          "careerId": "biochemists-and-biophysicists",
+          "value": 25.15
+        },
+        {
+          "careerId": "medical-scientists",
+          "value": 19.24
+        },
+        {
+          "careerId": "registered-nurses",
+          "value": 12.18
+        },
+        {
+          "careerId": "pharmacists",
+          "value": 27.83
+        },
+        {
+          "careerId": "postsecondary-philosophy-and-religion-teachers",
+          "value": 33.82
+        },
+        {
+          "careerId": "physicists",
+          "value": 23.46
+        },
+        {
+          "careerId": "political-scientists",
+          "value": 39.1
+        },
+        {
+          "careerId": "psychologists",
+          "value": 21.09
+        },
+        {
+          "careerId": "social-workers",
+          "value": 26.01,
+          "sourceTitle": "Social workers (covered groups: 90.5% of jobs)"
+        }
+      ]
     }
   ],
   "employmentOutlook": {

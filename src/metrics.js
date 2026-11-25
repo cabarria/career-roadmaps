@@ -10,6 +10,18 @@ const stars = {
   max: 5,
   format: value => `${value.toFixed(1)} / 5`,
 };
+const exposurePercent = {
+  unit: 'Observed AI exposure',
+  min: 0,
+  max: 100,
+  format: value => `${score.format(value)}%`,
+};
+const applicabilityPoints = {
+  unit: 'AI applicability (0–100)',
+  min: 0,
+  max: 100,
+  format: value => `${score.format(value)} / 100`,
+};
 
 export const metrics = [
   {
@@ -46,7 +58,7 @@ export const metrics = [
     label: 'AI resilience',
     icon: '✦',
     accent: '#c0aaff',
-    description: 'Compare estimates of how resilient occupations are to AI-driven disruption.',
+    description: 'Compare published AI exposure indicators alongside projected job growth. Lower exposure does not guarantee job security.',
     unit: 'Out of 100',
     max: 100,
     format: value => `${score.format(value)} / 100`,
@@ -54,7 +66,10 @@ export const metrics = [
 ];
 
 export function metricScale(metric, dataset) {
-  return dataset.scale === 'stars' ? stars : metric;
+  if (dataset.scale === 'stars') return stars;
+  if (dataset.scale === 'exposure-percent') return exposurePercent;
+  if (dataset.scale === 'applicability-points') return applicabilityPoints;
+  return metric;
 }
 
 export function rankEntries(entries, dataset) {
@@ -62,5 +77,7 @@ export function rankEntries(entries, dataset) {
 
   return dataset.scores
     .map(({ careerId, degreeFieldId, ...score }) => ({ ...score, ...byId.get(careerId ?? degreeFieldId) }))
-    .sort((left, right) => right.value - left.value || (left.sourceTitle ?? left.title).localeCompare(right.sourceTitle ?? right.title));
+    .sort((left, right) => (
+      dataset.sortOrder === 'ascending' ? left.value - right.value : right.value - left.value
+    ) || (left.sourceTitle ?? left.title).localeCompare(right.sourceTitle ?? right.title));
 }
