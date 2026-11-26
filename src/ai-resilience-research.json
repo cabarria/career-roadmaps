@@ -4599,6 +4599,183 @@
           "caveats": "Platform detection of fully AI-generated uploads on one service; uploads are not streams (0.5% of Deezer streams in Sept 2025 and 1% to 3% by Apr 2026); not US employment."
         }
       ]
+    },
+    "librarians-and-media-collections-specialists": {
+      "slug": "library-science",
+      "scope": "Librarians and media collections specialists in all settings combined; library technicians (25-4031), clerical library assistants (43-4121), archivists, curators and postsecondary library science teachers are separate occupations with their own task mixes.",
+      "current": "Librarianship mixes text-heavy tasks that generative tools can already assist with and relationship, teaching and stewardship tasks that stay with people. Surveyed librarians already use the tools: 66.5% of 272 respondents used generative AI at work and rated it 6.76 out of 10, while naming inconsistent accuracy, privacy and prompting skill as the main concerns. Among 483 academic library leaders surveyed in late 2025, 40% used AI in discovery and access, 29% in research support and 26% in internal data analysis, 24% used none, and 83% expected more demand for AI-literacy instruction. Cataloging is where the evidence is most specific: the Library of Congress found title and author fields reached up to 99% accuracy but subject and genre fell below 50%, short of the 95% bar for full automation. Employment signals point mostly elsewhere: BLS projects 2.6% growth for librarians but declines of 6.4% for both library technicians and clerical library assistants, and 2025 federal grant terminations at IMLS (reinstated in December 2025) show how funding can matter more than technology. The Anthropic (20.32%) and Microsoft (25.43 points) indicators put librarians near the middle of the featured occupations; they track text-and-chat tool use and are not a job-loss estimate.",
+      "scenario": "By 2029–31, if discovery systems add AI answer tools, vendors offer AI-assisted cataloging and models improve at subject analysis, routine cataloging, copy-editing of records and first-draft reference answers could take less staff time, and library technician and clerical roles, already projected to shrink, could contract faster. Teaching AI literacy, verifying sources, selecting collections for a community, running programs and managing budgets depend on trust and local judgment, and could grow in importance as AI-generated content spreads. Whether libraries use time saved to expand services or to cut staff depends on funding more than on technology.",
+      "preparation": [
+        "Work in a library early, in any role, and keep a record of tasks you can show: reference questions answered, programs run, collections organized, metadata edited.",
+        "Learn to verify AI output against sources, and practise teaching others to do it; AI-literacy instruction is among the most commonly expected new duties.",
+        "Add one technical or data skill that complements library judgment, such as metadata and linked data, SQL or Python for data cleanup, or research data management."
+      ],
+      "limitations": "BLS groups all librarians in one occupation and publishes no separate wage for school library media specialists, so the anchor is a broad average of very different settings. The Ithaka S+R survey covers academic libraries only, the 272-librarian survey is a convenience sample, the Library of Congress result is an abstract about one set of eBook records, and the Library Journal survey comes from graduates of participating schools. No causal study of AI and librarian employment was found, and the Occupational Outlook Handbook's Job Outlook text for librarians does not mention AI.",
+      "tasks": [
+        {
+          "id": "22411",
+          "code": "25-4022.00",
+          "task": "Search standard reference materials, including online sources and the Internet, to answer patrons' reference questions.",
+          "role": "AI-assisted",
+          "interpretation": "Generative tools search and draft answers; the librarian verifies sources and judges fit, and surveyed librarians name inaccurate output as a top concern",
+          "importance": 4.65,
+          "ratingDate": "08/2026"
+        },
+        {
+          "id": "22412",
+          "code": "25-4022.00",
+          "task": "Analyze patrons' requests to determine needed information and assist in furnishing or locating that information.",
+          "role": "human-led",
+          "interpretation": "Understanding what a patron needs is a conversation; no source found on AI replacing the reference interview",
+          "importance": 4.43,
+          "ratingDate": "08/2026"
+        },
+        {
+          "id": "22413",
+          "code": "25-4022.00",
+          "task": "Supervise daily library operations, budgeting, planning, and personnel activities, such as hiring, training, scheduling, and performance evaluations.",
+          "role": "human-led",
+          "interpretation": "Budget, staffing and policy decisions stay with managers; funding and grant changes affect staffing more than AI in the sources read",
+          "importance": 4.36,
+          "ratingDate": "08/2026"
+        },
+        {
+          "id": "22414",
+          "code": "25-4022.00",
+          "task": "Plan and teach classes on topics such as information literacy, library instruction, and technology use.",
+          "role": "AI-assisted",
+          "interpretation": "AI drafts lesson material; librarians teach AI literacy and verification, and 83% of academic library leaders expect more demand",
+          "importance": 4.35,
+          "ratingDate": "08/2026"
+        },
+        {
+          "id": "22416",
+          "code": "25-4022.00",
+          "task": "Code, classify, and catalog books, publications, films, audio-visual aids, and other library materials, based on subject matter or standard library classification systems.",
+          "role": "delegated with review",
+          "interpretation": "Models handle title and author well but subject and genre poorly (under 50%); human review required before records are used",
+          "importance": 4.3,
+          "ratingDate": "08/2026"
+        },
+        {
+          "id": "22409",
+          "code": "25-4022.00",
+          "task": "Review and evaluate materials, using book reviews, catalogs, faculty recommendations, and current holdings to select and order print, audio-visual, and electronic resources.",
+          "role": "AI-assisted",
+          "interpretation": "Tools can screen and summarize reviews; selection reflects local community needs, budgets and policy",
+          "importance": 4.26,
+          "ratingDate": "08/2026"
+        },
+        {
+          "id": "22429",
+          "code": "25-4022.00",
+          "task": "Evaluate vendor products and performance, negotiate contracts, and place orders.",
+          "role": "human-led",
+          "interpretation": "Negotiation and vendor evaluation stay with staff; 74% of academic library leaders expect AI in discovery systems, adding new products to evaluate",
+          "importance": 4.17,
+          "ratingDate": "08/2026"
+        }
+      ],
+      "paths": [
+        {
+          "id": "library-science-path-01",
+          "title": "Public Libraries",
+          "setting": "Public library systems and branches",
+          "matchQuality": "narrower",
+          "assessment": "Reference and cataloging drafts are assistable; community programming, outreach, intellectual-freedom decisions and grant-dependent staffing remain human, and funding changes affect jobs more than AI in the sources read."
+        },
+        {
+          "id": "library-science-path-02",
+          "title": "Academic & Research Libraries",
+          "setting": "Colleges, universities and research libraries",
+          "matchQuality": "narrower",
+          "assessment": "Discovery, metadata and research-support tools are the most common AI uses; instruction, liaison work, collection judgment and AI-literacy teaching remain, and use varies by institution type."
+        },
+        {
+          "id": "library-science-path-03",
+          "title": "School Library Media",
+          "setting": "K-12 schools and districts",
+          "matchQuality": "narrower",
+          "assessment": "Lesson and reading-list drafts are assistable; student relationships, literacy instruction and state licensure remain, and district budgets drive staffing."
+        },
+        {
+          "id": "library-science-path-04",
+          "title": "Law, Health & Government Libraries",
+          "setting": "Law, medical, government and other special libraries",
+          "matchQuality": "narrower",
+          "assessment": "Literature search and summaries are assistable; verification, citation accuracy and confidential research for lawyers, clinicians or officials stay with the librarian."
+        },
+        {
+          "id": "library-science-path-05",
+          "title": "Archives & Digital Curation",
+          "setting": "Archives, museums, special collections and records offices",
+          "matchQuality": "broader",
+          "assessment": "Graduates report experimenting with AI transcription and translation of documents; appraisal, provenance, donor relations and preservation decisions remain human."
+        },
+        {
+          "id": "library-science-path-06",
+          "title": "Data, Metadata & Digital Services",
+          "setting": "Libraries, repositories and digital collections teams",
+          "matchQuality": "narrower",
+          "assessment": "Metadata drafting is the closest delegated task, but subject and genre accuracy fell below 50% in Library of Congress tests; schema design, quality control and policy remain."
+        },
+        {
+          "id": "library-science-path-07",
+          "title": "Corporate, Vendor & Knowledge Work",
+          "setting": "Corporations, consultancies, law firms and library vendors",
+          "matchQuality": "proxy",
+          "assessment": "Research summarization is exposed and employer-specific; source evaluation, taxonomy design and client judgment remain, and no occupation-specific evidence was found."
+        },
+        {
+          "id": "library-science-path-08",
+          "title": "LIS Teaching & Research",
+          "setting": "Information schools and universities",
+          "matchQuality": "exact",
+          "assessment": "Writing, grading and literature drafts are assistable; original research, doctoral supervision and judgment of AI claims remain, and the small market (about 4,500 jobs) limits evidence."
+        }
+      ],
+      "sources": [
+        {
+          "name": "How Librarians Are Using Generative AI: Insights from a Nationwide Survey",
+          "url": "https://ischool.sjsu.edu/ciri-blog/how-librarians-are-using-generative-ai-insights-nationwide-survey",
+          "type": "survey (convenience sample)",
+          "date": "2025-11",
+          "locator": "Blog summary of the study",
+          "caveats": "Blog summary of a published study; convenience sample of 272 librarians across library types; self-reported usefulness (6.76 of 10) and use (66.5%); no employment data."
+        },
+        {
+          "name": "US Library Survey 2025",
+          "url": "https://sr.ithaka.org/publications/ithaka-sr-us-library-survey-2025/",
+          "type": "survey of library leaders",
+          "date": "2026",
+          "locator": "AI in the library section, Figures 15–17",
+          "caveats": "Library deans and directors at 483 institutions (36% response); academic libraries only, not public, school or special libraries; self-reported use and expectations."
+        },
+        {
+          "name": "Libraries and museums get federal funding back after Trump cuts",
+          "url": "https://npr.org/2025/12/04/nx-s1-5633347/libraries-museums-federal-funding-imls-trump-cuts",
+          "type": "news report",
+          "date": "2025-12-04",
+          "locator": "Article text",
+          "caveats": "News report; shows funding risk to library staffing, not AI effects; later appropriations and court outcomes not checked."
+        },
+        {
+          "name": "Challenges, Opportunities | Placements and Salaries Survey 2024",
+          "url": "https://libraryjournal.com/story/challenges-opportunities-placements-and-salaries-2024",
+          "type": "graduate placement survey",
+          "date": "2024-10-15",
+          "locator": "Traditional and emerging roles; placements and salaries by school",
+          "caveats": "Respondents self-select within participating schools; salaries are averages not medians; AI named in 4% of assignments; not a causal AI estimate."
+        },
+        {
+          "name": "Results of AI Experimentation for Cataloging at the Library of Congress",
+          "url": "https://repository.ifla.org/handle/20.500.14598/6861",
+          "type": "conference presentation abstract",
+          "date": "2025-08-15",
+          "locator": "Abstract",
+          "caveats": "Abstract read, slides not; one institution's eBook test records; accuracy depends on field and model (up to 99% on title and author, under 50% on subject and genre); does not measure employment."
+        }
+      ]
     }
   }
 }

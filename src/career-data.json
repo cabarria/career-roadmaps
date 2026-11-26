@@ -231,6 +231,14 @@
       "roadmapSlugs": [
         "music"
       ]
+    },
+    {
+      "id": "librarians-and-media-collections-specialists",
+      "title": "Librarians and media collections specialists",
+      "occupationCode": "25-4022",
+      "roadmapSlugs": [
+        "library-science"
+      ]
     }
   ],
   "degreeFields": [
@@ -452,6 +460,10 @@
       "careerId": "biochemists-and-biophysicists",
       "note": "A related occupation that covers some molecular biology research roles."
     },
+    "library-science": {
+      "careerId": "librarians-and-media-collections-specialists",
+      "note": "Covers public, school, academic and special librarians together. BLS does not publish a separate wage for school library media specialists, and archivists, curators and library technicians are separate occupations."
+    },
     "music": {
       "careerId": "music-directors-and-composers",
       "note": "Covers music directors, conductors and composers. Musicians and singers (27-2042) have no BLS annual median wage, so they are not the snapshot occupation. Music teachers are not included either; BLS has no K-12 music teacher occupation, so see the Education roadmap for teacher figures."
@@ -612,6 +624,10 @@
         {
           "careerId": "music-directors-and-composers",
           "value": 73710
+        },
+        {
+          "careerId": "librarians-and-media-collections-specialists",
+          "value": 68270
         }
       ]
     },
@@ -780,6 +796,12 @@
           "value": 4.2,
           "sourceTitle": "Composers",
           "sourceUrl": "https://www.careerexplorer.com/careers/composer/satisfaction/"
+        },
+        {
+          "careerId": "librarians-and-media-collections-specialists",
+          "value": 3.3,
+          "sourceTitle": "Librarian",
+          "sourceUrl": "https://www.careerexplorer.com/careers/librarian/satisfaction/"
         }
       ]
     },
@@ -960,6 +982,11 @@
         {
           "careerId": "music-directors-and-composers",
           "value": 80
+        },
+        {
+          "careerId": "librarians-and-media-collections-specialists",
+          "value": 81,
+          "sourceTitle": "Librarians"
         }
       ]
     },
@@ -1183,6 +1210,10 @@
         {
           "careerId": "music-directors-and-composers",
           "value": 3.68
+        },
+        {
+          "careerId": "librarians-and-media-collections-specialists",
+          "value": 20.32
         }
       ]
     },
@@ -1316,6 +1347,10 @@
         {
           "careerId": "music-directors-and-composers",
           "value": 13.66
+        },
+        {
+          "careerId": "librarians-and-media-collections-specialists",
+          "value": 25.43
         }
       ]
     }
@@ -1474,6 +1509,11 @@
         "jobs": 51100,
         "growthPercent": 1.2,
         "annualOpenings": 4200
+      },
+      "librarians-and-media-collections-specialists": {
+        "jobs": 142300,
+        "growthPercent": 2.6,
+        "annualOpenings": 12600
       }
     }
   }
