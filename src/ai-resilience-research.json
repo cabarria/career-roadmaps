@@ -4409,7 +4409,7 @@
         "Learn rights basics: licensing, split sheets, what the Copyright Office says about human authorship and AI assistance, and the terms of any tool used to generate material.",
         "Add conducting, rehearsal-leading and teaching experience, and learn a DAW and notation software well enough to judge and correct generated or transcribed output."
       ],
-      "limitations": "BLS publishes no annual wage for musicians and singers, so the anchor covers directors and composers only, and no US causal study of AI and music employment was found. The Anthropic and Microsoft indicators measure text-and-chat tool use and do not observe audio-generation tools. Producer surveys sample vendors' own audiences, the CISAC study is a commissioned scenario, Deezer's figures are one platform's upload detection, and BLS Table 1.12 was read verbatim through SOC 49-2096, which covers every music-related code.",
+      "limitations": "BLS publishes no annual wage for musicians and singers, so the anchor covers directors and composers only, and no US causal study of AI and music employment was found. The Anthropic and Microsoft indicators measure text-and-chat tool use and do not observe audio-generation tools. Producer surveys sample vendors' own audiences, the CISAC study is a commissioned scenario, Deezer's figures are one platform's upload detection, and BLS Table 1.12 was read in full on www.bls.gov on 2026-11-26 (937 rows, last modified 2026-10-22), including every music-related code.",
       "tasks": [
         {
           "id": "22544",
@@ -4548,7 +4548,7 @@
           "type": "forecast assumptions",
           "date": "2026",
           "locator": "Table 1.12 rows 27-2041 (industries 61110P and 61110L); 27-4014",
-          "caveats": "Lists arts-education cuts in public and private schools as the demand factor for music directors; no AI driver named for 27-2041; page read verbatim through SOC 49-2096 and covers all music codes; no causal identification."
+          "caveats": "Lists arts-education cuts in public and private schools as the demand factor for music directors; no AI driver named for 27-2041; page read in full on www.bls.gov on 2026-11-26 (937 rows"
         },
         {
           "name": "Copyright and AI, Part 2: Copyrightability",
