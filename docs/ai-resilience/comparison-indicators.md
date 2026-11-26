@@ -18,7 +18,7 @@ Additional starting points for research include the [OpenAI AI Jobs Transition F
 
 ## Occupation match
 
-Each row is joined by the six-digit 2018 SOC code in the site's BLS National Employment Matrix data. Twenty-seven detailed occupations have direct source matches. The game-art, family medicine and neuroscience (among others) anchors represent only the specific featured occupation, not an entire field; see the individual research profiles.
+Each row is joined by the six-digit 2018 SOC code in the site's BLS National Employment Matrix data. Twenty-eight detailed occupations have direct source matches. The game-art, family medicine and neuroscience (among others) anchors represent only the specific featured occupation, not an entire field; see the individual research profiles.
 
 Psychologists (19-3030) combines four detailed SOCs; social workers (21-1020) combines four. The values are employment-weighted averages over covered components, using the [BLS 2025 component employment counts](https://www.bls.gov/emp/tables/occupational-projections-and-characteristics.htm). Normalize the component values by their sum rather than a separately rounded parent total. No source value is available for social workers, all other (21-1029). The published social-work comparison row is therefore **only the covered 90.5% of employment**, not the full occupation: (405,100 + 194,800 + 138,900) / 816,200. The adjacent BLS growth projection explicitly describes the entire occupation. No missing value is treated as zero.
 

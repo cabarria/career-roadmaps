@@ -1,6 +1,6 @@
 # Job satisfaction by occupation
 
-Six of the 29 featured occupations have estimates in the General Social Survey dataset at `/careers?metric=satisfaction&dataset=gss-job-satisfaction-2004-2024`. Each value is the weighted percentage of employed U.S. respondents who reported being very or moderately satisfied with their work. The comparison shows unweighted respondent counts and 95% confidence intervals alongside the estimates. Differences in the order can reflect sampling uncertainty. See the [survey comparison notes](satisfaction-and-degree-regret.md) for the other datasets.
+Six of the 30 featured occupations have estimates in the General Social Survey dataset at `/careers?metric=satisfaction&dataset=gss-job-satisfaction-2004-2024`. Each value is the weighted percentage of employed U.S. respondents who reported being very or moderately satisfied with their work. The comparison shows unweighted respondent counts and 95% confidence intervals alongside the estimates. Differences in the order can reflect sampling uncertainty. See the [survey comparison notes](satisfaction-and-degree-regret.md) for the other datasets.
 
 ## Source and method
 
@@ -13,7 +13,7 @@ The estimates represent the pooled period. Occupation, career stage, and survey 
 
 ## Coverage across the roadmaps
 
-`n` counts working respondents with a valid satisfaction response for the listed survey category. For grouped categories, the count covers the whole group. Eight occupations matched but fell below the sample or precision criteria. Fifteen occupations had no equivalent category in the public survey.
+`n` counts working respondents with a valid satisfaction response for the listed survey category. For grouped categories, the count covers the whole group. Nine occupations matched but fell below the sample or precision criteria. Fifteen occupations had no equivalent category in the public survey.
 
 | Roadmap occupation | GSS occupation code | n | Result |
 | --- | --- | ---: | --- |
@@ -46,6 +46,7 @@ The estimates represent the pooled period. Occupation, career stage, and survey 
 | Psychologists | 1820 | 35 | Effective sample below 30 |
 | Social workers | 2010 | 127 | 89.0% (82.0–93.4%) |
 | Music directors and composers | 2750 | 27 | Sample too small; group also includes musicians and singers |
+| Librarians and media collections specialists | 2430 | 29 | Sample too small (below 30) |
 
 The 2023 National Survey of College Graduates is a candidate for a future dataset about employed degree holders. Its published satisfaction table uses broader occupation groups for many of the roadmap occupations. Design-based intervals for custom estimates require replicate weights from NCSES. [NSCG technical notes](https://ncses.nsf.gov/surveys/national-survey-college-graduates/2023) · [NSCG satisfaction table](https://ncses.nsf.gov/pubs/nsf25322/assets/data-tables/tables/nsf25322-tab003-002.pdf)
 

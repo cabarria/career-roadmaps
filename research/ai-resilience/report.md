@@ -6,7 +6,7 @@
 
 ## Findings in brief
 
-- All 29 featured occupations and 228 career cards are inventoried and assessed. The cards are education-to-career destinations, not uniformly defined occupations. A career card can span multiple employers, occupations, credential levels and seniority stages.
+- All 30 featured occupations and 236 career cards are inventoried and assessed. The cards are education-to-career destinations, not uniformly defined occupations. A career card can span multiple employers, occupations, credential levels and seniority stages.
 - Generative AI is already changing digital production, routine writing, programming, analysis and documentation; physical presence, judgment, interpersonal trust, legal accountability and verification often remain. High exposure can coincide with expanding demand or with a narrower entry route.
 - Students should develop domain knowledge before delegating their practice, learn to verify generated work independently, and seek authentic supervised experience with people, systems or evidence. Employers need to preserve training opportunities as routine junior tasks shift.
 - **Do not publish a 0–100 resilience ranking from this evidence.** The occupation profiles are useful; the published exposure, adoption, task importance and BLS outlook measurements cannot be converted into one defensible common resilience score.
@@ -96,6 +96,7 @@ Obtain a common-date US dataset for representative occupation task-time/exposure
 - [Finance](roadmaps/finance.md) — Financial and investment analysts (13-2051)
 - [Game Development](roadmaps/game-development.md) — Special effects artists and animators (27-1014)
 - [Law](roadmaps/law.md) — Lawyers (23-1011)
+- [Library Science](roadmaps/library-science.md) — Librarians and media collections specialists (25-4022)
 - [Mathematics](roadmaps/mathematics.md) — Mathematicians (15-2021)
 - [Mechanical Engineering](roadmaps/mechanical-engineering.md) — Mechanical engineers (17-2141)
 - [Medicine (Pre-Med)](roadmaps/medicine-premed.md) — Family medicine physicians (29-1215)
@@ -176,8 +177,9 @@ This research includes information from the [O*NET® 31.0 Database](https://www.
 
 ## Coverage and validation
 
-- 29 unique roadmap slugs, 228 career cards and 257 coverage rows were reconciled against catalog and artifact names. Each anchor uses a unique production career ID.
-- 177 featured-occupation task observations were matched by code/ID and selected using the method above. The evidence ledger includes 874 rows, including source, mapping and scenario interpretation records.
-- All nonblank occupation codes exist in the downloaded O*NET 31.0 occupation table. All 29 anchor employment, growth and opening rows agree with BLS Table 1.2 (the Music row was checked on 2026-11-26 against the table as served at data.bls.gov, because www.bls.gov blocks automated requests). Every profile links to its research notes and artifact in the repository.
+- 30 unique roadmap slugs, 236 career cards and 266 coverage rows were reconciled against catalog and artifact names. Each anchor uses a unique production career ID.
+- 184 featured-occupation task observations were matched by code/ID and selected using the method above. The evidence ledger includes 888 rows, including source, mapping and scenario interpretation records.
+- All nonblank occupation codes exist in the downloaded O*NET 31.0 occupation table. All 30 anchor employment, growth and opening rows agree with BLS Table 1.2 (the Music row was checked on 2026-11-26 against the table as served at data.bls.gov, because www.bls.gov blocks command-line requests; the Library Science row was checked on both data.bls.gov and www.bls.gov in a browser). Every profile links to its research notes and artifact in the repository.
 - No numeric resilience scores were assigned and the production JSON was not changed; score bounds, ranking sensitivity and reproduction are not applicable. The evidence and coverage files preserve the reasons for withholding.
+- The Library Science profile was added on 2026-11-26 and keeps the same evidence cutoff; its sources were accessed on 2026-11-26 and published on or before 2026-11-25. Its Library of Congress, Ithaka S+R and SJSU findings are specific to library settings and are not generalized to other roadmaps.
 - The Music profile was added on 2026-11-26 and keeps the report's shared evidence cutoff of 2026-11-25. Its sources were accessed on 2026-11-26 and were all published on or before 2026-11-25; earlier profiles were not re-verified and keep their original access dates.

@@ -2,7 +2,7 @@
 
 Interactive, research-backed career roadmaps for students choosing a field of study. Each roadmap follows one field from undergraduate study through the master's stage and into PhD or advanced research, then maps the career paths a graduate can actually reach, with salary ranges and honest notes on how competitive each one is.
 
-The [live site](https://careers.alianor.com/) groups 29 roadmaps into six subject areas and sorts both the groups and the roadmaps within them alphabetically. Search by field or topic, use the subject filters, and open a roadmap to explore its stages and download the research notes. Each roadmap card has its own [Lucide icon](https://lucide.dev/icons/) and accent color.
+The [live site](https://careers.alianor.com/) groups 30 roadmaps into six subject areas and sorts both the groups and the roadmaps within them alphabetically. Search by field or topic, use the subject filters, and open a roadmap to explore its stages and download the research notes. Each roadmap card has its own [Lucide icon](https://lucide.dev/icons/) and accent color.
 
 [Career Metrics](https://careers.alianor.com/careers) compares earnings by occupation, job satisfaction across three surveys, and degree regret by surveyed major field. Job satisfaction opens with CareerExplorer, followed by the General Social Survey and PayScale in the dataset picker. The AI resilience tab combines Anthropic observed exposure, Microsoft AI applicability, BLS projected job growth and our own qualitative task and career-path assessments, with no composite job-resilience score.
 
@@ -31,13 +31,13 @@ career-roadmaps/
 
 ### artifacts/
 
-- 29 single-file React components, one per field, named `<field>-roadmap.jsx`.
+- 30 single-file React components, one per field, named `<field>-roadmap.jsx`.
 - Each has a default export, runs on its own, and holds state in React only (no browser storage). The website passes a `summary` element to display the shared career snapshot.
 - Four tabs: Undergraduate, Master's, PhD or research, and Career Paths.
 - Each phase has sub-section tabs with expandable items. Career Paths is a card grid with role titles, a realistic picture of the path, and a salary range.
 - Every field gets its own visual style, so the roadmaps do not look alike.
 
-Fields covered: architecture, art and design, astronomy and astrophysics, biomedical engineering, business administration, civil engineering, computer science, data science, economics, education, electrical engineering, English, environmental engineering, finance, game development, law, mathematics, mechanical engineering, medicine (pre-med), molecular biology, music, neuroscience, nursing, pharmacy, philosophy, physics, political science, psychology, social work.
+Fields covered: architecture, art and design, astronomy and astrophysics, biomedical engineering, business administration, civil engineering, computer science, data science, economics, education, electrical engineering, English, environmental engineering, finance, game development, law, library science, mathematics, mechanical engineering, medicine (pre-med), molecular biology, music, neuroscience, nursing, pharmacy, philosophy, physics, political science, psychology, social work.
 
 ### research/
 
