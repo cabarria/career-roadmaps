@@ -4398,6 +4398,207 @@
           "caveats": "921 occupations per public summary; exposure weight approximations, proprietary conversation inputs, strict human necessity rules, GPT-estimated demand elasticity; not validated scalar."
         }
       ]
+    },
+    "music-directors-and-composers": {
+      "slug": "music",
+      "scope": "Directors, conductors and composers only; musicians and singers (27-2042), teachers, audio engineers and music-business roles have other task mixes and no BLS annual median.",
+      "current": "Directing and composing are the two halves of this occupation. Live direction is physical, real time and judged by an ensemble, and BLS ties demand to school, church and nonprofit funding rather than technology: its projections cite arts-education cuts in public and private schools, and the outlook text does not mention AI. Composition is different. Generative music platforms can already produce finished tracks, and commercial and library music is where they compete most directly: Deezer reports fully AI-generated tracks at 28% of daily uploads in September 2025 and 34% in November 2025 yet about 0.5% of streams, and a commissioned CISAC scenario puts generative AI at about 60% of library-music revenue by 2028. US copyright needs human creative input, and major labels have moved from litigation toward licensed AI models. The published Anthropic (3.68%) and Microsoft (13.66 points) indicators are low, but they track text-and-chat tool use and do not observe audio-generation tools.",
+      "scenario": "By 2029–31, if licensing frameworks settle, audio models become more reliable and generated music spreads through advertising, games and background-music libraries, low-budget commercial and library composing could be priced down, and the first rungs (copyist, orchestrator, library composer) could shrink or move into AI-assisted production. Live ensembles, conducting, teaching and commissioned concert work depend on people in a room, on school and church budgets and on audience demand, which AI does not change directly. Licensed models and clearer rights could expand demand for custom work or crowd it out; the evidence cannot say which.",
+      "preparation": [
+        "Build a recorded and notated portfolio of original work, arrangements and live-ensemble work, with dated drafts and a record of what you wrote yourself.",
+        "Learn rights basics: licensing, split sheets, what the Copyright Office says about human authorship and AI assistance, and the terms of any tool used to generate material.",
+        "Add conducting, rehearsal-leading and teaching experience, and learn a DAW and notation software well enough to judge and correct generated or transcribed output."
+      ],
+      "limitations": "BLS publishes no annual wage for musicians and singers, so the anchor covers directors and composers only, and no US causal study of AI and music employment was found. The Anthropic and Microsoft indicators measure text-and-chat tool use and do not observe audio-generation tools. Producer surveys sample vendors' own audiences, the CISAC study is a commissioned scenario, Deezer's figures are one platform's upload detection, and BLS Table 1.12 was read only in part.",
+      "tasks": [
+        {
+          "id": "22544",
+          "code": "27-2041.00",
+          "task": "Use gestures to shape the music being played, communicating desired tempo, phrasing, tone, color, pitch, volume, and other performance aspects.",
+          "role": "human-led",
+          "interpretation": "Real-time shaping of live players; no source found on AI substituting for conducting",
+          "importance": 4.78,
+          "ratingDate": "08/2022"
+        },
+        {
+          "id": "22545",
+          "code": "27-2041.00",
+          "task": "Direct groups at rehearsals and live or recorded performances to achieve desired effects such as tonal and harmonic balance dynamics, rhythm, and tempo.",
+          "role": "human-led",
+          "interpretation": "Rehearsal leadership and live balance; BLS ties demand to school and nonprofit funding, not AI",
+          "importance": 4.65,
+          "ratingDate": "08/2022"
+        },
+        {
+          "id": "22547",
+          "code": "27-2041.00",
+          "task": "Apply elements of music theory to create musical and tonal structures, including harmonies and melodies.",
+          "role": "AI-assisted",
+          "interpretation": "Generative tools propose material; composer selects, develops and owns authorship, and copyright needs human creative input",
+          "importance": 4.52,
+          "ratingDate": "08/2022"
+        },
+        {
+          "id": "22551",
+          "code": "27-2041.00",
+          "task": "Transcribe ideas for musical compositions into musical notation, using instruments, pen and paper, or computers.",
+          "role": "delegated with review",
+          "interpretation": "Candidate for software drafting; sources measure stem separation use, not transcription accuracy, so check against intent and players",
+          "importance": 4.18,
+          "ratingDate": "08/2022"
+        },
+        {
+          "id": "22554",
+          "code": "27-2041.00",
+          "task": "Write musical scores for orchestras, bands, choral groups, or individual instrumentalists or vocalists, using knowledge of music theory and of instrumental and vocal capabilities.",
+          "role": "AI-assisted",
+          "interpretation": "Drafting and voicing help; playability, ensemble idiom and rehearsal feedback stay with the composer",
+          "importance": 4.0,
+          "ratingDate": "08/2022"
+        },
+        {
+          "id": "22557",
+          "code": "27-2041.00",
+          "task": "Confer with producers and directors to define the nature and placement of film or television music.",
+          "role": "human-led",
+          "interpretation": "Client conversation, spotting and creative negotiation; no source found on AI substitution",
+          "importance": 3.85,
+          "ratingDate": "08/2022"
+        },
+        {
+          "id": "22561",
+          "code": "27-2041.00",
+          "task": "Write music for commercial mediums, including advertising jingles or film soundtracks.",
+          "role": "delegated with review",
+          "interpretation": "Commercial and library music is where generative platforms compete most directly; rights clearance and client intent stay human",
+          "importance": 3.78,
+          "ratingDate": "08/2022"
+        }
+      ],
+      "paths": [
+        {
+          "id": "music-path-01",
+          "title": "Orchestral & Classical Performance",
+          "setting": "Orchestras, opera, chamber and church",
+          "matchQuality": "narrower",
+          "assessment": "Live audition-based performance is physical and real time; recorded and commercial music is where generated audio competes. Pay concentrated in a few contracts."
+        },
+        {
+          "id": "music-path-02",
+          "title": "Popular, Jazz & Artist Careers",
+          "setting": "Independent and club, studio and touring work",
+          "matchQuality": "broader",
+          "assessment": "Live performance and artist identity remain human; AI-generated uploads and licensed generation platforms raise competition for streams and background music."
+        },
+        {
+          "id": "music-path-03",
+          "title": "Composing for Media, Concert & Games",
+          "setting": "Film, television, games, advertising and concert work",
+          "matchQuality": "narrower",
+          "assessment": "Commercial, library and cue music strongly exposed to generation; spotting, revision with clients, live recording and rights clearance remain."
+        },
+        {
+          "id": "music-path-04",
+          "title": "K-12 Music Education",
+          "setting": "Public and private schools",
+          "matchQuality": "broader",
+          "assessment": "Planning and materials drafts are assistable; classroom rehearsal, behavior and licensure remain human, and school arts funding drives demand."
+        },
+        {
+          "id": "music-path-05",
+          "title": "College & Conservatory Teaching",
+          "setting": "Colleges, universities and conservatories",
+          "matchQuality": "narrower",
+          "assessment": "Writing, grading and literature drafts are assistable; studio teaching, ensemble leadership and original scholarship remain human."
+        },
+        {
+          "id": "music-path-06",
+          "title": "Recording, Production & Audio Tech",
+          "setting": "Studios, venues, broadcast and freelance production",
+          "matchQuality": "broader",
+          "assessment": "Corrective editing, separation and basic mixing steps move to tools; room, performer direction and live-sound responsibility remain."
+        },
+        {
+          "id": "music-path-07",
+          "title": "Music Business & Industry",
+          "setting": "Labels, publishers, management, promoters and law firms",
+          "matchQuality": "proxy",
+          "assessment": "Rights administration and metadata drafting are assistable; negotiation, relationships and licensing judgment remain, and AI licensing deals create new work."
+        },
+        {
+          "id": "music-path-08",
+          "title": "Music Therapy & Community Music",
+          "setting": "Hospitals, schools, care facilities and community programs",
+          "matchQuality": "exact",
+          "assessment": "Session notes and playlists are assistable; clinical assessment, live client interaction and board-certified accountability remain human."
+        }
+      ],
+      "sources": [
+        {
+          "name": "Occupational Outlook Handbook: Music Directors and Composers",
+          "url": "https://www.bls.gov/ooh/entertainment-and-sports/music-directors-and-composers.htm",
+          "type": "official outlook text",
+          "date": "2026-08-27",
+          "locator": "Job Outlook and Pay tabs",
+          "caveats": "Outlook text names nonprofit funding strain and school music cuts and does not mention AI; BLS text is not a causal AI estimate."
+        },
+        {
+          "name": "Factors affecting occupational utilization",
+          "url": "https://www.bls.gov/emp/tables/factors-affecting-occupational-utilization.htm",
+          "type": "forecast assumptions",
+          "date": "2026",
+          "locator": "Table 1.12 rows 27-2041 (industries 61110P and 61110L); 27-4014",
+          "caveats": "Lists arts-education cuts in public and private schools as the demand factor for music directors; no AI driver named for 27-2041; page read only in part; no causal identification."
+        },
+        {
+          "name": "Copyright and AI, Part 2: Copyrightability",
+          "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf",
+          "type": "regulatory analysis",
+          "date": "2025-01-29",
+          "locator": "Executive summary, section II",
+          "caveats": "Human expressive contribution matters; prompting alone insufficient; specific facts govern. General report, not music-specific."
+        },
+        {
+          "name": "25% of music producers are now using AI, survey says",
+          "url": "https://www.musicbusinessworldwide.com/25-of-music-producers-are-now-using-ai-survey-says/",
+          "type": "vendor survey",
+          "date": "2024",
+          "locator": "Survey summary: stem separation 73.9% of AI users; whole songs 3%",
+          "caveats": "Vendor survey of its own audience, skewed to hobbyist and beginner producers; secondary report; publication date approximate."
+        },
+        {
+          "name": "AI & Music Tech In 2026",
+          "url": "https://www.soundonsound.com/music-business/ai-music-tech-2026",
+          "type": "vendor survey",
+          "date": "2026-02",
+          "locator": "Survey summary: about 1,200 respondents, over 70% experienced professionals",
+          "caveats": "Vendor survey of its own audience; answer categories taken from secondary coverage; full report not opened."
+        },
+        {
+          "name": "Economic impact of generative AI on music and audiovisual creators",
+          "url": "https://www.cisac.org/cisacpmp-strategy-ai-study",
+          "type": "commissioned scenario model",
+          "date": "2024-12",
+          "locator": "Study summary: 24% of music creators revenue at risk by 2028; about 60% of library-music revenue",
+          "caveats": "Commissioned by creator societies; covers songwriters not performers; revenue not jobs; scenario to 2028, not an observed outcome."
+        },
+        {
+          "name": "Warner Music Group strikes landmark deal with Suno; settles copyright lawsuit",
+          "url": "https://www.musicbusinessworldwide.com/warner-music-group-settles-with-suno/",
+          "type": "trade press report",
+          "date": "2025-11",
+          "locator": "Article text",
+          "caveats": "Trade press; Universal and Sony claims against Suno reported as ongoing; terms and later launches should be checked against company announcements."
+        },
+        {
+          "name": "Deezer AI tracking reveals 30,000+ AI tracks uploaded daily",
+          "url": "https://www.digitalmusicnews.com/2025/09/11/deezer-ai-tracks-daily-stat/",
+          "type": "platform data (vendor)",
+          "date": "2025-09-11",
+          "locator": "Article text on daily AI uploads",
+          "caveats": "Platform detection of fully AI-generated uploads on one service; uploads are not streams (about 0.5% of Deezer streams); not US employment."
+        }
+      ]
     }
   }
 }
