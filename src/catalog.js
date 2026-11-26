@@ -1,6 +1,6 @@
 import {
   Atom, BrainCircuit, BriefcaseBusiness, ChartCandlestick, ChartNoAxesCombined,
-  CircuitBoard, ClipboardPlus, CodeXml, Cog, Dna, DraftingCompass, Feather,
+  CircuitBoard, ClefTreble, ClipboardPlus, CodeXml, Cog, Dna, DraftingCompass, Feather,
   Gamepad2, GraduationCap, HandHeart, HardHat, HeartPulse, Landmark, Leaf,
   Lightbulb, MessagesSquare, Palette, Pill, Scale, Sigma, Stethoscope, Telescope,
   WalletCards,
@@ -88,6 +88,7 @@ const sections = [
       ['art-and-design', 'Art & Design', 'Develop a creative practice and build a portfolio for studio and design work.', '#f2abc5', Palette],
       ['education', 'Education', 'Explore classroom teaching, school leadership, and learning design.', '#e6be81', GraduationCap],
       ['english', 'English', 'Turn close reading and writing into paths in publishing, teaching, and more.', '#e6ae88', Feather],
+      ['music', 'Music', 'Train as a performer, composer, or teacher and explore paths from stage to studio.', '#c9a8ee', ClefTreble],
       ['philosophy', 'Philosophy', 'Study ethics, logic, and argument and see where those skills can lead.', '#edc389', Lightbulb],
       ['psychology', 'Psychology', 'Study behavior and explore clinical, research, and applied careers.', '#e5b5d6', MessagesSquare],
       ['social-work', 'Social Work', 'Support people and communities through practice, advocacy, and policy.', '#e7ada6', HandHeart],

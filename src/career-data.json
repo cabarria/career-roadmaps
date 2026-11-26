@@ -223,6 +223,14 @@
       "roadmapSlugs": [
         "social-work"
       ]
+    },
+    {
+      "id": "music-directors-and-composers",
+      "title": "Music directors and composers",
+      "occupationCode": "27-2041",
+      "roadmapSlugs": [
+        "music"
+      ]
     }
   ],
   "degreeFields": [
@@ -319,7 +327,8 @@
       "title": "Fine arts, performing arts, or design",
       "roadmapSlugs": [
         "art-and-design",
-        "game-development"
+        "game-development",
+        "music"
       ]
     },
     {
@@ -442,6 +451,10 @@
     "molecular-biology": {
       "careerId": "biochemists-and-biophysicists",
       "note": "A related occupation that covers some molecular biology research roles."
+    },
+    "music": {
+      "careerId": "music-directors-and-composers",
+      "note": "Covers music directors, conductors and composers. Musicians and singers (27-2042) have no BLS annual median wage, so they are not the snapshot occupation. Music teachers are not included either; BLS has no K-12 music teacher occupation, so see the Education roadmap for teacher figures."
     },
     "neuroscience": {
       "careerId": "medical-scientists",
@@ -595,6 +608,10 @@
         {
           "careerId": "social-workers",
           "value": 61780
+        },
+        {
+          "careerId": "music-directors-and-composers",
+          "value": 73710
         }
       ]
     },
@@ -757,6 +774,12 @@
           "careerId": "writers-and-authors",
           "value": 4.1,
           "sourceUrl": "https://www.careerexplorer.com/careers/writer/satisfaction/"
+        },
+        {
+          "careerId": "music-directors-and-composers",
+          "value": 4.2,
+          "sourceTitle": "Composers",
+          "sourceUrl": "https://www.careerexplorer.com/careers/composer/satisfaction/"
         }
       ]
     },
@@ -933,6 +956,10 @@
         {
           "careerId": "writers-and-authors",
           "value": 67
+        },
+        {
+          "careerId": "music-directors-and-composers",
+          "value": 80
         }
       ]
     },
@@ -1152,6 +1179,10 @@
           "careerId": "social-workers",
           "value": 2.82,
           "sourceTitle": "Social workers (covered groups: 90.5% of jobs)"
+        },
+        {
+          "careerId": "music-directors-and-composers",
+          "value": 3.68
         }
       ]
     },
@@ -1281,6 +1312,10 @@
           "careerId": "social-workers",
           "value": 26.01,
           "sourceTitle": "Social workers (covered groups: 90.5% of jobs)"
+        },
+        {
+          "careerId": "music-directors-and-composers",
+          "value": 13.66
         }
       ]
     }
@@ -1434,6 +1469,11 @@
         "jobs": 816100,
         "growthPercent": 6.2,
         "annualOpenings": 69100
+      },
+      "music-directors-and-composers": {
+        "jobs": 51100,
+        "growthPercent": 1.2,
+        "annualOpenings": 4200
       }
     }
   }

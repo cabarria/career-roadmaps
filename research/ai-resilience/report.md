@@ -6,7 +6,7 @@
 
 ## Findings in brief
 
-- All 28 featured occupations and 220 career cards are inventoried and assessed. The cards are education-to-career destinations, not uniformly defined occupations. A career card can span multiple employers, occupations, credential levels and seniority stages.
+- All 29 featured occupations and 228 career cards are inventoried and assessed. The cards are education-to-career destinations, not uniformly defined occupations. A career card can span multiple employers, occupations, credential levels and seniority stages.
 - Generative AI is already changing digital production, routine writing, programming, analysis and documentation; physical presence, judgment, interpersonal trust, legal accountability and verification often remain. High exposure can coincide with expanding demand or with a narrower entry route.
 - Students should develop domain knowledge before delegating their practice, learn to verify generated work independently, and seek authentic supervised experience with people, systems or evidence. Employers need to preserve training opportunities as routine junior tasks shift.
 - **Do not publish a 0–100 resilience ranking from this evidence.** The occupation profiles are useful; the published exposure, adoption, task importance and BLS outlook measurements cannot be converted into one defensible common resilience score.
@@ -100,6 +100,7 @@ Obtain a common-date US dataset for representative occupation task-time/exposure
 - [Mechanical Engineering](roadmaps/mechanical-engineering.md) — Mechanical engineers (17-2141)
 - [Medicine (Pre-Med)](roadmaps/medicine-premed.md) — Family medicine physicians (29-1215)
 - [Molecular Biology](roadmaps/molecular-biology.md) — Biochemists and biophysicists (19-1021)
+- [Music](roadmaps/music.md) — Music directors and composers (27-2041)
 - [Neuroscience](roadmaps/neuroscience.md) — Medical scientists, except epidemiologists (19-1042)
 - [Nursing](roadmaps/nursing.md) — Registered nurses (29-1141)
 - [Pharmacy](roadmaps/pharmacy.md) — Pharmacists (29-1051)
@@ -175,7 +176,8 @@ This research includes information from the [O*NET® 31.0 Database](https://www.
 
 ## Coverage and validation
 
-- 28 unique roadmap slugs, 220 career cards and 248 coverage rows were reconciled against catalog and artifact names. Each anchor uses a unique production career ID.
-- 170 featured-occupation task observations were matched by code/ID and selected using the method above. The evidence ledger includes 857 rows, including source, mapping and scenario interpretation records.
-- All nonblank occupation codes exist in the downloaded O*NET 31.0 occupation table. All 28 anchor employment, growth and opening rows agree with live BLS Table 1.2. Every profile links to its research notes and artifact in the repository.
+- 29 unique roadmap slugs, 228 career cards and 257 coverage rows were reconciled against catalog and artifact names. Each anchor uses a unique production career ID.
+- 177 featured-occupation task observations were matched by code/ID and selected using the method above. The evidence ledger includes 874 rows, including source, mapping and scenario interpretation records.
+- All nonblank occupation codes exist in the downloaded O*NET 31.0 occupation table. All 29 anchor employment, growth and opening rows agree with BLS Table 1.2 (the Music row was checked on 2026-11-26 against the table as served at data.bls.gov, because www.bls.gov blocks automated requests). Every profile links to its research notes and artifact in the repository.
 - No numeric resilience scores were assigned and the production JSON was not changed; score bounds, ranking sensitivity and reproduction are not applicable. The evidence and coverage files preserve the reasons for withholding.
+- The Music profile was added on 2026-11-26 and keeps the report's shared evidence cutoff of 2026-11-25. Its sources were accessed on 2026-11-26 and were all published on or before 2026-11-25; earlier profiles were not re-verified and keep their original access dates.

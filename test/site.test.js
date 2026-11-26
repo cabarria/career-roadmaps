@@ -124,8 +124,8 @@ test('AI resilience indicators cover every roadmap, reconstruct source values, a
   const [header, ...lines] = readFileSync(new URL('../research/ai-resilience/comparison-inputs.csv', import.meta.url), 'utf8').trim().split(/\r?\n/);
   assert.equal(header, 'careerId,occupationCode,employment2025,observedExposure,aiApplicability');
   const input = lines.map(line => line.split(','));
-  assert.equal(input.length, 34);
-  assert.equal(new Set(input.map(row => row[1])).size, 34);
+  assert.equal(input.length, 35);
+  assert.equal(new Set(input.map(row => row[1])).size, 35);
   assert.deepEqual(input.filter(row => !row[3] || !row[4]).map(row => row[1]), ['21-1029']);
   const metric = metrics.find(item => item.id === 'ai-resilience');
   const columns = { 'anthropic-observed-exposure-2026': 3, 'microsoft-ai-applicability-2026': 4 };
@@ -188,8 +188,8 @@ test('AI resilience research preserves every occupation, selected task, career p
       assert.ok([source.name, source.type, source.locator, source.caveats].every(isText));
     }
   }
-  assert.equal(taskCount, 170);
-  assert.equal(pathIds.size, 220);
+  assert.equal(taskCount, 177);
+  assert.equal(pathIds.size, 228);
   const roles = ['human-led', 'AI-assisted', 'delegated with review'];
   const counts = careerId => roles.map(role => profiles[careerId].tasks.filter(task => task.role === role).length);
   assert.deepEqual(counts('registered-nurses'), [4, 0, 2]);
