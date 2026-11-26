@@ -4402,14 +4402,14 @@
     "music-directors-and-composers": {
       "slug": "music",
       "scope": "Directors, conductors and composers only; musicians and singers (27-2042), teachers, audio engineers and music-business roles have other task mixes and no BLS annual median.",
-      "current": "Directing and composing are the two halves of this occupation. Live direction is physical, real time and judged by an ensemble, and BLS ties demand to school, church and nonprofit funding rather than technology: its projections cite arts-education cuts in public and private schools, and the outlook text does not mention AI. Composition is different. Generative music platforms can already produce finished tracks, and commercial and library music is where they compete most directly: Deezer reports fully AI-generated tracks at 28% of daily uploads in September 2025 and 34% in November 2025 yet about 0.5% of streams, and a commissioned CISAC scenario puts generative AI at about 60% of library-music revenue by 2028. US copyright needs human creative input, and major labels have moved from litigation toward licensed AI models. The published Anthropic (3.68%) and Microsoft (13.66 points) indicators are low, but they track text-and-chat tool use and do not observe audio-generation tools.",
+      "current": "Directing and composing are the two halves of this occupation. Live direction is physical, real time and judged by an ensemble, and BLS ties demand to school, church and nonprofit funding rather than technology: its projections cite arts-education cuts in public and private schools, and the outlook text does not mention AI. Composition is different. Generative music platforms can already produce finished tracks, and commercial and library music is where they compete most directly: Deezer reports fully AI-generated tracks at more than 28% of daily uploads in September 2025 and about 44% in April 2026 yet only 0.5% to 3% of streams, and a commissioned CISAC scenario puts generative AI at about 60% of library-music revenue by 2028. US copyright needs human creative input, and major labels have moved from litigation toward licensed AI models. The published Anthropic (3.68%) and Microsoft (13.66 points) indicators are low, but they track text-and-chat tool use and do not observe audio-generation tools.",
       "scenario": "By 2029–31, if licensing frameworks settle, audio models become more reliable and generated music spreads through advertising, games and background-music libraries, low-budget commercial and library composing could be priced down, and the first rungs (copyist, orchestrator, library composer) could shrink or move into AI-assisted production. Live ensembles, conducting, teaching and commissioned concert work depend on people in a room, on school and church budgets and on audience demand, which AI does not change directly. Licensed models and clearer rights could expand demand for custom work or crowd it out; the evidence cannot say which.",
       "preparation": [
         "Build a recorded and notated portfolio of original work, arrangements and live-ensemble work, with dated drafts and a record of what you wrote yourself.",
         "Learn rights basics: licensing, split sheets, what the Copyright Office says about human authorship and AI assistance, and the terms of any tool used to generate material.",
         "Add conducting, rehearsal-leading and teaching experience, and learn a DAW and notation software well enough to judge and correct generated or transcribed output."
       ],
-      "limitations": "BLS publishes no annual wage for musicians and singers, so the anchor covers directors and composers only, and no US causal study of AI and music employment was found. The Anthropic and Microsoft indicators measure text-and-chat tool use and do not observe audio-generation tools. Producer surveys sample vendors' own audiences, the CISAC study is a commissioned scenario, Deezer's figures are one platform's upload detection, and BLS Table 1.12 was read only in part.",
+      "limitations": "BLS publishes no annual wage for musicians and singers, so the anchor covers directors and composers only, and no US causal study of AI and music employment was found. The Anthropic and Microsoft indicators measure text-and-chat tool use and do not observe audio-generation tools. Producer surveys sample vendors' own audiences, the CISAC study is a commissioned scenario, Deezer's figures are one platform's upload detection, and BLS Table 1.12 was read verbatim through SOC 49-2096, which covers every music-related code.",
       "tasks": [
         {
           "id": "22544",
@@ -4548,7 +4548,7 @@
           "type": "forecast assumptions",
           "date": "2026",
           "locator": "Table 1.12 rows 27-2041 (industries 61110P and 61110L); 27-4014",
-          "caveats": "Lists arts-education cuts in public and private schools as the demand factor for music directors; no AI driver named for 27-2041; page read only in part; no causal identification."
+          "caveats": "Lists arts-education cuts in public and private schools as the demand factor for music directors; no AI driver named for 27-2041; page read verbatim through SOC 49-2096 and covers all music codes; no causal identification."
         },
         {
           "name": "Copyright and AI, Part 2: Copyrightability",
@@ -4596,7 +4596,7 @@
           "type": "platform data (vendor)",
           "date": "2025-09-11",
           "locator": "Article text on daily AI uploads",
-          "caveats": "Platform detection of fully AI-generated uploads on one service; uploads are not streams (about 0.5% of Deezer streams); not US employment."
+          "caveats": "Platform detection of fully AI-generated uploads on one service; uploads are not streams (0.5% of Deezer streams in Sept 2025 and 1% to 3% by Apr 2026); not US employment."
         }
       ]
     }

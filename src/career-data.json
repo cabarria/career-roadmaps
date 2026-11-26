@@ -454,7 +454,7 @@
     },
     "music": {
       "careerId": "music-directors-and-composers",
-      "note": "Covers music directors, conductors and composers. Musicians and singers (27-2042) have no BLS annual median wage, so they are not the snapshot occupation."
+      "note": "Covers music directors, conductors and composers. Musicians and singers (27-2042) have no BLS annual median wage, so they are not the snapshot occupation. Music teachers are not included either; BLS has no K-12 music teacher occupation, so see the Education roadmap for teacher figures."
     },
     "neuroscience": {
       "careerId": "medical-scientists",

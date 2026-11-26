@@ -352,9 +352,9 @@ const data = {
       color: "#E0A94A",
       roles: ["Freelance / Sub", "Section Member", "Assistant Principal", "Principal"],
       reality:
-        "Full-time orchestral jobs are filled by audition, and the research found no count of full-time seats. The League of American Orchestras counts 2,218 orchestras, but budgets run from $30,000 to $200 million and pay models run from 52-week salaried to per-service to volunteer. Most classical musicians combine orchestra services, teaching, chamber work and church jobs. BLS expects declining classical attendance to slow growth.",
+        "Full-time orchestral jobs are filled by audition, and the research found no count of full-time seats. Orchestras range from large professional ensembles to community groups, and pay models run from 52-week salaried to per-service to volunteer. Most classical musicians combine orchestra services, teaching, chamber work and church jobs. BLS expects declining classical attendance to slow growth.",
       salary:
-        "Top-tier contracts: Philadelphia base $176,280 (tentative deal to $200,008), Boston minimum $101,350 by 2027-28. All musicians and singers: $47.80 per hour median (BLS May 2025).",
+        "Top-tier contracts: Philadelphia base $176,280 (tentative deal to $200,008), Baltimore Symphony minimum $101,350 by 2027-28. All musicians and singers: $47.80 per hour median (BLS May 2025).",
     },
     {
       path: "Popular, Jazz & Artist Careers",
@@ -382,7 +382,7 @@ const data = {
       color: "#C79BE0",
       roles: ["General Music", "Band / Orchestra", "Choral Director", "Fine-Arts Coordinator"],
       reality:
-        "The most common salaried destination. It needs state licensure: state exams such as Praxis and, in some states, a teaching-performance assessment. BLS does not break out music teachers, and school arts cuts are named as a factor lowering music-director demand in schools. NFHS cites a 14% fall in music education graduates over a decade, and UNC Chapel Hill paused its K-12 music education track.",
+        "The most common salaried destination. It needs state licensure: state exams such as Praxis and, in some states, a teaching-performance assessment. BLS does not break out music teachers, and school arts cuts are named as a factor lowering music-director demand in schools. UNC Chapel Hill paused its K-12 music education track.",
       salary:
         "BLS medians by school level: $63,970 elementary, $64,370 middle, $72,040 secondary; projected change about -0.2% to -0.4% to 2035.",
     },
@@ -424,7 +424,7 @@ const data = {
       reality:
         "Requires an approved degree, supervised clinical hours and the CBMT board exam. BLS has no music therapist line; they are counted within therapists, all other, which also includes art therapists. Board certification is voluntary, but some states require it for licensure or registries.",
       salary:
-        "AMTA's 2019 workforce analysis put average pay at $54,816. BLS proxies: therapists, all other $77,930 (+12.6%); recreational therapists $61,960 (+4.8%).",
+        "BLS proxies: therapists, all other $77,930 (+12.6%); recreational therapists $61,960 (+4.8%).",
     },
   ],
 };
@@ -742,7 +742,7 @@ export default function MusicRoadmap({ summary } = {}) {
               <p style={{ margin: 0, fontSize: 17, lineHeight: 1.62, maxWidth: 780 }}>
                 Eight destinations, from the stage to the classroom to the studio. Pay figures are US BLS
                 medians (May 2025) unless noted. BLS publishes no annual median for musicians and singers,
-                only an hourly one, because the work is part-time and irregular.
+                only an hourly one, because the work is part-time and irregular. The career snapshot at the top covers music directors and composers, not performers or teachers. BLS has no K-12 music teacher occupation, so teacher pay uses school-level teacher groups; see the Education roadmap for those.
               </p>
             </div>
 
